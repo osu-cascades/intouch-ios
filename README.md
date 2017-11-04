@@ -1,6 +1,7 @@
 # Abilitree Intouch Mobile
 
-Abilitree InTouch, a mobile iOS application for notifying clients and staff of schedule changes.
+InTouch is a mobile application enabling Abilitree staff to notify clients of meeting changes, and
+for clients to notify staff of cancellations. 
 
 # Prerequisites
   * Install latest version of Xcode
@@ -19,9 +20,9 @@ Abilitree InTouch, a mobile iOS application for notifying clients and staff of s
 <br />
 :sparkles:The app development kit, Xcode is not available for any other operating systems except Mac OS X and iOS. 
 
-<br />
 # Requirements to Install Xcode on Windows 
-  To install Xcode on Windows 7, 8 or 8.1 and 10. Before initiating the installation process, you need to have the following     system requirements:
+<br />
+* To install Xcode on Windows 7, 8 or 8.1 and 10. Before initiating the installation process, you need to have the following     system requirements:
 <br />
 * A working Mac OS X virtual machine on VMware or VirtualBox.
 * Downloaded Xcode package from Apple site. You need to have Apple ID in order to download Xcode from Apple store.
