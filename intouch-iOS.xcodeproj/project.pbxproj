@@ -7,64 +7,64 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D4EA94D1FA8FC790089B1A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4EA94C1FA8FC790089B1A4 /* AppDelegate.swift */; };
-		7D4EA94F1FA8FC790089B1A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4EA94E1FA8FC790089B1A4 /* ViewController.swift */; };
-		7D4EA9521FA8FC790089B1A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D4EA9501FA8FC790089B1A4 /* Main.storyboard */; };
-		7D4EA9541FA8FC790089B1A4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D4EA9531FA8FC790089B1A4 /* Assets.xcassets */; };
-		7D4EA9571FA8FC790089B1A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7D4EA9551FA8FC790089B1A4 /* LaunchScreen.storyboard */; };
-		7D4EA9621FA8FC790089B1A4 /* intouch_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4EA9611FA8FC790089B1A4 /* intouch_iOSTests.swift */; };
-		7D4EA96D1FA8FC7A0089B1A4 /* intouch_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4EA96C1FA8FC7A0089B1A4 /* intouch_iOSUITests.swift */; };
+		7DE21F151FAD5859004A8C6C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE21F141FAD5859004A8C6C /* AppDelegate.swift */; };
+		7DE21F171FAD5859004A8C6C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE21F161FAD5859004A8C6C /* ViewController.swift */; };
+		7DE21F1A1FAD5859004A8C6C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE21F181FAD5859004A8C6C /* Main.storyboard */; };
+		7DE21F1C1FAD5859004A8C6C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7DE21F1B1FAD5859004A8C6C /* Assets.xcassets */; };
+		7DE21F1F1FAD5859004A8C6C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7DE21F1D1FAD5859004A8C6C /* LaunchScreen.storyboard */; };
+		7DE21F2A1FAD5859004A8C6C /* intouch_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE21F291FAD5859004A8C6C /* intouch_iOSTests.swift */; };
+		7DE21F351FAD5859004A8C6C /* intouch_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DE21F341FAD5859004A8C6C /* intouch_iOSUITests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		7D4EA95E1FA8FC790089B1A4 /* PBXContainerItemProxy */ = {
+		7DE21F261FAD5859004A8C6C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7D4EA9411FA8FC790089B1A4 /* Project object */;
+			containerPortal = 7DE21F091FAD5859004A8C6C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7D4EA9481FA8FC790089B1A4;
+			remoteGlobalIDString = 7DE21F101FAD5859004A8C6C;
 			remoteInfo = "intouch-iOS";
 		};
-		7D4EA9691FA8FC7A0089B1A4 /* PBXContainerItemProxy */ = {
+		7DE21F311FAD5859004A8C6C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 7D4EA9411FA8FC790089B1A4 /* Project object */;
+			containerPortal = 7DE21F091FAD5859004A8C6C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 7D4EA9481FA8FC790089B1A4;
+			remoteGlobalIDString = 7DE21F101FAD5859004A8C6C;
 			remoteInfo = "intouch-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7D4EA9491FA8FC790089B1A4 /* intouch-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "intouch-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D4EA94C1FA8FC790089B1A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7D4EA94E1FA8FC790089B1A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		7D4EA9511FA8FC790089B1A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		7D4EA9531FA8FC790089B1A4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7D4EA9561FA8FC790089B1A4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7D4EA9581FA8FC790089B1A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D4EA95D1FA8FC790089B1A4 /* intouch-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "intouch-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D4EA9611FA8FC790089B1A4 /* intouch_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intouch_iOSTests.swift; sourceTree = "<group>"; };
-		7D4EA9631FA8FC790089B1A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7D4EA9681FA8FC790089B1A4 /* intouch-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "intouch-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D4EA96C1FA8FC7A0089B1A4 /* intouch_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intouch_iOSUITests.swift; sourceTree = "<group>"; };
-		7D4EA96E1FA8FC7A0089B1A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DE21F111FAD5859004A8C6C /* intouch-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "intouch-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DE21F141FAD5859004A8C6C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7DE21F161FAD5859004A8C6C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7DE21F191FAD5859004A8C6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7DE21F1B1FAD5859004A8C6C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7DE21F1E1FAD5859004A8C6C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7DE21F201FAD5859004A8C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DE21F251FAD5859004A8C6C /* intouch-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "intouch-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DE21F291FAD5859004A8C6C /* intouch_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intouch_iOSTests.swift; sourceTree = "<group>"; };
+		7DE21F2B1FAD5859004A8C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7DE21F301FAD5859004A8C6C /* intouch-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "intouch-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7DE21F341FAD5859004A8C6C /* intouch_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intouch_iOSUITests.swift; sourceTree = "<group>"; };
+		7DE21F361FAD5859004A8C6C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7D4EA9461FA8FC790089B1A4 /* Frameworks */ = {
+		7DE21F0E1FAD5859004A8C6C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D4EA95A1FA8FC790089B1A4 /* Frameworks */ = {
+		7DE21F221FAD5859004A8C6C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D4EA9651FA8FC790089B1A4 /* Frameworks */ = {
+		7DE21F2D1FAD5859004A8C6C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -74,53 +74,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7D4EA9401FA8FC790089B1A4 = {
+		7DE21F081FAD5859004A8C6C = {
 			isa = PBXGroup;
 			children = (
-				7D4EA94B1FA8FC790089B1A4 /* intouch-iOS */,
-				7D4EA9601FA8FC790089B1A4 /* intouch-iOSTests */,
-				7D4EA96B1FA8FC7A0089B1A4 /* intouch-iOSUITests */,
-				7D4EA94A1FA8FC790089B1A4 /* Products */,
+				7DE21F131FAD5859004A8C6C /* intouch-iOS */,
+				7DE21F281FAD5859004A8C6C /* intouch-iOSTests */,
+				7DE21F331FAD5859004A8C6C /* intouch-iOSUITests */,
+				7DE21F121FAD5859004A8C6C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7D4EA94A1FA8FC790089B1A4 /* Products */ = {
+		7DE21F121FAD5859004A8C6C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7D4EA9491FA8FC790089B1A4 /* intouch-iOS.app */,
-				7D4EA95D1FA8FC790089B1A4 /* intouch-iOSTests.xctest */,
-				7D4EA9681FA8FC790089B1A4 /* intouch-iOSUITests.xctest */,
+				7DE21F111FAD5859004A8C6C /* intouch-iOS.app */,
+				7DE21F251FAD5859004A8C6C /* intouch-iOSTests.xctest */,
+				7DE21F301FAD5859004A8C6C /* intouch-iOSUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7D4EA94B1FA8FC790089B1A4 /* intouch-iOS */ = {
+		7DE21F131FAD5859004A8C6C /* intouch-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				7D4EA94C1FA8FC790089B1A4 /* AppDelegate.swift */,
-				7D4EA94E1FA8FC790089B1A4 /* ViewController.swift */,
-				7D4EA9501FA8FC790089B1A4 /* Main.storyboard */,
-				7D4EA9531FA8FC790089B1A4 /* Assets.xcassets */,
-				7D4EA9551FA8FC790089B1A4 /* LaunchScreen.storyboard */,
-				7D4EA9581FA8FC790089B1A4 /* Info.plist */,
+				7DE21F141FAD5859004A8C6C /* AppDelegate.swift */,
+				7DE21F161FAD5859004A8C6C /* ViewController.swift */,
+				7DE21F181FAD5859004A8C6C /* Main.storyboard */,
+				7DE21F1B1FAD5859004A8C6C /* Assets.xcassets */,
+				7DE21F1D1FAD5859004A8C6C /* LaunchScreen.storyboard */,
+				7DE21F201FAD5859004A8C6C /* Info.plist */,
 			);
 			path = "intouch-iOS";
 			sourceTree = "<group>";
 		};
-		7D4EA9601FA8FC790089B1A4 /* intouch-iOSTests */ = {
+		7DE21F281FAD5859004A8C6C /* intouch-iOSTests */ = {
 			isa = PBXGroup;
 			children = (
-				7D4EA9611FA8FC790089B1A4 /* intouch_iOSTests.swift */,
-				7D4EA9631FA8FC790089B1A4 /* Info.plist */,
+				7DE21F291FAD5859004A8C6C /* intouch_iOSTests.swift */,
+				7DE21F2B1FAD5859004A8C6C /* Info.plist */,
 			);
 			path = "intouch-iOSTests";
 			sourceTree = "<group>";
 		};
-		7D4EA96B1FA8FC7A0089B1A4 /* intouch-iOSUITests */ = {
+		7DE21F331FAD5859004A8C6C /* intouch-iOSUITests */ = {
 			isa = PBXGroup;
 			children = (
-				7D4EA96C1FA8FC7A0089B1A4 /* intouch_iOSUITests.swift */,
-				7D4EA96E1FA8FC7A0089B1A4 /* Info.plist */,
+				7DE21F341FAD5859004A8C6C /* intouch_iOSUITests.swift */,
+				7DE21F361FAD5859004A8C6C /* Info.plist */,
 			);
 			path = "intouch-iOSUITests";
 			sourceTree = "<group>";
@@ -128,13 +128,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7D4EA9481FA8FC790089B1A4 /* intouch-iOS */ = {
+		7DE21F101FAD5859004A8C6C /* intouch-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7D4EA9711FA8FC7A0089B1A4 /* Build configuration list for PBXNativeTarget "intouch-iOS" */;
+			buildConfigurationList = 7DE21F391FAD5859004A8C6C /* Build configuration list for PBXNativeTarget "intouch-iOS" */;
 			buildPhases = (
-				7D4EA9451FA8FC790089B1A4 /* Sources */,
-				7D4EA9461FA8FC790089B1A4 /* Frameworks */,
-				7D4EA9471FA8FC790089B1A4 /* Resources */,
+				7DE21F0D1FAD5859004A8C6C /* Sources */,
+				7DE21F0E1FAD5859004A8C6C /* Frameworks */,
+				7DE21F0F1FAD5859004A8C6C /* Resources */,
 			);
 			buildRules = (
 			);
@@ -142,72 +142,72 @@
 			);
 			name = "intouch-iOS";
 			productName = "intouch-iOS";
-			productReference = 7D4EA9491FA8FC790089B1A4 /* intouch-iOS.app */;
+			productReference = 7DE21F111FAD5859004A8C6C /* intouch-iOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		7D4EA95C1FA8FC790089B1A4 /* intouch-iOSTests */ = {
+		7DE21F241FAD5859004A8C6C /* intouch-iOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7D4EA9741FA8FC7A0089B1A4 /* Build configuration list for PBXNativeTarget "intouch-iOSTests" */;
+			buildConfigurationList = 7DE21F3C1FAD5859004A8C6C /* Build configuration list for PBXNativeTarget "intouch-iOSTests" */;
 			buildPhases = (
-				7D4EA9591FA8FC790089B1A4 /* Sources */,
-				7D4EA95A1FA8FC790089B1A4 /* Frameworks */,
-				7D4EA95B1FA8FC790089B1A4 /* Resources */,
+				7DE21F211FAD5859004A8C6C /* Sources */,
+				7DE21F221FAD5859004A8C6C /* Frameworks */,
+				7DE21F231FAD5859004A8C6C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7D4EA95F1FA8FC790089B1A4 /* PBXTargetDependency */,
+				7DE21F271FAD5859004A8C6C /* PBXTargetDependency */,
 			);
 			name = "intouch-iOSTests";
 			productName = "intouch-iOSTests";
-			productReference = 7D4EA95D1FA8FC790089B1A4 /* intouch-iOSTests.xctest */;
+			productReference = 7DE21F251FAD5859004A8C6C /* intouch-iOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		7D4EA9671FA8FC790089B1A4 /* intouch-iOSUITests */ = {
+		7DE21F2F1FAD5859004A8C6C /* intouch-iOSUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7D4EA9771FA8FC7A0089B1A4 /* Build configuration list for PBXNativeTarget "intouch-iOSUITests" */;
+			buildConfigurationList = 7DE21F3F1FAD5859004A8C6C /* Build configuration list for PBXNativeTarget "intouch-iOSUITests" */;
 			buildPhases = (
-				7D4EA9641FA8FC790089B1A4 /* Sources */,
-				7D4EA9651FA8FC790089B1A4 /* Frameworks */,
-				7D4EA9661FA8FC790089B1A4 /* Resources */,
+				7DE21F2C1FAD5859004A8C6C /* Sources */,
+				7DE21F2D1FAD5859004A8C6C /* Frameworks */,
+				7DE21F2E1FAD5859004A8C6C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				7D4EA96A1FA8FC7A0089B1A4 /* PBXTargetDependency */,
+				7DE21F321FAD5859004A8C6C /* PBXTargetDependency */,
 			);
 			name = "intouch-iOSUITests";
 			productName = "intouch-iOSUITests";
-			productReference = 7D4EA9681FA8FC790089B1A4 /* intouch-iOSUITests.xctest */;
+			productReference = 7DE21F301FAD5859004A8C6C /* intouch-iOSUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7D4EA9411FA8FC790089B1A4 /* Project object */ = {
+		7DE21F091FAD5859004A8C6C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
 				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Kyleen Gonzalez";
 				TargetAttributes = {
-					7D4EA9481FA8FC790089B1A4 = {
+					7DE21F101FAD5859004A8C6C = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
-					7D4EA95C1FA8FC790089B1A4 = {
+					7DE21F241FAD5859004A8C6C = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 7D4EA9481FA8FC790089B1A4;
+						TestTargetID = 7DE21F101FAD5859004A8C6C;
 					};
-					7D4EA9671FA8FC790089B1A4 = {
+					7DE21F2F1FAD5859004A8C6C = {
 						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
-						TestTargetID = 7D4EA9481FA8FC790089B1A4;
+						TestTargetID = 7DE21F101FAD5859004A8C6C;
 					};
 				};
 			};
-			buildConfigurationList = 7D4EA9441FA8FC790089B1A4 /* Build configuration list for PBXProject "intouch-iOS" */;
+			buildConfigurationList = 7DE21F0C1FAD5859004A8C6C /* Build configuration list for PBXProject "intouch-iOS" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -215,37 +215,37 @@
 				en,
 				Base,
 			);
-			mainGroup = 7D4EA9401FA8FC790089B1A4;
-			productRefGroup = 7D4EA94A1FA8FC790089B1A4 /* Products */;
+			mainGroup = 7DE21F081FAD5859004A8C6C;
+			productRefGroup = 7DE21F121FAD5859004A8C6C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7D4EA9481FA8FC790089B1A4 /* intouch-iOS */,
-				7D4EA95C1FA8FC790089B1A4 /* intouch-iOSTests */,
-				7D4EA9671FA8FC790089B1A4 /* intouch-iOSUITests */,
+				7DE21F101FAD5859004A8C6C /* intouch-iOS */,
+				7DE21F241FAD5859004A8C6C /* intouch-iOSTests */,
+				7DE21F2F1FAD5859004A8C6C /* intouch-iOSUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7D4EA9471FA8FC790089B1A4 /* Resources */ = {
+		7DE21F0F1FAD5859004A8C6C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D4EA9571FA8FC790089B1A4 /* LaunchScreen.storyboard in Resources */,
-				7D4EA9541FA8FC790089B1A4 /* Assets.xcassets in Resources */,
-				7D4EA9521FA8FC790089B1A4 /* Main.storyboard in Resources */,
+				7DE21F1F1FAD5859004A8C6C /* LaunchScreen.storyboard in Resources */,
+				7DE21F1C1FAD5859004A8C6C /* Assets.xcassets in Resources */,
+				7DE21F1A1FAD5859004A8C6C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D4EA95B1FA8FC790089B1A4 /* Resources */ = {
+		7DE21F231FAD5859004A8C6C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D4EA9661FA8FC790089B1A4 /* Resources */ = {
+		7DE21F2E1FAD5859004A8C6C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -255,59 +255,59 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7D4EA9451FA8FC790089B1A4 /* Sources */ = {
+		7DE21F0D1FAD5859004A8C6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D4EA94F1FA8FC790089B1A4 /* ViewController.swift in Sources */,
-				7D4EA94D1FA8FC790089B1A4 /* AppDelegate.swift in Sources */,
+				7DE21F171FAD5859004A8C6C /* ViewController.swift in Sources */,
+				7DE21F151FAD5859004A8C6C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D4EA9591FA8FC790089B1A4 /* Sources */ = {
+		7DE21F211FAD5859004A8C6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D4EA9621FA8FC790089B1A4 /* intouch_iOSTests.swift in Sources */,
+				7DE21F2A1FAD5859004A8C6C /* intouch_iOSTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D4EA9641FA8FC790089B1A4 /* Sources */ = {
+		7DE21F2C1FAD5859004A8C6C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D4EA96D1FA8FC7A0089B1A4 /* intouch_iOSUITests.swift in Sources */,
+				7DE21F351FAD5859004A8C6C /* intouch_iOSUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		7D4EA95F1FA8FC790089B1A4 /* PBXTargetDependency */ = {
+		7DE21F271FAD5859004A8C6C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7D4EA9481FA8FC790089B1A4 /* intouch-iOS */;
-			targetProxy = 7D4EA95E1FA8FC790089B1A4 /* PBXContainerItemProxy */;
+			target = 7DE21F101FAD5859004A8C6C /* intouch-iOS */;
+			targetProxy = 7DE21F261FAD5859004A8C6C /* PBXContainerItemProxy */;
 		};
-		7D4EA96A1FA8FC7A0089B1A4 /* PBXTargetDependency */ = {
+		7DE21F321FAD5859004A8C6C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 7D4EA9481FA8FC790089B1A4 /* intouch-iOS */;
-			targetProxy = 7D4EA9691FA8FC7A0089B1A4 /* PBXContainerItemProxy */;
+			target = 7DE21F101FAD5859004A8C6C /* intouch-iOS */;
+			targetProxy = 7DE21F311FAD5859004A8C6C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		7D4EA9501FA8FC790089B1A4 /* Main.storyboard */ = {
+		7DE21F181FAD5859004A8C6C /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7D4EA9511FA8FC790089B1A4 /* Base */,
+				7DE21F191FAD5859004A8C6C /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		7D4EA9551FA8FC790089B1A4 /* LaunchScreen.storyboard */ = {
+		7DE21F1D1FAD5859004A8C6C /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				7D4EA9561FA8FC790089B1A4 /* Base */,
+				7DE21F1E1FAD5859004A8C6C /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -315,7 +315,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		7D4EA96F1FA8FC7A0089B1A4 /* Debug */ = {
+		7DE21F371FAD5859004A8C6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -372,7 +372,7 @@
 			};
 			name = Debug;
 		};
-		7D4EA9701FA8FC7A0089B1A4 /* Release */ = {
+		7DE21F381FAD5859004A8C6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -422,7 +422,7 @@
 			};
 			name = Release;
 		};
-		7D4EA9721FA8FC7A0089B1A4 /* Debug */ = {
+		7DE21F3A1FAD5859004A8C6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -436,7 +436,7 @@
 			};
 			name = Debug;
 		};
-		7D4EA9731FA8FC7A0089B1A4 /* Release */ = {
+		7DE21F3B1FAD5859004A8C6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -450,7 +450,7 @@
 			};
 			name = Release;
 		};
-		7D4EA9751FA8FC7A0089B1A4 /* Debug */ = {
+		7DE21F3D1FAD5859004A8C6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -466,7 +466,7 @@
 			};
 			name = Debug;
 		};
-		7D4EA9761FA8FC7A0089B1A4 /* Release */ = {
+		7DE21F3E1FAD5859004A8C6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -482,7 +482,7 @@
 			};
 			name = Release;
 		};
-		7D4EA9781FA8FC7A0089B1A4 /* Debug */ = {
+		7DE21F401FAD5859004A8C6C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -497,7 +497,7 @@
 			};
 			name = Debug;
 		};
-		7D4EA9791FA8FC7A0089B1A4 /* Release */ = {
+		7DE21F411FAD5859004A8C6C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -515,43 +515,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7D4EA9441FA8FC790089B1A4 /* Build configuration list for PBXProject "intouch-iOS" */ = {
+		7DE21F0C1FAD5859004A8C6C /* Build configuration list for PBXProject "intouch-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7D4EA96F1FA8FC7A0089B1A4 /* Debug */,
-				7D4EA9701FA8FC7A0089B1A4 /* Release */,
+				7DE21F371FAD5859004A8C6C /* Debug */,
+				7DE21F381FAD5859004A8C6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7D4EA9711FA8FC7A0089B1A4 /* Build configuration list for PBXNativeTarget "intouch-iOS" */ = {
+		7DE21F391FAD5859004A8C6C /* Build configuration list for PBXNativeTarget "intouch-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7D4EA9721FA8FC7A0089B1A4 /* Debug */,
-				7D4EA9731FA8FC7A0089B1A4 /* Release */,
+				7DE21F3A1FAD5859004A8C6C /* Debug */,
+				7DE21F3B1FAD5859004A8C6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7D4EA9741FA8FC7A0089B1A4 /* Build configuration list for PBXNativeTarget "intouch-iOSTests" */ = {
+		7DE21F3C1FAD5859004A8C6C /* Build configuration list for PBXNativeTarget "intouch-iOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7D4EA9751FA8FC7A0089B1A4 /* Debug */,
-				7D4EA9761FA8FC7A0089B1A4 /* Release */,
+				7DE21F3D1FAD5859004A8C6C /* Debug */,
+				7DE21F3E1FAD5859004A8C6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7D4EA9771FA8FC7A0089B1A4 /* Build configuration list for PBXNativeTarget "intouch-iOSUITests" */ = {
+		7DE21F3F1FAD5859004A8C6C /* Build configuration list for PBXNativeTarget "intouch-iOSUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7D4EA9781FA8FC7A0089B1A4 /* Debug */,
-				7D4EA9791FA8FC7A0089B1A4 /* Release */,
+				7DE21F401FAD5859004A8C6C /* Debug */,
+				7DE21F411FAD5859004A8C6C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7D4EA9411FA8FC790089B1A4 /* Project object */;
+	rootObject = 7DE21F091FAD5859004A8C6C /* Project object */;
 }
