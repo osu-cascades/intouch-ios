@@ -1,9 +1,9 @@
 //
 //  ViewController.swift
-//  intouch-iOS
+//  InTouch Mobile
 //
-//  Created by Kyleen Gonzalez on 11/3/17.
-//  Copyright © 2017 Kyleen Gonzalez. All rights reserved.
+//  Created by Kyleen Gonzalez on 11/4/17.
+//  Copyright © 2017 Abilitree. All rights reserved.
 //
 
 import UIKit

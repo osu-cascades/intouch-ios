@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:intouch-iOS.xcodeproj">
+      location = "self:InTouch Mobile.xcodeproj">
    </FileRef>
 </Workspace>

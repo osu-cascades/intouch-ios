@@ -1,15 +1,15 @@
 //
-//  intouch_iOSTests.swift
-//  intouch-iOSTests
+//  InTouch_MobileTests.swift
+//  InTouch MobileTests
 //
-//  Created by Kyleen Gonzalez on 11/3/17.
-//  Copyright © 2017 Kyleen Gonzalez. All rights reserved.
+//  Created by Kyleen Gonzalez on 11/4/17.
+//  Copyright © 2017 Abilitree. All rights reserved.
 //
 
 import XCTest
-@testable import intouch_iOS
+@testable import InTouch_Mobile
 
-class intouch_iOSTests: XCTestCase {
+class InTouch_MobileTests: XCTestCase {
     
     override func setUp() {
         super.setUp()
