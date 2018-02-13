@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import intouch_ios
 
 class intouch_iosTests: XCTestCase { 
     
