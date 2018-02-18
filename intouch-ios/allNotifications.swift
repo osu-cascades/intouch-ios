@@ -6,7 +6,7 @@ class AllNotifications {
     var recvNotifications = [Notification()]
     
     init() {
-        for _ in 0..<5 {
+        for _ in 0..<25 {
             createNotification()
         }
     }

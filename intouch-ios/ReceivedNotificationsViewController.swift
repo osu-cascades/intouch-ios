@@ -12,7 +12,10 @@ class ReceivedNotificationsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: .value1, reuseIdentifier: "UITableViewCell")
+        
+        //let cell = UITableViewCell(style: .value1, reuseIdentifier: "UITableViewCell")
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
         
         let item = allNotifications.recvNotifications[indexPath.row]
         
