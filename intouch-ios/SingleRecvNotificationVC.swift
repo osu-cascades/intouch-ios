@@ -9,17 +9,31 @@ class SingleRecvNotificationVC: UIViewController {
     @IBOutlet var fromField: UITextField!
     @IBOutlet var messageView: UITextView!
 
-    var notification: Notification!
+    //MARK: Variables
+    var notification: Notification! {
+        didSet {
+            navigationItem.title = notification.title
+        }
+    }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
         titleField.text = notification.title
-        dateField.text = "\(notification.dateCreated)"
+        dateField.text = "\(notification.date)"
         fromField.text = notification.from
         messageView.text = notification.message
+        
+        titleField.isUserInteractionEnabled = false
+        dateField.isUserInteractionEnabled = false
+        fromField.isUserInteractionEnabled = false
+        messageView.isUserInteractionEnabled = false
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+    }
 
     
 }
