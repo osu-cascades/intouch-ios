@@ -167,38 +167,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <view key="tableHeaderView" contentMode="scaleToFill" id="pny-lC-UKx">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8m-ur-uhK">
-                                    <rect key="frame" x="191.5" y="15" width="175.5" height="30"/>
-                                    <state key="normal" title="Add"/>
-                                    <connections>
-                                        <action selector="addNewNotification:" destination="Rvf-Gc-pnk" eventType="touchUpInside" id="KeN-jg-bRp"/>
-                                    </connections>
-                                </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obp-Vr-mTo">
-                                    <rect key="frame" x="8" y="15" width="175.5" height="30"/>
-                                    <state key="normal" title="Edit"/>
-                                    <connections>
-                                        <action selector="toggleEditingMode:" destination="Rvf-Gc-pnk" eventType="touchUpInside" id="c7P-uc-IBF"/>
-                                    </connections>
-                                </button>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <constraints>
-                                <constraint firstItem="D8m-ur-uhK" firstAttribute="leading" secondItem="obp-Vr-mTo" secondAttribute="trailing" constant="8" id="BGZ-OF-1kQ"/>
-                                <constraint firstItem="obp-Vr-mTo" firstAttribute="centerY" secondItem="pny-lC-UKx" secondAttribute="centerY" id="D7T-QH-p4y"/>
-                                <constraint firstItem="D8m-ur-uhK" firstAttribute="width" secondItem="obp-Vr-mTo" secondAttribute="width" id="FdM-fp-PV8"/>
-                                <constraint firstItem="obp-Vr-mTo" firstAttribute="leading" secondItem="pny-lC-UKx" secondAttribute="leading" constant="8" id="ZYF-VZ-4Fr"/>
-                                <constraint firstAttribute="trailing" secondItem="D8m-ur-uhK" secondAttribute="trailing" constant="8" id="f0U-JM-e1b"/>
-                                <constraint firstItem="D8m-ur-uhK" firstAttribute="centerY" secondItem="pny-lC-UKx" secondAttribute="centerY" id="u03-yu-dTw"/>
-                            </constraints>
-                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationCell" rowHeight="65" id="HfO-bW-u2r" customClass="NotificationCell" customModule="intouch_ios" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="88" width="375" height="65"/>
+                                <rect key="frame" x="0.0" y="28" width="375" height="65"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HfO-bW-u2r" id="yrA-Y4-R1K">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="64.5"/>
@@ -246,7 +217,18 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Received Notifications" id="gey-eB-zPM"/>
+                    <navigationItem key="navigationItem" title="Received Notifications" id="gey-eB-zPM">
+                        <barButtonItem key="leftBarButtonItem" systemItem="edit" id="57n-7t-w0H">
+                            <connections>
+                                <action selector="toggleEditingMode:" destination="Rvf-Gc-pnk" id="V3t-kJ-QJU"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="pTt-mZ-S00">
+                            <connections>
+                                <action selector="addNewNotification:" destination="Rvf-Gc-pnk" id="KeC-5n-2fZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pR1-xO-isf" userLabel="First Responder" sceneMemberID="firstResponder"/>

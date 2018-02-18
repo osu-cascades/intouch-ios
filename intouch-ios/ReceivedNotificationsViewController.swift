@@ -7,22 +7,12 @@ class ReceivedNotificationsViewController: UITableViewController {
     var allNotifications: AllNotifications!
     
     //MARK: Actions
-    @IBAction func addNewNotification(_ sender: UIButton) {
+    @IBAction func addNewNotification(_ sender: UIBarButtonItem) {
         
         let newNotification = allNotifications.createNotification()
         if let index = allNotifications.recvNotifications.index(of: newNotification) {
             let indexPath = IndexPath(row: index, section: 0)
             tableView.insertRows(at: [indexPath], with: .automatic)
-        }
-    }
-    
-    @IBAction func toggleEditingMode(_ sender: UIButton) {
-        if isEditing {
-            sender.setTitle("Edit", for: .normal)
-            setEditing(false, animated: true)
-        } else {
-            sender.setTitle("Done", for: .normal)
-            setEditing(true, animated: true)
         }
     }
     
@@ -102,6 +92,11 @@ class ReceivedNotificationsViewController: UITableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        super.init(coder: aDecoder)
+        navigationItem.leftBarButtonItem = editButtonItem
     }
     
 }
