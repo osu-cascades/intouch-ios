@@ -4,10 +4,10 @@ import UIKit
 class Notification: NSObject {
     var title: String
     var message: String
-    var id: String?
+    var id: Int
     let dateCreated: Date
     
-    init(title: String, message: String, id: String?, date: Date) {
+    init(title: String, message: String, id: Int) {
         self.title = title
         self.message = message
         self.id = id
@@ -28,10 +28,10 @@ class Notification: NSObject {
         
             let randomId = Int(arc4random_uniform(1000))
             
-            self.init(title: randomTitle, message: randomMessage, id: randomId, date: Nil)
+            self.init(title: randomTitle, message: randomMessage, id: randomId)
             
         } else {
-            self.init(title: "", message:"", id: "", date: Nil)
+            self.init(title: "", message:"", id: 0)
         }
     }
     
