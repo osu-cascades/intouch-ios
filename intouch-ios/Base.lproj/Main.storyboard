@@ -112,24 +112,18 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Message:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzz-qs-oLX">
-                                        <rect key="frame" x="0.0" y="114" width="359" height="253"/>
+                                        <rect key="frame" x="0.0" y="114" width="359" height="291"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yso-VJ-bLl">
-                                        <rect key="frame" x="0.0" y="375" width="359" height="128"/>
+                                        <rect key="frame" x="0.0" y="413" width="359" height="128"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rIo-OZ-a9B">
-                                        <rect key="frame" x="0.0" y="511" width="359" height="30"/>
-                                        <state key="normal" title="Delete">
-                                            <color key="titleColor" red="0.60172742605209351" green="0.76106065511703491" blue="0.13176700472831726" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="A3G-hT-npV" firstAttribute="leading" secondItem="Oip-u2-eUk" secondAttribute="leading" id="W3T-nd-2eS"/>
@@ -159,7 +153,7 @@
             </objects>
             <point key="canvasLocation" x="1346" y="457"/>
         </scene>
-        <!--Received Notifications-->
+        <!--Notifications-->
         <scene sceneID="NUn-yl-OQT">
             <objects>
                 <tableViewController id="Rvf-Gc-pnk" customClass="ReceivedNotificationsViewController" customModule="intouch_ios" customModuleProvider="target" sceneMemberID="viewController">
@@ -217,7 +211,7 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Received Notifications" id="gey-eB-zPM">
+                    <navigationItem key="navigationItem" title="Notifications" id="gey-eB-zPM">
                         <barButtonItem key="leftBarButtonItem" systemItem="edit" id="57n-7t-w0H">
                             <connections>
                                 <action selector="toggleEditingMode:" destination="Rvf-Gc-pnk" id="V3t-kJ-QJU"/>
