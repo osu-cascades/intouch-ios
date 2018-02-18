@@ -1,7 +1,7 @@
 
 import UIKit
 
-class allNotifications {
+class AllNotifications {
     
     var recvNotifications = [Notification()]
     
