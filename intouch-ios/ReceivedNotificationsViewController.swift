@@ -7,8 +7,23 @@ class ReceivedNotificationsViewController: UITableViewController {
     var allNotifications: AllNotifications!
     
     //MARK: Actions
-    @IBAction func toggleEditMode(_ sender: UIButton) {
+    @IBAction func addNewNotification(_ sender: UIButton) {
         
+        let newNotification = allNotifications.createNotification()
+        if let index = allNotifications.recvNotifications.index(of: newNotification) {
+            let indexPath = IndexPath(row: index, section: 0)
+            tableView.insertRows(at: [indexPath], with: .automatic)
+        }
+    }
+    
+    @IBAction func toggleEditingMode(_ sender: UIButton) {
+        if isEditing {
+            sender.setTitle("Edit", for: .normal)
+            setEditing(false, animated: true)
+        } else {
+            sender.setTitle("Done", for: .normal)
+            setEditing(true, animated: true)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
