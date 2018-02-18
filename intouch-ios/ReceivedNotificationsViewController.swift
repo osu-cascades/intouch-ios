@@ -99,4 +99,5 @@ class ReceivedNotificationsViewController: UITableViewController {
         navigationItem.leftBarButtonItem = editButtonItem
     }
     
+
 }

@@ -29,4 +29,11 @@ class AllNotifications {
         return NSKeyedArchiver.archiveRootObject(recvNotifications, toFile: notificationsArchiveURL.path)
     }
     
+    init() {
+        if let archivedNotifications = NSKeyedUnarchiver.unarchiveObject(withFile: notificationsArchiveURL.path) as? [Notification] {
+            recvNotifications = archivedNotifications
+        }
+    }
+    
+    
 }
