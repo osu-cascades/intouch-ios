@@ -13,6 +13,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         registerForRemoteNotification()
+        
+        let notifications = allNotifications()
+        
+        let receivedNotificationsViewController = window!.rootViewController as! ReceivedNotificationsViewController
+        receivedNotificationsViewController.notifications = notifications
+        
         return true
     }
 
