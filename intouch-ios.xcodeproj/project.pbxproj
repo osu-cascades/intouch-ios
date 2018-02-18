@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D50F671904808142FF4AF79 /* Pods_intouch_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE91657A43E90DE1A85A8E5 /* Pods_intouch_ios.framework */; };
 		4AB384D424A519697CFE0AB2 /* Pods_intouch_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87F4652073DFD0E269C33A9 /* Pods_intouch_iosUITests.framework */; };
+		932ABF1E20391F99003A4179 /* ReceivedNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABF1D20391F99003A4179 /* ReceivedNotificationsViewController.swift */; };
 		93782A42202D425900E69E66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93782A41202D425900E69E66 /* AppDelegate.swift */; };
 		93782A44202D425900E69E66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93782A43202D425900E69E66 /* ViewController.swift */; };
 		93782A47202D425900E69E66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93782A45202D425900E69E66 /* Main.storyboard */; };
@@ -42,6 +43,7 @@
 		52A93C6F3C9A3D807BC0130C /* Pods-intouch-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intouch-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-intouch-iosTests/Pods-intouch-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		5A12392CA0673F3599F0798C /* Pods_intouch_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intouch_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FE91657A43E90DE1A85A8E5 /* Pods_intouch_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intouch_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		932ABF1D20391F99003A4179 /* ReceivedNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedNotificationsViewController.swift; sourceTree = "<group>"; };
 		936AB9A6410F4D8D366BD75F /* Pods-intouch-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intouch-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-intouch-ios/Pods-intouch-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		93782A3E202D425900E69E66 /* intouch-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "intouch-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93782A41202D425900E69E66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 				93782A48202D425900E69E66 /* Assets.xcassets */,
 				93782A4A202D425900E69E66 /* LaunchScreen.storyboard */,
 				93782A4D202D425900E69E66 /* Info.plist */,
+				932ABF1D20391F99003A4179 /* ReceivedNotificationsViewController.swift */,
 			);
 			path = "intouch-ios";
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				932ABF1E20391F99003A4179 /* ReceivedNotificationsViewController.swift in Sources */,
 				93782A44202D425900E69E66 /* ViewController.swift in Sources */,
 				93782A42202D425900E69E66 /* AppDelegate.swift in Sources */,
 			);
