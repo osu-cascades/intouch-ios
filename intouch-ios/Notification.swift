@@ -1,17 +1,17 @@
 
 import UIKit
 
-class Notification: NSObject {
+class Notification: NSObject, NSCoding {
     var title: String
     var message: String
-    var id: Int
+    //var id: Int
     var from: String
     var date: NSDate
     
-    init(title: String, message: String, id: Int) {
+    init(title: String, message: String) {
         self.title = title
         self.message = message
-        self.id = id
+        //self.id = id
         self.from = "no author"
         self.date = NSDate()
         super.init()
@@ -28,13 +28,30 @@ class Notification: NSObject {
             idx = arc4random_uniform(UInt32(messages.count))
             let randomMessage = messages[Int(idx)]
         
-            let randomId = Int(arc4random_uniform(1000))
+            //let randomId = Int(arc4random_uniform(1000))
             
-            self.init(title: randomTitle, message: randomMessage, id: randomId)
+            self.init(title: randomTitle, message: randomMessage)
             
         } else {
-            self.init(title: "", message:"", id: 0)
+            self.init(title: "", message:"")
         }
+    }
+    
+    required init(coder aDecoder: NSCoder) {
+        title = aDecoder.decodeObject(forKey: "title") as! String
+        date = aDecoder.decodeObject(forKey: "date") as! NSDate
+        from = aDecoder.decodeObject(forKey: "from") as! String
+        message = aDecoder.decodeObject(forKey: "message") as! String
+        
+        super.init()
+        
+    }
+    
+    func encode(with aCoder: NSCoder) {
+        aCoder.encode(title, forKey: "title")
+        aCoder.encode(date, forKey: "date")
+        aCoder.encode(from, forKey: "from")
+        aCoder.encode(message, forKey: "message")
     }
     
 }
