@@ -11,6 +11,19 @@ class ReceivedNotificationsViewController: UITableViewController {
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        switch segue.identifier {
+        case "showNotification"?:
+            if let row = tableView.indexPathForSelectedRow?.row {
+                let notification = allNotifications.recvNotifications[row]
+                let singleRecvNotificationVC = segue.destination as! SingleRecvNotificationVC
+                singleRecvNotificationVC.notification = notification
+            }
+        default:
+            preconditionFailure("Unexpected segue identifier")
+        }
+    }
+    
     //MARK: tableView
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
