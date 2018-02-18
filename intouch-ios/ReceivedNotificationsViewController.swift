@@ -47,15 +47,21 @@ class ReceivedNotificationsViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        //let cell = UITableViewCell(style: .value1, reuseIdentifier: "UITableViewCell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NotificationCell", for: indexPath) as! NotificationCell
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "UITableViewCell", for: indexPath)
+        let notification = allNotifications.recvNotifications[indexPath.row]
         
-        let item = allNotifications.recvNotifications[indexPath.row]
+        cell.titleLabel.text = notification.title
+        cell.fromLabel.text = notification.from
         
-        cell.textLabel?.text = item.title
-        cell.detailTextLabel?.text = item.message
+        let calendar = NSCalendar.current
+        let components = calendar.dateComponents([.day, .month, .year], from: notification.date as Date)
         
+        let year = components.year!
+        let month = components.month!
+        let day = components.day!
+        
+        cell.dateLabel.text = "\(month)-\(day)-\(year)"
         return cell
         
     }
@@ -86,8 +92,10 @@ class ReceivedNotificationsViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        //tableView.rowHeight = UITableViewAutomaticDimension
-        //tableView.estimatedRowHeight = 65
+        let statusBarHeight = UIApplication.shared.statusBarFrame.height
+        let insets = UIEdgeInsets(top: statusBarHeight, left: 0, bottom: 0, right: 0)
+        tableView.scrollIndicatorInsets = insets
+        tableView.rowHeight = 65
         
     }
     

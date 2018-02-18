@@ -6,14 +6,14 @@ class Notification: NSObject {
     var message: String
     var id: Int
     var from: String
-    var date: Date
+    var date: NSDate
     
     init(title: String, message: String, id: Int) {
         self.title = title
         self.message = message
         self.id = id
         self.from = "no author"
-        self.date = Date()
+        self.date = NSDate()
         super.init()
     }
     
