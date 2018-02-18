@@ -16,7 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         
         let allNotifications = AllNotifications()
         
-        let receivedNotificationsViewController = window!.rootViewController as! ReceivedNotificationsViewController
+        let navController = window!.rootViewController as! UINavigationController
+        let receivedNotificationsViewController = navController.topViewController as! ReceivedNotificationsViewController
         receivedNotificationsViewController.allNotifications = allNotifications
         
         return true
