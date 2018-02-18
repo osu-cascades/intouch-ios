@@ -14,10 +14,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // Override point for customization after application launch.
         registerForRemoteNotification()
         
-        let notifications = allNotifications()
+        let allNotifications = AllNotifications()
         
         let receivedNotificationsViewController = window!.rootViewController as! ReceivedNotificationsViewController
-        receivedNotificationsViewController.notifications = notifications
+        receivedNotificationsViewController.allNotifications = allNotifications
         
         return true
     }
