@@ -13,4 +13,9 @@ class AllNotifications {
         return newNotification
     }
     
+    func removeNotification(_ notification: Notification) {
+        if let index = recvNotifications.index(of: notification) {
+            recvNotifications.remove(at: index)
+        }
+    }
 }

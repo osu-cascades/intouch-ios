@@ -60,6 +60,14 @@ class ReceivedNotificationsViewController: UITableViewController {
         
     }
     
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            let notification = allNotifications.recvNotifications[indexPath.row]
+            allNotifications.removeNotification(notification)
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
+    
     //MARK: lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
