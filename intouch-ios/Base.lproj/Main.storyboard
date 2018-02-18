@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="823" y="-214"/>
         </scene>
-        <!--View Controller-->
+        <!--SingleRecvNotificationVC-->
         <scene sceneID="zB7-md-5mg">
             <objects>
-                <viewController id="Kl0-Xl-dOu" sceneMemberID="viewController">
+                <viewController title="SingleRecvNotificationVC" id="Kl0-Xl-dOu" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yX2-Nz-C2Y">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,7 +141,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V7L-3B-D7w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="598" y="457"/>
+            <point key="canvasLocation" x="501.60000000000002" y="456.52173913043481"/>
         </scene>
         <!--Received Notifications View Controller-->
         <scene sceneID="NUn-yl-OQT">
@@ -175,6 +175,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Kl0-Xl-dOu" kind="show" id="M4O-ay-WWI"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
