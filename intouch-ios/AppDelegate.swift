@@ -13,7 +13,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        registerForRemoteNotification()
+        
+        registerForPushNotifications()
         
         let navController = window!.rootViewController as! UINavigationController
         let receivedNotificationsViewController = navController.topViewController as! ReceivedNotificationsViewController
@@ -52,34 +53,41 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
-    func registerForRemoteNotification() {
-        if #available(iOS 10.0, *) {
-            let center  = UNUserNotificationCenter.current()
+
+    func registerForPushNotifications() {
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {
+            (granted, error) in
+            print("Permission granted: \(granted)")
             
-            center.requestAuthorization(options: [.sound, .alert, .badge]) { (granted, error) in
-                if error == nil{
-                    UIApplication.shared.registerForRemoteNotifications()
-                }
-            }
-            
+            guard granted else { return }
+            self.getNotificationSettings()
         }
-        else {
-            UIApplication.shared.registerUserNotificationSettings(UIUserNotificationSettings(types: [.sound, .alert, .badge], categories: nil))
+        
+    }
+    
+    func getNotificationSettings() {
+        UNUserNotificationCenter.current().getNotificationSettings { (settings) in
+            print("Notification Settings: \(settings)")
+            guard settings.authorizationStatus == .authorized else { return }
             UIApplication.shared.registerForRemoteNotifications()
         }
     }
     
-//    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-//        let token = deviceToken.map { String(format: "%02.2hhx", $0) }.joined()
-//        print(token)
-//
-//        print(deviceToken.description)
-//        if let uuid = UIDevice.current.identifierForVendor?.uuidString {
-//        print(uuid)
-//        }
-//        UserDefaults.standard.setValue(token, forKey: "ApplicationIdentifier")
-//        UserDefaults.standard.synchronize()
-//    }
+    func application(_ application: UIApplication,
+                     didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        let tokenParts = deviceToken.map { data -> String in
+            return String(format: "%02.2hhx", data)
+        }
+        
+        let token = tokenParts.joined()
+        print("Device Token: \(token)")
+    }
+    
+    func application(_ application: UIApplication,
+                     didFailToRegisterForRemoteNotificationsWithError error: Error) {
+        print("Failed to register: \(error)")
+    }
+    
 
 }
 
