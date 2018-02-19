@@ -47,6 +47,7 @@
 		52A93C6F3C9A3D807BC0130C /* Pods-intouch-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intouch-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-intouch-iosTests/Pods-intouch-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		5A12392CA0673F3599F0798C /* Pods_intouch_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intouch_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FE91657A43E90DE1A85A8E5 /* Pods_intouch_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intouch_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9324EDD5203B704D001E84E9 /* intouch-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "intouch-ios.entitlements"; sourceTree = "<group>"; };
 		932ABF1D20391F99003A4179 /* ReceivedNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedNotificationsViewController.swift; sourceTree = "<group>"; };
 		932ABF232039232C003A4179 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		932ABF272039358D003A4179 /* allNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allNotifications.swift; sourceTree = "<group>"; };
@@ -137,6 +138,7 @@
 		93782A40202D425900E69E66 /* intouch-ios */ = {
 			isa = PBXGroup;
 			children = (
+				9324EDD5203B704D001E84E9 /* intouch-ios.entitlements */,
 				93782A41202D425900E69E66 /* AppDelegate.swift */,
 				93782A43202D425900E69E66 /* ViewController.swift */,
 				93782A45202D425900E69E66 /* Main.storyboard */,
@@ -260,6 +262,9 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
 								enabled = 1;
 							};
 						};
@@ -651,12 +656,13 @@
 			baseConfigurationReference = 936AB9A6410F4D8D366BD75F /* Pods-intouch-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "intouch-ios/intouch-ios.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 96B75MLXWA;
+				DEVELOPMENT_TEAM = M3Z29LPJB3;
 				INFOPLIST_FILE = "intouch-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bakeaaro.BeerTracker.intouch-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = com.abilitree.intouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -668,12 +674,13 @@
 			baseConfigurationReference = 1E1052AAE45526EEF4D9D98C /* Pods-intouch-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "intouch-ios/intouch-ios.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 96B75MLXWA;
+				DEVELOPMENT_TEAM = M3Z29LPJB3;
 				INFOPLIST_FILE = "intouch-ios/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bakeaaro.BeerTracker.intouch-ios";
+				PRODUCT_BUNDLE_IDENTIFIER = com.abilitree.intouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
