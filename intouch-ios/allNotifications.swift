@@ -13,7 +13,7 @@ class AllNotifications {
     @discardableResult func createNotification() -> Notification {
         let newNotification = Notification(random: true)
         
-        recvNotifications.append(newNotification)
+        recvNotifications.insert(newNotification, at: 0)
         
         return newNotification
     }
