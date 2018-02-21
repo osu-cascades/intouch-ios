@@ -4,6 +4,7 @@ import UIKit
 class AllNotifications {
     
     var recvNotifications = [Notification()]
+    
     let notificationsArchiveURL: URL = {
         let documentsDirectories = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         let documentDirectory = documentsDirectories.first!
@@ -32,7 +33,7 @@ class AllNotifications {
     init() {
         if let archivedNotifications = NSKeyedUnarchiver.unarchiveObject(withFile: notificationsArchiveURL.path) as? [Notification] {
             recvNotifications = archivedNotifications
-        }
+        } 
     }
     
     
