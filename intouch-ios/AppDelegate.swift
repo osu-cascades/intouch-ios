@@ -21,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         receivedNotificationsViewController.allNotifications = allNotifications
         
         if let notification = launchOptions?[.remoteNotification] as? [String: AnyObject] {
-            print("Launched from notification menu")
+            print("Launched from notification menu: \(notification)")
             allNotifications.createNotification()
         }
         
