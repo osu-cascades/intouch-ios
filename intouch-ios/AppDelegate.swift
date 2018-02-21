@@ -93,6 +93,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         print("Failed to register: \(error)")
     }
     
+    func application(
+        _ application: UIApplication,
+        didReceiveRemoteNotification userInfo: [AnyHashable : Any],
+        fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        
+        let aps = userInfo["aps"] as! [String: AnyObject]
+        print("recevied notification while foregrounded/backgrounded: \(aps)")
+    }
 
 }
 
