@@ -99,7 +99,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
         fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         
         let aps = userInfo["aps"] as! [String: AnyObject]
-        print("recevied notification while foregrounded/backgrounded: \(aps)")
+        print("recevied notification while fore/backgrounded: \(aps)")
+        allNotifications.createNotification()
     }
 
 }
