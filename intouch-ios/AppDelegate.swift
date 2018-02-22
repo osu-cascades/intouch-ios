@@ -3,18 +3,23 @@
 //  intouch-ios
 
 import UIKit
-import UserNotifications
+import PushNotifications
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     let allNotifications = AllNotifications()
+    let pushNotifications = PushNotifications.shared
+    let INSTANCE_ID: String = "9313976c-3ca4-4a1c-9538-1627280923f4"
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        registerForPushNotifications()
+        self.pushNotifications.start(instanceId: INSTANCE_ID)
+        self.pushNotifications.registerForRemoteNotifications()
+        
+        
         
         let navController = window!.rootViewController as! UINavigationController
         let receivedNotificationsViewController = navController.topViewController as! ReceivedNotificationsViewController
@@ -57,35 +62,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UNUserNotificationCenterD
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
-    func registerForPushNotifications() {
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]) {
-            (granted, error) in
-            print("Permission granted: \(granted)")
-            
-            guard granted else { return }
-            self.getNotificationSettings()
-        }
-        
-    }
-    
-    func getNotificationSettings() {
-        UNUserNotificationCenter.current().getNotificationSettings { (settings) in
-            print("Notification Settings: \(settings)")
-            guard settings.authorizationStatus == .authorized else { return }
-            UIApplication.shared.registerForRemoteNotifications()
-        }
-    }
     
     func application(_ application: UIApplication,
                      didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        let tokenParts = deviceToken.map { data -> String in
-            return String(format: "%02.2hhx", data)
+
+        print("Device Token: \(deviceToken)")
+        self.pushNotifications.registerDeviceToken(deviceToken) {
+            try? self.pushNotifications.subscribe(interest: "my-channel")
         }
-        
-        let token = tokenParts.joined()
-        print("Device Token: \(token)")
     }
     
     func application(_ application: UIApplication,
