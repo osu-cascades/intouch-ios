@@ -6,10 +6,9 @@ target 'intouch-ios' do
   use_frameworks!
 
   # Pods for intouch-ios
-  pod 'PusherSwift', '~>5.0'
+  pod 'PushNotifications'
 
-  # reduced version to 5.0, add import pusherswift, then pod install
-  # don't know why that worked
+ 
 
   target 'intouch-iosTests' do
     inherit! :search_paths
