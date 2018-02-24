@@ -15,7 +15,6 @@
 		9362250A2039F82E007F0636 /* SingleRecvNotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936225092039F82E007F0636 /* SingleRecvNotificationVC.swift */; };
 		9362250C203A231F007F0636 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9362250B203A231F007F0636 /* NotificationCell.swift */; };
 		93782A42202D425900E69E66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93782A41202D425900E69E66 /* AppDelegate.swift */; };
-		93782A44202D425900E69E66 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93782A43202D425900E69E66 /* ViewController.swift */; };
 		93782A47202D425900E69E66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93782A45202D425900E69E66 /* Main.storyboard */; };
 		93782A49202D425900E69E66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93782A48202D425900E69E66 /* Assets.xcassets */; };
 		93782A4C202D425900E69E66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93782A4A202D425900E69E66 /* LaunchScreen.storyboard */; };
@@ -56,7 +55,6 @@
 		936AB9A6410F4D8D366BD75F /* Pods-intouch-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intouch-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-intouch-ios/Pods-intouch-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		93782A3E202D425900E69E66 /* intouch-ios.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "intouch-ios.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93782A41202D425900E69E66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		93782A43202D425900E69E66 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		93782A46202D425900E69E66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		93782A48202D425900E69E66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		93782A4B202D425900E69E66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 			children = (
 				9324EDD5203B704D001E84E9 /* intouch-ios.entitlements */,
 				93782A41202D425900E69E66 /* AppDelegate.swift */,
-				93782A43202D425900E69E66 /* ViewController.swift */,
 				93782A45202D425900E69E66 /* Main.storyboard */,
 				93782A48202D425900E69E66 /* Assets.xcassets */,
 				93782A4A202D425900E69E66 /* LaunchScreen.storyboard */,
@@ -262,7 +259,7 @@
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
-								enabled = 0;
+								enabled = 1;
 							};
 							com.apple.Push = {
 								enabled = 1;
@@ -486,7 +483,6 @@
 				932ABF282039358D003A4179 /* allNotifications.swift in Sources */,
 				932ABF242039232C003A4179 /* Notification.swift in Sources */,
 				932ABF1E20391F99003A4179 /* ReceivedNotificationsViewController.swift in Sources */,
-				93782A44202D425900E69E66 /* ViewController.swift in Sources */,
 				93782A42202D425900E69E66 /* AppDelegate.swift in Sources */,
 				9362250A2039F82E007F0636 /* SingleRecvNotificationVC.swift in Sources */,
 				9362250C203A231F007F0636 /* NotificationCell.swift in Sources */,
