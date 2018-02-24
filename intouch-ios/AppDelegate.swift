@@ -65,8 +65,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication,
                      didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        let tokenParts = deviceToken.map { data -> String in
+            return String(format: "%02.2hhx", data)
+        }
 
-        print("Device Token: \(deviceToken)")
+        let token = tokenParts.joined()
+        print("Device Token: \(token)")
         self.pushNotifications.registerDeviceToken(deviceToken) {
             try? self.pushNotifications.subscribe(interest: "my-channel")
         }
