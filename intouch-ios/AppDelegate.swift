@@ -32,11 +32,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let title = alert["title"] as! String
             let from = alert["from"] as! String
             
-            print("title: \(title)")
-            print("body: \(body)")
-            print("from: \(from)")
-            print("Launched from notification menu: \(notification)")
-            allNotifications.createNotification()
+//            print("title: \(title)")
+//            print("message: \(body)")
+//            print("from: \(from)")
+//            print("Launched from notification menu: \(notification)")
+            allNotifications.createNotification(title: title, from: from, message: body)
             
         }
         
@@ -105,7 +105,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
  
         print("recevied while fore/backgrounded: \(aps)")
         print("title: \(title)")
-        print("body: \(body)")
+        print("message: \(body)")
         print("from: \(from)")
         //allNotifications.createNotification()
     }

@@ -19,6 +19,14 @@ class AllNotifications {
         return newNotification
     }
     
+    @discardableResult func createNotification(title: String, from: String, message: String) -> Notification {
+        let newNotification = Notification(title: title, from: from, message: message)
+        
+        recvNotifications.insert(newNotification, at: 0)
+        
+        return newNotification
+    }
+    
     func removeNotification(_ notification: Notification) {
         if let index = recvNotifications.index(of: notification) {
             recvNotifications.remove(at: index)

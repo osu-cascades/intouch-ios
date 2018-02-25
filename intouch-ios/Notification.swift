@@ -8,11 +8,11 @@ class Notification: NSObject, NSCoding {
     var from: String
     var date: NSDate
     
-    init(title: String, message: String) {
+    init(title: String, from: String, message: String) {
         self.title = title
         self.message = message
         //self.id = id
-        self.from = "no author"
+        self.from = from
         self.date = NSDate()
         super.init()
     }
@@ -30,10 +30,10 @@ class Notification: NSObject, NSCoding {
         
             //let randomId = Int(arc4random_uniform(1000))
             
-            self.init(title: randomTitle, message: randomMessage)
+            self.init(title: randomTitle, from: "no author", message: randomMessage)
             
         } else {
-            self.init(title: "", message:"")
+            self.init(title: "", from: "no author", message:"")
         }
     }
     
