@@ -24,6 +24,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         receivedNotificationsViewController.allNotifications = allNotifications
         
         if let notification = launchOptions?[.remoteNotification] as? [String: AnyObject] {
+            
+            let aps = notification["aps"] as! [String: AnyObject]
+            let alert = aps["alert"] as! [String: AnyObject]
+            // must have title and body as keys in alert
+            let body = alert["body"] as! String
+            let title = alert["title"] as! String
+            let from = alert["from"] as! String
+            
+            print("title: \(title)")
+            print("body: \(body)")
+            print("from: \(from)")
             print("Launched from notification menu: \(notification)")
             allNotifications.createNotification()
             
@@ -87,14 +98,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let aps = userInfo["aps"] as! [String: AnyObject]
         let alert = aps["alert"] as! [String: AnyObject]
+        // must have title and body as keys in alert
         let body = alert["body"] as! String
         let title = alert["title"] as! String
-        let author = alert["author"] as! String
+        let from = alert["from"] as! String
  
-        print("recevied notification while fore/backgrounded: \(aps)")
+        print("recevied while fore/backgrounded: \(aps)")
         print("title: \(title)")
         print("body: \(body)")
-        print("author: \(author)")
+        print("from: \(from)")
         //allNotifications.createNotification()
     }
 
