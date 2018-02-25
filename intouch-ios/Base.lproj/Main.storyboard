@@ -179,11 +179,6 @@
                                 <action selector="toggleEditingMode:" destination="Rvf-Gc-pnk" id="V3t-kJ-QJU"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="pTt-mZ-S00">
-                            <connections>
-                                <action selector="addNewNotification:" destination="Rvf-Gc-pnk" id="KeC-5n-2fZ"/>
-                            </connections>
-                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
