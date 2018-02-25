@@ -137,26 +137,26 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfl-eA-mTn">
-                                            <rect key="frame" x="287.5" y="22" width="34.5" height="21"/>
-                                            <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalCompressionResistancePriority="749" text="from:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhM-0z-bf3">
                                             <rect key="frame" x="35" y="39.5" width="30" height="14.5"/>
                                             <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sfl-eA-mTn">
+                                            <rect key="frame" x="295" y="39" width="25.5" height="14.5"/>
+                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCaption1"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="Sfl-eA-mTn" secondAttribute="trailing" constant="53" id="2Wj-CR-FGo"/>
+                                        <constraint firstAttribute="trailing" secondItem="Sfl-eA-mTn" secondAttribute="trailing" constant="54" id="2Wj-CR-FGo"/>
                                         <constraint firstItem="cVV-gK-qxF" firstAttribute="top" secondItem="yrA-Y4-R1K" secondAttribute="topMargin" id="5WK-54-0qj"/>
                                         <constraint firstItem="nhM-0z-bf3" firstAttribute="bottom" secondItem="yrA-Y4-R1K" secondAttribute="bottomMargin" id="FGP-Wb-f4C"/>
                                         <constraint firstItem="cVV-gK-qxF" firstAttribute="leading" secondItem="yrA-Y4-R1K" secondAttribute="leadingMargin" constant="19" id="ITz-Z5-e2Q"/>
                                         <constraint firstItem="nhM-0z-bf3" firstAttribute="leading" secondItem="cVV-gK-qxF" secondAttribute="leading" id="Ooa-dA-Mmj"/>
-                                        <constraint firstItem="Sfl-eA-mTn" firstAttribute="centerY" secondItem="yrA-Y4-R1K" secondAttribute="centerY" id="cqT-xh-1UH"/>
+                                        <constraint firstItem="Sfl-eA-mTn" firstAttribute="centerY" secondItem="nhM-0z-bf3" secondAttribute="centerY" id="vok-ej-8oJ"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
