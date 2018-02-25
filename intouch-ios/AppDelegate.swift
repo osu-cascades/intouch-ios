@@ -86,14 +86,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         
         let aps = userInfo["aps"] as! [String: AnyObject]
-        let alert = aps["alert"] as? NSDictionary
-        let body = alert?["body"] as? String
-        let title = alert?["title"] as? String
+        let alert = aps["alert"] as! [String: AnyObject]
+        let body = alert["body"] as! String
+        let title = alert["title"] as! String
+        let author = alert["author"] as! String
  
-        //print("recevied notification while fore/backgrounded: \(aps)")
-        print("title: \(String(describing: title))")
-        print("body: \(String(describing: body))")
-        allNotifications.createNotification()
+        print("recevied notification while fore/backgrounded: \(aps)")
+        print("title: \(title)")
+        print("body: \(body)")
+        print("author: \(author)")
+        //allNotifications.createNotification()
     }
 
 }
