@@ -19,8 +19,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.pushNotifications.start(instanceId: INSTANCE_ID)
         self.pushNotifications.registerForRemoteNotifications()
         
-        
-        
         let navController = window!.rootViewController as! UINavigationController
         let receivedNotificationsViewController = navController.topViewController as! ReceivedNotificationsViewController
         receivedNotificationsViewController.allNotifications = allNotifications
@@ -28,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let notification = launchOptions?[.remoteNotification] as? [String: AnyObject] {
             print("Launched from notification menu: \(notification)")
             allNotifications.createNotification()
+            
         }
         
         return true
@@ -87,7 +86,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
         
         let aps = userInfo["aps"] as! [String: AnyObject]
-        print("recevied notification while fore/backgrounded: \(aps)")
+        let alert = aps["alert"] as? NSDictionary
+        let body = alert?["body"] as? String
+        let title = alert?["title"] as? String
+ 
+        //print("recevied notification while fore/backgrounded: \(aps)")
+        print("title: \(String(describing: title))")
+        print("body: \(String(describing: body))")
         allNotifications.createNotification()
     }
 
