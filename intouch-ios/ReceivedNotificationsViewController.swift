@@ -7,9 +7,19 @@ class ReceivedNotificationsViewController: UITableViewController {
     var allNotifications: AllNotifications!
     
     //MARK: Actions
+    // for debugging
     @IBAction func addNewNotification(_ sender: UIBarButtonItem) {
         
         let newNotification = allNotifications.createNotification()
+        if let index = allNotifications.recvNotifications.index(of: newNotification) {
+            let indexPath = IndexPath(row: index, section: 0)
+            tableView.insertRows(at: [indexPath], with: .automatic)
+        }
+    }
+    
+    //MARK: Custom
+    func addNewNotification(title: String, from: String, message: String) {
+        let newNotification = allNotifications.createNotification(title: title, from: from, message: message)
         if let index = allNotifications.recvNotifications.index(of: newNotification) {
             let indexPath = IndexPath(row: index, section: 0)
             tableView.insertRows(at: [indexPath], with: .automatic)

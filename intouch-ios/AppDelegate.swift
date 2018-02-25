@@ -23,22 +23,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let receivedNotificationsViewController = navController.topViewController as! ReceivedNotificationsViewController
         receivedNotificationsViewController.allNotifications = allNotifications
         
-        if let notification = launchOptions?[.remoteNotification] as? [String: AnyObject] {
-            
-            let aps = notification["aps"] as! [String: AnyObject]
-            let alert = aps["alert"] as! [String: AnyObject]
-            // must have title and body as keys in alert
-            let body = alert["body"] as! String
-            let title = alert["title"] as! String
-            let from = alert["from"] as! String
-            
+//        if let notification = launchOptions?[.remoteNotification] as? [String: AnyObject] {
+//            let aps = notification["aps"] as! [String: AnyObject]
+//            // alert must have title and body as keys
+//            let alert = aps["alert"] as! [String: AnyObject]
+//            let body = alert["body"] as! String
+//            let title = alert["title"] as! String
+//            let from = alert["from"] as! String
 //            print("title: \(title)")
 //            print("message: \(body)")
 //            print("from: \(from)")
 //            print("Launched from notification menu: \(notification)")
-            allNotifications.createNotification(title: title, from: from, message: body)
-            
-        }
+//            allNotifications.createNotification(title: title, from: from, message: body)
+//        }
         
         return true
     }
@@ -103,11 +100,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let title = alert["title"] as! String
         let from = alert["from"] as! String
  
-        print("recevied while fore/backgrounded: \(aps)")
-        print("title: \(title)")
-        print("message: \(body)")
-        print("from: \(from)")
-        //allNotifications.createNotification()
+//        print("recevied while fore/backgrounded: \(aps)")
+//        print("title: \(title)")
+//        print("message: \(body)")
+//        print("from: \(from)")
+        
+        let navController = window!.rootViewController as! UINavigationController
+        let receivedNotificationsViewController = navController.topViewController as! ReceivedNotificationsViewController
+        receivedNotificationsViewController.allNotifications = allNotifications
+        receivedNotificationsViewController.addNewNotification(title: title, from: from, message: body)
     }
 
 }
