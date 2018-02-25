@@ -23,19 +23,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let receivedNotificationsViewController = navController.topViewController as! ReceivedNotificationsViewController
         receivedNotificationsViewController.allNotifications = allNotifications
         
-//        if let notification = launchOptions?[.remoteNotification] as? [String: AnyObject] {
-//            let aps = notification["aps"] as! [String: AnyObject]
-//            // alert must have title and body as keys
-//            let alert = aps["alert"] as! [String: AnyObject]
-//            let body = alert["body"] as! String
-//            let title = alert["title"] as! String
-//            let from = alert["from"] as! String
-//            print("title: \(title)")
-//            print("message: \(body)")
-//            print("from: \(from)")
-//            print("Launched from notification menu: \(notification)")
-//            allNotifications.createNotification(title: title, from: from, message: body)
-//        }
+        if let notification = launchOptions?[.remoteNotification] as? [String: AnyObject] {
+            print("launched with notification")
+            let aps = notification["aps"] as! [String: AnyObject]
+            // alert must have title and body as keys
+            let alert = aps["alert"] as! [String: AnyObject]
+            let body = alert["body"] as! String
+            let title = alert["title"] as! String
+            let from = alert["from"] as! String
+            let datetime = alert["datetime"] as! String
+            allNotifications.createNotification(title: title, from: from, message: body, datetime: datetime)
+        }
         
         return true
     }
@@ -48,6 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationDidEnterBackground(_ application: UIApplication) {
         // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
         // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    
         
         let success = allNotifications.saveChanges()
         if (success) {
@@ -79,7 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let token = tokenParts.joined()
         print("Device Token: \(token)")
         self.pushNotifications.registerDeviceToken(deviceToken) {
-            try? self.pushNotifications.subscribe(interest: "my-channel")
+            try? self.pushNotifications.subscribe(interest: "abilitree")
         }
     }
     
@@ -99,16 +98,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let body = alert["body"] as! String
         let title = alert["title"] as! String
         let from = alert["from"] as! String
- 
-//        print("recevied while fore/backgrounded: \(aps)")
-//        print("title: \(title)")
-//        print("message: \(body)")
-//        print("from: \(from)")
-        
+        let datetime = alert["datetime"] as! String
         let navController = window!.rootViewController as! UINavigationController
         let receivedNotificationsViewController = navController.topViewController as! ReceivedNotificationsViewController
         receivedNotificationsViewController.allNotifications = allNotifications
-        receivedNotificationsViewController.addNewNotification(title: title, from: from, message: body)
+        receivedNotificationsViewController.addNewNotification(title: title, from: from, message: body, datetime: datetime)
+        
     }
 
 }

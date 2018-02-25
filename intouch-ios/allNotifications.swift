@@ -19,11 +19,18 @@ class AllNotifications {
         return newNotification
     }
     
-    @discardableResult func createNotification(title: String, from: String, message: String) -> Notification {
-        let newNotification = Notification(title: title, from: from, message: message)
+    @discardableResult func createNotification(title: String, from: String, message: String, datetime: String) -> Notification? {
+       
+        // need to change this to check for notification id, rails needs to send the id first
+        for notification in recvNotifications {
+            if (notification.message == message && notification.title == title
+                    && notification.from == from && notification.datetime == datetime) {
+                return nil
+            }
+        }
         
-        recvNotifications.insert(newNotification, at: 0)
-        
+        let newNotification = Notification(title: title, from: from, message: message, datetime: datetime)
+        recvNotifications.insert(newNotification, at: 0)   
         return newNotification
     }
     

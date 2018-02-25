@@ -7,11 +7,13 @@ class ReceivedNotificationsViewController: UITableViewController {
     var allNotifications: AllNotifications!
     
     //MARK: Custom
-    func addNewNotification(title: String, from: String, message: String) {
-        let newNotification = allNotifications.createNotification(title: title, from: from, message: message)
-        if let index = allNotifications.recvNotifications.index(of: newNotification) {
-            let indexPath = IndexPath(row: index, section: 0)
-            tableView.insertRows(at: [indexPath], with: .automatic)
+    func addNewNotification(title: String, from: String, message: String, datetime: String) {
+        let newNotification = allNotifications.createNotification(title: title, from: from, message: message, datetime: datetime)
+        if newNotification != nil {
+            if let index = allNotifications.recvNotifications.index(of: newNotification!) {
+                let indexPath = IndexPath(row: index, section: 0)
+                tableView.insertRows(at: [indexPath], with: .automatic)
+            }
         }
     }
     
@@ -43,15 +45,8 @@ class ReceivedNotificationsViewController: UITableViewController {
         
         cell.titleLabel.text = notification.title
         cell.fromLabel.text = notification.from
+        cell.dateLabel.text = notification.datetime
         
-        let calendar = NSCalendar.current
-        let components = calendar.dateComponents([.day, .month, .year], from: notification.date as Date)
-        
-        let year = components.year!
-        let month = components.month!
-        let day = components.day!
-        
-        cell.dateLabel.text = "\(month)-\(day)-\(year)"
         return cell
         
     }

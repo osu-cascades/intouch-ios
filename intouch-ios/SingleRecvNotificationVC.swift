@@ -20,7 +20,7 @@ class SingleRecvNotificationVC: UIViewController {
         super.viewWillAppear(animated)
         
         titleField.text = notification.title
-        dateField.text = "\(notification.date)"
+        dateField.text = notification.datetime
         fromField.text = notification.from
         messageView.text = notification.message
         
