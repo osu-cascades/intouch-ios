@@ -19,7 +19,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.pushNotifications.start(instanceId: INSTANCE_ID)
         self.pushNotifications.registerForRemoteNotifications()
         
-        let controllerId = "Login"
+        let controllerId: String
+        let loggedinStatus: String? = UserDefaults.standard.string(forKey: "LOGGED_IN")
+        
+        if loggedinStatus == "true" {
+            controllerId = "RecvNav"
+        } else {
+            controllerId = "Login"
+        }
+        
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let initViewController: UIViewController = storyboard.instantiateViewController(withIdentifier: controllerId) as UIViewController
         self.window?.rootViewController = initViewController

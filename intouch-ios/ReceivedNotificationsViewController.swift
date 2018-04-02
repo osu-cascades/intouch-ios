@@ -8,6 +8,9 @@ class ReceivedNotificationsViewController: UITableViewController {
     
     //MARK: actions
     @IBAction func logout(_ sender: Any) {
+        
+        UserDefaults.standard.set("false", forKey: "LOGGED_IN")
+        
         let controllerId = "Login"
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let initViewController: UIViewController = storyboard.instantiateViewController(withIdentifier: controllerId) as UIViewController
