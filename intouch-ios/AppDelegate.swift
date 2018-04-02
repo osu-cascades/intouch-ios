@@ -19,9 +19,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.pushNotifications.start(instanceId: INSTANCE_ID)
         self.pushNotifications.registerForRemoteNotifications()
         
-        let navController = window!.rootViewController as! UINavigationController
-        let receivedNotificationsViewController = navController.topViewController as! ReceivedNotificationsViewController
-        receivedNotificationsViewController.allNotifications = allNotifications
+        let controllerId = "Login"
+        
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let initViewController: UIViewController = storyboard.instantiateViewController(withIdentifier: controllerId) as UIViewController
+        self.window?.rootViewController = initViewController
+        
+        
+//        let navController = window!.rootViewController as! UINavigationController
+//        let receivedNotificationsViewController = navController.topViewController as! ReceivedNotificationsViewController
+//        receivedNotificationsViewController.allNotifications = allNotifications
         
         if let notification = launchOptions?[.remoteNotification] as? [String: AnyObject] {
             print("launched with notification")

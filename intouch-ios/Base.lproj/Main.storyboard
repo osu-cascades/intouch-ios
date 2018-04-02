@@ -189,18 +189,21 @@
         <!--LoginVC-->
         <scene sceneID="auj-tf-JUN">
             <objects>
-                <viewController id="w6p-tE-TnA" customClass="LoginVC" customModule="intouch_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Login" id="w6p-tE-TnA" customClass="LoginVC" customModule="intouch_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="g0T-Qc-zsZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFG-wx-rDK">
-                                <rect key="frame" x="169" y="318" width="38" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFG-wx-rDK">
+                                <rect key="frame" x="169" y="328.5" width="38" height="30"/>
                                 <state key="normal" title="Login"/>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lFG-wx-rDK" firstAttribute="centerX" secondItem="VTa-7d-qpE" secondAttribute="centerX" id="8QK-ck-0ES"/>
+                            <constraint firstItem="lFG-wx-rDK" firstAttribute="centerY" secondItem="VTa-7d-qpE" secondAttribute="centerY" id="mPm-Sh-YIY"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="VTa-7d-qpE"/>
                     </view>
                     <connections>
