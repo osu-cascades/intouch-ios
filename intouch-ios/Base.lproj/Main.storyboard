@@ -118,7 +118,7 @@
         <!--Notifications-->
         <scene sceneID="NUn-yl-OQT">
             <objects>
-                <tableViewController storyboardIdentifier="RecvVC" id="Rvf-Gc-pnk" customClass="ReceivedNotificationsViewController" customModule="intouch_ios" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="Recv" id="Rvf-Gc-pnk" customClass="ReceivedNotificationsViewController" customModule="intouch_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="7d4-ua-4rB">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -179,7 +179,11 @@
                                 <action selector="toggleEditingMode:" destination="Rvf-Gc-pnk" id="V3t-kJ-QJU"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" title="Logout" id="Ipd-No-gSG"/>
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="Ipd-No-gSG">
+                            <connections>
+                                <action selector="logout:" destination="Rvf-Gc-pnk" id="2cr-nw-Q5T"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
