@@ -179,8 +179,12 @@
                                 <action selector="toggleEditingMode:" destination="Rvf-Gc-pnk" id="V3t-kJ-QJU"/>
                             </connections>
                         </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="Ipd-No-gSG"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="logoutBrBtn" destination="Ipd-No-gSG" id="mkQ-Cx-2j0"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pR1-xO-isf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
