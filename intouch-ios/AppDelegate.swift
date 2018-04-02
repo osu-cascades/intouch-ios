@@ -78,7 +78,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let token = tokenParts.joined()
         print("Device Token: \(token)")
         self.pushNotifications.registerDeviceToken(deviceToken) {
-            try? self.pushNotifications.subscribe(interest: "abilitree")
+            try? self.pushNotifications.subscribe(interest: "abilitree_dev")
         }
     }
     
