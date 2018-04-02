@@ -6,6 +6,15 @@ class ReceivedNotificationsViewController: UITableViewController {
     
     var allNotifications: AllNotifications!
     
+    //MARK: actions
+    @IBAction func logout(_ sender: Any) {
+        let controllerId = "Login"
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let initViewController: UIViewController = storyboard.instantiateViewController(withIdentifier: controllerId) as UIViewController
+        self.present(initViewController, animated: true, completion: nil)
+        
+    }
+    
     //MARK: Custom
     func addNewNotification(title: String, from: String, message: String, datetime: String) {
         let newNotification = allNotifications.createNotification(title: title, from: from, message: message, datetime: datetime)
