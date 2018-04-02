@@ -45,7 +45,11 @@ class ReceivedNotificationsViewController: UITableViewController {
     //MARK: tableView
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-            return allNotifications.recvNotifications.count
+        if let notifications = allNotifications?.recvNotifications {
+            return notifications.count
+        } else {
+            return 0
+        }
 
     }
     

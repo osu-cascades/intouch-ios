@@ -228,7 +228,7 @@
         <!--Navigation Controller-->
         <scene sceneID="TH8-nX-7nc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="zSn-Qp-Fm6" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="RecvNav" automaticallyAdjustsScrollViewInsets="NO" id="zSn-Qp-Fm6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Bxt-kd-VkR">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
