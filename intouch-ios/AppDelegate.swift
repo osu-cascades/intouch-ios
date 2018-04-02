@@ -25,6 +25,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let initViewController: UIViewController = storyboard.instantiateViewController(withIdentifier: controllerId) as UIViewController
         self.window?.rootViewController = initViewController
         
+        // app settings
+//        var setting = "Some Setting"
+//        let userDefaults = NSUserDefaults.standardUserDefaults()
+//
+//        // Save Settings
+//        userDefaults.setObject(setting, forKey: "key")
+//
+//        // Load Settings
+//        if let userSettings = userDefaults.objectForKey("key") {
+//            print(userSettings) // prints "Some Setting"
+//        }
         
 //        let navController = window!.rootViewController as! UINavigationController
 //        let receivedNotificationsViewController = navController.topViewController as! ReceivedNotificationsViewController
