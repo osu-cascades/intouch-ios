@@ -9,9 +9,9 @@ class LoginVC: UIViewController {
         
         UserDefaults.standard.set("true", forKey: "LOGGED_IN")
         
-        let controllerId = "RecvNav"
+        let controllerId = "TabBar"
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let initViewController: UIViewController = storyboard.instantiateViewController(withIdentifier: controllerId) as UIViewController
+        let initViewController: UITabBarController = storyboard.instantiateViewController(withIdentifier: controllerId) as! UITabBarController
         self.present(initViewController, animated: true, completion: nil)
         
     }
