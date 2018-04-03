@@ -21,23 +21,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         let controllerId: String
         let loggedinStatus: String? = UserDefaults.standard.string(forKey: "LOGGED_IN")
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
         if loggedinStatus == "true" {
             controllerId = "TabBar"
-            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let initViewController: UITabBarController = storyboard.instantiateViewController(withIdentifier: controllerId) as! UITabBarController
             self.window?.rootViewController = initViewController
             print(initViewController)
-//            let viewControllers: [UIViewController]?
-//            viewControllers = initViewController.viewControllers
-//            for viewController in viewControllers! {
-//                print(viewController)
-//                (viewController as! ReceivedNotificationsViewController).allNotifications = allNotifications
-//            }
             
+            let viewControllers: [UIViewController]?
+            viewControllers = initViewController.viewControllers
+            let recvVC: ReceivedNotificationsViewController = (viewControllers![0] as! UINavigationController).viewControllers[0] as! ReceivedNotificationsViewController
+            print(recvVC)
+            
+            recvVC.allNotifications = allNotifications
         } else {
             controllerId = "Login"
-            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
             let initViewController: UIViewController = storyboard.instantiateViewController(withIdentifier: controllerId) as UIViewController
             self.window?.rootViewController = initViewController
         }
