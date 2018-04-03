@@ -12,33 +12,46 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     let allNotifications = AllNotifications()
     let pushNotifications = PushNotifications.shared
     let INSTANCE_ID: String = "9313976c-3ca4-4a1c-9538-1627280923f4"
-
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
         self.pushNotifications.start(instanceId: INSTANCE_ID)
         self.pushNotifications.registerForRemoteNotifications()
         
-        let controllerId: String
         let loggedinStatus: String? = UserDefaults.standard.string(forKey: "LOGGED_IN")
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         
+        
+        // get instance of allNotifications and assign it to the
+        // ReceivedNotificationsViewController allNotifications
+        // member variable
+        let tabBarControllerId: String = "TabBar"
+        let tabBarController: UITabBarController = storyboard.instantiateViewController(withIdentifier: tabBarControllerId) as! UITabBarController
+        let viewControllers: [UIViewController]?
+        viewControllers = tabBarController.viewControllers
+        let recvVC: ReceivedNotificationsViewController = (viewControllers![0] as! UINavigationController).viewControllers[0] as! ReceivedNotificationsViewController
+        recvVC.allNotifications = allNotifications
+        
+        
         if loggedinStatus == "true" {
-            controllerId = "TabBar"
-            let initViewController: UITabBarController = storyboard.instantiateViewController(withIdentifier: controllerId) as! UITabBarController
-            self.window?.rootViewController = initViewController
-            print(initViewController)
+//            controllerId = "TabBar"
+//            let initViewController: UITabBarController = storyboard.instantiateViewController(withIdentifier: controllerId) as! UITabBarController
+            self.window?.rootViewController = tabBarController
+            //print(tabBarController)
             
-            let viewControllers: [UIViewController]?
-            viewControllers = initViewController.viewControllers
-            let recvVC: ReceivedNotificationsViewController = (viewControllers![0] as! UINavigationController).viewControllers[0] as! ReceivedNotificationsViewController
-            print(recvVC)
+//            let viewControllers: [UIViewController]?
+//            viewControllers = initViewController.viewControllers
+//            let recvVC: ReceivedNotificationsViewController = (viewControllers![0] as! UINavigationController).viewControllers[0] as! ReceivedNotificationsViewController
+//            print(recvVC)
             
-            recvVC.allNotifications = allNotifications
+            
         } else {
-            controllerId = "Login"
-            let initViewController: UIViewController = storyboard.instantiateViewController(withIdentifier: controllerId) as UIViewController
-            self.window?.rootViewController = initViewController
+            let controllerId: String = "Login"
+            let loginViewController: LoginVC = storyboard.instantiateViewController(withIdentifier: controllerId) as! LoginVC
+            loginViewController.allNotifications = allNotifications
+            print(loginViewController.allNotifications)
+            self.window?.rootViewController = loginViewController
         }
         
         if let notification = launchOptions?[.remoteNotification] as? [String: AnyObject] {
@@ -126,7 +139,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         receivedNotificationsViewController.addNewNotification(title: title, from: from, message: body, datetime: datetime)
         } else {
             allNotifications.createNotification(title: title, from: from, message: body, datetime: datetime)
-            
         }
         
     }

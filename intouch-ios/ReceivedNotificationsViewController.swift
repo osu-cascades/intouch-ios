@@ -9,12 +9,16 @@ class ReceivedNotificationsViewController: UITableViewController {
     //MARK: actions
     @IBAction func logout(_ sender: Any) {
         
+        // present alert, warn of losing notifications
+        // delete all notifications
+        
         UserDefaults.standard.set("false", forKey: "LOGGED_IN")
         
         let controllerId = "Login"
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let initViewController: UIViewController = storyboard.instantiateViewController(withIdentifier: controllerId) as UIViewController
-        self.present(initViewController, animated: true, completion: nil)
+        let loginViewController: LoginVC = storyboard.instantiateViewController(withIdentifier: controllerId) as! LoginVC
+        loginViewController.allNotifications = allNotifications
+        self.present(loginViewController, animated: true, completion: nil)
         
     }
     
