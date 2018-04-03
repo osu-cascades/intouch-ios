@@ -24,29 +24,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         if loggedinStatus == "true" {
             controllerId = "RecvNav"
+            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let initViewController: UINavigationController = storyboard.instantiateViewController(withIdentifier: controllerId) as! UINavigationController
+            self.window?.rootViewController = initViewController
+            print(initViewController)
+            let viewControllers: [UIViewController]?
+            viewControllers = initViewController.viewControllers
+            for viewController in viewControllers! {
+                print(viewController)
+                (viewController as! ReceivedNotificationsViewController).allNotifications = allNotifications
+            }
+            
         } else {
             controllerId = "Login"
+            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let initViewController: UIViewController = storyboard.instantiateViewController(withIdentifier: controllerId) as UIViewController
+            self.window?.rootViewController = initViewController
         }
-        
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let initViewController: UIViewController = storyboard.instantiateViewController(withIdentifier: controllerId) as UIViewController
-        self.window?.rootViewController = initViewController
-        
-        // app settings
-//        var setting = "Some Setting"
-//        let userDefaults = NSUserDefaults.standardUserDefaults()
-//
-//        // Save Settings
-//        userDefaults.setObject(setting, forKey: "key")
-//
-//        // Load Settings
-//        if let userSettings = userDefaults.objectForKey("key") {
-//            print(userSettings) // prints "Some Setting"
-//        }
-        
-//        let navController = window!.rootViewController as! UINavigationController
-//        let receivedNotificationsViewController = navController.topViewController as! ReceivedNotificationsViewController
-//        receivedNotificationsViewController.allNotifications = allNotifications
         
         if let notification = launchOptions?[.remoteNotification] as? [String: AnyObject] {
             print("launched with notification")
