@@ -117,10 +117,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let title = alert["title"] as! String
         let from = alert["from"] as! String
         let datetime = alert["datetime"] as! String
-        let navController = window!.rootViewController as! UINavigationController
-        let receivedNotificationsViewController = navController.topViewController as! ReceivedNotificationsViewController
+        
+        let tabBarController = window!.rootViewController as! UITabBarController
+
+        if tabBarController.selectedIndex == 0 {
+            let receivedNotificationsViewController = (tabBarController.viewControllers![0] as! UINavigationController).viewControllers[0] as! ReceivedNotificationsViewController
         receivedNotificationsViewController.allNotifications = allNotifications
         receivedNotificationsViewController.addNewNotification(title: title, from: from, message: body, datetime: datetime)
+        } else {
+            allNotifications.createNotification(title: title, from: from, message: body, datetime: datetime)
+            
+        }
         
     }
 

@@ -228,7 +228,7 @@
         <!--Create-->
         <scene sceneID="XKb-8a-hec">
             <objects>
-                <viewController title="Create" id="JUG-8k-JhV" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Create" title="Create" id="JUG-8k-JhV" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qyg-7M-OhU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -256,7 +256,7 @@
         <!--Sent-->
         <scene sceneID="B5s-X3-ChY">
             <objects>
-                <viewController id="YkT-4Y-3Xs" userLabel="Sent" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Sent" id="YkT-4Y-3Xs" userLabel="Sent" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aoV-L1-NJf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -303,7 +303,7 @@
         <!--NavController-->
         <scene sceneID="TH8-nX-7nc">
             <objects>
-                <navigationController storyboardIdentifier="RecvNav" automaticallyAdjustsScrollViewInsets="NO" id="zSn-Qp-Fm6" userLabel="NavController" sceneMemberID="viewController">
+                <navigationController restorationIdentifier="RecvNav" storyboardIdentifier="RecvNav" automaticallyAdjustsScrollViewInsets="NO" id="zSn-Qp-Fm6" userLabel="NavController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Received" id="40I-57-PTU"/>
                     <toolbarItems/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
