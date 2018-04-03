@@ -284,16 +284,16 @@
         <!--Tab Bar Controller-->
         <scene sceneID="Atu-Qd-ac5">
             <objects>
-                <tabBarController id="sUP-mK-VM9" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBar" id="sUP-mK-VM9" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="FM4-wd-u2K">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
                     <connections>
-                        <segue destination="YkT-4Y-3Xs" kind="relationship" relationship="viewControllers" id="fyN-Zr-0Jq"/>
-                        <segue destination="JUG-8k-JhV" kind="relationship" relationship="viewControllers" id="rBD-Bb-xk7"/>
-                        <segue destination="zSn-Qp-Fm6" kind="show" id="tEP-3S-2RY"/>
+                        <segue destination="zSn-Qp-Fm6" kind="relationship" relationship="viewControllers" id="myN-nL-lPo"/>
+                        <segue destination="YkT-4Y-3Xs" kind="relationship" relationship="viewControllers" id="bBm-Jn-6Og"/>
+                        <segue destination="JUG-8k-JhV" kind="relationship" relationship="viewControllers" id="fHB-2X-5GC"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Iyv-GB-24z" userLabel="First Responder" sceneMemberID="firstResponder"/>
