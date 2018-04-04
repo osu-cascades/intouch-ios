@@ -7,7 +7,7 @@ class createNotificationVC: UIViewController, UITextFieldDelegate {
     @IBAction func sendPushNotification(_ sender: Any) {
         let title: String? = titleTfO.text
         //let to: String? = toTfO.text
-        let message: String? = messegeTfO.text
+        let message: String? = messageTvO.text
         if title == "" /*|| to == ""*/ || message == "" {
             // show alert
             print("title, to, and message text fields must not be blank")
@@ -19,16 +19,14 @@ class createNotificationVC: UIViewController, UITextFieldDelegate {
     
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
         titleTfO.resignFirstResponder()
-        toTfO.resignFirstResponder()
-        messegeTfO.resignFirstResponder()
+        messageTvO.resignFirstResponder()
         print("tap")
     }
     
     //MARK: custom
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         titleTfO.resignFirstResponder()
-        toTfO.resignFirstResponder()
-        messegeTfO.resignFirstResponder()
+        messageTvO.resignFirstResponder()
         return false
     }
     
@@ -37,18 +35,16 @@ class createNotificationVC: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
-        messegeTfO!.layer.borderWidth = 1
-        messegeTfO!.layer.borderColor = UIColor(red:230/255, green:230/255, blue:230/255, alpha: 1).cgColor
-        messegeTfO!.layer.cornerRadius = 6
+        messageTvO!.layer.borderWidth = 1
+        messageTvO!.layer.borderColor = UIColor(red:230/255, green:230/255, blue:230/255, alpha: 1).cgColor
+        messageTvO!.layer.cornerRadius = 5
         
         self.titleTfO.delegate = self
-        self.toTfO.delegate = self
     }
     
     //MARK: outlets
     @IBOutlet weak var titleTfO: UITextField!
-    @IBOutlet weak var toTfO: UITextField!
-    @IBOutlet weak var messegeTfO: UITextView!
+    @IBOutlet weak var messageTvO: UITextView!
     
     //MARK: posts
     private let pushUrlStr = "https://abilitree-intouch-staging.herokuapp.com/push"
@@ -86,7 +82,7 @@ class createNotificationVC: UIViewController, UITextFieldDelegate {
                     print("notification has been sent")
                     DispatchQueue.main.async {
                         self.titleTfO.text = ""
-                        self.messegeTfO.text = ""
+                        self.messageTvO.text = ""
                     }
                 } else {
                     print("invalid token")

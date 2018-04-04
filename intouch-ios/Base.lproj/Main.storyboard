@@ -228,30 +228,90 @@
         <!--Create-->
         <scene sceneID="XKb-8a-hec">
             <objects>
-                <viewController storyboardIdentifier="Create" title="Create" id="JUG-8k-JhV" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Create" title="Create" id="JUG-8k-JhV" customClass="createNotificationVC" customModule="intouch_ios" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qyg-7M-OhU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Create" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S13-5B-0gk">
-                                <rect key="frame" x="162" y="20" width="51" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S13-5B-0gk">
+                                <rect key="frame" x="156" y="20" width="63.5" height="26.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2H-Zi-eC7" userLabel="sendBtn">
+                                <rect key="frame" x="164" y="54.5" width="46" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Send"/>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kwl-e5-Ses">
+                                <rect key="frame" x="8" y="127" width="359" height="99"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="7dV-tR-veQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="359" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d5E-GB-eB7" userLabel="titleL">
+                                                <rect key="frame" x="0.0" y="0.0" width="47" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VRq-yz-k2z" userLabel="titleTf">
+                                                <rect key="frame" x="55" y="0.0" width="304" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="deZ-4h-I4I">
+                                        <rect key="frame" x="0.0" y="38" width="359" height="26.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ah0-Oh-gNo" userLabel="toL">
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="26.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Message:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yf9-ok-fef" userLabel="messageL">
+                                        <rect key="frame" x="0.0" y="72.5" width="359" height="26.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sd1-OD-aqz" userLabel="messageTv">
+                                <rect key="frame" x="8" y="234" width="359" height="146"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="S13-5B-0gk" firstAttribute="centerX" secondItem="JCK-pA-vIp" secondAttribute="centerX" id="Ttj-4x-NcC"/>
-                            <constraint firstItem="S13-5B-0gk" firstAttribute="leading" secondItem="JCK-pA-vIp" secondAttribute="leading" constant="162" id="x00-bA-fm7"/>
+                            <constraint firstItem="h2H-Zi-eC7" firstAttribute="top" secondItem="S13-5B-0gk" secondAttribute="bottom" constant="7.5" id="5T1-F1-dQS"/>
+                            <constraint firstItem="kwl-e5-Ses" firstAttribute="top" secondItem="h2H-Zi-eC7" secondAttribute="bottom" constant="36.5" id="7xq-GI-rbc"/>
+                            <constraint firstItem="kwl-e5-Ses" firstAttribute="leading" secondItem="JCK-pA-vIp" secondAttribute="leading" constant="8" id="Gio-v0-CIT"/>
+                            <constraint firstItem="S13-5B-0gk" firstAttribute="top" secondItem="JCK-pA-vIp" secondAttribute="top" id="LHo-O1-jWe"/>
+                            <constraint firstItem="S13-5B-0gk" firstAttribute="centerX" secondItem="JCK-pA-vIp" secondAttribute="centerX" id="Nwl-dC-mq8"/>
+                            <constraint firstItem="JCK-pA-vIp" firstAttribute="trailing" secondItem="kwl-e5-Ses" secondAttribute="trailing" constant="8" id="PZB-b8-sQo"/>
+                            <constraint firstItem="h2H-Zi-eC7" firstAttribute="centerX" secondItem="JCK-pA-vIp" secondAttribute="centerX" id="QK6-OC-b8S"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JCK-pA-vIp"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Create" id="FAH-HF-36B"/>
+                    <connections>
+                        <outlet property="messageTvO" destination="Sd1-OD-aqz" id="KSa-pn-6b6"/>
+                        <outlet property="titleTfO" destination="VRq-yz-k2z" id="gbE-vK-Rol"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bY4-ev-Oe7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-250" y="1785"/>
+            <point key="canvasLocation" x="-250.40000000000001" y="1784.257871064468"/>
         </scene>
         <!--Sent-->
         <scene sceneID="B5s-X3-ChY">
