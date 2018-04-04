@@ -12,6 +12,7 @@
 		932ABF1E20391F99003A4179 /* ReceivedNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABF1D20391F99003A4179 /* ReceivedNotificationsViewController.swift */; };
 		932ABF242039232C003A4179 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABF232039232C003A4179 /* Notification.swift */; };
 		932ABF282039358D003A4179 /* allNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABF272039358D003A4179 /* allNotifications.swift */; };
+		9347D6A920757E590006E584 /* CreateNotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9347D6A820757E590006E584 /* CreateNotificationVC.swift */; };
 		9362250A2039F82E007F0636 /* SingleRecvNotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936225092039F82E007F0636 /* SingleRecvNotificationVC.swift */; };
 		9362250C203A231F007F0636 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9362250B203A231F007F0636 /* NotificationCell.swift */; };
 		93782A42202D425900E69E66 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93782A41202D425900E69E66 /* AppDelegate.swift */; };
@@ -51,6 +52,7 @@
 		932ABF1D20391F99003A4179 /* ReceivedNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedNotificationsViewController.swift; sourceTree = "<group>"; };
 		932ABF232039232C003A4179 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		932ABF272039358D003A4179 /* allNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allNotifications.swift; sourceTree = "<group>"; };
+		9347D6A820757E590006E584 /* CreateNotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNotificationVC.swift; sourceTree = "<group>"; };
 		936225092039F82E007F0636 /* SingleRecvNotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRecvNotificationVC.swift; sourceTree = "<group>"; };
 		9362250B203A231F007F0636 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		936AB9A6410F4D8D366BD75F /* Pods-intouch-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intouch-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-intouch-ios/Pods-intouch-ios.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +152,7 @@
 				936225092039F82E007F0636 /* SingleRecvNotificationVC.swift */,
 				9362250B203A231F007F0636 /* NotificationCell.swift */,
 				93FC734F2071DFB0003A4073 /* LoginVC.swift */,
+				9347D6A820757E590006E584 /* CreateNotificationVC.swift */,
 			);
 			path = "intouch-ios";
 			sourceTree = "<group>";
@@ -484,6 +487,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				932ABF282039358D003A4179 /* allNotifications.swift in Sources */,
+				9347D6A920757E590006E584 /* CreateNotificationVC.swift in Sources */,
 				932ABF242039232C003A4179 /* Notification.swift in Sources */,
 				93FC73502071DFB0003A4073 /* LoginVC.swift in Sources */,
 				932ABF1E20391F99003A4179 /* ReceivedNotificationsViewController.swift in Sources */,
