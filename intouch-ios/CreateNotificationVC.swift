@@ -18,15 +18,12 @@ class createNotificationVC: UIViewController, UITextFieldDelegate {
     }
     
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
-        titleTfO.resignFirstResponder()
-        messageTvO.resignFirstResponder()
-        print("tap")
+        self.view.endEditing(true)
     }
     
     //MARK: custom
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        titleTfO.resignFirstResponder()
-        messageTvO.resignFirstResponder()
+        self.view.endEditing(true)
         return false
     }
     
