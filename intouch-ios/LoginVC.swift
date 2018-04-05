@@ -20,8 +20,12 @@ class LoginVC: UIViewController {
         
     }
     
-    //MARK: lifecycle
+    //MARK: custom
+    @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
     
+    //MARK: lifecycle
     override func viewWillAppear(_ animated: Bool) {
         usernameTf.placeholder = "username"
         passwordTf.placeholder = "password"

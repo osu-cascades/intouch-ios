@@ -230,6 +230,7 @@
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <gestureRecognizers/>
                         <constraints>
                             <constraint firstItem="MGa-T8-ayc" firstAttribute="top" secondItem="VTa-7d-qpE" secondAttribute="top" constant="164" id="Ngi-IS-W1v"/>
                             <constraint firstItem="MGa-T8-ayc" firstAttribute="leading" secondItem="VTa-7d-qpE" secondAttribute="leading" constant="10" id="d7r-Oh-us1"/>
@@ -237,6 +238,9 @@
                             <constraint firstItem="VTa-7d-qpE" firstAttribute="trailing" secondItem="MGa-T8-ayc" secondAttribute="trailing" constant="10" id="jKW-F2-bFF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="VTa-7d-qpE"/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="i64-Mw-oqq" appends="YES" id="LHc-TJ-2qL"/>
+                        </connections>
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="lFG-wx-rDK" id="8uD-nh-czo"/>
@@ -245,6 +249,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3aN-47-JXy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="i64-Mw-oqq">
+                    <connections>
+                        <action selector="dismissKeyboard:" destination="w6p-tE-TnA" id="anU-aO-eW2"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-1181.25" y="501.76056338028172"/>
         </scene>
