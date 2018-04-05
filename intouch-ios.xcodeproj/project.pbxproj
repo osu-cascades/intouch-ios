@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D50F671904808142FF4AF79 /* Pods_intouch_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE91657A43E90DE1A85A8E5 /* Pods_intouch_ios.framework */; };
 		4AB384D424A519697CFE0AB2 /* Pods_intouch_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87F4652073DFD0E269C33A9 /* Pods_intouch_iosUITests.framework */; };
+		930B885F2076ED5E00A69A23 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930B885E2076ED5E00A69A23 /* Settings.swift */; };
 		932ABF1E20391F99003A4179 /* ReceivedNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABF1D20391F99003A4179 /* ReceivedNotificationsViewController.swift */; };
 		932ABF242039232C003A4179 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABF232039232C003A4179 /* Notification.swift */; };
 		932ABF282039358D003A4179 /* allNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABF272039358D003A4179 /* allNotifications.swift */; };
@@ -48,6 +49,7 @@
 		52A93C6F3C9A3D807BC0130C /* Pods-intouch-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intouch-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-intouch-iosTests/Pods-intouch-iosTests.release.xcconfig"; sourceTree = "<group>"; };
 		5A12392CA0673F3599F0798C /* Pods_intouch_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intouch_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6FE91657A43E90DE1A85A8E5 /* Pods_intouch_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intouch_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		930B885E2076ED5E00A69A23 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		9324EDD5203B704D001E84E9 /* intouch-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "intouch-ios.entitlements"; sourceTree = "<group>"; };
 		932ABF1D20391F99003A4179 /* ReceivedNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedNotificationsViewController.swift; sourceTree = "<group>"; };
 		932ABF232039232C003A4179 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
@@ -153,6 +155,7 @@
 				9362250B203A231F007F0636 /* NotificationCell.swift */,
 				93FC734F2071DFB0003A4073 /* LoginVC.swift */,
 				9347D6A820757E590006E584 /* CreateNotificationVC.swift */,
+				930B885E2076ED5E00A69A23 /* Settings.swift */,
 			);
 			path = "intouch-ios";
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				93FC73502071DFB0003A4073 /* LoginVC.swift in Sources */,
 				932ABF1E20391F99003A4179 /* ReceivedNotificationsViewController.swift in Sources */,
 				93782A42202D425900E69E66 /* AppDelegate.swift in Sources */,
+				930B885F2076ED5E00A69A23 /* Settings.swift in Sources */,
 				9362250A2039F82E007F0636 /* SingleRecvNotificationVC.swift in Sources */,
 				9362250C203A231F007F0636 /* NotificationCell.swift in Sources */,
 			);
