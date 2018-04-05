@@ -243,6 +243,9 @@
                                 <rect key="frame" x="164" y="54.5" width="46" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="sendPushNotification:" destination="JUG-8k-JhV" eventType="touchUpInside" id="d2e-3G-ic6"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kwl-e5-Ses">
                                 <rect key="frame" x="8" y="127" width="359" height="99"/>
@@ -283,9 +286,8 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sd1-OD-aqz" userLabel="messageTv">
-                                <rect key="frame" x="8" y="234" width="359" height="146"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Sd1-OD-aqz" userLabel="messageTv">
+                                <rect key="frame" x="8" y="234" width="359" height="185"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -298,8 +300,12 @@
                             <constraint firstItem="kwl-e5-Ses" firstAttribute="leading" secondItem="JCK-pA-vIp" secondAttribute="leading" constant="8" id="Gio-v0-CIT"/>
                             <constraint firstItem="S13-5B-0gk" firstAttribute="top" secondItem="JCK-pA-vIp" secondAttribute="top" id="LHo-O1-jWe"/>
                             <constraint firstItem="S13-5B-0gk" firstAttribute="centerX" secondItem="JCK-pA-vIp" secondAttribute="centerX" id="Nwl-dC-mq8"/>
+                            <constraint firstItem="Sd1-OD-aqz" firstAttribute="leading" secondItem="JCK-pA-vIp" secondAttribute="leading" constant="8" id="P6k-HH-dUw"/>
                             <constraint firstItem="JCK-pA-vIp" firstAttribute="trailing" secondItem="kwl-e5-Ses" secondAttribute="trailing" constant="8" id="PZB-b8-sQo"/>
                             <constraint firstItem="h2H-Zi-eC7" firstAttribute="centerX" secondItem="JCK-pA-vIp" secondAttribute="centerX" id="QK6-OC-b8S"/>
+                            <constraint firstItem="Sd1-OD-aqz" firstAttribute="top" secondItem="kwl-e5-Ses" secondAttribute="bottom" constant="8" id="Vk9-Fz-VXP"/>
+                            <constraint firstItem="JCK-pA-vIp" firstAttribute="bottom" secondItem="Sd1-OD-aqz" secondAttribute="bottom" constant="199" id="W3y-cH-MAV"/>
+                            <constraint firstItem="JCK-pA-vIp" firstAttribute="trailing" secondItem="Sd1-OD-aqz" secondAttribute="trailing" constant="8" id="dUe-td-7rC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JCK-pA-vIp"/>
                     </view>
