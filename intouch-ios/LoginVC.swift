@@ -23,6 +23,8 @@ class LoginVC: UIViewController {
     //MARK: lifecycle
     
     override func viewWillAppear(_ animated: Bool) {
+        usernameTf.placeholder = "username"
+        passwordTf.placeholder = "password"
         print(allNotifications)
     }
     
@@ -32,4 +34,6 @@ class LoginVC: UIViewController {
     
     //MARK: outlets
     @IBOutlet weak var loginBtn: UIButton!
+    @IBOutlet weak var usernameTf: UITextField!
+    @IBOutlet weak var passwordTf: UITextField!
 }
