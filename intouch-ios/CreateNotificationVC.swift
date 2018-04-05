@@ -65,13 +65,23 @@ class createNotificationVC: UIViewController, UITextFieldDelegate {
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data, error == nil else {
                 print("error: \(String(describing: error))")
+                print("connection error")
+                DispatchQueue.main.async {
+                    let alert = UIAlertController(title: "Status", message: "Error: \(error)", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert, animated: true)
+                }
                 return
             }
             if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {
                 print("status code: \(httpStatus.statusCode)")
                 print("response: \(String(describing: response))")
+                print("connection error")
                 DispatchQueue.main.async {
-                    print("connection error")
+                    let alert = UIAlertController(title: "Status", message: "Connection Error. Try again later.", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert, animated: true)
+                    
                 }
                 return
             }
@@ -81,12 +91,18 @@ class createNotificationVC: UIViewController, UITextFieldDelegate {
                 if responseString == "notification sent" {
                     print("notification has been sent")
                     DispatchQueue.main.async {
+                        let alert = UIAlertController(title: "Status", message: "Notification successfully sent.", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                        self.present(alert, animated: true)
                         self.titleTfO.text = ""
                         self.messageTvO.text = ""
                     }
                 } else {
                     print("invalid token")
                     DispatchQueue.main.async {
+                        let alert = UIAlertController(title: "Status", message: "Unknown Error", preferredStyle: .alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                        self.present(alert, animated: true)
                     }
                 }
             }
