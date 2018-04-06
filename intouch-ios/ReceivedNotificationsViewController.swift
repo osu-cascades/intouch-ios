@@ -1,10 +1,12 @@
 
 
 import UIKit
+import PushNotifications
 
 class ReceivedNotificationsViewController: UITableViewController {
     
     var allNotifications: AllNotifications!
+    var pushNotifications = PushNotifications.shared
     
     //MARK: actions
     @IBAction func logout(_ sender: Any) {
@@ -12,7 +14,9 @@ class ReceivedNotificationsViewController: UITableViewController {
         // present alert, warn of losing notifications
         // delete all notifications
         
-        UserDefaults.standard.set("false", forKey: "LOGGED_IN")
+        let channel: String = Settings.getUsername()
+        try? pushNotifications.unsubscribe(interest:"\(channel)")
+        Settings.clearUsernameAndPassword()
         
         let controllerId = "Login"
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
