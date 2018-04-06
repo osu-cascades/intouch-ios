@@ -11,9 +11,10 @@ class Settings {
         static let userType = "USER_TYPE"
     }
     
-    class func setUsernameAndPassword(username: String, password: String) {
+    class func setUsernamePasswordUserType(username: String, password: String, userType: String) {
         UserDefaults.standard.set(username, forKey: Keys.username)
         UserDefaults.standard.set(password, forKey: Keys.password)
+        UserDefaults.standard.set(userType, forKey: Keys.userType)
         UserDefaults.standard.set("true", forKey: Keys.loggedIn)
     }
     
@@ -27,9 +28,6 @@ class Settings {
         return UserDefaults.standard.string(forKey: Keys.username)!
     }
     
-    class func setUserType(type: String) {
-        UserDefaults.standard.set(type, forKey:Keys.userType)
-    }
     class func getUserType() -> String? {
         return UserDefaults.standard.string(forKey: Keys.userType)
     }
