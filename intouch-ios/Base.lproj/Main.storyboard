@@ -271,14 +271,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2H-Zi-eC7" userLabel="sendBtn">
-                                <rect key="frame" x="137" y="54.5" width="46" height="36"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="Send"/>
-                                <connections>
-                                    <action selector="sendPushNotification:" destination="JUG-8k-JhV" eventType="touchUpInside" id="d2e-3G-ic6"/>
-                                </connections>
-                            </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="kwl-e5-Ses">
                                 <rect key="frame" x="8" y="127" width="304" height="99"/>
                                 <subviews>
@@ -324,21 +316,30 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2H-Zi-eC7" userLabel="sendBtn">
+                                <rect key="frame" x="137" y="447" width="46" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="sendPushNotification:" destination="JUG-8k-JhV" eventType="touchUpInside" id="d2e-3G-ic6"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <gestureRecognizers/>
                         <constraints>
-                            <constraint firstItem="h2H-Zi-eC7" firstAttribute="top" secondItem="S13-5B-0gk" secondAttribute="bottom" constant="7.5" id="5T1-F1-dQS"/>
-                            <constraint firstItem="kwl-e5-Ses" firstAttribute="top" secondItem="h2H-Zi-eC7" secondAttribute="bottom" constant="36.5" id="7xq-GI-rbc"/>
+                            <constraint firstItem="h2H-Zi-eC7" firstAttribute="top" secondItem="Sd1-OD-aqz" secondAttribute="bottom" constant="127" id="2Fj-rJ-w2B"/>
+                            <constraint firstItem="JCK-pA-vIp" firstAttribute="bottom" secondItem="h2H-Zi-eC7" secondAttribute="bottom" constant="36" id="6YU-yC-ivI"/>
                             <constraint firstItem="kwl-e5-Ses" firstAttribute="leading" secondItem="JCK-pA-vIp" secondAttribute="leading" constant="8" id="Gio-v0-CIT"/>
                             <constraint firstItem="S13-5B-0gk" firstAttribute="top" secondItem="JCK-pA-vIp" secondAttribute="top" id="LHo-O1-jWe"/>
+                            <constraint firstItem="Sd1-OD-aqz" firstAttribute="top" secondItem="kwl-e5-Ses" secondAttribute="bottom" constant="8" id="NHE-i5-Wr2"/>
                             <constraint firstItem="S13-5B-0gk" firstAttribute="centerX" secondItem="JCK-pA-vIp" secondAttribute="centerX" id="Nwl-dC-mq8"/>
-                            <constraint firstItem="Sd1-OD-aqz" firstAttribute="leading" secondItem="JCK-pA-vIp" secondAttribute="leading" constant="8" id="P6k-HH-dUw"/>
                             <constraint firstItem="JCK-pA-vIp" firstAttribute="trailing" secondItem="kwl-e5-Ses" secondAttribute="trailing" constant="8" id="PZB-b8-sQo"/>
                             <constraint firstItem="h2H-Zi-eC7" firstAttribute="centerX" secondItem="JCK-pA-vIp" secondAttribute="centerX" id="QK6-OC-b8S"/>
-                            <constraint firstItem="Sd1-OD-aqz" firstAttribute="top" secondItem="kwl-e5-Ses" secondAttribute="bottom" constant="8" id="Vk9-Fz-VXP"/>
                             <constraint firstItem="JCK-pA-vIp" firstAttribute="bottom" secondItem="Sd1-OD-aqz" secondAttribute="bottom" constant="199" id="W3y-cH-MAV"/>
                             <constraint firstItem="JCK-pA-vIp" firstAttribute="trailing" secondItem="Sd1-OD-aqz" secondAttribute="trailing" constant="8" id="dUe-td-7rC"/>
+                            <constraint firstItem="Sd1-OD-aqz" firstAttribute="leading" secondItem="JCK-pA-vIp" secondAttribute="leading" constant="8" id="vDy-2V-z3E"/>
+                            <constraint firstItem="kwl-e5-Ses" firstAttribute="top" secondItem="S13-5B-0gk" secondAttribute="bottom" constant="80.5" id="zZk-Cy-bBe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JCK-pA-vIp"/>
                         <connections>
