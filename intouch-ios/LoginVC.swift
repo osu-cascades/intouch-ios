@@ -13,20 +13,12 @@ class LoginVC: UIViewController {
         let password: String = (passwordTf?.text)!
         //print(password)
         if username == "" || password == "" {
+            //alert
             print("Username and Password must not be blank")
+            return
         }
         
         sendAuthRequest(username: username, password: password)
-        
-        UserDefaults.standard.set("true", forKey: "LOGGED_IN")
-        
-        let controllerId = "TabBar"
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let tabBarController: UITabBarController = storyboard.instantiateViewController(withIdentifier: controllerId) as! UITabBarController
-
-        let recvVC: ReceivedNotificationsViewController = (tabBarController.viewControllers![0] as! UINavigationController).viewControllers[0] as! ReceivedNotificationsViewController
-        recvVC.allNotifications = allNotifications
-        self.present(tabBarController, animated: true, completion: nil)
         
     }
     
@@ -39,11 +31,11 @@ class LoginVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         usernameTf.placeholder = "username"
         passwordTf.placeholder = "password"
-        print(allNotifications)
+        //print(allNotifications)
     }
     
     override func viewDidLoad() {
-        print(allNotifications)
+        //print(allNotifications)
     }
     
     //MARK: outlets
@@ -52,8 +44,8 @@ class LoginVC: UIViewController {
     @IBOutlet weak var passwordTf: UITextField!
     
     //MARK: posts
-    //private let authUrlStr = "https://abilitree-intouch-staging.herokuapp.com/auth"
-    private let authUrlStr = "https://abilitree.herokuapp.com/auth"
+    private let authUrlStr = "https://abilitree-intouch-staging.herokuapp.com/auth"
+    //private let authUrlStr = "https://abilitree.herokuapp.com/auth"
     
     func sendAuthRequest(username: String, password: String) {
         var request = URLRequest(url: URL(string: authUrlStr)!)
@@ -69,9 +61,8 @@ class LoginVC: UIViewController {
                 print("status code: \(httpStatus.statusCode)")
                 print("response: \(String(describing: response))")
                 DispatchQueue.main.async {
-                    self.responseL.text = "connection error"
+                    //alert connection error
                 }
-                // error handle
                 return
             }
             if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode == 200 {
@@ -81,16 +72,22 @@ class LoginVC: UIViewController {
                     print("\(username) has been authenticated")
                     DispatchQueue.main.async {
                         //self.responseL.text = "User authenticated"
-                        SettingsBundleHelper.setUsernameAndPassword(username: username, password: password)
-                        self.usernameTf.text = ""
-                        self.passwordTf.text = ""
+                        Settings.setUsernameAndPassword(username: username, password: password)
+                        //self.usernameTf.text = ""
+                        //self.passwordTf.text = ""
                         //sleep(3)
-                        self.performSegue(withIdentifier: "showNotifications", sender: nil)
+                        let controllerId = "TabBar"
+                        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                        let tabBarController: UITabBarController = storyboard.instantiateViewController(withIdentifier: "TabBar") as! UITabBarController
+                        
+                        let recvVC: ReceivedNotificationsViewController = (tabBarController.viewControllers![0] as! UINavigationController).viewControllers[0] as! ReceivedNotificationsViewController
+                        recvVC.allNotifications = self.allNotifications
+                        self.present(tabBarController, animated: true, completion: nil)
                     }
                 } else {
                     print("username and/or password is invalid")
                     DispatchQueue.main.async {
-                        self.responseL.text = "username and/or password is invalid"
+                        // alert "username and/or password is invalid"
                     }
                 }
             }
