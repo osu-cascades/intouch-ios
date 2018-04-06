@@ -11,18 +11,13 @@ class ReceivedNotificationsViewController: UITableViewController {
     //MARK: actions
     @IBAction func logout(_ sender: Any) {
         
-        // present alert, warn of losing notifications
-        // delete all notifications
+        let alert = UIAlertController(title: "Alert", message: "Are you sure you want to log off?", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
+            self.logout()
+        }))
         
-        let channel: String = Settings.getUsername()
-        try? pushNotifications.unsubscribe(interest:"\(channel)")
-        Settings.clearUsernameAndPassword()
-        
-        let controllerId = "Login"
-        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let loginViewController: LoginVC = storyboard.instantiateViewController(withIdentifier: controllerId) as! LoginVC
-        loginViewController.allNotifications = allNotifications
-        self.present(loginViewController, animated: true, completion: nil)
+        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+        self.present(alert, animated: true, completion: nil)
         
     }
     
@@ -35,6 +30,18 @@ class ReceivedNotificationsViewController: UITableViewController {
                 tableView.insertRows(at: [indexPath], with: .automatic)
             }
         }
+    }
+    
+    func logout() {
+        let channel: String = Settings.getUsername()
+        try? pushNotifications.unsubscribe(interest:"\(channel)")
+        Settings.clearUsernameAndPassword()
+        
+        let controllerId = "Login"
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let loginViewController: LoginVC = storyboard.instantiateViewController(withIdentifier: controllerId) as! LoginVC
+        loginViewController.allNotifications = allNotifications
+        self.present(loginViewController, animated: true, completion: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
