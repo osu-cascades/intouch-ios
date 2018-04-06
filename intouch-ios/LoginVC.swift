@@ -79,7 +79,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                         let controllerId = "TabBar"
                         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                         let tabBarController: UITabBarController = storyboard.instantiateViewController(withIdentifier: controllerId) as! UITabBarController
-                        try? self.pushNotifications.subscribe(interest: "\(username)")
+                        
                         let recvVC: ReceivedNotificationsViewController = (tabBarController.viewControllers![0] as! UINavigationController).viewControllers[0] as! ReceivedNotificationsViewController
                         recvVC.allNotifications = self.allNotifications
                         recvVC.pushNotifications = self.pushNotifications
