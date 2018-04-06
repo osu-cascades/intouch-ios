@@ -72,10 +72,11 @@ class LoginVC: UIViewController, UITextFieldDelegate {
             if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode == 200 {
                 print("status code: \(httpStatus.statusCode)")
                 let responseString = String(data: data, encoding: .utf8)
-                if responseString == "authenticated: \(username)" {
-                    print("\(username) has been authenticated")
+                if responseString?.range(of: "usertype") != nil {
+                    var responseArray = responseString?.components(separatedBy:" ")
+                    print("usertype: \(responseArray![1])")
                     DispatchQueue.main.async {
-                        Settings.setUsernameAndPassword(username: username, password: password)
+                        Settings.setUsernamePasswordUserType(username: username, password: password, userType: responseArray![1])
                         let controllerId = "TabBar"
                         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                         let tabBarController: UITabBarController = storyboard.instantiateViewController(withIdentifier: controllerId) as! UITabBarController
