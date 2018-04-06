@@ -1,7 +1,7 @@
 
 import UIKit
 
-class createNotificationVC: UIViewController, UITextFieldDelegate {
+class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     
     //MARK: actions
     @IBAction func sendPushNotification(_ sender: Any) {
@@ -37,11 +37,27 @@ class createNotificationVC: UIViewController, UITextFieldDelegate {
         messageTvO!.layer.cornerRadius = 5
         
         self.titleTfO.delegate = self
+        self.groupPv.delegate = self
+        //self.groupPv.dataSource = self
+        groups = ["group1", "group2", "group3"]
+        
     }
     
     //MARK: outlets
     @IBOutlet weak var titleTfO: UITextField!
+    @IBOutlet weak var groupPv: UIPickerView!
     @IBOutlet weak var messageTvO: UITextView!
+    
+    //MARK: picker
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return groups.count
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent: Int) -> String? {
+        return groups[row]
+    }
     
     //MARK: posts
     private let pushUrlStr = "https://abilitree-intouch-staging.herokuapp.com/push"
@@ -107,5 +123,7 @@ class createNotificationVC: UIViewController, UITextFieldDelegate {
         task.resume()
     }
     
+    //MARK: variables
+    var groups: [String] = [String]()
     
 }
