@@ -103,7 +103,8 @@ class ReceivedNotificationsViewController: UITableViewController {
     //MARK: lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        let username: String = Settings.getUsername()
+        try? self.pushNotifications.subscribe(interest: "\(username)")
         let statusBarHeight = UIApplication.shared.statusBarFrame.height
         let insets = UIEdgeInsets(top: statusBarHeight, left: 0, bottom: 0, right: 0)
         tableView.scrollIndicatorInsets = insets
