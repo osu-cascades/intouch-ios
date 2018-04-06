@@ -7,10 +7,10 @@ import PushNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    
     var window: UIWindow?
     let allNotifications = AllNotifications()
-    let pushNotifications = PushNotifications.shared
+    var pushNotifications = PushNotifications.shared
     let INSTANCE_ID: String = "9313976c-3ca4-4a1c-9538-1627280923f4"
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -35,21 +35,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         if loggedinStatus == "true" {
-//            controllerId = "TabBar"
-//            let initViewController: UITabBarController = storyboard.instantiateViewController(withIdentifier: controllerId) as! UITabBarController
             self.window?.rootViewController = tabBarController
-            //print(tabBarController)
-            
-//            let viewControllers: [UIViewController]?
-//            viewControllers = initViewController.viewControllers
-//            let recvVC: ReceivedNotificationsViewController = (viewControllers![0] as! UINavigationController).viewControllers[0] as! ReceivedNotificationsViewController
-//            print(recvVC)
-            
-            
         } else {
             let controllerId: String = "Login"
             let loginViewController: LoginVC = storyboard.instantiateViewController(withIdentifier: controllerId) as! LoginVC
             loginViewController.allNotifications = allNotifications
+            loginViewController.pushNotifications = pushNotifications
             print(loginViewController.allNotifications)
             self.window?.rootViewController = loginViewController
         }
@@ -109,7 +100,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let token = tokenParts.joined()
         print("Device Token: \(token)")
         self.pushNotifications.registerDeviceToken(deviceToken) {
-            try? self.pushNotifications.subscribe(interest: "abilitree_dev")
+            //try? self.pushNotifications.subscribe(interest: "abilitree_dev")
         }
     }
     
