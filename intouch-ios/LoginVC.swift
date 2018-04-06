@@ -1,19 +1,20 @@
 
 import UIKit
 
-class LoginVC: UIViewController {
+class LoginVC: UIViewController, UITextFieldDelegate {
     
     var allNotifications: AllNotifications!
     
     //MARK: actions
+    @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+        self.view.endEditing(true)
+    }
     @IBAction func login(_ sender: Any) {
-        
-        //send request
+
         let username: String = (usernameTf?.text)!
         let password: String = (passwordTf?.text)!
-        //print(password)
         if username == "" || password == "" {
-            //alert
+            // create alert
             print("Username and Password must not be blank")
             return
         }
@@ -23,19 +24,20 @@ class LoginVC: UIViewController {
     }
     
     //MARK: custom
-    @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
+        return false
     }
     
     //MARK: lifecycle
     override func viewWillAppear(_ animated: Bool) {
         usernameTf.placeholder = "username"
         passwordTf.placeholder = "password"
-        //print(allNotifications)
     }
     
     override func viewDidLoad() {
-        //print(allNotifications)
+        self.usernameTf.delegate = self
+        self.passwordTf.delegate = self
     }
     
     //MARK: outlets
@@ -71,11 +73,7 @@ class LoginVC: UIViewController {
                 if responseString == "authenticated: \(username)" {
                     print("\(username) has been authenticated")
                     DispatchQueue.main.async {
-                        //self.responseL.text = "User authenticated"
                         Settings.setUsernameAndPassword(username: username, password: password)
-                        //self.usernameTf.text = ""
-                        //self.passwordTf.text = ""
-                        //sleep(3)
                         let controllerId = "TabBar"
                         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                         let tabBarController: UITabBarController = storyboard.instantiateViewController(withIdentifier: "TabBar") as! UITabBarController
