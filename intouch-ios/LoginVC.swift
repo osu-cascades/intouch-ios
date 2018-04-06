@@ -1,9 +1,11 @@
 
 import UIKit
+import PushNotifications
 
 class LoginVC: UIViewController, UITextFieldDelegate {
     
     var allNotifications: AllNotifications!
+    var pushNotifications = PushNotifications.shared
     
     //MARK: actions
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
@@ -76,10 +78,12 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                         Settings.setUsernameAndPassword(username: username, password: password)
                         let controllerId = "TabBar"
                         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                        let tabBarController: UITabBarController = storyboard.instantiateViewController(withIdentifier: "TabBar") as! UITabBarController
-                        
+                        let tabBarController: UITabBarController = storyboard.instantiateViewController(withIdentifier: controllerId) as! UITabBarController
+                        try? self.pushNotifications.subscribe(interest: "\(username)")
                         let recvVC: ReceivedNotificationsViewController = (tabBarController.viewControllers![0] as! UINavigationController).viewControllers[0] as! ReceivedNotificationsViewController
                         recvVC.allNotifications = self.allNotifications
+                        recvVC.pushNotifications = self.pushNotifications
+                        
                         self.present(tabBarController, animated: true, completion: nil)
                     }
                 } else {
