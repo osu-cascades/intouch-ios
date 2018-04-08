@@ -48,8 +48,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTf: UITextField!
     
     //MARK: posts
-    private let authUrlStr = "https://abilitree-intouch-staging.herokuapp.com/auth"
-    //private let authUrlStr = "https://abilitree.herokuapp.com/auth"
+    //private let authUrlStr = "https://abilitree-intouch-staging.herokuapp.com/auth"
+    private let authUrlStr = "https://abilitree.herokuapp.com/auth"
     
     func sendAuthRequest(username: String, password: String) {
         var request = URLRequest(url: URL(string: authUrlStr)!)
