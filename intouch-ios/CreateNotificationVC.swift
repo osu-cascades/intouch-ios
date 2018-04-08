@@ -63,29 +63,31 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent: Int) -> String? {
         return groups[row]
     }
+    //not being called, why? 
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        //group = groups[row] as String
+        //print("group: \(group!)")
+    }
     
     //MARK: posts
-    private let pushUrlStr = "https://abilitree-intouch-staging.herokuapp.com/push"
-    //private let authUrlStr = "https://abilitree.herokuapp.com/push"
+    //private let pushUrlStr = "https://abilitree-intouch-staging.herokuapp.com/push"
+    private let pushUrlStr = "https://abilitree.herokuapp.com/push"
     
     func sendPushRequest(title: String?, message: String?) {
         var request = URLRequest(url: URL(string: pushUrlStr)!)
         request.httpMethod = "POST"
         
-//        let username: String? = UserDefaults.standard.string(forKey: "USERNAME")
-//        let password: String? = UserDefaults.standard.string(forKey: "PASSWORD")
-        
-        let username: String? = "admin"
-        let password: String? = "queenannesrevenge"
-        
-        let postString = "username=\(username!)&password=\(password!)&title=\(title!)&body=\(message!)"
+        let username: String? = Settings.getUsername()
+        let password: String? = Settings.getPassword()
+        let group = groups[groupPv.selectedRow(inComponent: 0)]
+        let postString = "username=\(username!)&password=\(password!)&title=\(title!)&body=\(message!)&group=\(group)"
         request.httpBody = postString.data(using: .utf8)
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data, error == nil else {
                 print("error: \(String(describing: error))")
                 print("connection error")
                 DispatchQueue.main.async {
-                    let alert = UIAlertController(title: "Status", message: "Error: \(error)", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Status", message: "Connection Error: \(String(describing: error))", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                     self.present(alert, animated: true)
                 }
@@ -94,9 +96,8 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
             if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {
                 print("status code: \(httpStatus.statusCode)")
                 print("response: \(String(describing: response))")
-                print("connection error")
                 DispatchQueue.main.async {
-                    let alert = UIAlertController(title: "Status", message: "Connection Error. Try again later.", preferredStyle: .alert)
+                    let alert = UIAlertController(title: "Status", message: "Server Error: \(response!)", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
                     self.present(alert, animated: true)
                     
