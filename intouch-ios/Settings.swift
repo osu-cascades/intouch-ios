@@ -24,6 +24,10 @@ class Settings {
         UserDefaults.standard.set("false", forKey: Keys.loggedIn)
     }
     
+    class func getPassword() -> String {
+        return UserDefaults.standard.string(forKey: Keys.password)!
+    }
+    
     class func getUsername() -> String {
         return UserDefaults.standard.string(forKey: Keys.username)!
     }
