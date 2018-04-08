@@ -70,8 +70,8 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
     }
     
     //MARK: posts
-    //private let pushUrlStr = "https://abilitree-intouch-staging.herokuapp.com/push"
-    private let pushUrlStr = "https://abilitree.herokuapp.com/push"
+    private let pushUrlStr = "https://abilitree-intouch-staging.herokuapp.com/push"
+    //private let pushUrlStr = "https://abilitree.herokuapp.com/push"
     
     func sendPushRequest(title: String?, message: String?) {
         var request = URLRequest(url: URL(string: pushUrlStr)!)
