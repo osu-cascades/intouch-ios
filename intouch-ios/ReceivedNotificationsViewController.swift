@@ -91,7 +91,7 @@ class ReceivedNotificationsViewController: UITableViewController {
             let title = "Delete \(notification.title)?"
             let message = "Are you sure you want to delete this notification?"
             
-            let ac = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)
+            let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
             
             let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
             ac.addAction(cancelAction)
