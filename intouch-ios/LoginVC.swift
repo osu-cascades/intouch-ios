@@ -65,7 +65,9 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                 print("status code: \(httpStatus.statusCode)")
                 print("response: \(String(describing: response))")
                 DispatchQueue.main.async {
-                    //alert connection error
+                    let alert = UIAlertController(title: "Alert", message: "Connection Error. Please try again.", preferredStyle: UIAlertControllerStyle.alert)
+                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    self.present(alert, animated: true, completion: nil)
                 }
                 return
             }
@@ -90,7 +92,9 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                 } else {
                     print("username and/or password is invalid")
                     DispatchQueue.main.async {
-                        // alert "username and/or password is invalid"
+                        let alert = UIAlertController(title: "Alert", message: "Username and/or password is invalid.", preferredStyle: UIAlertControllerStyle.alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                        self.present(alert, animated: true, completion: nil)
                     }
                 }
             }
