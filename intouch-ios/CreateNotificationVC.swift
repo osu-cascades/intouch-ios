@@ -40,10 +40,11 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
         self.groupPv.delegate = self
         
         let usertype: String? = Settings.getUserType()
+        
         if usertype == "client" {
-            groups = ["Cross-Disability", "Healing Pathways", "Looking Ahead", "Moving A Head", "Speak Up"]
+            groups = ["Art", "Cross-Disability", "Healing Pathways", "Journey"]
         } else {
-            groups = ["All", "All Clients", "All Staff", "Cross-Disability", "Healing Pathways", "Looking Ahead", "Moving A Head", "Speak Up"]
+            groups = ["All", "Clients", "Staff", "Art", "Cross-Disability", "Healing Pathways", "Journey"]
         }
         
     }
