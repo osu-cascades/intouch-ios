@@ -7,7 +7,9 @@ for clients to notify staff of cancellations.
   * Install latest version of Xcode
   * macOS (App store or https://developer.apple.com/xcode/)
   * Other operating systems see :sparkles: below
-  
+  * Pusher - https://pusher.com/push-notifications
+  * CocoaPods - https://cocoapods.org/
+    * $ sudo gem install cocoapods
   
  # Running Application
   * git clone repository in local directory
