@@ -16,6 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
+        #if DEBUG
+        print("intouch-ios-dev: debug")
+        #endif
+        
+        #if RELEASE
+        print("intouch-ios: release")
+        #endif
+        
         self.pushNotifications.start(instanceId: INSTANCE_ID)
         self.pushNotifications.registerForRemoteNotifications()
         
@@ -98,7 +106,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
 
         let token = tokenParts.joined()
+
         print("Device Token: \(token)")
+
         self.pushNotifications.registerDeviceToken(deviceToken) {
             //try? self.pushNotifications.subscribe(interest: "abilitree_dev")
         }
@@ -106,7 +116,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(_ application: UIApplication,
                      didFailToRegisterForRemoteNotificationsWithError error: Error) {
+
         print("Failed to register: \(error)")
+
     }
     
     func application(

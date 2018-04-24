@@ -17,7 +17,9 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         let password: String = (passwordTf?.text)!
         if username == "" || password == "" {
             // create alert
+            #if DEVELOPMENT
             print("Username and Password must not be blank")
+            #endif
             return
         }
         

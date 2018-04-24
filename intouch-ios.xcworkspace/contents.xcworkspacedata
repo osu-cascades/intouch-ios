@@ -2,7 +2,7 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:intouch-ios.xcodeproj">
+      location = "group:/Users/Aaron/Documents/school/F2017/capstone/InTouch/intouch-ios/intouch-ios.xcodeproj">
    </FileRef>
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
