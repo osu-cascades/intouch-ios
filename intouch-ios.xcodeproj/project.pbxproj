@@ -23,6 +23,7 @@
 		93782A57202D425A00E69E66 /* intouch_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93782A56202D425A00E69E66 /* intouch_iosTests.swift */; };
 		93782A62202D425A00E69E66 /* intouch_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93782A61202D425A00E69E66 /* intouch_iosUITests.swift */; };
 		93916AB9208FA7160006B7DA /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 93916AB8208FA7150006B7DA /* fonts */; };
+		93916ABD208FB09E0006B7DA /* logo-no-tag.png in Resources */ = {isa = PBXBuildFile; fileRef = 93916ABC208FB09E0006B7DA /* logo-no-tag.png */; };
 		93FC73502071DFB0003A4073 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FC734F2071DFB0003A4073 /* LoginVC.swift */; };
 		DE66B53A6F91D03C69E67065 /* Pods_intouch_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A12392CA0673F3599F0798C /* Pods_intouch_iosTests.framework */; };
 /* End PBXBuildFile section */
@@ -71,8 +72,8 @@
 		93782A5D202D425A00E69E66 /* intouch-iosUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "intouch-iosUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93782A61202D425A00E69E66 /* intouch_iosUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intouch_iosUITests.swift; sourceTree = "<group>"; };
 		93782A63202D425A00E69E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		93916AB3208F9DD90006B7DA /* logo-no-tag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-no-tag.png"; sourceTree = "<group>"; };
 		93916AB8208FA7150006B7DA /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
+		93916ABC208FB09E0006B7DA /* logo-no-tag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-no-tag.png"; sourceTree = "<group>"; };
 		93FC734F2071DFB0003A4073 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		B87F4652073DFD0E269C33A9 /* Pods_intouch_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intouch_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2AFC4DE21D8DB81D58FD4A2 /* Pods-intouch-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intouch-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-intouch-iosUITests/Pods-intouch-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -145,22 +146,17 @@
 		93782A40202D425900E69E66 /* intouch-ios */ = {
 			isa = PBXGroup;
 			children = (
+				93916ABB208FAEDE0006B7DA /* Models */,
+				93916ABA208FAEC50006B7DA /* Controllers */,
 				9324EDD5203B704D001E84E9 /* intouch-ios.entitlements */,
 				93782A41202D425900E69E66 /* AppDelegate.swift */,
 				93782A45202D425900E69E66 /* Main.storyboard */,
 				93782A48202D425900E69E66 /* Assets.xcassets */,
 				93782A4A202D425900E69E66 /* LaunchScreen.storyboard */,
 				93782A4D202D425900E69E66 /* Info.plist */,
-				932ABF1D20391F99003A4179 /* ReceivedNotificationsViewController.swift */,
-				932ABF232039232C003A4179 /* Notification.swift */,
-				932ABF272039358D003A4179 /* allNotifications.swift */,
-				936225092039F82E007F0636 /* SingleRecvNotificationVC.swift */,
-				9362250B203A231F007F0636 /* NotificationCell.swift */,
-				93FC734F2071DFB0003A4073 /* LoginVC.swift */,
 				93916AB8208FA7150006B7DA /* fonts */,
-				9347D6A820757E590006E584 /* CreateNotificationVC.swift */,
 				930B885E2076ED5E00A69A23 /* Settings.swift */,
-				93916AB3208F9DD90006B7DA /* logo-no-tag.png */,
+				93916ABC208FB09E0006B7DA /* logo-no-tag.png */,
 			);
 			path = "intouch-ios";
 			sourceTree = "<group>";
@@ -181,6 +177,27 @@
 				93782A63202D425A00E69E66 /* Info.plist */,
 			);
 			path = "intouch-iosUITests";
+			sourceTree = "<group>";
+		};
+		93916ABA208FAEC50006B7DA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				932ABF1D20391F99003A4179 /* ReceivedNotificationsViewController.swift */,
+				936225092039F82E007F0636 /* SingleRecvNotificationVC.swift */,
+				93FC734F2071DFB0003A4073 /* LoginVC.swift */,
+				9347D6A820757E590006E584 /* CreateNotificationVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		93916ABB208FAEDE0006B7DA /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9362250B203A231F007F0636 /* NotificationCell.swift */,
+				932ABF232039232C003A4179 /* Notification.swift */,
+				932ABF272039358D003A4179 /* allNotifications.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		BF69A24D33F0D50FF64AF46E /* Frameworks */ = {
@@ -318,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93916AB9208FA7160006B7DA /* fonts in Resources */,
+				93916ABD208FB09E0006B7DA /* logo-no-tag.png in Resources */,
 				93782A4C202D425900E69E66 /* LaunchScreen.storyboard in Resources */,
 				93782A49202D425900E69E66 /* Assets.xcassets in Resources */,
 				93782A47202D425900E69E66 /* Main.storyboard in Resources */,
