@@ -13,7 +13,7 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
             print("title, to, and message text fields must not be blank")
             return
         }
-        print("sending push notification... title: \(title) message: \(message)")
+        print("sending push notification... title: \(title!) message: \(message!)")
         sendPushRequest(title: title!, message: message!)
     }
     
@@ -90,6 +90,7 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
                 DispatchQueue.main.async {
                     let alert = UIAlertController(title: "Status", message: "Connection Error: \(String(describing: error))", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    alert.view.tintColor = UIColor(red: 157/255, green: 200/255, blue: 49/255, alpha: 1)
                     self.present(alert, animated: true)
                 }
                 return
@@ -100,6 +101,7 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
                 DispatchQueue.main.async {
                     let alert = UIAlertController(title: "Status", message: "Server Error: \(response!)", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    alert.view.tintColor = UIColor(red: 157/255, green: 200/255, blue: 49/255, alpha: 1)
                     self.present(alert, animated: true)
                     
                 }
@@ -113,6 +115,7 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
                     DispatchQueue.main.async {
                         let alert = UIAlertController(title: "Status", message: "Notification successfully sent.", preferredStyle: .alert)
                         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                        alert.view.tintColor = UIColor(red: 157/255, green: 200/255, blue: 49/255, alpha: 1)
                         self.present(alert, animated: true)
                         self.titleTfO.text = ""
                         self.messageTvO.text = ""

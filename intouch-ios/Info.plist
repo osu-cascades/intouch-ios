@@ -47,5 +47,15 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>fonts/GothamRnd-Medium.otf</string>
+		<string>fonts/GothamRnd-Bold.otf</string>
+		<string>fonts/GothamRnd-BoldIta.otf</string>
+		<string>fonts/GothamRnd-BookIta.otf</string>
+		<string>fonts/GothamRnd-Light.otf</string>
+		<string>fonts/GothamRnd-LightIta.otf</string>
+		<string>fonts/GothamRnd-MedIta.otf</string>
+	</array>
 </dict>
 </plist>

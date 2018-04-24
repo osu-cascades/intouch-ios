@@ -15,8 +15,8 @@ class ReceivedNotificationsViewController: UITableViewController {
         alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
             self.logout()
         }))
-        
         alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: nil))
+        alert.view.tintColor = UIColor(red: 157/255, green: 200/255, blue: 49/255, alpha: 1)
         self.present(alert, animated: true, completion: nil)
         
     }

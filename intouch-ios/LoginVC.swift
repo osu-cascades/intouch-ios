@@ -67,6 +67,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                 DispatchQueue.main.async {
                     let alert = UIAlertController(title: "Alert", message: "Connection Error. Please try again.", preferredStyle: UIAlertControllerStyle.alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                    alert.view.tintColor = UIColor(red: 157/255, green: 200/255, blue: 49/255, alpha: 1)
                     self.present(alert, animated: true, completion: nil)
                 }
                 return
@@ -94,6 +95,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                     DispatchQueue.main.async {
                         let alert = UIAlertController(title: "Alert", message: "Username and/or password is invalid.", preferredStyle: UIAlertControllerStyle.alert)
                         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+                        alert.view.tintColor = UIColor(red: 157/255, green: 200/255, blue: 49/255, alpha: 1)
                         self.present(alert, animated: true, completion: nil)
                     }
                 }
