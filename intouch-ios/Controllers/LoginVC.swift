@@ -16,10 +16,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         let username: String = (usernameTf?.text)!
         let password: String = (passwordTf?.text)!
         if username == "" || password == "" {
-            let alert = UIAlertController(title: "Alert", message: "Username and Password cannot be blank.", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-            alert.view.tintColor = UIColor(red: 157/255, green: 200/255, blue: 49/255, alpha: 1)
-            self.present(alert, animated: true, completion: nil)
+            onBlankLogin()
 #if DEBUG
             print("Username and Password cannot be blank")
 #endif
@@ -31,6 +28,45 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     }
     
     //MARK: custom
+
+    func onBlankLogin() {
+        let alert = UIAlertController(title: "Alert", message: "Username and Password cannot be blank.", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        alert.view.tintColor = UIColor(red: 157/255, green: 200/255, blue: 49/255, alpha: 1)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func onConnectionError() {
+        let alert = UIAlertController(title: "Alert", message: "Connection Error. Please try again.", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        alert.view.tintColor = UIColor(red: 157/255, green: 200/255, blue: 49/255, alpha: 1)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func onLoginFailure() {
+        let alert = UIAlertController(title: "Alert", message: "Username and/or password is invalid.", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        alert.view.tintColor = UIColor(red: 157/255, green: 200/255, blue: 49/255, alpha: 1)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func onLoginSuccess(username: String?, password: String?, userType: String?) {
+        
+        // save username, password, usertype
+        Settings.setUsernamePasswordUserType(username: username!, password: password!, userType: userType!)
+        
+        // switch view controllers
+        let controllerId = "TabBar"
+        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let tabBarController: UITabBarController = storyboard.instantiateViewController(withIdentifier: controllerId) as! UITabBarController
+        
+        let recvVC: ReceivedNotificationsViewController = (tabBarController.viewControllers![0] as! UINavigationController).viewControllers[0] as! ReceivedNotificationsViewController
+        recvVC.allNotifications = self.allNotifications
+        recvVC.pushNotifications = self.pushNotifications
+        
+        self.present(tabBarController, animated: true, completion: nil)
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
@@ -78,11 +114,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                 print("response: \(String(describing: response))")
 #endif
                 DispatchQueue.main.async {
-                    let alert = UIAlertController(title: "Alert", message: "Connection Error. Please try again.", preferredStyle: UIAlertControllerStyle.alert)
-                    alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                    alert.view.tintColor = UIColor(red: 157/255, green: 200/255, blue: 49/255, alpha: 1)
-                    self.present(alert, animated: true, completion: nil)
-                }
+                    self.onConnectionError()                }
                 return
             }
             if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode == 200 {
@@ -94,26 +126,14 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                     print("usertype: \(responseArray![1])")
 #endif
                     DispatchQueue.main.async {
-                        Settings.setUsernamePasswordUserType(username: username, password: password, userType: responseArray![1])
-                        let controllerId = "TabBar"
-                        let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                        let tabBarController: UITabBarController = storyboard.instantiateViewController(withIdentifier: controllerId) as! UITabBarController
-                        
-                        let recvVC: ReceivedNotificationsViewController = (tabBarController.viewControllers![0] as! UINavigationController).viewControllers[0] as! ReceivedNotificationsViewController
-                        recvVC.allNotifications = self.allNotifications
-                        recvVC.pushNotifications = self.pushNotifications
-                        
-                        self.present(tabBarController, animated: true, completion: nil)
+                        self.onLoginSuccess(username: username, password: password, userType: responseArray![1])
                     }
                 } else {
 #if DEBUG
                     print("username and/or password is invalid")
 #endif
                     DispatchQueue.main.async {
-                        let alert = UIAlertController(title: "Alert", message: "Username and/or password is invalid.", preferredStyle: UIAlertControllerStyle.alert)
-                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-                        alert.view.tintColor = UIColor(red: 157/255, green: 200/255, blue: 49/255, alpha: 1)
-                        self.present(alert, animated: true, completion: nil)
+                        self.onLoginFailure()
                     }
                 }
             }
