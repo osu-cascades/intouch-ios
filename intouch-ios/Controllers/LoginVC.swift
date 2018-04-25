@@ -16,10 +16,13 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         let username: String = (usernameTf?.text)!
         let password: String = (passwordTf?.text)!
         if username == "" || password == "" {
-            // create alert
-            #if DEVELOPMENT
-            print("Username and Password must not be blank")
-            #endif
+            let alert = UIAlertController(title: "Alert", message: "Username and Password cannot be blank.", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            alert.view.tintColor = UIColor(red: 157/255, green: 200/255, blue: 49/255, alpha: 1)
+            self.present(alert, animated: true, completion: nil)
+#if DEBUG
+            print("Username and Password cannot be blank")
+#endif
             return
         }
         
@@ -50,8 +53,11 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var passwordTf: UITextField!
     
     //MARK: posts
+#if DEBUG
     private let authUrlStr = "https://abilitree-intouch-staging.herokuapp.com/auth"
-    //private let authUrlStr = "https://abilitree.herokuapp.com/auth"
+#else
+    private let authUrlStr = "https://abilitree.herokuapp.com/auth"
+#endif
     
     func sendAuthRequest(username: String, password: String) {
         var request = URLRequest(url: URL(string: authUrlStr)!)
@@ -60,12 +66,17 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         request.httpBody = postString.data(using: .utf8)
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data, error == nil else {
+                // alert
+#if DEBUG
                 print("error: \(String(describing: error))")
+#endif
                 return
             }
             if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {
+#if DEBUG
                 print("status code: \(httpStatus.statusCode)")
                 print("response: \(String(describing: response))")
+#endif
                 DispatchQueue.main.async {
                     let alert = UIAlertController(title: "Alert", message: "Connection Error. Please try again.", preferredStyle: UIAlertControllerStyle.alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -79,7 +90,9 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                 let responseString = String(data: data, encoding: .utf8)
                 if responseString?.range(of: "usertype") != nil {
                     var responseArray = responseString?.components(separatedBy:" ")
+#if DEBUG
                     print("usertype: \(responseArray![1])")
+#endif
                     DispatchQueue.main.async {
                         Settings.setUsernamePasswordUserType(username: username, password: password, userType: responseArray![1])
                         let controllerId = "TabBar"
@@ -93,7 +106,9 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                         self.present(tabBarController, animated: true, completion: nil)
                     }
                 } else {
+#if DEBUG
                     print("username and/or password is invalid")
+#endif
                     DispatchQueue.main.async {
                         let alert = UIAlertController(title: "Alert", message: "Username and/or password is invalid.", preferredStyle: UIAlertControllerStyle.alert)
                         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
