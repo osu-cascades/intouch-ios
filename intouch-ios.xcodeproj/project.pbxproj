@@ -89,7 +89,6 @@
 		93782A63202D425A00E69E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93916AB8208FA7150006B7DA /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		93916ABC208FB09E0006B7DA /* logo-no-tag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-no-tag.png"; sourceTree = "<group>"; };
-		93916AD8208FB31D0006B7DA /* intouch-ios copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "intouch-ios copy-Info.plist"; path = "/Users/Aaron/Documents/school/F2017/capstone/InTouch/intouch-ios/intouch-ios copy-Info.plist"; sourceTree = "<absolute>"; };
 		93BBEA53208FEFCE00F4CF64 /* intouch-ios-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "intouch-ios-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93BBEA54208FEFCE00F4CF64 /* intouch-ios copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "intouch-ios copy2-Info.plist"; path = "/Users/Aaron/Documents/school/F2017/capstone/InTouch/intouch-ios/intouch-ios copy2-Info.plist"; sourceTree = "<absolute>"; };
 		93FC734F2071DFB0003A4073 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
@@ -156,7 +155,6 @@
 				93782A3F202D425900E69E66 /* Products */,
 				804654BE98F99C6AD66D6B95 /* Pods */,
 				BF69A24D33F0D50FF64AF46E /* Frameworks */,
-				93916AD8208FB31D0006B7DA /* intouch-ios copy-Info.plist */,
 				93BBEA54208FEFCE00F4CF64 /* intouch-ios copy2-Info.plist */,
 			);
 			sourceTree = "<group>";
