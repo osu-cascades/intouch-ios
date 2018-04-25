@@ -67,6 +67,13 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         self.present(tabBarController, animated: true, completion: nil)
     }
     
+    func onServerError(response: URLResponse?) {
+        let alert = UIAlertController(title: "Status", message: "Server Error: \(response!)", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        alert.view.tintColor = UIColor(red: 157/255, green: 200/255, blue: 49/255, alpha: 1)
+        self.present(alert, animated: true)
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
@@ -102,7 +109,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         request.httpBody = postString.data(using: .utf8)
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data, error == nil else {
-                // alert
+                self.onConnectionError()
 #if DEBUG
                 print("error: \(String(describing: error))")
 #endif
@@ -114,7 +121,8 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                 print("response: \(String(describing: response))")
 #endif
                 DispatchQueue.main.async {
-                    self.onConnectionError()                }
+                    self.onServerError(response: response) 
+                }
                 return
             }
             if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode == 200 {
