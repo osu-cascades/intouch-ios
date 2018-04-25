@@ -9,11 +9,15 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
         //let to: String? = toTfO.text
         let message: String? = messageTvO.text
         if title == "" /*|| to == ""*/ || message == "" {
-            // show alert
+            onBlankMessageSend()
+#if DEBUG
             print("title, to, and message text fields must not be blank")
+#endif
             return
         }
+#if DEBUG
         print("sending push notification... title: \(title!) message: \(message!)")
+#endif
         sendPushRequest(title: title!, message: message!)
     }
     
@@ -22,6 +26,14 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
     }
     
     //MARK: custom
+    
+    func onBlankMessageSend() {
+        let alert = UIAlertController(title: "Alert", message: "Title and message cannot be blank.", preferredStyle: UIAlertControllerStyle.alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        alert.view.tintColor = UIColor(red: 157/255, green: 200/255, blue: 49/255, alpha: 1)
+        self.present(alert, animated: true, completion: nil)
+    }
+    
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         self.view.endEditing(true)
         return false
@@ -71,8 +83,11 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
     }
     
     //MARK: posts
+#if DEBUG
     private let pushUrlStr = "https://abilitree-intouch-staging.herokuapp.com/push"
-    //private let pushUrlStr = "https://abilitree.herokuapp.com/push"
+#else
+    private let pushUrlStr = "https://abilitree.herokuapp.com/push"
+#endif
     
     func sendPushRequest(title: String?, message: String?) {
         var request = URLRequest(url: URL(string: pushUrlStr)!)
@@ -85,8 +100,9 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
         request.httpBody = postString.data(using: .utf8)
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data, error == nil else {
-                print("error: \(String(describing: error))")
-                print("connection error")
+#if DEBUG
+                print("connection error: \(String(describing: error))")
+#endif
                 DispatchQueue.main.async {
                     let alert = UIAlertController(title: "Status", message: "Connection Error: \(String(describing: error))", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -96,8 +112,10 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
                 return
             }
             if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {
+#if DEBUG
                 print("status code: \(httpStatus.statusCode)")
                 print("response: \(String(describing: response))")
+#endif
                 DispatchQueue.main.async {
                     let alert = UIAlertController(title: "Status", message: "Server Error: \(response!)", preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -108,10 +126,11 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
                 return
             }
             if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode == 200 {
-                print("status code: \(httpStatus.statusCode)")
                 let responseString = String(data: data, encoding: .utf8)
                 if responseString == "notification sent" {
+#if DEBUG
                     print("notification has been sent")
+#endif
                     DispatchQueue.main.async {
                         let alert = UIAlertController(title: "Status", message: "Notification successfully sent.", preferredStyle: .alert)
                         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -121,7 +140,9 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
                         self.messageTvO.text = ""
                     }
                 } else {
-                    print("invalid token")
+#if DEBUG
+                    print("invalid username/password")
+#endif
                     DispatchQueue.main.async {
                         let alert = UIAlertController(title: "Status", message: "Unknown Error", preferredStyle: .alert)
                         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
