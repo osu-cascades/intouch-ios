@@ -1,0 +1,6 @@
+framework module Pods_intouch {
+  umbrella header "Pods-intouch-umbrella.h"
+
+  export *
+  module * { export * }
+}

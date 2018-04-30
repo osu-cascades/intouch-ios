@@ -4,4 +4,10 @@
    <FileRef
       location = "group:/Users/Aaron/Documents/school/F2017/capstone/InTouch/intouch-ios/intouch.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:intouch.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
 </Workspace>

@@ -1,0 +1,6 @@
+framework module Pods_intouchTests {
+  umbrella header "Pods-intouchTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
