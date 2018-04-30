@@ -1,6 +1,6 @@
 //
 //  AppDelegate.swift
-//  intouch-ios
+//  intouch
 
 import UIKit
 import PushNotifications
@@ -17,11 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         #if DEBUG
-        print("intouch-ios-dev: debug")
+        print("intouch-dev: debug")
         #endif
         
         #if RELEASE
-        print("intouch-ios: release")
+        print("intouch: release")
         #endif
         
         self.pushNotifications.start(instanceId: INSTANCE_ID)

@@ -1,6 +1,6 @@
 //
-//  intouch_iosUITests.swift
-//  intouch-iosUITests
+//  intouchUITests.swift
+//  intouchUITests
 //
 //  Created by Aaron on 2/8/18.
 //  Copyright © 2018 Aaron. All rights reserved.

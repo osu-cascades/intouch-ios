@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D50F671904808142FF4AF79 /* Pods_intouch_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE91657A43E90DE1A85A8E5 /* Pods_intouch_ios.framework */; };
-		4AB384D424A519697CFE0AB2 /* Pods_intouch_iosUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87F4652073DFD0E269C33A9 /* Pods_intouch_iosUITests.framework */; };
 		930B885F2076ED5E00A69A23 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930B885E2076ED5E00A69A23 /* Settings.swift */; };
 		932ABF1E20391F99003A4179 /* ReceivedNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABF1D20391F99003A4179 /* ReceivedNotificationsViewController.swift */; };
 		932ABF242039232C003A4179 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABF232039232C003A4179 /* Notification.swift */; };
@@ -33,14 +31,12 @@
 		93BBEA43208FEFCE00F4CF64 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930B885E2076ED5E00A69A23 /* Settings.swift */; };
 		93BBEA44208FEFCE00F4CF64 /* SingleRecvNotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936225092039F82E007F0636 /* SingleRecvNotificationVC.swift */; };
 		93BBEA45208FEFCE00F4CF64 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9362250B203A231F007F0636 /* NotificationCell.swift */; };
-		93BBEA47208FEFCE00F4CF64 /* Pods_intouch_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE91657A43E90DE1A85A8E5 /* Pods_intouch_ios.framework */; };
 		93BBEA49208FEFCE00F4CF64 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 93916AB8208FA7150006B7DA /* fonts */; };
 		93BBEA4A208FEFCE00F4CF64 /* logo-no-tag.png in Resources */ = {isa = PBXBuildFile; fileRef = 93916ABC208FB09E0006B7DA /* logo-no-tag.png */; };
 		93BBEA4B208FEFCE00F4CF64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93782A4A202D425900E69E66 /* LaunchScreen.storyboard */; };
 		93BBEA4C208FEFCE00F4CF64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93782A48202D425900E69E66 /* Assets.xcassets */; };
 		93BBEA4D208FEFCE00F4CF64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93782A45202D425900E69E66 /* Main.storyboard */; };
 		93FC73502071DFB0003A4073 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FC734F2071DFB0003A4073 /* LoginVC.swift */; };
-		DE66B53A6F91D03C69E67065 /* Pods_intouch_iosTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A12392CA0673F3599F0798C /* Pods_intouch_iosTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,20 +57,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0CCDBCD51646C504E6731F4E /* Pods-intouch-iosUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intouch-iosUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-intouch-iosUITests/Pods-intouch-iosUITests.release.xcconfig"; sourceTree = "<group>"; };
-		1E1052AAE45526EEF4D9D98C /* Pods-intouch-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intouch-ios.release.xcconfig"; path = "Pods/Target Support Files/Pods-intouch-ios/Pods-intouch-ios.release.xcconfig"; sourceTree = "<group>"; };
-		52A93C6F3C9A3D807BC0130C /* Pods-intouch-iosTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intouch-iosTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-intouch-iosTests/Pods-intouch-iosTests.release.xcconfig"; sourceTree = "<group>"; };
-		5A12392CA0673F3599F0798C /* Pods_intouch_iosTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intouch_iosTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FE91657A43E90DE1A85A8E5 /* Pods_intouch_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intouch_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		930B885E2076ED5E00A69A23 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		9324EDD5203B704D001E84E9 /* intouch-ios.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "intouch-ios.entitlements"; sourceTree = "<group>"; };
+		9324EDD5203B704D001E84E9 /* intouch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = intouch.entitlements; sourceTree = "<group>"; };
 		932ABF1D20391F99003A4179 /* ReceivedNotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReceivedNotificationsViewController.swift; sourceTree = "<group>"; };
 		932ABF232039232C003A4179 /* Notification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
 		932ABF272039358D003A4179 /* allNotifications.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = allNotifications.swift; sourceTree = "<group>"; };
 		9347D6A820757E590006E584 /* CreateNotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNotificationVC.swift; sourceTree = "<group>"; };
 		936225092039F82E007F0636 /* SingleRecvNotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleRecvNotificationVC.swift; sourceTree = "<group>"; };
 		9362250B203A231F007F0636 /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
-		936AB9A6410F4D8D366BD75F /* Pods-intouch-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intouch-ios.debug.xcconfig"; path = "Pods/Target Support Files/Pods-intouch-ios/Pods-intouch-ios.debug.xcconfig"; sourceTree = "<group>"; };
 		93782A3E202D425900E69E66 /* intouch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = intouch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93782A41202D425900E69E66 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93782A46202D425900E69E66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -90,11 +80,8 @@
 		93916AB8208FA7150006B7DA /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		93916ABC208FB09E0006B7DA /* logo-no-tag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-no-tag.png"; sourceTree = "<group>"; };
 		93BBEA53208FEFCE00F4CF64 /* intouch-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "intouch-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		93BBEA54208FEFCE00F4CF64 /* intouch copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "intouch copy2-Info.plist"; sourceTree = "<group>"; };
+		93BBEA54208FEFCE00F4CF64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93FC734F2071DFB0003A4073 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
-		B87F4652073DFD0E269C33A9 /* Pods_intouch_iosUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intouch_iosUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2AFC4DE21D8DB81D58FD4A2 /* Pods-intouch-iosUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intouch-iosUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-intouch-iosUITests/Pods-intouch-iosUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		EE7BED454C94C6A654B4001E /* Pods-intouch-iosTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intouch-iosTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-intouch-iosTests/Pods-intouch-iosTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +89,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D50F671904808142FF4AF79 /* Pods_intouch_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +96,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DE66B53A6F91D03C69E67065 /* Pods_intouch_iosTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +103,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AB384D424A519697CFE0AB2 /* Pods_intouch_iosUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,36 +110,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93BBEA47208FEFCE00F4CF64 /* Pods_intouch_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		804654BE98F99C6AD66D6B95 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				936AB9A6410F4D8D366BD75F /* Pods-intouch-ios.debug.xcconfig */,
-				1E1052AAE45526EEF4D9D98C /* Pods-intouch-ios.release.xcconfig */,
-				EE7BED454C94C6A654B4001E /* Pods-intouch-iosTests.debug.xcconfig */,
-				52A93C6F3C9A3D807BC0130C /* Pods-intouch-iosTests.release.xcconfig */,
-				C2AFC4DE21D8DB81D58FD4A2 /* Pods-intouch-iosUITests.debug.xcconfig */,
-				0CCDBCD51646C504E6731F4E /* Pods-intouch-iosUITests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		93782A35202D425900E69E66 = {
 			isa = PBXGroup;
 			children = (
-				93782A40202D425900E69E66 /* intouch-ios */,
-				93782A55202D425A00E69E66 /* intouch-iosTests */,
-				93782A60202D425A00E69E66 /* intouch-iosUITests */,
+				93782A40202D425900E69E66 /* intouch */,
+				93782A55202D425A00E69E66 /* intouchTests */,
+				93782A60202D425A00E69E66 /* intouchUITests */,
 				93782A3F202D425900E69E66 /* Products */,
-				804654BE98F99C6AD66D6B95 /* Pods */,
-				BF69A24D33F0D50FF64AF46E /* Frameworks */,
-				93BBEA54208FEFCE00F4CF64 /* intouch copy2-Info.plist */,
+				93BBEA54208FEFCE00F4CF64 /* Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -170,12 +138,12 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		93782A40202D425900E69E66 /* intouch-ios */ = {
+		93782A40202D425900E69E66 /* intouch */ = {
 			isa = PBXGroup;
 			children = (
 				93916ABB208FAEDE0006B7DA /* Models */,
 				93916ABA208FAEC50006B7DA /* Controllers */,
-				9324EDD5203B704D001E84E9 /* intouch-ios.entitlements */,
+				9324EDD5203B704D001E84E9 /* intouch.entitlements */,
 				93782A41202D425900E69E66 /* AppDelegate.swift */,
 				93782A45202D425900E69E66 /* Main.storyboard */,
 				93782A48202D425900E69E66 /* Assets.xcassets */,
@@ -185,25 +153,25 @@
 				930B885E2076ED5E00A69A23 /* Settings.swift */,
 				93916ABC208FB09E0006B7DA /* logo-no-tag.png */,
 			);
-			path = "intouch-ios";
+			path = intouch;
 			sourceTree = "<group>";
 		};
-		93782A55202D425A00E69E66 /* intouch-iosTests */ = {
+		93782A55202D425A00E69E66 /* intouchTests */ = {
 			isa = PBXGroup;
 			children = (
 				93782A56202D425A00E69E66 /* intouch_iosTests.swift */,
 				93782A58202D425A00E69E66 /* Info.plist */,
 			);
-			path = "intouch-iosTests";
+			path = intouchTests;
 			sourceTree = "<group>";
 		};
-		93782A60202D425A00E69E66 /* intouch-iosUITests */ = {
+		93782A60202D425A00E69E66 /* intouchUITests */ = {
 			isa = PBXGroup;
 			children = (
 				93782A61202D425A00E69E66 /* intouch_iosUITests.swift */,
 				93782A63202D425A00E69E66 /* Info.plist */,
 			);
-			path = "intouch-iosUITests";
+			path = intouchUITests;
 			sourceTree = "<group>";
 		};
 		93916ABA208FAEC50006B7DA /* Controllers */ = {
@@ -227,16 +195,6 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
-		BF69A24D33F0D50FF64AF46E /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				6FE91657A43E90DE1A85A8E5 /* Pods_intouch_ios.framework */,
-				5A12392CA0673F3599F0798C /* Pods_intouch_iosTests.framework */,
-				B87F4652073DFD0E269C33A9 /* Pods_intouch_iosUITests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -244,12 +202,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93782A66202D425A00E69E66 /* Build configuration list for PBXNativeTarget "intouch" */;
 			buildPhases = (
-				D719AEF5C0186FBDBC8885E4 /* [CP] Check Pods Manifest.lock */,
 				93782A3A202D425900E69E66 /* Sources */,
 				93782A3B202D425900E69E66 /* Frameworks */,
 				93782A3C202D425900E69E66 /* Resources */,
-				388FC1A71BAC017A1C478ED0 /* [CP] Embed Pods Frameworks */,
-				24F1AF6943C3FF4EC55B19AE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -264,12 +219,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93782A69202D425A00E69E66 /* Build configuration list for PBXNativeTarget "intouchTests" */;
 			buildPhases = (
-				87ABD1F9B3B9AB80A260C249 /* [CP] Check Pods Manifest.lock */,
 				93782A4E202D425A00E69E66 /* Sources */,
 				93782A4F202D425A00E69E66 /* Frameworks */,
 				93782A50202D425A00E69E66 /* Resources */,
-				7C3193D93175E960D526FE51 /* [CP] Embed Pods Frameworks */,
-				AD49F1082735704231E771A8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -285,12 +237,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93782A6C202D425A00E69E66 /* Build configuration list for PBXNativeTarget "intouchUITests" */;
 			buildPhases = (
-				2ED705C6D21F8AD81B7DAD44 /* [CP] Check Pods Manifest.lock */,
 				93782A59202D425A00E69E66 /* Sources */,
 				93782A5A202D425A00E69E66 /* Frameworks */,
 				93782A5B202D425A00E69E66 /* Resources */,
-				A263E80748E7E2FB89DFFE8A /* [CP] Embed Pods Frameworks */,
-				3C089CC079542F79670B7FB4 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -306,12 +255,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93BBEA50208FEFCE00F4CF64 /* Build configuration list for PBXNativeTarget "intouch-dev" */;
 			buildPhases = (
-				93BBEA3B208FEFCE00F4CF64 /* [CP] Check Pods Manifest.lock */,
 				93BBEA3C208FEFCE00F4CF64 /* Sources */,
 				93BBEA46208FEFCE00F4CF64 /* Frameworks */,
 				93BBEA48208FEFCE00F4CF64 /* Resources */,
-				93BBEA4E208FEFCE00F4CF64 /* [CP] Embed Pods Frameworks */,
-				93BBEA4F208FEFCE00F4CF64 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -420,207 +366,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		24F1AF6943C3FF4EC55B19AE /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intouch-ios/Pods-intouch-ios-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2ED705C6D21F8AD81B7DAD44 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-intouch-iosUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		388FC1A71BAC017A1C478ED0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-intouch-ios/Pods-intouch-ios-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/PushNotifications/PushNotifications.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PushNotifications.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intouch-ios/Pods-intouch-ios-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		3C089CC079542F79670B7FB4 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intouch-iosUITests/Pods-intouch-iosUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7C3193D93175E960D526FE51 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intouch-iosTests/Pods-intouch-iosTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		87ABD1F9B3B9AB80A260C249 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-intouch-iosTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		93BBEA3B208FEFCE00F4CF64 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-intouch-ios-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		93BBEA4E208FEFCE00F4CF64 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-intouch-ios/Pods-intouch-ios-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/PushNotifications/PushNotifications.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PushNotifications.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intouch-ios/Pods-intouch-ios-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		93BBEA4F208FEFCE00F4CF64 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intouch-ios/Pods-intouch-ios-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		A263E80748E7E2FB89DFFE8A /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intouch-iosUITests/Pods-intouch-iosUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AD49F1082735704231E771A8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intouch-iosTests/Pods-intouch-iosTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D719AEF5C0186FBDBC8885E4 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-intouch-ios-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		93782A3A202D425900E69E66 /* Sources */ = {
@@ -815,14 +560,13 @@
 		};
 		93782A67202D425A00E69E66 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 936AB9A6410F4D8D366BD75F /* Pods-intouch-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "intouch-ios/intouch-ios.entitlements";
+				CODE_SIGN_ENTITLEMENTS = intouch/intouch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3Z29LPJB3;
-				INFOPLIST_FILE = "intouch-ios/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				INFOPLIST_FILE = intouch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DEVELOPMENT";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abilitree.intouch;
@@ -834,14 +578,13 @@
 		};
 		93782A68202D425A00E69E66 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E1052AAE45526EEF4D9D98C /* Pods-intouch-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "intouch-ios/intouch-ios.entitlements";
+				CODE_SIGN_ENTITLEMENTS = intouch/intouch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3Z29LPJB3;
-				INFOPLIST_FILE = "intouch-ios/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				INFOPLIST_FILE = intouch/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "$(inherited) -DRELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abilitree.intouch;
@@ -853,15 +596,14 @@
 		};
 		93782A6A202D425A00E69E66 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EE7BED454C94C6A654B4001E /* Pods-intouch-iosTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96B75MLXWA;
-				INFOPLIST_FILE = "intouch-iosTests/Info.plist";
+				INFOPLIST_FILE = "intouch-Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bakeaaro.BeerTracker.intouch-iosTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bakeaaro.BeerTracker.intouchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -871,15 +613,14 @@
 		};
 		93782A6B202D425A00E69E66 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 52A93C6F3C9A3D807BC0130C /* Pods-intouch-iosTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96B75MLXWA;
-				INFOPLIST_FILE = "intouch-iosTests/Info.plist";
+				INFOPLIST_FILE = "intouch-Tests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bakeaaro.BeerTracker.intouch-iosTests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bakeaaro.BeerTracker.intouchTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -889,47 +630,44 @@
 		};
 		93782A6D202D425A00E69E66 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2AFC4DE21D8DB81D58FD4A2 /* Pods-intouch-iosUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96B75MLXWA;
-				INFOPLIST_FILE = "intouch-iosUITests/Info.plist";
+				INFOPLIST_FILE = intouchUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bakeaaro.BeerTracker.intouch-iosUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bakeaaro.BeerTracker.intouchUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "intouch-ios";
+				TEST_TARGET_NAME = intouch;
 			};
 			name = Debug;
 		};
 		93782A6E202D425A00E69E66 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0CCDBCD51646C504E6731F4E /* Pods-intouch-iosUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 96B75MLXWA;
-				INFOPLIST_FILE = "intouch-iosUITests/Info.plist";
+				INFOPLIST_FILE = intouchUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.bakeaaro.BeerTracker.intouch-iosUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = com.bakeaaro.BeerTracker.intouchUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "intouch-ios";
+				TEST_TARGET_NAME = intouch;
 			};
 			name = Release;
 		};
 		93BBEA51208FEFCE00F4CF64 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 936AB9A6410F4D8D366BD75F /* Pods-intouch-ios.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "intouch-ios/intouch-ios.entitlements";
+				CODE_SIGN_ENTITLEMENTS = intouch/intouch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3Z29LPJB3;
-				INFOPLIST_FILE = "intouch copy2-Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DEVELOPMENT";
@@ -942,13 +680,12 @@
 		};
 		93BBEA52208FEFCE00F4CF64 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E1052AAE45526EEF4D9D98C /* Pods-intouch-ios.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "intouch-ios/intouch-ios.entitlements";
+				CODE_SIGN_ENTITLEMENTS = intouch/intouch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3Z29LPJB3;
-				INFOPLIST_FILE = "intouch copy2-Info.plist";
+				INFOPLIST_FILE = Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abilitree.intouch;
