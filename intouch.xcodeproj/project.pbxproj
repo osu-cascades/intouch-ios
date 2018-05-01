@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		1CD7AE30FBB8C1CF92E03D74 /* Pods_intouchUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6AC00987CB48F2FAD516B0 /* Pods_intouchUITests.framework */; };
 		3694B0F323A5813974FBD1C6 /* Pods_intouchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2002B976AEE293F4F62AB515 /* Pods_intouchTests.framework */; };
-		3EA017AF6F543608A4C954CA /* Pods_intouch_dev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97A9892FECFB9EBF89758E0F /* Pods_intouch_dev.framework */; };
 		72434F87536F6B27296C4AD4 /* Pods_intouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56A2011A25453979B83CCB1 /* Pods_intouch.framework */; };
 		930B885F2076ED5E00A69A23 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930B885E2076ED5E00A69A23 /* Settings.swift */; };
 		932ABF1E20391F99003A4179 /* ReceivedNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABF1D20391F99003A4179 /* ReceivedNotificationsViewController.swift */; };
@@ -26,20 +25,21 @@
 		93782A62202D425A00E69E66 /* intouch_iosUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93782A61202D425A00E69E66 /* intouch_iosUITests.swift */; };
 		93916AB9208FA7160006B7DA /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 93916AB8208FA7150006B7DA /* fonts */; };
 		93916ABD208FB09E0006B7DA /* logo-no-tag.png in Resources */ = {isa = PBXBuildFile; fileRef = 93916ABC208FB09E0006B7DA /* logo-no-tag.png */; };
-		93BBEA3D208FEFCE00F4CF64 /* allNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABF272039358D003A4179 /* allNotifications.swift */; };
-		93BBEA3E208FEFCE00F4CF64 /* CreateNotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9347D6A820757E590006E584 /* CreateNotificationVC.swift */; };
-		93BBEA3F208FEFCE00F4CF64 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABF232039232C003A4179 /* Notification.swift */; };
-		93BBEA40208FEFCE00F4CF64 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FC734F2071DFB0003A4073 /* LoginVC.swift */; };
-		93BBEA41208FEFCE00F4CF64 /* ReceivedNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABF1D20391F99003A4179 /* ReceivedNotificationsViewController.swift */; };
-		93BBEA42208FEFCE00F4CF64 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93782A41202D425900E69E66 /* AppDelegate.swift */; };
-		93BBEA43208FEFCE00F4CF64 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930B885E2076ED5E00A69A23 /* Settings.swift */; };
-		93BBEA44208FEFCE00F4CF64 /* SingleRecvNotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936225092039F82E007F0636 /* SingleRecvNotificationVC.swift */; };
-		93BBEA45208FEFCE00F4CF64 /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9362250B203A231F007F0636 /* NotificationCell.swift */; };
-		93BBEA49208FEFCE00F4CF64 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 93916AB8208FA7150006B7DA /* fonts */; };
-		93BBEA4A208FEFCE00F4CF64 /* logo-no-tag.png in Resources */ = {isa = PBXBuildFile; fileRef = 93916ABC208FB09E0006B7DA /* logo-no-tag.png */; };
-		93BBEA4B208FEFCE00F4CF64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93782A4A202D425900E69E66 /* LaunchScreen.storyboard */; };
-		93BBEA4C208FEFCE00F4CF64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93782A48202D425900E69E66 /* Assets.xcassets */; };
-		93BBEA4D208FEFCE00F4CF64 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93782A45202D425900E69E66 /* Main.storyboard */; };
+		93BC0273209822FA0008CF6B /* allNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABF272039358D003A4179 /* allNotifications.swift */; };
+		93BC0274209822FA0008CF6B /* CreateNotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9347D6A820757E590006E584 /* CreateNotificationVC.swift */; };
+		93BC0275209822FA0008CF6B /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABF232039232C003A4179 /* Notification.swift */; };
+		93BC0276209822FA0008CF6B /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FC734F2071DFB0003A4073 /* LoginVC.swift */; };
+		93BC0277209822FA0008CF6B /* ReceivedNotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABF1D20391F99003A4179 /* ReceivedNotificationsViewController.swift */; };
+		93BC0278209822FA0008CF6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93782A41202D425900E69E66 /* AppDelegate.swift */; };
+		93BC0279209822FA0008CF6B /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930B885E2076ED5E00A69A23 /* Settings.swift */; };
+		93BC027A209822FA0008CF6B /* SingleRecvNotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936225092039F82E007F0636 /* SingleRecvNotificationVC.swift */; };
+		93BC027B209822FA0008CF6B /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9362250B203A231F007F0636 /* NotificationCell.swift */; };
+		93BC027D209822FA0008CF6B /* Pods_intouch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B56A2011A25453979B83CCB1 /* Pods_intouch.framework */; };
+		93BC027F209822FA0008CF6B /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 93916AB8208FA7150006B7DA /* fonts */; };
+		93BC0280209822FA0008CF6B /* logo-no-tag.png in Resources */ = {isa = PBXBuildFile; fileRef = 93916ABC208FB09E0006B7DA /* logo-no-tag.png */; };
+		93BC0281209822FA0008CF6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93782A4A202D425900E69E66 /* LaunchScreen.storyboard */; };
+		93BC0282209822FA0008CF6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93782A48202D425900E69E66 /* Assets.xcassets */; };
+		93BC0283209822FA0008CF6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93782A45202D425900E69E66 /* Main.storyboard */; };
 		93FC73502071DFB0003A4073 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FC734F2071DFB0003A4073 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -88,8 +88,8 @@
 		93782A63202D425A00E69E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93916AB8208FA7150006B7DA /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		93916ABC208FB09E0006B7DA /* logo-no-tag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-no-tag.png"; sourceTree = "<group>"; };
-		93BBEA53208FEFCE00F4CF64 /* intouch-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "intouch-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		93BBEA54208FEFCE00F4CF64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		93BC0289209822FA0008CF6B /* intouch-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "intouch-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		93BC028A209822FA0008CF6B /* Info-dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-dev.plist"; path = "/Users/Aaron/Documents/school/F2017/capstone/InTouch/intouch-ios/Info-dev.plist"; sourceTree = "<absolute>"; };
 		93FC734F2071DFB0003A4073 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		97A9892FECFB9EBF89758E0F /* Pods_intouch_dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intouch_dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3801904D039849409C8EBE9 /* Pods-intouch-dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intouch-dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-intouch-dev/Pods-intouch-dev.release.xcconfig"; sourceTree = "<group>"; };
@@ -125,11 +125,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93BBEA46208FEFCE00F4CF64 /* Frameworks */ = {
+		93BC027C209822FA0008CF6B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3EA017AF6F543608A4C954CA /* Pods_intouch_dev.framework in Frameworks */,
+				93BC027D209822FA0008CF6B /* Pods_intouch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,9 +143,9 @@
 				93782A55202D425A00E69E66 /* intouchTests */,
 				93782A60202D425A00E69E66 /* intouchUITests */,
 				93782A3F202D425900E69E66 /* Products */,
-				93BBEA54208FEFCE00F4CF64 /* Info.plist */,
 				E75ED8C29DAB8C114F705710 /* Pods */,
 				BBD277F2482A3ACF71E4669E /* Frameworks */,
+				93BC028A209822FA0008CF6B /* Info-dev.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -155,7 +155,7 @@
 				93782A3E202D425900E69E66 /* intouch.app */,
 				93782A52202D425A00E69E66 /* intouchTests.xctest */,
 				93782A5D202D425A00E69E66 /* intouchUITests.xctest */,
-				93BBEA53208FEFCE00F4CF64 /* intouch-dev.app */,
+				93BC0289209822FA0008CF6B /* intouch-dev.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -308,16 +308,16 @@
 			productReference = 93782A5D202D425A00E69E66 /* intouchUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		93BBEA3A208FEFCE00F4CF64 /* intouch-dev */ = {
+		93BC0270209822FA0008CF6B /* intouch-dev */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 93BBEA50208FEFCE00F4CF64 /* Build configuration list for PBXNativeTarget "intouch-dev" */;
+			buildConfigurationList = 93BC0286209822FA0008CF6B /* Build configuration list for PBXNativeTarget "intouch-dev" */;
 			buildPhases = (
-				7E6DE3B0BAF86F58A8063123 /* [CP] Check Pods Manifest.lock */,
-				93BBEA3C208FEFCE00F4CF64 /* Sources */,
-				93BBEA46208FEFCE00F4CF64 /* Frameworks */,
-				93BBEA48208FEFCE00F4CF64 /* Resources */,
-				58F4E6EA270ACA7C8224C0D6 /* [CP] Embed Pods Frameworks */,
-				A624A8C7FB7B8FF04837B464 /* [CP] Copy Pods Resources */,
+				93BC0271209822FA0008CF6B /* [CP] Check Pods Manifest.lock */,
+				93BC0272209822FA0008CF6B /* Sources */,
+				93BC027C209822FA0008CF6B /* Frameworks */,
+				93BC027E209822FA0008CF6B /* Resources */,
+				93BC0284209822FA0008CF6B /* [CP] Embed Pods Frameworks */,
+				93BC0285209822FA0008CF6B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -325,7 +325,7 @@
 			);
 			name = "intouch-dev";
 			productName = "intouch-ios";
-			productReference = 93BBEA53208FEFCE00F4CF64 /* intouch-dev.app */;
+			productReference = 93BC0289209822FA0008CF6B /* intouch-dev.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -360,7 +360,7 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 93782A3D202D425900E69E66;
 					};
-					93BBEA3A208FEFCE00F4CF64 = {
+					93BC0270209822FA0008CF6B = {
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -381,7 +381,7 @@
 				93782A3D202D425900E69E66 /* intouch */,
 				93782A51202D425A00E69E66 /* intouchTests */,
 				93782A5C202D425A00E69E66 /* intouchUITests */,
-				93BBEA3A208FEFCE00F4CF64 /* intouch-dev */,
+				93BC0270209822FA0008CF6B /* intouch-dev */,
 			);
 		};
 /* End PBXProject section */
@@ -413,15 +413,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93BBEA48208FEFCE00F4CF64 /* Resources */ = {
+		93BC027E209822FA0008CF6B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93BBEA49208FEFCE00F4CF64 /* fonts in Resources */,
-				93BBEA4A208FEFCE00F4CF64 /* logo-no-tag.png in Resources */,
-				93BBEA4B208FEFCE00F4CF64 /* LaunchScreen.storyboard in Resources */,
-				93BBEA4C208FEFCE00F4CF64 /* Assets.xcassets in Resources */,
-				93BBEA4D208FEFCE00F4CF64 /* Main.storyboard in Resources */,
+				93BC027F209822FA0008CF6B /* fonts in Resources */,
+				93BC0280209822FA0008CF6B /* logo-no-tag.png in Resources */,
+				93BC0281209822FA0008CF6B /* LaunchScreen.storyboard in Resources */,
+				93BC0282209822FA0008CF6B /* Assets.xcassets in Resources */,
+				93BC0283209822FA0008CF6B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -494,21 +494,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intouchTests/Pods-intouchTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		58F4E6EA270ACA7C8224C0D6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intouch-dev/Pods-intouch-dev-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		602497D7DC2A9BEF79FFF72E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -545,7 +530,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7E6DE3B0BAF86F58A8063123 /* [CP] Check Pods Manifest.lock */ = {
+		93BC0271209822FA0008CF6B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -556,14 +541,32 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-intouch-dev-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-intouch-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A624A8C7FB7B8FF04837B464 /* [CP] Copy Pods Resources */ = {
+		93BC0284209822FA0008CF6B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-intouch/Pods-intouch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PushNotifications/PushNotifications.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PushNotifications.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intouch/Pods-intouch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93BC0285209822FA0008CF6B /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -575,7 +578,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intouch-dev/Pods-intouch-dev-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-intouch/Pods-intouch-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D8ADD3D1D283FDD8C19D9A7A /* [CP] Embed Pods Frameworks */ = {
@@ -658,19 +661,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		93BBEA3C208FEFCE00F4CF64 /* Sources */ = {
+		93BC0272209822FA0008CF6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93BBEA3D208FEFCE00F4CF64 /* allNotifications.swift in Sources */,
-				93BBEA3E208FEFCE00F4CF64 /* CreateNotificationVC.swift in Sources */,
-				93BBEA3F208FEFCE00F4CF64 /* Notification.swift in Sources */,
-				93BBEA40208FEFCE00F4CF64 /* LoginVC.swift in Sources */,
-				93BBEA41208FEFCE00F4CF64 /* ReceivedNotificationsViewController.swift in Sources */,
-				93BBEA42208FEFCE00F4CF64 /* AppDelegate.swift in Sources */,
-				93BBEA43208FEFCE00F4CF64 /* Settings.swift in Sources */,
-				93BBEA44208FEFCE00F4CF64 /* SingleRecvNotificationVC.swift in Sources */,
-				93BBEA45208FEFCE00F4CF64 /* NotificationCell.swift in Sources */,
+				93BC0273209822FA0008CF6B /* allNotifications.swift in Sources */,
+				93BC0274209822FA0008CF6B /* CreateNotificationVC.swift in Sources */,
+				93BC0275209822FA0008CF6B /* Notification.swift in Sources */,
+				93BC0276209822FA0008CF6B /* LoginVC.swift in Sources */,
+				93BC0277209822FA0008CF6B /* ReceivedNotificationsViewController.swift in Sources */,
+				93BC0278209822FA0008CF6B /* AppDelegate.swift in Sources */,
+				93BC0279209822FA0008CF6B /* Settings.swift in Sources */,
+				93BC027A209822FA0008CF6B /* SingleRecvNotificationVC.swift in Sources */,
+				93BC027B209822FA0008CF6B /* NotificationCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -924,16 +927,16 @@
 			};
 			name = Release;
 		};
-		93BBEA51208FEFCE00F4CF64 /* Debug */ = {
+		93BC0287209822FA0008CF6B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8F7952CDF826955758C7918 /* Pods-intouch-dev.debug.xcconfig */;
+			baseConfigurationReference = 69673346365442AEE80122B2 /* Pods-intouch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = intouch/intouch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3Z29LPJB3;
-				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				INFOPLIST_FILE = "Info-dev.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_SWIFT_FLAGS = "-DEVELOPMENT";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abilitree.intouch;
@@ -943,17 +946,18 @@
 			};
 			name = Debug;
 		};
-		93BBEA52208FEFCE00F4CF64 /* Release */ = {
+		93BC0288209822FA0008CF6B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A3801904D039849409C8EBE9 /* Pods-intouch-dev.release.xcconfig */;
+			baseConfigurationReference = 3DE7C3FD8127FC80A33618FF /* Pods-intouch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = intouch/intouch.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M3Z29LPJB3;
-				INFOPLIST_FILE = Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				INFOPLIST_FILE = "Info-dev.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_SWIFT_FLAGS = "$(inherited) -DRELEASE";
 				PRODUCT_BUNDLE_IDENTIFIER = com.abilitree.intouch;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -1000,11 +1004,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		93BBEA50208FEFCE00F4CF64 /* Build configuration list for PBXNativeTarget "intouch-dev" */ = {
+		93BC0286209822FA0008CF6B /* Build configuration list for PBXNativeTarget "intouch-dev" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				93BBEA51208FEFCE00F4CF64 /* Debug */,
-				93BBEA52208FEFCE00F4CF64 /* Release */,
+				93BC0287209822FA0008CF6B /* Debug */,
+				93BC0288209822FA0008CF6B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
