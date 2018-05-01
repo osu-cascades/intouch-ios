@@ -2,15 +2,15 @@
 //  intouchUITests.swift
 //  intouchUITests
 //
-//  Created by Aaron on 2/8/18.
-//  Copyright © 2018 Aaron. All rights reserved.
 //
 
 import XCTest
 @testable import intouch
 
-class intouch_iosUITests: XCTestCase {
-        
+class intouchUITests: XCTestCase {
+    
+    
+    
     override func setUp() {
         super.setUp()
         
