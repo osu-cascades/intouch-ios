@@ -37,8 +37,8 @@ class Settings {
         return UserDefaults.standard.string(forKey: Keys.userType)
     }
     
-    class func getLoggedInStatus() -> Bool? {
-        return UserDefaults.standard.bool(forKey: Keys.loggedIn)
+    class func getLoggedInStatus() -> String? {
+        return UserDefaults.standard.string(forKey: Keys.loggedIn)
     }
     
 }
