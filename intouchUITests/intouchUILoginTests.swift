@@ -7,7 +7,7 @@
 import XCTest
 @testable import intouch
 
-class intouchUITests: XCTestCase {
+class intouchUILoginTests: XCTestCase {
     
     var app: XCUIApplication!
     
@@ -16,6 +16,8 @@ class intouchUITests: XCTestCase {
         
         continueAfterFailure = false
 
+        
+        
         app = XCUIApplication()
         app.launch()
 
@@ -27,7 +29,7 @@ class intouchUITests: XCTestCase {
         super.tearDown()
     }
     
-    func testUserCanLoginAndLogout() {
+    func testValidLoginCredentialsLoadsTabView() {
         
         let app = XCUIApplication()
         app.textFields["username"].tap()
@@ -75,8 +77,6 @@ class intouchUITests: XCTestCase {
         app.alerts["Alert"].buttons["Yes"].tap()
         
         XCTAssert(app.textFields["username"].exists)
-
-
 
         XCUIDevice.shared.orientation = .faceUp
         
