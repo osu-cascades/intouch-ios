@@ -22,7 +22,7 @@
 		93782A49202D425900E69E66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93782A48202D425900E69E66 /* Assets.xcassets */; };
 		93782A4C202D425900E69E66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93782A4A202D425900E69E66 /* LaunchScreen.storyboard */; };
 		93782A57202D425A00E69E66 /* intouch_iosTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93782A56202D425A00E69E66 /* intouch_iosTests.swift */; };
-		93782A62202D425A00E69E66 /* intouchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93782A61202D425A00E69E66 /* intouchUITests.swift */; };
+		93782A62202D425A00E69E66 /* intouchUILoginTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93782A61202D425A00E69E66 /* intouchUILoginTests.swift */; };
 		93916AB9208FA7160006B7DA /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 93916AB8208FA7150006B7DA /* fonts */; };
 		93916ABD208FB09E0006B7DA /* logo-no-tag.png in Resources */ = {isa = PBXBuildFile; fileRef = 93916ABC208FB09E0006B7DA /* logo-no-tag.png */; };
 		93BC0273209822FA0008CF6B /* allNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932ABF272039358D003A4179 /* allNotifications.swift */; };
@@ -84,7 +84,7 @@
 		93782A56202D425A00E69E66 /* intouch_iosTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intouch_iosTests.swift; sourceTree = "<group>"; };
 		93782A58202D425A00E69E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93782A5D202D425A00E69E66 /* intouchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = intouchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		93782A61202D425A00E69E66 /* intouchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intouchUITests.swift; sourceTree = "<group>"; };
+		93782A61202D425A00E69E66 /* intouchUILoginTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intouchUILoginTests.swift; sourceTree = "<group>"; };
 		93782A63202D425A00E69E66 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93916AB8208FA7150006B7DA /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		93916ABC208FB09E0006B7DA /* logo-no-tag.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "logo-no-tag.png"; sourceTree = "<group>"; };
@@ -190,7 +190,7 @@
 		93782A60202D425A00E69E66 /* intouchUITests */ = {
 			isa = PBXGroup;
 			children = (
-				93782A61202D425A00E69E66 /* intouchUITests.swift */,
+				93782A61202D425A00E69E66 /* intouchUILoginTests.swift */,
 				93782A63202D425A00E69E66 /* Info.plist */,
 			);
 			path = intouchUITests;
@@ -657,7 +657,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				93782A62202D425A00E69E66 /* intouchUITests.swift in Sources */,
+				93782A62202D425A00E69E66 /* intouchUILoginTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
