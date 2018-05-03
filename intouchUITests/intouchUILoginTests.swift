@@ -16,11 +16,8 @@ class intouchUILoginTests: XCTestCase {
         
         continueAfterFailure = false
 
-        
-        
         app = XCUIApplication()
         app.launch()
-
 
     }
     
@@ -31,7 +28,6 @@ class intouchUILoginTests: XCTestCase {
     
     func testValidLoginCredentialsLoadsTabView() {
         
-        let app = XCUIApplication()
         app.textFields["username"].tap()
         
         let cKey = app/*@START_MENU_TOKEN@*/.keys["c"]/*[[".keyboards.keys[\"c\"]",".keys[\"c\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
@@ -79,6 +75,31 @@ class intouchUILoginTests: XCTestCase {
         XCTAssert(app.textFields["username"].exists)
 
         XCUIDevice.shared.orientation = .faceUp
+        
+    }
+    
+    func testInvalidCredentialsThrowsAlert() {
+        
+        app.textFields["username"].tap()
+        
+        let cKey = app/*@START_MENU_TOKEN@*/.keys["c"]/*[[".keyboards.keys[\"c\"]",".keys[\"c\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        cKey.tap()
+        
+        // enter invalid credentials
+        let passwordSecureTextField = app.secureTextFields["password"]
+        passwordSecureTextField.tap()
+
+        let pKey = app/*@START_MENU_TOKEN@*/.keys["p"]/*[[".keyboards.keys[\"p\"]",".keys[\"p\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
+        pKey.tap()
+
+        let loginButton = app.buttons["Login"]
+        loginButton.tap()
+        
+        sleep(2)
+        
+        XCTAssert(app.alerts.element.staticTexts["Username and/or password is invalid."].exists)
+        
+        app.alerts["Alert"].buttons["OK"].tap()
         
     }
     
