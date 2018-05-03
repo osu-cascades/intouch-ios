@@ -18,9 +18,10 @@ class Settings {
         UserDefaults.standard.set("true", forKey: Keys.loggedIn)
     }
     
-    class func clearUsernameAndPassword() {
+    class func clearUsernamePasswordUserType() {
         UserDefaults.standard.set("", forKey: Keys.username)
         UserDefaults.standard.set("", forKey: Keys.password)
+        UserDefaults.standard.set("", forKey: Keys.userType)
         UserDefaults.standard.set("false", forKey: Keys.loggedIn)
     }
     
@@ -34,6 +35,10 @@ class Settings {
     
     class func getUserType() -> String? {
         return UserDefaults.standard.string(forKey: Keys.userType)
+    }
+    
+    class func getLoggedInStatus() -> Bool? {
+        return UserDefaults.standard.bool(forKey: Keys.loggedIn)
     }
     
 }

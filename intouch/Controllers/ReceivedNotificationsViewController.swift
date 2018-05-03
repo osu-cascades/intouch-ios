@@ -35,7 +35,7 @@ class ReceivedNotificationsViewController: UITableViewController {
     func logout() {
         let channel: String = Settings.getUsername()
         try? pushNotifications.unsubscribe(interest:"\(channel)")
-        Settings.clearUsernameAndPassword()
+        Settings.clearUsernamePasswordUserType()
         
         let controllerId = "Login"
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
