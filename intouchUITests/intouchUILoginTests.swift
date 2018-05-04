@@ -118,4 +118,52 @@ class intouchUILoginTests: XCTestCase {
         
     }
     
+    func testBlankUsernameThrowsAlert() {
+        XCUIDevice.shared.orientation = .faceUp
+        XCUIDevice.shared.orientation = .portrait
+        
+        app.secureTextFields["password"].tap()
+        app.keys["p"].tap()
+        app.keys["a"].tap()
+        app.keys["s"].tap()
+        app.keys["s"].tap()
+        app.keys["w"].tap()
+        app.keys["o"].tap()
+        app.keys["r"].tap()
+        app.keys["d"].tap()
+        
+        app.buttons["Login"].tap()
+        
+        XCTAssert(app.alerts.element.staticTexts["Username and Password cannot be blank."].exists)
+        
+        app.alerts["Alert"].buttons["OK"].tap()
+        
+        XCTAssert(app.textFields["username"].exists)
+        XCTAssert(app.secureTextFields["password"].exists)
+    }
+    
+    func testBlankPasswordThrowsAlert() {
+        XCUIDevice.shared.orientation = .faceUp
+        XCUIDevice.shared.orientation = .portrait
+        
+        app.textFields["username"].tap()
+        app.keys["u"].tap()
+        app.keys["s"].tap()
+        app.keys["e"].tap()
+        app.keys["r"].tap()
+        app.keys["n"].tap()
+        app.keys["a"].tap()
+        app.keys["m"].tap()
+        app.keys["e"].tap()
+        
+        app.buttons["Login"].tap()
+        
+        XCTAssert(app.alerts.element.staticTexts["Username and Password cannot be blank."].exists)
+        
+        app.alerts["Alert"].buttons["OK"].tap()
+        
+        XCTAssert(app.textFields["username"].exists)
+        XCTAssert(app.secureTextFields["password"].exists)
+    }
+    
 }
