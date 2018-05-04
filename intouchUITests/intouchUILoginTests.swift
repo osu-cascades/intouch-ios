@@ -78,7 +78,7 @@ class intouchUILoginTests: XCTestCase {
         
     }
     
-    func testInvalidCredentialsThrowsAlert() {
+    func testInvalidCredentialsAtLoginThrowsAlert() {
         
         app.textFields["username"].tap()
         
@@ -100,6 +100,21 @@ class intouchUILoginTests: XCTestCase {
         XCTAssert(app.alerts.element.staticTexts["Username and/or password is invalid."].exists)
         
         app.alerts["Alert"].buttons["OK"].tap()
+        
+    }
+    
+    func testBlankUsernameAndPasswordThrowsAlert() {
+        XCUIDevice.shared.orientation = .faceUp
+        XCUIDevice.shared.orientation = .portrait
+        
+        app.buttons["Login"].tap()
+        
+        XCTAssert(app.alerts.element.staticTexts["Username and Password cannot be blank."].exists)
+    
+        app.alerts["Alert"].buttons["OK"].tap()
+        
+        XCTAssert(app.textFields["username"].exists)
+        XCTAssert(app.secureTextFields["password"].exists)
         
     }
     
