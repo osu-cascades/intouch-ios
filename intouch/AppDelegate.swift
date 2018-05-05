@@ -32,13 +32,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         // get instance of allNotifications and assign it to the
-        // ReceivedNotificationsViewController allNotifications
+        // NotificationsViewController allNotifications
         // member variable
         let tabBarControllerId: String = "TabBar"
         let tabBarController: UITabBarController = storyboard.instantiateViewController(withIdentifier: tabBarControllerId) as! UITabBarController
         let viewControllers: [UIViewController]?
         viewControllers = tabBarController.viewControllers
-        let recvVC: ReceivedNotificationsViewController = (viewControllers![0] as! UINavigationController).viewControllers[0] as! ReceivedNotificationsViewController
+        let recvVC: NotificationsViewController = (viewControllers![0] as! UINavigationController).viewControllers[0] as! NotificationsViewController
         recvVC.allNotifications = allNotifications
         
         
@@ -137,9 +137,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabBarController = window!.rootViewController as! UITabBarController
 
         if tabBarController.selectedIndex == 0 {
-            let receivedNotificationsViewController = (tabBarController.viewControllers![0] as! UINavigationController).viewControllers[0] as! ReceivedNotificationsViewController
-        receivedNotificationsViewController.allNotifications = allNotifications
-        receivedNotificationsViewController.addNewNotification(title: title, from: from, message: body, datetime: datetime)
+            let notificationsViewController = (tabBarController.viewControllers![0] as! UINavigationController).viewControllers[0] as! NotificationsViewController
+        notificationsViewController.allNotifications = allNotifications
+        notificationsViewController.addNewNotification(title: title, from: from, message: body, datetime: datetime)
         } else {
             allNotifications.createNotification(title: title, from: from, message: body, datetime: datetime)
         }

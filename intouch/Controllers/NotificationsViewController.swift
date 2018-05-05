@@ -3,7 +3,7 @@
 import UIKit
 import PushNotifications
 
-class ReceivedNotificationsViewController: UITableViewController {
+class NotificationsViewController: UITableViewController {
     
     var allNotifications: AllNotifications!
     var pushNotifications = PushNotifications.shared
