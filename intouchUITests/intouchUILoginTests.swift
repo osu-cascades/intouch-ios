@@ -64,7 +64,6 @@ class intouchUILoginTests: XCTestCase {
         let loginButton = app.buttons["Login"]
         loginButton.tap()
         
-        sleep(2)
         XCTAssert(app.navigationBars["Notifications"].otherElements["Notifications"].exists)
         
         XCUIDevice.shared.orientation = .portrait
@@ -94,8 +93,6 @@ class intouchUILoginTests: XCTestCase {
 
         let loginButton = app.buttons["Login"]
         loginButton.tap()
-        
-        sleep(2)
         
         XCTAssert(app.alerts.element.staticTexts["Username and/or password is invalid."].exists)
         
