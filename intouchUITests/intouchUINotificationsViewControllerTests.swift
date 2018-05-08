@@ -19,8 +19,7 @@ class intouchUINotificationsViewControllerTests: XCTestCase {
         app.launch()
         
         // login in
-        let loginVc: LoginVC = LoginVC()
-        loginVc.onLoginSuccess(username: "client", password: "password", userType: "client")
+
 
     }
     
@@ -30,6 +29,9 @@ class intouchUINotificationsViewControllerTests: XCTestCase {
     }
     
     func testExample() {
+        
+
+
         
     }
     
