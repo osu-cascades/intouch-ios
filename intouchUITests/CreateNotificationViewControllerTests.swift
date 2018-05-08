@@ -65,6 +65,54 @@ class CreateNotificationViewControllerTests: XCTestCase {
         
     }
     
+    func testUserCannotLeaveTitleOrMessageBlank() {
+        
+        // leave both text fields blank
+        app.buttons["sendBtn"].tap()
+        
+        // assert
+        XCTAssert(app.alerts.element.staticTexts["Title and message cannot be blank."].exists)
+        
+        // dismiss
+        app.alerts["Alert"].buttons["OK"].tap()
+        
+        // leave message text view blank
+        app.textFields["createTitle"].tap()
+        app.textFields["createTitle"].typeText("iphone test title")
+        
+        // dismiss keyboard
+        app.staticTexts["Title:"].tap()
+        
+        app.buttons["sendBtn"].tap()
+        
+        // assert
+        XCTAssert(app.alerts.element.staticTexts["Title and message cannot be blank."].exists)
+        
+        // dismiss
+        app.alerts["Alert"].buttons["OK"].tap()
+        
+        // leave title text field blank
+        app.textFields["createTitle"].tap()
+        for _ in 1...17 {
+            app.keys["delete"].tap()
+        }
+        
+        app.textViews["createMessage"].tap()
+        app.textViews["createMessage"].typeText("iphone test message")
+        
+        // dismiss keyboard
+        app.staticTexts["Title:"].tap()
+        
+        app.buttons["sendBtn"].tap()
+        
+        // assert
+        XCTAssert(app.alerts.element.staticTexts["Title and message cannot be blank."].exists)
+        
+        // dismiss
+        app.alerts["Alert"].buttons["OK"].tap()
+        
+    }
+    
     func testTest() {
         
     }
