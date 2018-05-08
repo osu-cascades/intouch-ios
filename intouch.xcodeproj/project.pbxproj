@@ -41,6 +41,7 @@
 		93BC0282209822FA0008CF6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 93782A48202D425900E69E66 /* Assets.xcassets */; };
 		93BC0283209822FA0008CF6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93782A45202D425900E69E66 /* Main.storyboard */; };
 		93BE12B3209D3ED5004408C2 /* intouchUINotificationsViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BE12B2209D3ED5004408C2 /* intouchUINotificationsViewControllerTests.swift */; };
+		93BE12B5209D418D004408C2 /* CreateNotificationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BE12B4209D418D004408C2 /* CreateNotificationViewControllerTests.swift */; };
 		93FC73502071DFB0003A4073 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FC734F2071DFB0003A4073 /* LoginVC.swift */; };
 /* End PBXBuildFile section */
 
@@ -92,6 +93,7 @@
 		93BC0289209822FA0008CF6B /* intouch-dev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "intouch-dev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		93BC028A209822FA0008CF6B /* Info-dev.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-dev.plist"; path = "/Users/Aaron/Documents/school/F2017/capstone/InTouch/intouch-ios/Info-dev.plist"; sourceTree = "<absolute>"; };
 		93BE12B2209D3ED5004408C2 /* intouchUINotificationsViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = intouchUINotificationsViewControllerTests.swift; sourceTree = "<group>"; };
+		93BE12B4209D418D004408C2 /* CreateNotificationViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNotificationViewControllerTests.swift; sourceTree = "<group>"; };
 		93FC734F2071DFB0003A4073 /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		97A9892FECFB9EBF89758E0F /* Pods_intouch_dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intouch_dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3801904D039849409C8EBE9 /* Pods-intouch-dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intouch-dev.release.xcconfig"; path = "Pods/Target Support Files/Pods-intouch-dev/Pods-intouch-dev.release.xcconfig"; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 		93782A60202D425A00E69E66 /* intouchUITests */ = {
 			isa = PBXGroup;
 			children = (
+				93BE12B4209D418D004408C2 /* CreateNotificationViewControllerTests.swift */,
 				93BE12B2209D3ED5004408C2 /* intouchUINotificationsViewControllerTests.swift */,
 				93782A61202D425A00E69E66 /* intouchUILoginTests.swift */,
 				93782A63202D425A00E69E66 /* Info.plist */,
@@ -661,6 +664,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93BE12B3209D3ED5004408C2 /* intouchUINotificationsViewControllerTests.swift in Sources */,
+				93BE12B5209D418D004408C2 /* CreateNotificationViewControllerTests.swift in Sources */,
 				93782A62202D425A00E69E66 /* intouchUILoginTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

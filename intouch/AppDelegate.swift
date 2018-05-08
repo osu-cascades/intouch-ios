@@ -133,7 +133,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let title = alert["title"] as! String
         let from = alert["from"] as! String
         let datetime = alert["datetime"] as! String
-        
+#if RELEASE
         let tabBarController = window!.rootViewController as! UITabBarController
 
         if tabBarController.selectedIndex == 0 {
@@ -143,8 +143,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             allNotifications.createNotification(title: title, from: from, message: body, datetime: datetime)
         }
+#endif
         
+#if DEBUG
+        allNotifications.createNotification(title: title, from: from, message: body, datetime: datetime)
+#endif
     }
-
 }
 
