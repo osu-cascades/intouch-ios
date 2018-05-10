@@ -1,12 +1,12 @@
 PODS:
-  - PushNotifications (0.10.2)
+  - PushNotifications (0.10.7)
 
 DEPENDENCIES:
   - PushNotifications
 
 SPEC CHECKSUMS:
-  PushNotifications: 5974c65d7d57cb7d46051a54deff903f56b3a733
+  PushNotifications: 2e3df1e301e19ae2a100267f8387da5fc471ecc7
 
-PODFILE CHECKSUM: e6828882b5d443d32fd6fdc30c87c7efab87960c
+PODFILE CHECKSUM: 2ce21eb03bab16c4d00a75ae0dca9b2e192dc278
 
 COCOAPODS: 1.4.0
