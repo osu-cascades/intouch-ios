@@ -6,19 +6,22 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
     //MARK: actions
     @IBAction func sendPushNotification(_ sender: Any) {
         let title: String? = titleTfO.text
-        //let to: String? = toTfO.text
+        let to: String? = groups[groupPv.selectedRow(inComponent: 0)]
+#if DEBUG
+        print("to: \(to)")
+#endif
         let message: String? = messageTvO.text
         if title == "" /*|| to == ""*/ || message == "" {
             onSendBlankMessage()
 #if DEBUG
-            print("title, to, and message text fields must not be blank")
+            print("title and message text fields must not be blank")
 #endif
             return
         }
 #if DEBUG
         print("sending push notification... title: \(title!) message: \(message!)")
 #endif
-        sendPushRequest(title: title!, message: message!)
+        sendPushRequest(title: title!, to: to!, message: message!)
     }
     
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
@@ -124,14 +127,14 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
     private let pushUrlStr = "https://abilitree-intouch.herokuapp.com/push"
 #endif
     
-    func sendPushRequest(title: String?, message: String?) {
+    func sendPushRequest(title: String?, to: String?, message: String?) {
         var request = URLRequest(url: URL(string: pushUrlStr)!)
         request.httpMethod = "POST"
         
         let username: String? = Settings.getUsername()
         let password: String? = Settings.getPassword()
-        let group = groups[groupPv.selectedRow(inComponent: 0)]
-        let postString = "username=\(username!)&password=\(password!)&title=\(title!)&body=\(message!)&group=\(group)"
+        //let group = groups[groupPv.selectedRow(inComponent: 0)]
+        let postString = "username=\(username!)&password=\(password!)&title=\(title!)&body=\(message!)&group=\(to!)"
         request.httpBody = postString.data(using: .utf8)
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data, error == nil else {
