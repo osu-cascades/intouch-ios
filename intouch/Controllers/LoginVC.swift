@@ -98,11 +98,14 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     //MARK: posts
 #if DEBUG
     private let authUrlStr = "https://abilitree-intouch-staging.herokuapp.com/auth"
-#else
-    private let authUrlStr = "https://abilitree.herokuapp.com/auth"
+#endif
+    
+#if RELEASE
+    private let authUrlStr = "https://abilitree-intouch.herokuapp.com/auth"
 #endif
     
     func sendAuthRequest(username: String, password: String) {
+        print(authUrlStr)
         var request = URLRequest(url: URL(string: authUrlStr)!)
         request.httpMethod = "POST"
         let postString = "username=\(username)&password=\(password)"

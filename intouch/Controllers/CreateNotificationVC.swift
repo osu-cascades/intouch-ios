@@ -56,8 +56,8 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
         self.present(alert, animated: true, completion: nil)
     }
     
-    func onServerError(response: URLResponse?) {
-        let alert = UIAlertController(title: "Status", message: "Server Error: \(response!)", preferredStyle: .alert)
+    func onServerError(error: String?) {
+        let alert = UIAlertController(title: "Status", message: "Server Error: \(String(describing: error))", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         alert.view.tintColor = UIColor(red: 157/255, green: 200/255, blue: 49/255, alpha: 1)
         self.present(alert, animated: true)
@@ -114,8 +114,10 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
     //MARK: posts
 #if DEBUG
     private let pushUrlStr = "https://abilitree-intouch-staging.herokuapp.com/push"
-#else
-    private let pushUrlStr = "https://abilitree.herokuapp.com/push"
+#endif
+
+#if RELEASE
+    private let pushUrlStr = "https://abilitree-intouch.herokuapp.com/push"
 #endif
     
     func sendPushRequest(title: String?, message: String?) {
@@ -143,7 +145,7 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
                 print("response: \(String(describing: response))")
 #endif
                 DispatchQueue.main.async {
-                    self.onServerError(response: response)
+                    self.onServerError(error: error as? String)
                 }
                 return
             }
