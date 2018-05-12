@@ -91,7 +91,7 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
             groups = ["All", "Clients", "Staff", "Art", "Cross-Disability", "Healing Pathways", "Journey"]
         }
         let username: String? = Settings.getUsername()
-        if username == "testuser" {
+        if username == "testuser" || username == "admin" {
             groups.insert("test group", at: 0)
         }
         
