@@ -3,15 +3,15 @@
 //  intouch
 
 import UIKit
-import PushNotifications
+//import PushNotifications
+import PusherSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     let allNotifications = AllNotifications()
-    var pushNotifications = PushNotifications.shared
-    let INSTANCE_ID: String = "9313976c-3ca4-4a1c-9538-1627280923f4"
+    var pushNotifications: Pusher! = nil
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -24,8 +24,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         print("intouch: release")
 #endif
         
-        self.pushNotifications.start(instanceId: INSTANCE_ID)
-        self.pushNotifications.registerForRemoteNotifications()
+        let options = PusherClientOptions(
+            host: .cluster("us2")
+        )
+        self.pushNotifications = Pusher(
+            key: "9d82b24b0c3b8eaf2b9f",
+            options: options
+        )
+        
+        self.pushNotifications.connect()
         
         let loggedinStatus: String? = UserDefaults.standard.string(forKey: "LOGGED_IN")
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -108,10 +115,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let token = tokenParts.joined()
 
         print("Device Token: \(token)")
-
-        self.pushNotifications.registerDeviceToken(deviceToken) {
-            //try? self.pushNotifications.subscribe(interest: "abilitree_dev")
-        }
     }
     
     func application(_ application: UIApplication,

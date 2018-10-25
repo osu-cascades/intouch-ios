@@ -1,12 +1,12 @@
 
 
 import UIKit
-import PushNotifications
+import PusherSwift
 
 class NotificationsViewController: UITableViewController {
     
     var allNotifications: AllNotifications!
-    var pushNotifications = PushNotifications.shared
+    var pushNotifications: Pusher! = nil
     
     //MARK: actions
     @IBAction func logout(_ sender: Any) {
@@ -34,7 +34,7 @@ class NotificationsViewController: UITableViewController {
     
     func logout() {
         let channel: String = Settings.getUsername()
-        try? pushNotifications.unsubscribe(interest:"\(channel)")
+        self.pushNotifications.unsubscribe("\(channel)")
         Settings.clearUsernamePasswordUserType()
         
         let controllerId = "Login"
@@ -110,8 +110,30 @@ class NotificationsViewController: UITableViewController {
     //MARK: lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        let options = PusherClientOptions(
+            host: .cluster("us2")
+        )
+        
+        self.pushNotifications = Pusher(
+            key: "9d82b24b0c3b8eaf2b9f",
+            options: options
+        )
+        
         let username: String = Settings.getUsername()
-        try? self.pushNotifications.subscribe(interest: "\(username)")
+        print(username)
+        let channel = self.pushNotifications.subscribe("\(username)")
+
+        let _ = channel.bind(eventName: "new-notification", callback: { (data: Any?) -> Void in
+            if let data = data as? [String : AnyObject] {
+                print(data)
+                if let message = data["body"] as? String {
+                    print(message)
+                }
+            }
+        })
+        
+        self.pushNotifications.connect()
+
         let statusBarHeight = UIApplication.shared.statusBarFrame.height
         let insets = UIEdgeInsets(top: statusBarHeight, left: 0, bottom: 0, right: 0)
         tableView.scrollIndicatorInsets = insets

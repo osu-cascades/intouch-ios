@@ -1,11 +1,11 @@
 
 import UIKit
-import PushNotifications
+import PusherSwift
 
 class LoginVC: UIViewController, UITextFieldDelegate {
     
     var allNotifications: AllNotifications!
-    var pushNotifications = PushNotifications.shared
+    var pushNotifications: Pusher! = nil
     
     //MARK: actions
     @IBAction func dismissKeyboard(_ sender: UITapGestureRecognizer) {
@@ -88,6 +88,17 @@ class LoginVC: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         self.usernameTf.delegate = self
         self.passwordTf.delegate = self
+        
+        let options = PusherClientOptions(
+            host: .cluster("us2")
+        )
+        
+        self.pushNotifications = Pusher(
+            key: "9d82b24b0c3b8eaf2b9f",
+            options: options
+        )
+        
+        self.pushNotifications.connect()
     }
     
     //MARK: outlets

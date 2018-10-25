@@ -1,12 +1,16 @@
 PODS:
-  - PushNotifications (0.10.7)
+  - PusherSwift (5.1.1)
 
 DEPENDENCIES:
-  - PushNotifications
+  - PusherSwift (~> 5.1.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - PusherSwift
 
 SPEC CHECKSUMS:
-  PushNotifications: 2e3df1e301e19ae2a100267f8387da5fc471ecc7
+  PusherSwift: de9238b6b9faec5275d452e5f43ce9c82b78731e
 
-PODFILE CHECKSUM: 2ce21eb03bab16c4d00a75ae0dca9b2e192dc278
+PODFILE CHECKSUM: a9157666cb06665b2e8a9da2a87ffc07061858fd
 
-COCOAPODS: 1.4.0
+COCOAPODS: 1.5.3

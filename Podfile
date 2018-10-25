@@ -8,7 +8,7 @@ target 'intouch' do
   # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
   use_frameworks!
 
-  pod 'PushNotifications'
+  pod 'PusherSwift', '~> 5.1.1'
 
   # Pods for intouch
 
