@@ -128,6 +128,7 @@ class NotificationsViewController: UITableViewController {
                 print(data)
                 let notification = self.allNotifications.createNotification(title: data["title"] as! String, from: data["from"] as! String, message: data["body"] as! String, datetime: data["datetime"] as! String)
                 self.allNotifications.recvNotifications.append(notification!)
+                self.addNewNotification(title: data["title"] as! String, from: data["from"] as! String, message: data["body"] as! String, datetime: data["datetime"] as! String)
                 if let message = data["body"] as? String {
                     print(message)
                 }
