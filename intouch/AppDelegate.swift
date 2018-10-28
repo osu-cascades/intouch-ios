@@ -31,8 +31,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             key: "9d82b24b0c3b8eaf2b9f",
             options: options
         )
-        
         self.pushNotifications.connect()
+      
         
         let loggedinStatus: String? = UserDefaults.standard.string(forKey: "LOGGED_IN")
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)

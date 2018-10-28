@@ -54,6 +54,16 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         
         // save username, password, usertype
         Settings.setUsernamePasswordUserType(username: username!, password: password!, userType: userType!)
+        let options = PusherClientOptions(
+            host: .cluster("us2")
+        )
+        
+        self.pushNotifications = Pusher(
+            key: "9d82b24b0c3b8eaf2b9f",
+            options: options
+        )
+        
+        self.pushNotifications.connect()
         
         // switch view controllers
         let controllerId = "TabBar"
@@ -89,16 +99,6 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         self.usernameTf.delegate = self
         self.passwordTf.delegate = self
         
-        let options = PusherClientOptions(
-            host: .cluster("us2")
-        )
-        
-        self.pushNotifications = Pusher(
-            key: "9d82b24b0c3b8eaf2b9f",
-            options: options
-        )
-        
-        self.pushNotifications.connect()
     }
     
     //MARK: outlets
