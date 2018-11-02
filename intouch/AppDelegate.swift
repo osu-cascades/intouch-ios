@@ -11,7 +11,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     let allNotifications = AllNotifications()
     var pushNotifications = PushNotifications.shared
-    let INSTANCE_ID: String = "9313976c-3ca4-4a1c-9538-1627280923f4"
+    let INSTANCE_ID: String = "d9585a0d-3255-4f45-9f7f-7fb5c52afe0a"
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -26,6 +26,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.pushNotifications.start(instanceId: INSTANCE_ID)
         self.pushNotifications.registerForRemoteNotifications()
+        try? self.pushNotifications.subscribe(interest: "\(Settings.getUsername())")
         
         let loggedinStatus: String? = UserDefaults.standard.string(forKey: "LOGGED_IN")
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -59,9 +60,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // alert must have title and body as keys
             let alert = aps["alert"] as! [String: AnyObject]
             let body = alert["body"] as! String
-            let title = alert["title"] as! String
-            let from = alert["from"] as! String
-            let datetime = alert["datetime"] as! String
+            let data = notification["data"] as! [String: AnyObject]
+            let title = data["title"] as! String
+            let from = data["from"] as! String
+            let datetime = data["datetime"] as! String
+            print("title: \(title) body: \(body) sender: \(from) datetime: \(datetime)")
             allNotifications.createNotification(title: title, from: from, message: body, datetime: datetime)
         }
         
@@ -109,9 +112,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
         print("Device Token: \(token)")
 
-        self.pushNotifications.registerDeviceToken(deviceToken) {
-            //try? self.pushNotifications.subscribe(interest: "abilitree_dev")
-        }
+        self.pushNotifications.registerDeviceToken(deviceToken)
     }
     
     func application(_ application: UIApplication,
@@ -125,14 +126,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didReceiveRemoteNotification userInfo: [AnyHashable : Any],
         fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
-        
         let aps = userInfo["aps"] as! [String: AnyObject]
         let alert = aps["alert"] as! [String: AnyObject]
         // must have title and body as keys in alert
         let body = alert["body"] as! String
-        let title = alert["title"] as! String
-        let from = alert["from"] as! String
-        let datetime = alert["datetime"] as! String
+        
+        let data = userInfo["data"] as! [String: AnyObject]
+        let title = data["title"] as! String
+        let from = data["from"] as! String
+        let datetime = data["datetime"] as! String
+        
+        print("title: \(title) body: \(body) sender: \(from) datetime: \(datetime)")
 #if RELEASE
         let tabBarController = window!.rootViewController as! UITabBarController
 

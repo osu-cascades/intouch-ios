@@ -112,6 +112,7 @@ class NotificationsViewController: UITableViewController {
         super.viewDidLoad()
         let username: String = Settings.getUsername()
         try? self.pushNotifications.subscribe(interest: "\(username)")
+        print(self.allNotifications.recvNotifications);
         let statusBarHeight = UIApplication.shared.statusBarFrame.height
         let insets = UIEdgeInsets(top: statusBarHeight, left: 0, bottom: 0, right: 0)
         tableView.scrollIndicatorInsets = insets
