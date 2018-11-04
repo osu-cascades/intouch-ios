@@ -16,6 +16,8 @@ class Settings {
         UserDefaults.standard.set(password, forKey: Keys.password)
         UserDefaults.standard.set(userType, forKey: Keys.userType)
         UserDefaults.standard.set("true", forKey: Keys.loggedIn)
+        UserDefaults.standard.synchronize()
+        
     }
     
     class func clearUsernamePasswordUserType() {

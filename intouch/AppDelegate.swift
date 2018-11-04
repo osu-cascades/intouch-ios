@@ -26,7 +26,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         self.pushNotifications.start(instanceId: INSTANCE_ID)
         self.pushNotifications.registerForRemoteNotifications()
-        try? self.pushNotifications.subscribe(interest: "\(Settings.getUsername())")
         
         let loggedinStatus: String? = UserDefaults.standard.string(forKey: "LOGGED_IN")
         let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
@@ -44,7 +43,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         
         if loggedinStatus == "true" {
+            try? self.pushNotifications.subscribe(interest: "\(Settings.getUsername())")
             self.window?.rootViewController = tabBarController
+            
         } else {
             let controllerId: String = "Login"
             let loginViewController: LoginVC = storyboard.instantiateViewController(withIdentifier: controllerId) as! LoginVC

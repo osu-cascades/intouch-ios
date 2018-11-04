@@ -63,6 +63,7 @@ class LoginVC: UIViewController, UITextFieldDelegate {
         let recvVC: NotificationsViewController = (tabBarController.viewControllers![0] as! UINavigationController).viewControllers[0] as! NotificationsViewController
         recvVC.allNotifications = self.allNotifications
         recvVC.pushNotifications = self.pushNotifications
+        try? recvVC.pushNotifications.subscribe(interest: "\(Settings.getUsername())")
         
         self.present(tabBarController, animated: true, completion: nil)
     }
