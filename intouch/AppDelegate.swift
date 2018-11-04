@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var pushNotifications = PushNotifications.shared
     let INSTANCE_ID: String = "d9585a0d-3255-4f45-9f7f-7fb5c52afe0a"
     
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -127,6 +128,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ application: UIApplication,
         didReceiveRemoteNotification userInfo: [AnyHashable : Any],
         fetchCompletionHandler completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        
+        
         let aps = userInfo["aps"] as! [String: AnyObject]
         let alert = aps["alert"] as! [String: AnyObject]
         // must have title and body as keys in alert
@@ -148,10 +151,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         } else {
             allNotifications.createNotification(title: title, from: from, message: body, datetime: datetime)
         }
+        NotificationCenter.default.postNotification(name: .didReceiveNotification, object: nil)
 #endif
         
 #if DEBUG
         allNotifications.createNotification(title: title, from: from, message: body, datetime: datetime)
+        NotificationCenter.default.post(name: NSNotification.Name("reloadTable"), object: nil)
 #endif
     }
 }

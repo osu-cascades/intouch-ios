@@ -8,6 +8,7 @@ class NotificationsViewController: UITableViewController {
     var allNotifications: AllNotifications!
     var pushNotifications = PushNotifications.shared
     
+    
     //MARK: actions
     @IBAction func logout(_ sender: Any) {
         
@@ -44,6 +45,10 @@ class NotificationsViewController: UITableViewController {
         self.present(loginViewController, animated: true, completion: nil)
     }
     
+    @objc func recievedNewNotification(){
+        tableView.reloadData()
+    }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         switch segue.identifier {
         case "showNotification"?:
@@ -72,7 +77,7 @@ class NotificationsViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
+    
         let cell = tableView.dequeueReusableCell(withIdentifier: "NotificationCell", for: indexPath) as! NotificationCell
         
         let notification = allNotifications.recvNotifications[indexPath.row]
@@ -110,6 +115,8 @@ class NotificationsViewController: UITableViewController {
     //MARK: lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(self.recievedNewNotification), name: NSNotification.Name("reloadTable"), object: nil)
+        
         let username: String = Settings.getUsername()
         try? self.pushNotifications.subscribe(interest: "\(username)")
         print(self.allNotifications.recvNotifications);
