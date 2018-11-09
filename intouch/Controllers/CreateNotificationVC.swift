@@ -83,6 +83,10 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
         self.titleTfO.delegate = self
         self.groupPv.delegate = self
         
+        let tap = UITapGestureRecognizer(target: self.view, action: Selector("endEditing:"))
+        tap.cancelsTouchesInView = false
+        self.view.addGestureRecognizer(tap)
+        
         let usertype: String? = Settings.getUserType()
         
         if usertype == "client" {
