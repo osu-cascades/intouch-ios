@@ -45,7 +45,6 @@
 		93BE12B5209D418D004408C2 /* CreateNotificationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BE12B4209D418D004408C2 /* CreateNotificationViewControllerTests.swift */; };
 		93FC73502071DFB0003A4073 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FC734F2071DFB0003A4073 /* LoginVC.swift */; };
 		EBB7EF0B219D35CA00DC1C0A /* ReplyToSenderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB7EF0A219D35CA00DC1C0A /* ReplyToSenderVC.swift */; };
-		EBB7EF0D219D376500DC1C0A /* Controllers in Resources */ = {isa = PBXBuildFile; fileRef = EBB7EF0C219D376500DC1C0A /* Controllers */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,7 +104,6 @@
 		B56A2011A25453979B83CCB1 /* Pods_intouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB29EDB279DE836979266CA /* Pods-intouchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intouchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-intouchTests/Pods-intouchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EBB7EF0A219D35CA00DC1C0A /* ReplyToSenderVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReplyToSenderVC.swift; sourceTree = "<group>"; };
-		EBB7EF0C219D376500DC1C0A /* Controllers */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Controllers; sourceTree = "<group>"; };
 		F7786568FD2455EB7E36A223 /* Pods-intouchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intouchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-intouchUITests/Pods-intouchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -216,7 +214,6 @@
 				93FC734F2071DFB0003A4073 /* LoginVC.swift */,
 				9347D6A820757E590006E584 /* CreateNotificationVC.swift */,
 				EBB7EF0A219D35CA00DC1C0A /* ReplyToSenderVC.swift */,
-				EBB7EF0C219D376500DC1C0A /* Controllers */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -400,7 +397,6 @@
 			files = (
 				93916AB9208FA7160006B7DA /* fonts in Resources */,
 				93916ABD208FB09E0006B7DA /* logo-no-tag.png in Resources */,
-				EBB7EF0D219D376500DC1C0A /* Controllers in Resources */,
 				93782A4C202D425900E69E66 /* LaunchScreen.storyboard in Resources */,
 				93782A49202D425900E69E66 /* Assets.xcassets in Resources */,
 				93782A47202D425900E69E66 /* Main.storyboard in Resources */,

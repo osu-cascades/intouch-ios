@@ -26,16 +26,16 @@
                                 <rect key="frame" x="8" y="74" width="304" height="393"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qpx-DD-U3c">
-                                        <rect key="frame" x="0.0" y="0.0" width="304" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="304" height="17"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Y7-PP-Ljg">
-                                                <rect key="frame" x="0.0" y="0.0" width="50.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="50.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A3G-hT-npV">
-                                                <rect key="frame" x="58.5" y="0.0" width="245.5" height="30"/>
+                                                <rect key="frame" x="58.5" y="0.0" width="245.5" height="17"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -43,16 +43,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QIU-6w-oAh">
-                                        <rect key="frame" x="0.0" y="38" width="304" height="30"/>
+                                        <rect key="frame" x="0.0" y="25" width="304" height="17"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zT6-Sf-DaX">
-                                                <rect key="frame" x="0.0" y="0.0" width="50.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="50.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oip-u2-eUk">
-                                                <rect key="frame" x="58.5" y="0.0" width="245.5" height="30"/>
+                                                <rect key="frame" x="58.5" y="0.0" width="245.5" height="17"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -60,16 +60,16 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CEH-wB-gvG">
-                                        <rect key="frame" x="0.0" y="76" width="304" height="30"/>
+                                        <rect key="frame" x="0.0" y="50" width="304" height="17"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szh-Vd-VlG">
-                                                <rect key="frame" x="0.0" y="0.0" width="50.5" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="50.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tgQ-kU-BpF">
-                                                <rect key="frame" x="58.5" y="0.0" width="245.5" height="30"/>
+                                                <rect key="frame" x="58.5" y="0.0" width="245.5" height="17"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -77,13 +77,26 @@
                                         </subviews>
                                     </stackView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Message:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzz-qs-oLX">
-                                        <rect key="frame" x="0.0" y="114" width="304" height="105"/>
+                                        <rect key="frame" x="0.0" y="75" width="304" height="17"/>
                                         <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <textField opaque="NO" contentMode="center" horizontalHuggingPriority="280" placeholderIntrinsicWidth="304" placeholderIntrinsicHeight="86" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oN9-mN-Sh4">
+                                        <rect key="frame" x="0.0" y="100" width="304" height="86"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sth-wk-KPC">
+                                        <rect key="frame" x="0.0" y="194" width="304" height="30"/>
+                                        <state key="normal" title="Send"/>
+                                        <connections>
+                                            <action selector="sendReply:" destination="Kl0-Xl-dOu" eventType="touchUpInside" id="fOt-Uo-pct"/>
+                                        </connections>
+                                    </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yso-VJ-bLl">
-                                        <rect key="frame" x="0.0" y="227" width="304" height="128"/>
+                                        <rect key="frame" x="0.0" y="232" width="304" height="123"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -94,7 +107,7 @@
                                             <color key="titleColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="PTT-Wu-ILh" kind="show" id="NK7-mG-BQb"/>
+                                            <action selector="showReplyTextField:" destination="Kl0-Xl-dOu" eventType="touchUpInside" id="zNY-4E-vQ8"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -119,7 +132,9 @@
                         <outlet property="dateField" destination="Oip-u2-eUk" id="bEg-Bs-C65"/>
                         <outlet property="fromField" destination="tgQ-kU-BpF" id="vMe-og-Ib9"/>
                         <outlet property="messageView" destination="yso-VJ-bLl" id="Shd-BC-PBE"/>
-                        <outlet property="replyToSender" destination="36q-3j-f2v" id="g8J-cT-iED"/>
+                        <outlet property="replyTextField" destination="oN9-mN-Sh4" id="jaR-at-Ela"/>
+                        <outlet property="replyToSenderBtn" destination="36q-3j-f2v" id="eEN-Jo-ZZa"/>
+                        <outlet property="sendBtn" destination="Sth-wk-KPC" id="cD4-JG-iiF"/>
                         <outlet property="titleField" destination="A3G-hT-npV" id="LCU-aw-m6u"/>
                     </connections>
                 </viewController>
