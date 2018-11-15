@@ -8,7 +8,8 @@ class SingleRecvNotificationVC: UIViewController {
     @IBOutlet var dateField: UITextField!
     @IBOutlet var fromField: UITextField!
     @IBOutlet var messageView: UITextView!
-
+    @IBOutlet weak var replyToSender: UIButton!
+    
     //MARK: Variables
     var notification: Notification! {
         didSet {
