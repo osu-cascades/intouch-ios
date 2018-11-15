@@ -66,8 +66,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let title = data["title"] as! String
             let from = data["from"] as! String
             let datetime = data["datetime"] as! String
-            print("title: \(title) body: \(body) sender: \(from) datetime: \(datetime)")
-            allNotifications.createNotification(title: title, from: from, message: body, datetime: datetime)
+            let fromUsername = data["from_username"] as! String
+            print("title: \(title) body: \(body) sender: \(from) datetime: \(datetime) fromUsername: \(fromUsername)")
+            allNotifications.createNotification(title: title, from: from, message: body, datetime: datetime, fromUsername: fromUsername)
         }
         
         return true
@@ -139,8 +140,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let title = data["title"] as! String
         let from = data["from"] as! String
         let datetime = data["datetime"] as! String
-        
-        print("title: \(title) body: \(body) sender: \(from) datetime: \(datetime)")
+        let fromUsername = data["from_username"] as! String
+        print("title: \(title) body: \(body) sender: \(from) datetime: \(datetime) fromUsername: \(fromUsername)")
 #if RELEASE
         let tabBarController = window!.rootViewController as! UITabBarController
 
@@ -155,7 +156,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 #endif
         
 #if DEBUG
-        allNotifications.createNotification(title: title, from: from, message: body, datetime: datetime)
+        allNotifications.createNotification(title: title, from: from, message: body, datetime: datetime, fromUsername: fromUsername)
         NotificationCenter.default.post(name: NSNotification.Name("reloadTable"), object: nil)
 #endif
     }

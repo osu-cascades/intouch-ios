@@ -6,12 +6,14 @@ class Notification: NSObject, NSCoding {
     var message: String
     var from: String
     var datetime: String
+    var fromUsername: String
     
-    init(title: String, from: String, message: String, datetime: String) {
+    init(title: String, from: String, message: String, datetime: String, fromUsername: String) {
         self.title = title
         self.message = message
         self.from = from
         self.datetime = datetime
+        self.fromUsername = fromUsername
         super.init()
     }
     
@@ -28,10 +30,10 @@ class Notification: NSObject, NSCoding {
         
             //let randomId = Int(arc4random_uniform(1000))
             
-            self.init(title: randomTitle, from: "no author", message: randomMessage, datetime: "")
+            self.init(title: randomTitle, from: "no author", message: randomMessage, datetime: "", fromUsername: "")
             
         } else {
-            self.init(title: "", from: "no author", message:"", datetime: "")
+            self.init(title: "", from: "no author", message:"", datetime: "", fromUsername: "")
         }
     }
     
@@ -40,6 +42,7 @@ class Notification: NSObject, NSCoding {
         datetime = aDecoder.decodeObject(forKey: "datetime") as! String
         from = aDecoder.decodeObject(forKey: "from") as! String
         message = aDecoder.decodeObject(forKey: "message") as! String
+        fromUsername = aDecoder.decodeObject(forKey: "fromUsername") as! String
         
         super.init()
         
