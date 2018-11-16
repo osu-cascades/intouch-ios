@@ -71,6 +71,7 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
         return false
     }
     
+   
     //MARK: lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,23 +82,15 @@ class createNotificationVC: UIViewController, UITextFieldDelegate, UIPickerViewD
         messageTvO!.layer.cornerRadius = 5
         
         self.titleTfO.delegate = self
+        self.groupPv.reloadAllComponents()
         self.groupPv.delegate = self
         
         let tap = UITapGestureRecognizer(target: self.view, action: Selector("endEditing:"))
         tap.cancelsTouchesInView = false
         self.view.addGestureRecognizer(tap)
         
-        let usertype: String? = Settings.getUserType()
+       
         
-        if usertype == "client" {
-            groups = ["Art", "Cross-Disability", "Healing Pathways", "Journey"]
-        } else {
-            groups = ["All", "Clients", "Staff", "Art", "Cross-Disability", "Healing Pathways", "Journey"]
-        }
-        let username: String? = Settings.getUsername()
-        if username == "testuser" || username == "admin" {
-            groups.insert("test group", at: 0)
-        }
         
     }
     

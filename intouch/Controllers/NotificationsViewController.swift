@@ -61,6 +61,7 @@ class NotificationsViewController: UITableViewController {
             preconditionFailure("Unexpected segue identifier")
         }
     }
+
     
     //MARK: outlets
     @IBOutlet weak var logoutBrBtn: UIBarButtonItem!
@@ -118,6 +119,7 @@ class NotificationsViewController: UITableViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(self.recievedNewNotification), name: NSNotification.Name("reloadTable"), object: nil)
         
         let username: String = Settings.getUsername()
+          let password: String? = Settings.getPassword()
         try? self.pushNotifications.subscribe(interest: "\(username)")
         print(self.allNotifications.recvNotifications);
         let statusBarHeight = UIApplication.shared.statusBarFrame.height
@@ -125,11 +127,44 @@ class NotificationsViewController: UITableViewController {
         tableView.scrollIndicatorInsets = insets
         tableView.rowHeight = 65
         
+        #if DEBUG
+        let getGroupUrl = "https://abilitree-intouch-staging.herokuapp.com/get_groups"
+        #endif
+        
+        #if RELEASE
+        let getGroupUrl = "https://abilitree-intouch.herokuapp.com/get_groups"
+        #endif
+        
+        let postString = "username=\(username)&password=\(password!)"
+        var request = URLRequest(url: URL(string: getGroupUrl)!)
+        request.httpMethod = "POST"
+        request.httpBody = postString.data(using: .utf8)
+        
+        let task = URLSession.shared.dataTask(with: request) {(data, response, error) in
+            guard let data = data else { return }
+            
+            do{
+                let json = try JSONSerialization.jsonObject(with: data)
+                let groups = json as! [String]
+                print(groups)
+                let createTab = self.tabBarController?.viewControllers?[1] as! createNotificationVC
+                createTab.groups = groups
+                
+                
+            } catch let parsingError {
+                print("Error", parsingError)
+            }
+        }
+        
+        task.resume()
+        
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         tableView.reloadData()
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
