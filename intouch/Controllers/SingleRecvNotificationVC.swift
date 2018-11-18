@@ -4,6 +4,13 @@ import UIKit
 class SingleRecvNotificationVC: UIViewController {
     
     // MARK: Outlets
+    #if DEBUG
+    private let pushUrlStr = "https://abilitree-intouch-staging.herokuapp.com/reply_to_sender"
+    #endif
+    
+    #if RELEASE
+    private let pushUrlStr = "https://abilitree-intouch.herokuapp.com/reply_to_sender"
+    #endif
     @IBOutlet var titleField: UITextField!
     @IBOutlet var dateField: UITextField!
     @IBOutlet var fromField: UITextField!
@@ -20,14 +27,22 @@ class SingleRecvNotificationVC: UIViewController {
     }
 
     @IBAction func sendReply(_ sender: Any) {
-//        var request = URLRequest(url: URL(string: pushUrlStr)!)
-//        request.httpMethod = "POST"
-//        
-//        let username: String? = Settings.getUsername()
-//        let password: String? = Settings.getPassword()
-//        //let group = groups[groupPv.selectedRow(inComponent: 0)]
-//        let postString = "username=\(username!)&password=\(password!)&title=\(title!)&body=\(message!)&group=\(to!)"
-//        request.httpBody = postString.data(using: .utf8)
+        let message: String? = replyTextField.text
+        let sender = self.notification.fromUsername
+        var request = URLRequest(url: URL(string: pushUrlStr)!)
+        request.httpMethod = "POST"
+        
+        let username: String? = Settings.getUsername()
+        let password: String? = Settings.getPassword()
+        //let group = groups[groupPv.selectedRow(inComponent: 0)]
+        let postString = "username=\(username!)&password=\(password!)&body=\(message!)&sender=\(sender)"
+        request.httpBody = postString.data(using: .utf8)
+        let task = URLSession.shared.dataTask(with: request) {(data, response, error) in
+            guard let data = data else { return }
+            
+        }
+        
+        task.resume()
         sendBtn.isHidden.toggle()
         replyTextField.isHidden.toggle()
     }

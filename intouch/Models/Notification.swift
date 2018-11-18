@@ -53,6 +53,7 @@ class Notification: NSObject, NSCoding {
         aCoder.encode(datetime, forKey: "datetime")
         aCoder.encode(from, forKey: "from")
         aCoder.encode(message, forKey: "message")
+        aCoder.encode(fromUsername, forKey: "fromUsername")
     }
     
 }
