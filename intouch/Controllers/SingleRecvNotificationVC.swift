@@ -17,7 +17,7 @@ class SingleRecvNotificationVC: UIViewController {
     @IBOutlet var messageView: UITextView!
     @IBOutlet weak var replyToSenderBtn: UIButton!
     @IBOutlet weak var replyTextField: UITextField!
-   
+    @IBOutlet weak var replyToAllbtn: UIButton!
     @IBOutlet weak var sendBtn: UIButton!
     
     @IBAction func showReplyTextField(_ sender: Any) {
@@ -45,6 +45,10 @@ class SingleRecvNotificationVC: UIViewController {
         task.resume()
         sendBtn.isHidden.toggle()
         replyTextField.isHidden.toggle()
+    }
+    
+    @IBAction func replyAll(_ sender: Any) {
+        let createTab = self.tabBarController?.viewControllers?[1] as! createNotificationVC
     }
     
     //MARK: Variables

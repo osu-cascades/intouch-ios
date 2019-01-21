@@ -7,13 +7,16 @@ class Notification: NSObject, NSCoding {
     var from: String
     var datetime: String
     var fromUsername: String
+    var groupRecipients: String
     
-    init(title: String, from: String, message: String, datetime: String, fromUsername: String) {
+    init(title: String, from: String, message: String, datetime: String, fromUsername: String, groupRecipients: String) {
         self.title = title
         self.message = message
         self.from = from
         self.datetime = datetime
         self.fromUsername = fromUsername
+        self.groupRecipients = groupRecipients
+        
         super.init()
     }
     
@@ -30,10 +33,10 @@ class Notification: NSObject, NSCoding {
         
             //let randomId = Int(arc4random_uniform(1000))
             
-            self.init(title: randomTitle, from: "no author", message: randomMessage, datetime: "", fromUsername: "")
+            self.init(title: randomTitle, from: "no author", message: randomMessage, datetime: "", fromUsername: "", groupRecipients: "")
             
         } else {
-            self.init(title: "", from: "no author", message:"", datetime: "", fromUsername: "")
+            self.init(title: "", from: "no author", message:"", datetime: "", fromUsername: "", groupRecipients: "")
         }
     }
     
@@ -43,9 +46,9 @@ class Notification: NSObject, NSCoding {
         from = aDecoder.decodeObject(forKey: "from") as! String
         message = aDecoder.decodeObject(forKey: "message") as! String
         fromUsername = aDecoder.decodeObject(forKey: "fromUsername") as! String
+        groupRecipients = aDecoder.decodeObject(forKey: "groupRecipients") as! String
         
         super.init()
-        
     }
     
     func encode(with aCoder: NSCoder) {
@@ -54,6 +57,7 @@ class Notification: NSObject, NSCoding {
         aCoder.encode(from, forKey: "from")
         aCoder.encode(message, forKey: "message")
         aCoder.encode(fromUsername, forKey: "fromUsername")
+        aCoder.encode(groupRecipients, forKey: "groupRecipients")
     }
     
 }

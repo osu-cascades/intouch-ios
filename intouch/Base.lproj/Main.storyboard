@@ -96,11 +96,18 @@
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yso-VJ-bLl">
-                                        <rect key="frame" x="0.0" y="232" width="304" height="123"/>
+                                        <rect key="frame" x="0.0" y="232" width="304" height="85"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf9-Oj-yMN" userLabel="Reply To All Btn">
+                                        <rect key="frame" x="0.0" y="325" width="304" height="30"/>
+                                        <state key="normal" title="Reply To All"/>
+                                        <connections>
+                                            <action selector="replyAll:" destination="Kl0-Xl-dOu" eventType="touchUpInside" id="EXC-Ol-CJ1"/>
+                                        </connections>
+                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36q-3j-f2v">
                                         <rect key="frame" x="0.0" y="363" width="304" height="30"/>
                                         <state key="normal" title="Reply to Sender">
@@ -133,6 +140,7 @@
                         <outlet property="fromField" destination="tgQ-kU-BpF" id="vMe-og-Ib9"/>
                         <outlet property="messageView" destination="yso-VJ-bLl" id="Shd-BC-PBE"/>
                         <outlet property="replyTextField" destination="oN9-mN-Sh4" id="jaR-at-Ela"/>
+                        <outlet property="replyToAllbtn" destination="hf9-Oj-yMN" id="Xdh-z3-71K"/>
                         <outlet property="replyToSenderBtn" destination="36q-3j-f2v" id="eEN-Jo-ZZa"/>
                         <outlet property="sendBtn" destination="Sth-wk-KPC" id="cD4-JG-iiF"/>
                         <outlet property="titleField" destination="A3G-hT-npV" id="LCU-aw-m6u"/>
