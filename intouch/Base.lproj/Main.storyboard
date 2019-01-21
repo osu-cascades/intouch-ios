@@ -25,16 +25,16 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bqi-Zk-BLf">
                                 <rect key="frame" x="8" y="74" width="304" height="393"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qpx-DD-U3c">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qpx-DD-U3c">
                                         <rect key="frame" x="0.0" y="0.0" width="304" height="17"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Y7-PP-Ljg">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Title:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Y7-PP-Ljg">
                                                 <rect key="frame" x="0.0" y="0.0" width="50.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A3G-hT-npV">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A3G-hT-npV">
                                                 <rect key="frame" x="58.5" y="0.0" width="245.5" height="17"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
@@ -42,16 +42,16 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QIU-6w-oAh">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="QIU-6w-oAh">
                                         <rect key="frame" x="0.0" y="25" width="304" height="17"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zT6-Sf-DaX">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Date: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zT6-Sf-DaX">
                                                 <rect key="frame" x="0.0" y="0.0" width="50.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oip-u2-eUk">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Oip-u2-eUk">
                                                 <rect key="frame" x="58.5" y="0.0" width="245.5" height="17"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
@@ -59,16 +59,16 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CEH-wB-gvG">
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="CEH-wB-gvG">
                                         <rect key="frame" x="0.0" y="50" width="304" height="17"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szh-Vd-VlG">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="From:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="szh-Vd-VlG">
                                                 <rect key="frame" x="0.0" y="0.0" width="50.5" height="17"/>
                                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tgQ-kU-BpF">
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tgQ-kU-BpF">
                                                 <rect key="frame" x="58.5" y="0.0" width="245.5" height="17"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
@@ -88,33 +88,51 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sth-wk-KPC">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2m4-5V-hYt">
                                         <rect key="frame" x="0.0" y="194" width="304" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sth-wk-KPC">
+                                        <rect key="frame" x="0.0" y="232" width="304" height="30"/>
                                         <state key="normal" title="Send"/>
                                         <connections>
                                             <action selector="sendReply:" destination="Kl0-Xl-dOu" eventType="touchUpInside" id="fOt-Uo-pct"/>
                                         </connections>
                                     </button>
+                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGv-Zx-gI4">
+                                        <rect key="frame" x="0.0" y="266" width="304" height="0.0"/>
+                                        <state key="normal" title="Send All"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wP-ZT-Qgp">
+                                        <rect key="frame" x="0.0" y="270" width="304" height="30"/>
+                                        <state key="normal" title="Reply All"/>
+                                        <connections>
+                                            <action selector="sendAllReply:" destination="Kl0-Xl-dOu" eventType="touchUpInside" id="UGQ-HD-7Lc"/>
+                                        </connections>
+                                    </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yso-VJ-bLl">
-                                        <rect key="frame" x="0.0" y="232" width="304" height="85"/>
+                                        <rect key="frame" x="0.0" y="308" width="304" height="9"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf9-Oj-yMN" userLabel="Reply To All Btn">
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="241" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36q-3j-f2v">
                                         <rect key="frame" x="0.0" y="325" width="304" height="30"/>
-                                        <state key="normal" title="Reply To All"/>
-                                        <connections>
-                                            <action selector="replyAll:" destination="Kl0-Xl-dOu" eventType="touchUpInside" id="EXC-Ol-CJ1"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="36q-3j-f2v">
-                                        <rect key="frame" x="0.0" y="363" width="304" height="30"/>
+                                        <rect key="contentStretch" x="0.0" y="0.0" width="0.75" height="1"/>
                                         <state key="normal" title="Reply to Sender">
                                             <color key="titleColor" red="0.55634254220000001" green="0.97934550050000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="showReplyTextField:" destination="Kl0-Xl-dOu" eventType="touchUpInside" id="zNY-4E-vQ8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hf9-Oj-yMN" userLabel="Reply To All Btn">
+                                        <rect key="frame" x="0.0" y="363" width="304" height="30"/>
+                                        <state key="normal" title="Reply To All"/>
+                                        <connections>
+                                            <action selector="replyAll:" destination="Kl0-Xl-dOu" eventType="touchUpInside" id="EXC-Ol-CJ1"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -139,9 +157,11 @@
                         <outlet property="dateField" destination="Oip-u2-eUk" id="bEg-Bs-C65"/>
                         <outlet property="fromField" destination="tgQ-kU-BpF" id="vMe-og-Ib9"/>
                         <outlet property="messageView" destination="yso-VJ-bLl" id="Shd-BC-PBE"/>
+                        <outlet property="replyAllTextField" destination="2m4-5V-hYt" id="muH-mU-8dN"/>
                         <outlet property="replyTextField" destination="oN9-mN-Sh4" id="jaR-at-Ela"/>
                         <outlet property="replyToAllbtn" destination="hf9-Oj-yMN" id="Xdh-z3-71K"/>
                         <outlet property="replyToSenderBtn" destination="36q-3j-f2v" id="eEN-Jo-ZZa"/>
+                        <outlet property="sendAllReplyBtn" destination="9wP-ZT-Qgp" id="4Nb-2s-OSx"/>
                         <outlet property="sendBtn" destination="Sth-wk-KPC" id="cD4-JG-iiF"/>
                         <outlet property="titleField" destination="A3G-hT-npV" id="LCU-aw-m6u"/>
                     </connections>

@@ -17,12 +17,15 @@ class SingleRecvNotificationVC: UIViewController {
     @IBOutlet var messageView: UITextView!
     @IBOutlet weak var replyToSenderBtn: UIButton!
     @IBOutlet weak var replyTextField: UITextField!
+    @IBOutlet weak var replyAllTextField: UITextField!
     @IBOutlet weak var replyToAllbtn: UIButton!
     @IBOutlet weak var sendBtn: UIButton!
+    @IBOutlet weak var sendAllReplyBtn: UIButton!
     
     @IBAction func showReplyTextField(_ sender: Any) {
         sendBtn.isHidden.toggle()
         replyTextField.isHidden.toggle()
+        replyTextField.isEnabled.toggle()
         replyTextField.becomeFirstResponder()
     }
 
@@ -45,10 +48,22 @@ class SingleRecvNotificationVC: UIViewController {
         task.resume()
         sendBtn.isHidden.toggle()
         replyTextField.isHidden.toggle()
+        replyTextField.isEnabled.toggle()
     }
     
     @IBAction func replyAll(_ sender: Any) {
+        replyAllTextField.isEnabled.toggle()
+        replyAllTextField.isHidden.toggle()
+        replyAllTextField.becomeFirstResponder()
         let createTab = self.tabBarController?.viewControllers?[1] as! createNotificationVC
+    }
+    @IBAction func sendAllReply(_ sender: Any) {
+        let message: String? = replyAllTextField.text
+        
+        
+        replyToAllbtn.isHidden.toggle()
+        replyAllTextField.isEnabled.toggle()
+        replyAllTextField.isHidden.toggle()
     }
     
     //MARK: Variables
@@ -61,13 +76,17 @@ class SingleRecvNotificationVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        replyTextField.isEnabled = false
+        replyAllTextField.isEnabled = false
         replyTextField.isHidden = true
+        replyAllTextField.isHidden = true
         sendBtn.isHidden = true
+        sendAllReplyBtn.isHidden = true
         titleField.text = notification.title
         dateField.text = notification.datetime
         fromField.text = notification.from
         messageView.text = notification.message
-        
+        print(self.notification.groupRecipients)
         titleField.isUserInteractionEnabled = false
         dateField.isUserInteractionEnabled = false
         fromField.isUserInteractionEnabled = false

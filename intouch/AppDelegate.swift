@@ -67,8 +67,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let from = data["from"] as! String
             let datetime = data["datetime"] as! String
             let fromUsername = data["from_username"] as! String
-            print("title: \(title) body: \(body) sender: \(from) datetime: \(datetime) fromUsername: \(fromUsername)")
-            allNotifications.createNotification(title: title, from: from, message: body, datetime: datetime, fromUsername: fromUsername)
+            let groupRecipients = data["group_recipients"] as! [String]
+            print("title: \(title) body: \(body) sender: \(from) datetime: \(datetime) fromUsername: \(fromUsername) groupRecipients: \(groupRecipients)")
+            allNotifications.createNotification(title: title, from: from, message: body, datetime: datetime, fromUsername: fromUsername, groupRecipients: groupRecipients)
         }
         
         return true
@@ -141,7 +142,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let from = data["from"] as! String
         let datetime = data["datetime"] as! String
         let fromUsername = data["from_username"] as! String
-        print("title: \(title) body: \(body) sender: \(from) datetime: \(datetime) fromUsername: \(fromUsername)")
+        let groupRecipients = data["group_recipients"] as! [String]
+        print("title: \(title) body: \(body) sender: \(from) datetime: \(datetime) fromUsername: \(fromUsername) groupRecipients: \(groupRecipients)")
 #if RELEASE
         let tabBarController = window!.rootViewController as! UITabBarController
 
@@ -156,7 +158,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 #endif
         
 #if DEBUG
-        allNotifications.createNotification(title: title, from: from, message: body, datetime: datetime, fromUsername: fromUsername)
+        allNotifications.createNotification(title: title, from: from, message: body, datetime: datetime, fromUsername: fromUsername, groupRecipients: groupRecipients)
         NotificationCenter.default.post(name: NSNotification.Name("reloadTable"), object: nil)
 #endif
     }

@@ -23,8 +23,8 @@ class NotificationsViewController: UITableViewController {
     }
     
     //MARK: Custom
-    func addNewNotification(title: String, from: String, message: String, datetime: String, fromUsername: String) {
-        let newNotification = allNotifications.createNotification(title: title, from: from, message: message, datetime: datetime, fromUsername: fromUsername)
+    func addNewNotification(title: String, from: String, message: String, datetime: String, fromUsername: String, groupRecipients: [String]) {
+        let newNotification = allNotifications.createNotification(title: title, from: from, message: message, datetime: datetime, fromUsername: fromUsername, groupRecipients: groupRecipients)
         if newNotification != nil {
             if let index = allNotifications.recvNotifications.index(of: newNotification!) {
                 let indexPath = IndexPath(row: index, section: 0)
