@@ -5,11 +5,13 @@ class SingleRecvNotificationVC: UIViewController {
     
     // MARK: Outlets
     #if DEBUG
-    private let pushUrlStr = "https://abilitree-intouch-staging.herokuapp.com/reply_to_sender"
+    private let senderUrlStr = "https://abilitree-intouch-staging.herokuapp.com/reply_to_sender"
+     private let pushUrlStr = "https://abilitree-intouch-staging.herokuapp.com/push"
     #endif
     
     #if RELEASE
-    private let pushUrlStr = "https://abilitree-intouch.herokuapp.com/reply_to_sender"
+    private let senderUrlStr = "https://abilitree-intouch.herokuapp.com/reply_to_sender"
+    private let pushUrlStr = "https://abilitree-intouch.herokuapp.com/push"
     #endif
     @IBOutlet var titleField: UITextField!
     @IBOutlet var dateField: UITextField!
@@ -32,7 +34,7 @@ class SingleRecvNotificationVC: UIViewController {
     @IBAction func sendReply(_ sender: Any) {
         let message: String? = replyTextField.text
         let sender = self.notification.fromUsername
-        var request = URLRequest(url: URL(string: pushUrlStr)!)
+        var request = URLRequest(url: URL(string: senderUrlStr)!)
         request.httpMethod = "POST"
         
         let username: String? = Settings.getUsername()
@@ -52,14 +54,20 @@ class SingleRecvNotificationVC: UIViewController {
     }
     
     @IBAction func replyAll(_ sender: Any) {
+        sendAllReplyBtn.isHidden.toggle()
         replyAllTextField.isEnabled.toggle()
         replyAllTextField.isHidden.toggle()
         replyAllTextField.becomeFirstResponder()
-        let createTab = self.tabBarController?.viewControllers?[1] as! createNotificationVC
+    
     }
     @IBAction func sendAllReply(_ sender: Any) {
+
+        let title = "RE: " + self.notification.title
         let message: String? = replyAllTextField.text
-        
+        for group in self.notification.groupRecipients {
+            print("hey")
+            sendPushRequest(title: title, to: group, message: message)
+        }
         
         replyToAllbtn.isHidden.toggle()
         replyAllTextField.isEnabled.toggle()
@@ -96,6 +104,23 @@ class SingleRecvNotificationVC: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
 
+    }
+    
+    func sendPushRequest(title: String?, to: String?, message: String?) {
+        var request = URLRequest(url: URL(string: pushUrlStr)!)
+        request.httpMethod = "POST"
+        
+        let username: String? = Settings.getUsername()
+        let password: String? = Settings.getPassword()
+        //let group = groups[groupPv.selectedRow(inComponent: 0)]
+        let postString = "username=\(username!)&password=\(password!)&title=\(title!)&body=\(message!)&group=\(to!)"
+        request.httpBody = postString.data(using: .utf8)
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {
+                return
+            }
+        }
+        task.resume()
     }
 
     
