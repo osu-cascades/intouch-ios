@@ -6,12 +6,12 @@ class SingleRecvNotificationVC: UIViewController {
     // MARK: Outlets
     #if DEBUG
     private let senderUrlStr = "https://abilitree-intouch-staging.herokuapp.com/reply_to_sender"
-     private let pushUrlStr = "https://abilitree-intouch-staging.herokuapp.com/push"
+     private let replyAllUrlStr = "https://abilitree-intouch-staging.herokuapp.com/reply_all"
     #endif
     
     #if RELEASE
     private let senderUrlStr = "https://abilitree-intouch.herokuapp.com/reply_to_sender"
-    private let pushUrlStr = "https://abilitree-intouch.herokuapp.com/push"
+    private let replyAllUrlStr = "https://abilitree-intouch.herokuapp.com/reply_all"
     #endif
     @IBOutlet var titleField: UITextField!
     @IBOutlet var dateField: UITextField!
@@ -61,14 +61,10 @@ class SingleRecvNotificationVC: UIViewController {
     
     }
     @IBAction func sendAllReply(_ sender: Any) {
-
-        let title = "RE: " + self.notification.title
         let message: String? = replyAllTextField.text
-        for group in self.notification.groupRecipients {
-            print("hey")
-            sendPushRequest(title: title, to: group, message: message)
-        }
-        
+        let groupRecipients: String? = self.notification.groupRecipients.joined(separator: ", ")
+        print("hey")
+        sendPushRequest(groupRecipients: groupRecipients, message: message)
         replyToAllbtn.isHidden.toggle()
         replyAllTextField.isEnabled.toggle()
         replyAllTextField.isHidden.toggle()
@@ -106,14 +102,15 @@ class SingleRecvNotificationVC: UIViewController {
 
     }
     
-    func sendPushRequest(title: String?, to: String?, message: String?) {
-        var request = URLRequest(url: URL(string: pushUrlStr)!)
+    func sendPushRequest(groupRecipients: String?, message: String?) {
+        var request = URLRequest(url: URL(string: replyAllUrlStr)!)
         request.httpMethod = "POST"
         
         let username: String? = Settings.getUsername()
         let password: String? = Settings.getPassword()
         //let group = groups[groupPv.selectedRow(inComponent: 0)]
-        let postString = "username=\(username!)&password=\(password!)&title=\(title!)&body=\(message!)&group=\(to!)"
+        let postString = "username=\(username!)&password=\(password!)&body=\(message!)&group_recipients=\(groupRecipients!)"
+        print(postString)
         request.httpBody = postString.data(using: .utf8)
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
             guard let data = data, error == nil else {
