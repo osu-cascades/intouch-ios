@@ -150,11 +150,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if tabBarController.selectedIndex == 0 {
             let notificationsViewController = (tabBarController.viewControllers![0] as! UINavigationController).viewControllers[0] as! NotificationsViewController
         notificationsViewController.allNotifications = allNotifications
-        notificationsViewController.addNewNotification(title: title, from: from, message: body, datetime: datetime)
+            notificationsViewController.addNewNotification(title: title, from: from, message: body,datetime: datetime, fromUsername: fromUsername, groupRecipients: groupRecipients)
         } else {
-            allNotifications.createNotification(title: title, from: from, message: body, datetime: datetime)
+            allNotifications.createNotification(title: title, from: from, message: body, datetime: datetime, fromUsername: fromUsername,groupRecipients: groupRecipients )
         }
-        NotificationCenter.default.postNotification(name: .didReceiveNotification, object: nil)
+        NotificationCenter.default.post(name: NSNotification.Name("reloadTable"), object: nil)
 #endif
         
 #if DEBUG
