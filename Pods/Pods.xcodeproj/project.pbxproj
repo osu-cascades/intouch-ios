@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 46;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -76,10 +76,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0430A7583E03779F43A474F291952E14 /* Pods_intouch_dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_intouch_dev.framework; path = "Pods-intouch-dev.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0430A7583E03779F43A474F291952E14 /* Pods_intouch_dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intouch_dev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		04384342F4588B50FC51F8209AD3BB84 /* Pods-intouch-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-intouch-acknowledgements.markdown"; sourceTree = "<group>"; };
 		05D9CF958DBBFF70F00F381BFE72DD7D /* Pods-intouchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-intouchUITests.release.xcconfig"; sourceTree = "<group>"; };
-		06FEF5FEB9950AEAC2AB5C322E1F1E52 /* Pods_intouchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_intouchTests.framework; path = "Pods-intouchTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		06FEF5FEB9950AEAC2AB5C322E1F1E52 /* Pods_intouchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intouchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0980743E792A12ECF36748215B649D9A /* Pods-intouch-dev-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-intouch-dev-umbrella.h"; sourceTree = "<group>"; };
 		0FAE90E4C220711612F577FE883892E7 /* Pods-intouchUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-intouchUITests.modulemap"; sourceTree = "<group>"; };
 		12CF05156A898F3FF2D4BD3B9FB29C0D /* Pods-intouchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-intouchTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -110,9 +110,9 @@
 		56C50343C8D96F4462BB3FD263C3F3CF /* SystemVersion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SystemVersion.swift; path = Sources/SystemVersion.swift; sourceTree = "<group>"; };
 		5A060856A2370DC8D65EBC0C42293C98 /* Pods-intouchTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-intouchTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		5C509BAC85D6459D7250CC5E6F9E5677 /* Pods-intouchUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-intouchUITests-frameworks.sh"; sourceTree = "<group>"; };
-		5E27B577C61163F621D5842A598A89CB /* Pods_intouchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_intouchUITests.framework; path = "Pods-intouchUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E27B577C61163F621D5842A598A89CB /* Pods_intouchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intouchUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F537C81B813BB46417CE81328464EBE /* Pods-intouch-dev-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-intouch-dev-frameworks.sh"; sourceTree = "<group>"; };
-		60FD6DBCA1E3D97A1F14F45CE79E5A79 /* Pods_intouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_intouch.framework; path = "Pods-intouch.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		60FD6DBCA1E3D97A1F14F45CE79E5A79 /* Pods_intouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		660C1DFE4BC3763805136716D49C9A69 /* PusherAlreadyRegisteredError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherAlreadyRegisteredError.swift; path = Sources/PusherAlreadyRegisteredError.swift; sourceTree = "<group>"; };
 		6680A5BBD821A37CBCEEC0826DA073CF /* Instance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Instance.swift; path = Sources/Instance.swift; sourceTree = "<group>"; };
 		6F19C15CEED6C38E97AA5403F8BEF682 /* InterestValidationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterestValidationError.swift; path = Sources/InterestValidationError.swift; sourceTree = "<group>"; };
@@ -122,10 +122,10 @@
 		7B4F1CCFF216A413F82646829A2C86D1 /* PushNotifications-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PushNotifications-umbrella.h"; sourceTree = "<group>"; };
 		8B9696A5B91361E3E9932A6A8D2BCD79 /* Pods-intouch-dev-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-intouch-dev-resources.sh"; sourceTree = "<group>"; };
 		8CF0747B7BCD065F2B1EA46D1551C697 /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Sources/HTTPMethod.swift; sourceTree = "<group>"; };
-		8E6F662FEC1F8DB3C5C41661DF7A94D1 /* PushNotifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PushNotifications.framework; path = PushNotifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E6F662FEC1F8DB3C5C41661DF7A94D1 /* PushNotifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PushNotifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EDD50B1F474B28B0056CC91AFC93C50 /* Pods-intouchTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-intouchTests-umbrella.h"; sourceTree = "<group>"; };
 		9391CA774B413AEC0106530E0A0E0BC3 /* RemoteNotificationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteNotificationType.swift; path = Sources/RemoteNotificationType.swift; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9711053FDB7A03905975D67E0A5AE10E /* Pods-intouch-dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-intouch-dev.debug.xcconfig"; sourceTree = "<group>"; };
 		9CBD9E94FB69480FEEEFD1A778E6AF14 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9F20A068B7BA090DE4914320E6A0741F /* Pods-intouch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-intouch-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -263,7 +263,6 @@
 				56C50343C8D96F4462BB3FD263C3F3CF /* SystemVersion.swift */,
 				EFDC58E9539EB1459F59C7479FA18EEF /* Support Files */,
 			);
-			name = PushNotifications;
 			path = PushNotifications;
 			sourceTree = "<group>";
 		};
@@ -529,6 +528,11 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
 				LastUpgradeCheck = 0930;
+				TargetAttributes = {
+					7B0EDE4D45BD8D8660521A5006D56BC9 = {
+						LastSwiftMigration = 1010;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1143,8 +1147,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};

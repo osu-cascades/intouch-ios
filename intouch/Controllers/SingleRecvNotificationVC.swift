@@ -43,7 +43,7 @@ class SingleRecvNotificationVC: UIViewController {
         let postString = "username=\(username!)&password=\(password!)&body=\(message!)&sender=\(sender)"
         request.httpBody = postString.data(using: .utf8)
         let task = URLSession.shared.dataTask(with: request) {(data, response, error) in
-            guard let data = data else { return }
+            guard data != nil else { return }
             
         }
         
@@ -113,7 +113,7 @@ class SingleRecvNotificationVC: UIViewController {
         print(postString)
         request.httpBody = postString.data(using: .utf8)
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            guard let data = data, error == nil else {
+            guard let _ = data, error == nil else {
                 return
             }
         }

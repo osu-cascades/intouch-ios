@@ -341,6 +341,7 @@
 				TargetAttributes = {
 					93782A3D202D425900E69E66 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
@@ -353,11 +354,13 @@
 					};
 					93782A51202D425A00E69E66 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 93782A3D202D425900E69E66;
 					};
 					93782A5C202D425A00E69E66 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 93782A3D202D425900E69E66;
 					};
