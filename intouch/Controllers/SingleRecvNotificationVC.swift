@@ -30,6 +30,8 @@ class SingleRecvNotificationVC: UIViewController {
             navigationItem.title = notification.title
         }
     }
+    let username: String? = Settings.getUsername()
+    let password: String? = Settings.getPassword()
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -50,6 +52,63 @@ class SingleRecvNotificationVC: UIViewController {
         fromField.isUserInteractionEnabled = false
         messageView.isUserInteractionEnabled = false
     }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+    }
+    
+    
+    @IBAction func showReplyTextField(_ sender: Any) {
+        sendBtn.isHidden.toggle()
+        replyTextField.isHidden.toggle()
+        replyTextField.isEnabled.toggle()
+        replyTextField.becomeFirstResponder()
+    }
+    
+    @IBAction func showReplyAllTextField(_ sender: Any) {
+        sendAllReplyBtn.isHidden.toggle()
+        replyAllTextField.isEnabled.toggle()
+        replyAllTextField.isHidden.toggle()
+        replyAllTextField.becomeFirstResponder()
+    }
+    
+    @IBAction func sendReply(_ sender: Any) {
+        let message: String? = replyTextField.text
+        let sender = self.notification.fromUsername
+        let postString = "username=\(username!)&password=\(password!)&body=\(message!)&sender=\(sender)"
+        
+        
+        pushReply(urlString: senderUrlStr, postString: postString, message: message)
+        sendBtn.isHidden.toggle()
+        replyTextField.isHidden.toggle()
+        replyTextField.isEnabled.toggle()
+    }
+    
+    @IBAction func sendAllReply(_ sender: Any) {
+        let message: String? = replyAllTextField.text
+        let groupRecipients: String? = self.notification.groupRecipients.joined(separator: ", ")
+        let postString = "username=\(username!)&password=\(password!)&body=\(message!)&group_recipients=\(groupRecipients!)"
+        
+        pushReply(urlString: replyAllUrlStr, postString: postString, message: message)
+        replyToAllbtn.isHidden.toggle()
+        replyAllTextField.isEnabled.toggle()
+        replyAllTextField.isHidden.toggle()
+    }
+    
+    func pushReply(urlString : String?, postString: String?, message: String?) {
+        var request = URLRequest(url: URL(string: urlString!)!)
+        request.httpMethod = "POST"
+        
+        request.httpBody = postString!.data(using: .utf8)
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard data != nil else {
+                return
+            }
+        }
+        task.resume()
+    }
+    
     func onConnectionError(error: String?) {
         let alert = UIAlertController(title: "Status", message: "Connection Error: \(String(describing: error))", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
@@ -85,74 +144,5 @@ class SingleRecvNotificationVC: UIViewController {
         alert.view.tintColor = UIColor(red: 157/255, green: 200/255, blue: 49/255, alpha: 1)
         self.present(alert, animated: true)
     }
-    
-    override func viewWillDisappear(_ animated: Bool) {
-        super.viewWillDisappear(animated)
-
-    }
-    
-    @IBAction func showReplyTextField(_ sender: Any) {
-        sendBtn.isHidden.toggle()
-        replyTextField.isHidden.toggle()
-        replyTextField.isEnabled.toggle()
-        replyTextField.becomeFirstResponder()
-    }
-    
-    @IBAction func showReplyAllTextField(_ sender: Any) {
-        sendAllReplyBtn.isHidden.toggle()
-        replyAllTextField.isEnabled.toggle()
-        replyAllTextField.isHidden.toggle()
-        replyAllTextField.becomeFirstResponder()
-    }
-    
-    @IBAction func sendReply(_ sender: Any) {
-        let message: String? = replyTextField.text
-        let sender = self.notification.fromUsername
-        var request = URLRequest(url: URL(string: senderUrlStr)!)
-        let username: String? = Settings.getUsername()
-        let password: String? = Settings.getPassword()
-        let postString = "username=\(username!)&password=\(password!)&body=\(message!)&sender=\(sender)"
-        
-        
-        request.httpMethod = "POST"
-        request.httpBody = postString.data(using: .utf8)
-        let task = URLSession.shared.dataTask(with: request) {(data, response, error) in
-            guard data != nil else { return }
-            
-        }
-        
-        task.resume()
-        sendBtn.isHidden.toggle()
-        replyTextField.isHidden.toggle()
-        replyTextField.isEnabled.toggle()
-    }
-    
-    @IBAction func sendAllReply(_ sender: Any) {
-        let message: String? = replyAllTextField.text
-        let groupRecipients: String? = self.notification.groupRecipients.joined(separator: ", ")
-        sendReplyAll(groupRecipients: groupRecipients, message: message)
-        replyToAllbtn.isHidden.toggle()
-        replyAllTextField.isEnabled.toggle()
-        replyAllTextField.isHidden.toggle()
-    }
-    
-    func sendReplyAll(groupRecipients: String?, message: String?) {
-        var request = URLRequest(url: URL(string: replyAllUrlStr)!)
-        request.httpMethod = "POST"
-        
-        let username: String? = Settings.getUsername()
-        let password: String? = Settings.getPassword()
-
-        let postString = "username=\(username!)&password=\(password!)&body=\(message!)&group_recipients=\(groupRecipients!)"
-        print(postString)
-        request.httpBody = postString.data(using: .utf8)
-        let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            guard data != nil else {
-                return
-            }
-        }
-        task.resume()
-    }
-
     
 }
