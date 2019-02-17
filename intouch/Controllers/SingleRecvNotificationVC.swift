@@ -98,12 +98,49 @@ class SingleRecvNotificationVC: UIViewController {
     
     func pushReply(urlString : String?, postString: String?, message: String?) {
         var request = URLRequest(url: URL(string: urlString!)!)
+        if message == "" {
+            onSendBlankMessage()
+            return
+        }
         request.httpMethod = "POST"
-        
         request.httpBody = postString!.data(using: .utf8)
         let task = URLSession.shared.dataTask(with: request) { data, response, error in
-            guard data != nil else {
+            guard let data = data, error == nil else {
+#if DEBUG
+                print("connection error: \(String(describing: error))")
+#endif
+                DispatchQueue.main.async {
+                    self.onConnectionError(error: error as? String)
+                }
                 return
+            }
+            if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {
+#if DEBUG
+                print("status code: \(httpStatus.statusCode)")
+                print("response: \(String(describing: response))")
+#endif
+                DispatchQueue.main.async {
+                    self.onServerError(error: error as? String)
+                }
+                return
+            }
+            if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode == 200 {
+                let responseString = String(data: data, encoding: .utf8)
+                if responseString == "notification sent" {
+#if DEBUG
+                    print("notification has been sent")
+#endif
+                    DispatchQueue.main.async {
+                        self.onNotificationSent()
+                    }
+                } else {
+#if DEBUG
+                    print("invalid username/password")
+#endif
+                    DispatchQueue.main.async {
+                        
+                    }
+                }
             }
         }
         task.resume()
