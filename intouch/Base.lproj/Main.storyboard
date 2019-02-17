@@ -76,44 +76,49 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Message:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzz-qs-oLX">
-                                        <rect key="frame" x="0.0" y="75" width="304" height="17"/>
-                                        <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="center" horizontalHuggingPriority="280" placeholderIntrinsicWidth="304" placeholderIntrinsicHeight="86" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oN9-mN-Sh4">
-                                        <rect key="frame" x="0.0" y="100" width="304" height="86"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2m4-5V-hYt">
-                                        <rect key="frame" x="0.0" y="194" width="304" height="30"/>
-                                        <nil key="textColor"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sth-wk-KPC">
-                                        <rect key="frame" x="0.0" y="232" width="304" height="30"/>
-                                        <state key="normal" title="Send"/>
-                                        <connections>
-                                            <action selector="sendReply:" destination="Kl0-Xl-dOu" eventType="touchUpInside" id="fOt-Uo-pct"/>
-                                        </connections>
-                                    </button>
-                                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGv-Zx-gI4">
-                                        <rect key="frame" x="0.0" y="266" width="304" height="0.0"/>
-                                        <state key="normal" title="Send All"/>
-                                    </button>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dhG-TP-fHr">
+                                        <rect key="frame" x="0.0" y="75" width="304" height="163"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" text="Message:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzz-qs-oLX">
+                                                <rect key="frame" x="0.0" y="0.0" width="304" height="17"/>
+                                                <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2m4-5V-hYt">
+                                                <rect key="frame" x="0.0" y="17" width="304" height="30"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <textField opaque="NO" contentMode="center" horizontalHuggingPriority="280" placeholderIntrinsicWidth="304" placeholderIntrinsicHeight="86" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oN9-mN-Sh4">
+                                                <rect key="frame" x="0.0" y="47" width="304" height="86"/>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sth-wk-KPC">
+                                                <rect key="frame" x="0.0" y="133" width="304" height="30"/>
+                                                <state key="normal" title="Send"/>
+                                                <connections>
+                                                    <action selector="sendReply:" destination="Kl0-Xl-dOu" eventType="touchUpInside" id="fOt-Uo-pct"/>
+                                                </connections>
+                                            </button>
+                                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGv-Zx-gI4">
+                                                <rect key="frame" x="0.0" y="163" width="304" height="0.0"/>
+                                                <state key="normal" title="Send All"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9wP-ZT-Qgp">
-                                        <rect key="frame" x="0.0" y="270" width="304" height="30"/>
+                                        <rect key="frame" x="0.0" y="246" width="304" height="30"/>
                                         <state key="normal" title="Reply All"/>
                                         <connections>
                                             <action selector="sendAllReply:" destination="Kl0-Xl-dOu" eventType="touchUpInside" id="UGQ-HD-7Lc"/>
                                         </connections>
                                     </button>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="yso-VJ-bLl">
-                                        <rect key="frame" x="0.0" y="308" width="304" height="9"/>
+                                        <rect key="frame" x="0.0" y="284" width="304" height="33"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="GothamRounded-Medium" family="Gotham Rounded" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -132,7 +137,7 @@
                                         <rect key="frame" x="0.0" y="363" width="304" height="30"/>
                                         <state key="normal" title="Reply To All"/>
                                         <connections>
-                                            <action selector="replyAll:" destination="Kl0-Xl-dOu" eventType="touchUpInside" id="EXC-Ol-CJ1"/>
+                                            <action selector="showReplyAllTextField:" destination="Kl0-Xl-dOu" eventType="touchUpInside" id="MLG-k6-TlX"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -148,6 +153,7 @@
                             <constraint firstItem="bqi-Zk-BLf" firstAttribute="leading" secondItem="IT0-R7-L7d" secondAttribute="leading" constant="8" id="6Fs-QM-VbW"/>
                             <constraint firstItem="bqi-Zk-BLf" firstAttribute="top" secondItem="yX2-Nz-C2Y" secondAttribute="top" constant="74" id="BAn-kl-BUa"/>
                             <constraint firstItem="bqi-Zk-BLf" firstAttribute="bottom" secondItem="IT0-R7-L7d" secondAttribute="bottom" constant="-8" id="Iuo-S2-d73"/>
+                            <constraint firstItem="bqi-Zk-BLf" firstAttribute="top" secondItem="IT0-R7-L7d" secondAttribute="bottom" constant="-401" id="gPd-AL-zH7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IT0-R7-L7d"/>
                     </view>
@@ -168,7 +174,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V7L-3B-D7w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1346" y="457"/>
+            <point key="canvasLocation" x="1342.5" y="430.98591549295776"/>
         </scene>
         <!--Notifications-->
         <scene sceneID="NUn-yl-OQT">
@@ -249,7 +255,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pR1-xO-isf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="527" y="457"/>
+            <point key="canvasLocation" x="521" y="423"/>
         </scene>
         <!--LoginVC-->
         <scene sceneID="auj-tf-JUN">
