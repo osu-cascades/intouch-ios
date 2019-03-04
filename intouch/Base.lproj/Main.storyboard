@@ -18,11 +18,11 @@
         <scene sceneID="zB7-md-5mg">
             <objects>
                 <viewController title="SingleRecvNotificationVC" id="Kl0-Xl-dOu" customClass="SingleRecvNotificationVC" customModule="intouch" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="yX2-Nz-C2Y">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="yX2-Nz-C2Y">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bqi-Zk-BLf">
+                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="bqi-Zk-BLf">
                                 <rect key="frame" x="8" y="74" width="304" height="393"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qpx-DD-U3c">
@@ -151,8 +151,8 @@
                         <constraints>
                             <constraint firstItem="bqi-Zk-BLf" firstAttribute="trailing" secondItem="IT0-R7-L7d" secondAttribute="trailing" constant="-8" id="3tK-UH-zJC"/>
                             <constraint firstItem="bqi-Zk-BLf" firstAttribute="leading" secondItem="IT0-R7-L7d" secondAttribute="leading" constant="8" id="6Fs-QM-VbW"/>
-                            <constraint firstItem="bqi-Zk-BLf" firstAttribute="top" secondItem="yX2-Nz-C2Y" secondAttribute="top" constant="74" id="BAn-kl-BUa"/>
                             <constraint firstItem="bqi-Zk-BLf" firstAttribute="bottom" secondItem="IT0-R7-L7d" secondAttribute="bottom" constant="-8" id="Iuo-S2-d73"/>
+                            <constraint firstItem="bqi-Zk-BLf" firstAttribute="centerY" secondItem="IT0-R7-L7d" secondAttribute="centerY" id="JDn-X9-NTn"/>
                             <constraint firstItem="bqi-Zk-BLf" firstAttribute="top" secondItem="IT0-R7-L7d" secondAttribute="bottom" constant="-401" id="gPd-AL-zH7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="IT0-R7-L7d"/>
@@ -247,6 +247,9 @@
                                 <action selector="logout:" destination="Rvf-Gc-pnk" id="2cr-nw-Q5T"/>
                             </connections>
                         </barButtonItem>
+                        <connections>
+                            <outlet property="titleView" destination="7d4-ua-4rB" id="OGt-lO-5CR"/>
+                        </connections>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
