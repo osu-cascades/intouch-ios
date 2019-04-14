@@ -9,8 +9,8 @@ target 'intouch' do
   use_frameworks!
 
   pod 'PushNotifications'
-  pod 'JTAppleCalendar', '~> 7.0'
-
+  pod 'JTAppleCalendar', '7.0.6'
+  pod 'FSCalendar'
   # Pods for intouch
 
   target 'intouchTests' do
