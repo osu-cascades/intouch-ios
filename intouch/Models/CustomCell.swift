@@ -11,4 +11,5 @@ import JTAppleCalendar
 
 class CustomCell: JTAppleCell {
     @IBOutlet weak var dateLabel: UILabel!
+    var is_selected = false
 }
