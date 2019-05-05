@@ -135,10 +135,10 @@ class LoginVC: UIViewController, UITextFieldDelegate {
                 if responseString?.range(of: "usertype") != nil {
                     var responseArray = responseString?.components(separatedBy:" ")
 #if DEBUG
-                    print("usertype: \(responseArray![1])")
+//                    print("usertype: \(responseArray![1])")
 #endif
                     DispatchQueue.main.async {
-                        self.onLoginSuccess(username: username, password: password, userType: responseArray![1])
+                        self.onLoginSuccess(username: username, password: password, userType: responseArray![0])
                     }
                 } else {
 #if DEBUG

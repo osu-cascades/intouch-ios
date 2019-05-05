@@ -11,25 +11,45 @@ import UIKit
 import JTAppleCalendar
 
 class CalendarVC: UIViewController {
-    let formatter = DateFormatter()
-    @IBOutlet weak var calendarView: JTAppleCalendarView!
+    var formatter = DateFormatter()
+    var eventList: [String:Event] = [:]
+    @IBOutlet var calendarView: JTAppleCalendarView!
     @IBOutlet weak var year: UILabel!
     @IBOutlet weak var month: UILabel!
+    @IBOutlet weak var event: UIView!
+    @IBOutlet var currentTitle: UILabel!
+    @IBOutlet var currentDescription: UILabel!
+    @IBOutlet var CurrentTime: UILabel!
+    @IBOutlet var CurrentPlace: UILabel!
+    @IBOutlet var currentNotes: UILabel!
+    @IBOutlet var currentGroupParticipants: UILabel!
+    @IBOutlet var currentHostedBy: UILabel!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpCalendarView()
-    
+        populateEventList()
     }
+    
+    func populateEventList() {
+        // You can get the data from a server.
+        // Then convert that data into a form that can be used by the calendar.
+        eventList = [
+            "21-Apr-2019": Event(title: "Easter", description: "Holiday", time: "noon", place: "Your mom's House", notes: "Bring eggs", groupParticipants: ["Henry"], hostedBy: "Sarah"),
+        ]
+        // update the calendar
+    }
+    
+    
     func setUpCalendarView() {
         calendarView.visibleDates{(visibleDates) in
-            let date = visibleDates.monthDates.first!.date
             self.formatter.dateFormat = "yyyy"
+            let date = visibleDates.monthDates.first!.date
             self.year.text = self.formatter.string(from: date)
             self.formatter.dateFormat = "MMMM"
             self.month.text = self.formatter.string(from: date)
-            self.calendarView.scrollToDate(Date())
+            self.calendarView.scrollToDate(Date(), animateScroll: false)
             
         }
     }
@@ -50,12 +70,15 @@ class CalendarVC: UIViewController {
     }
     
     func handleCellEvents(cell: CustomCell, cellState: CellState) {
+        self.formatter.dateFormat = "dd-MMM-yyyy"
         let dateString = formatter.string(from: cellState.date)
-//        if calendarDataSource[dateString] == nil {
-//            cell.dotView.isHidden = true
-//        } else {
-//            cell.dotView.isHidden = false
-//        }
+        if eventList[dateString] != nil {
+            cell.event = eventList[dateString]
+            cell.dateLabel.textColor = UIColor.red
+        }
+    }
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
     }
 
 }
@@ -95,6 +118,7 @@ extension CalendarVC: JTAppleCalendarViewDelegate, JTAppleCalendarViewDataSource
    
     func calendar(_ calendar: JTAppleCalendarView, willDisplay cell: JTAppleCell, forItemAt date: Date, cellState: CellState, indexPath: IndexPath) {
         configureCell(view: cell, cellState: cellState)
+        
     }
     
     func calendar(_ calendar: JTAppleCalendarView, headerViewForDateRange range: (start: Date, end: Date), at indexPath: IndexPath) -> JTAppleCollectionReusableView {
@@ -115,10 +139,21 @@ extension CalendarVC: JTAppleCalendarViewDelegate, JTAppleCalendarViewDataSource
     func calendar(_ calendar: JTAppleCalendarView, didSelectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
         guard let selectedCell = cell as? CustomCell else { return }
             selectedCell.backgroundColor = UIColor(red: 119/255, green: 145/255, blue: 45/255, alpha: 1.0)
+        event.isHidden.toggle()
+        calendarView.reloadData(withanchor: date)
+        currentTitle.text = selectedCell.event?.title
+        currentNotes.text = selectedCell.event?.notes
+        currentHostedBy.text = selectedCell.event?.hostedBy
+        currentDescription.text = selectedCell.event?.description
+        CurrentTime.text = selectedCell.event?.time
+        currentGroupParticipants.text = selectedCell.event?.groupParticipants.joined(separator: ", ")
+        CurrentPlace.text = selectedCell.event?.place
+       
     }
     
     func calendar(_ calendar: JTAppleCalendarView, didDeselectDate date: Date, cell: JTAppleCell?, cellState: CellState) {
         guard let selectedCell = cell as? CustomCell else { return }
+        calendarView.sizeToFit()
         selectedCell.backgroundColor = nil
     }
 }
