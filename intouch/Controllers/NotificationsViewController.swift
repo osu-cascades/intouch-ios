@@ -119,7 +119,7 @@ class NotificationsViewController: UITableViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(self.recievedNewNotification), name: NSNotification.Name("reloadTable"), object: nil)
         
         let username: String = Settings.getUsername()
-          let password: String? = Settings.getPassword()
+        let password: String? = Settings.getPassword()
         try? self.pushNotifications.subscribe(interest: "\(username)")
         print(self.allNotifications.recvNotifications);
         let statusBarHeight = UIApplication.shared.statusBarFrame.height
@@ -146,7 +146,6 @@ class NotificationsViewController: UITableViewController {
             do{
                 let json = try JSONSerialization.jsonObject(with: data)
                 let groups = json as! [String]
-                print(groups)
                 let createTab = self.tabBarController?.viewControllers?[1] as! createNotificationVC
                 createTab.groups = groups
                 
@@ -158,7 +157,7 @@ class NotificationsViewController: UITableViewController {
         
         task.resume()
         
-        
+        populateEventList()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -170,6 +169,68 @@ class NotificationsViewController: UITableViewController {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         navigationItem.leftBarButtonItem = editButtonItem
+    }
+    
+    func populateEventList() {
+        #if DEBUG
+        let eventUrlStr = "https://abilitree-intouch-staging.herokuapp.com/get_events"
+        #endif
+        
+        #if RELEASE
+        let eventUrlStr = "https://abilitree-intouch.herokuapp.com/get_events"
+        #endif
+        let username: String = Settings.getUsername()
+        let password: String? = Settings.getPassword()
+        let postString = "username=\(username)&password=\(password!)"
+        var request = URLRequest(url: URL(string: eventUrlStr)!)
+        request.httpMethod = "POST"
+        request.httpBody = postString.data(using: .utf8)
+        var eventList:[String:Event] = [:]
+        let calendarTab = self.tabBarController?.viewControllers?[2] as! CalendarVC
+        let task = URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data, error == nil else {
+                return
+            }
+            do{
+                let json = try JSONSerialization.jsonObject(with: data)
+                
+                let response = json as! [String: Any]
+                let events = response["events"] as! [Dictionary<String, AnyObject>]
+                print(data)
+                let eventDateFormatter = DateFormatter()
+                eventDateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+                eventDateFormatter.timeZone = TimeZone.current
+                let dateFormatterKey = DateFormatter()
+                dateFormatterKey.dateFormat = "dd-MMM-yyyy"
+                let calendar = Calendar.current
+                
+                for event in events{
+                    print(event)
+                    let time = event["time"] as? String ?? ""
+                    let title = event["title"] as? String ?? ""
+                    let description = event["description"] as? String ?? ""
+                    let place = event["place"] as? String ?? ""
+                    let notes = event["notes"] as? String ?? ""
+                    let groupParticipants = event["group_participants"] as? String ?? ""
+                    let hostedBy = event["hosted_by"] as? String ?? ""
+                    
+                    eventDateFormatter.locale = Locale.current
+                    if let date =  eventDateFormatter.date(from: time){
+                        let components = calendar.dateComponents([Calendar.Component.day, Calendar.Component.hour, Calendar.Component.minute], from: date)
+                        print(components.hour)
+                        
+                        eventList[dateFormatterKey.string(from: date)] =
+                            Event(title: title ?? "", description: description ?? "", time: "\(components.hour!):\(components.minute!)", place: place ??  "", notes: notes ?? "", groupParticipants: [groupParticipants ?? ""], hostedBy: hostedBy ?? "")
+                    }
+                }
+                calendarTab.eventList = eventList
+                
+            } catch let parsingError {
+                print("Error", parsingError)
+            }
+            
+        }
+        task.resume()
     }
     
 

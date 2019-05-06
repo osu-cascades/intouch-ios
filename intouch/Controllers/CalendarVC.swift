@@ -11,6 +11,7 @@ import UIKit
 import JTAppleCalendar
 
 class CalendarVC: UIViewController {
+    
     var formatter = DateFormatter()
     var eventList: [String:Event] = [:]
     @IBOutlet var calendarView: JTAppleCalendarView!
@@ -29,17 +30,9 @@ class CalendarVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setUpCalendarView()
-        populateEventList()
+        
     }
     
-    func populateEventList() {
-        // You can get the data from a server.
-        // Then convert that data into a form that can be used by the calendar.
-        eventList = [
-            "21-Apr-2019": Event(title: "Easter", description: "Holiday", time: "noon", place: "Your mom's House", notes: "Bring eggs", groupParticipants: ["Henry"], hostedBy: "Sarah"),
-        ]
-        // update the calendar
-    }
     
     
     func setUpCalendarView() {
