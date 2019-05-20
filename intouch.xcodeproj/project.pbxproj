@@ -48,6 +48,7 @@
 		EB109A7822595288003FCD6F /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB109A7722595288003FCD6F /* CustomCell.swift */; };
 		EB64761C226CFCD500B9EB2C /* event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB64761B226CFCD500B9EB2C /* event.swift */; };
 		EB64761D226CFCD500B9EB2C /* event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB64761B226CFCD500B9EB2C /* event.swift */; };
+		EBB84A6D229313160077F8C5 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB84A6C229313160077F8C5 /* ColorExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -109,6 +110,7 @@
 		EB109A722259280D003FCD6F /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
 		EB109A7722595288003FCD6F /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		EB64761B226CFCD500B9EB2C /* event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = event.swift; sourceTree = "<group>"; };
+		EBB84A6C229313160077F8C5 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		F7786568FD2455EB7E36A223 /* Pods-intouchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intouchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-intouchUITests/Pods-intouchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -231,6 +233,7 @@
 				932ABF272039358D003A4179 /* allNotifications.swift */,
 				EB109A7722595288003FCD6F /* CustomCell.swift */,
 				EB64761B226CFCD500B9EB2C /* event.swift */,
+				EBB84A6C229313160077F8C5 /* ColorExtension.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -578,6 +581,7 @@
 				930B885F2076ED5E00A69A23 /* Settings.swift in Sources */,
 				9362250A2039F82E007F0636 /* SingleRecvNotificationVC.swift in Sources */,
 				9362250C203A231F007F0636 /* NotificationCell.swift in Sources */,
+				EBB84A6D229313160077F8C5 /* ColorExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

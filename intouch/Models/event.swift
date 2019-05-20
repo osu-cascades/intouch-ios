@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class Event {
     var title: String
@@ -16,9 +17,10 @@ class Event {
     var notes: String
     var groupParticipants: [String]
     var hostedBy: String
+    var color: String
     
     
-    init(title: String, description: String, time: String, place: String, notes: String, groupParticipants: [String], hostedBy: String) {
+    init(title: String, description: String, time: String, place: String, notes: String, groupParticipants: [String], hostedBy: String, color: String) {
         self.title = title
         self.description = description
         self.time = time
@@ -26,5 +28,7 @@ class Event {
         self.notes = notes
         self.groupParticipants = groupParticipants
         self.hostedBy = hostedBy
+        self.color = color
     }
+    
 }
