@@ -25,6 +25,7 @@ class CalendarVC: UIViewController {
     @IBOutlet var currentNotes: UILabel!
     @IBOutlet var currentGroupParticipants: UILabel!
     @IBOutlet var currentHostedBy: UILabel!
+    @IBOutlet var eventsScroll: UIScrollView!
     
     
     override func viewDidLoad() {
@@ -67,7 +68,9 @@ class CalendarVC: UIViewController {
         let dateString = formatter.string(from: cellState.date)
         if eventList[dateString] != nil {
             cell.event = eventList[dateString]
-            cell.dateLabel.textColor = UIColor.red
+            let colorHex = eventList[dateString]!.color
+            print("Hex color: \(colorHex)")
+            cell.dateLabel.textColor = UIColor(hexString: colorHex)
         }
     }
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {

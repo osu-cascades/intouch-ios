@@ -213,6 +213,7 @@ class NotificationsViewController: UITableViewController {
                     let notes = event["notes"] as? String ?? ""
                     let groupParticipants = event["group_participants"] as? String ?? ""
                     let hostedBy = event["hosted_by"] as? String ?? ""
+                    let color = event["color"] as? String ?? ""
                     
                     eventDateFormatter.locale = Locale.current
                     if let date =  eventDateFormatter.date(from: time){
@@ -220,7 +221,7 @@ class NotificationsViewController: UITableViewController {
                         print(components.hour)
                         
                         eventList[dateFormatterKey.string(from: date)] =
-                            Event(title: title ?? "", description: description ?? "", time: "\(components.hour!):\(components.minute!)", place: place ??  "", notes: notes ?? "", groupParticipants: [groupParticipants ?? ""], hostedBy: hostedBy ?? "")
+                            Event(title: title ?? "", description: description ?? "", time: "\(components.hour!):\(components.minute!)", place: place ??  "", notes: notes ?? "", groupParticipants: [groupParticipants ?? ""], hostedBy: hostedBy ?? "", color: color ?? "")
                     }
                 }
                 calendarTab.eventList = eventList
