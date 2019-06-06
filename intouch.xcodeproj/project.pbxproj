@@ -45,6 +45,9 @@
 		93BE12B5209D418D004408C2 /* CreateNotificationViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93BE12B4209D418D004408C2 /* CreateNotificationViewControllerTests.swift */; };
 		93FC73502071DFB0003A4073 /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FC734F2071DFB0003A4073 /* LoginVC.swift */; };
 		EB109A732259280D003FCD6F /* CalendarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB109A722259280D003FCD6F /* CalendarVC.swift */; };
+		EB109A7822595288003FCD6F /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB109A7722595288003FCD6F /* CustomCell.swift */; };
+		EB64761C226CFCD500B9EB2C /* event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB64761B226CFCD500B9EB2C /* event.swift */; };
+		EB64761D226CFCD500B9EB2C /* event.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB64761B226CFCD500B9EB2C /* event.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +107,8 @@
 		B56A2011A25453979B83CCB1 /* Pods_intouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_intouch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB29EDB279DE836979266CA /* Pods-intouchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intouchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-intouchTests/Pods-intouchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		EB109A722259280D003FCD6F /* CalendarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarVC.swift; sourceTree = "<group>"; };
+		EB109A7722595288003FCD6F /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		EB64761B226CFCD500B9EB2C /* event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = event.swift; sourceTree = "<group>"; };
 		F7786568FD2455EB7E36A223 /* Pods-intouchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-intouchUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-intouchUITests/Pods-intouchUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -224,6 +229,8 @@
 				9362250B203A231F007F0636 /* NotificationCell.swift */,
 				932ABF232039232C003A4179 /* Notification.swift */,
 				932ABF272039358D003A4179 /* allNotifications.swift */,
+				EB109A7722595288003FCD6F /* CustomCell.swift */,
+				EB64761B226CFCD500B9EB2C /* event.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -461,10 +468,14 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-intouch/Pods-intouch-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
 				"${BUILT_PRODUCTS_DIR}/PushNotifications-iOS10.3/PushNotifications.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FSCalendar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PushNotifications.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,11 +568,13 @@
 			files = (
 				EB109A732259280D003FCD6F /* CalendarVC.swift in Sources */,
 				932ABF282039358D003A4179 /* allNotifications.swift in Sources */,
+				EB109A7822595288003FCD6F /* CustomCell.swift in Sources */,
 				9347D6A920757E590006E584 /* CreateNotificationVC.swift in Sources */,
 				932ABF242039232C003A4179 /* Notification.swift in Sources */,
 				93FC73502071DFB0003A4073 /* LoginVC.swift in Sources */,
 				932ABF1E20391F99003A4179 /* NotificationsViewController.swift in Sources */,
 				93782A42202D425900E69E66 /* AppDelegate.swift in Sources */,
+				EB64761C226CFCD500B9EB2C /* event.swift in Sources */,
 				930B885F2076ED5E00A69A23 /* Settings.swift in Sources */,
 				9362250A2039F82E007F0636 /* SingleRecvNotificationVC.swift in Sources */,
 				9362250C203A231F007F0636 /* NotificationCell.swift in Sources */,
@@ -594,6 +607,7 @@
 				93BC0274209822FA0008CF6B /* CreateNotificationVC.swift in Sources */,
 				93BC0275209822FA0008CF6B /* Notification.swift in Sources */,
 				93BC0276209822FA0008CF6B /* LoginVC.swift in Sources */,
+				EB64761D226CFCD500B9EB2C /* event.swift in Sources */,
 				93BC0277209822FA0008CF6B /* NotificationsViewController.swift in Sources */,
 				93BC0278209822FA0008CF6B /* AppDelegate.swift in Sources */,
 				93BC0279209822FA0008CF6B /* Settings.swift in Sources */,

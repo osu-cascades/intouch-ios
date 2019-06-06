@@ -7,78 +7,131 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		01405D3FDB38A5791CCBB3028F7E4097 /* PusherAlreadyRegisteredError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A924DFA30B0F824F8BF7FDAC95A805 /* PusherAlreadyRegisteredError.swift */; };
-		0268D198F837674C345CF5C59CB9C76A /* PushNotifications-iOS10.3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C3B602ABEC03810C61851F362327B9A /* PushNotifications-iOS10.3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0367F03C2F3E19C29771702884670F0E /* PropertyListReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A07A3C2F3810B9854F669405DD2B21 /* PropertyListReadable.swift */; };
-		0851293F362EF3C00231BD2453CD1402 /* SystemVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB05F016FD91F25E6CBAB0D92579901 /* SystemVersion.swift */; };
-		0C043BA2123AAE4399B34506F69DA0B4 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6271FAFF56D942C7194ABF7B78A1CE /* NetworkResponse.swift */; };
-		0D0036777DCEE1332181A59A7AAC51A2 /* SDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F614D5CD550BFF15B666C43801846F /* SDK.swift */; };
+		020668B9884D1E3BE333BD6C6998F3E7 /* JTAppleCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F3162C7F30E3B14FB53AD90CF961D69 /* JTAppleCalendar-dummy.m */; };
+		02B6683F07586D2EC8BFDF5A9305CCCA /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2793158D1B164DD5578CE25797BBD0 /* FeatureFlags.swift */; };
+		0367F03C2F3E19C29771702884670F0E /* PropertyListReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11038B4C1D298D64478440272F7FC49E /* PropertyListReadable.swift */; };
+		07B841C68A7FD91E4F42C5CD183760CA /* PublishId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE639A85C42445DF308940A024F7607 /* PublishId.swift */; };
+		0CB555B61A1D34A700FF6C3E9377F31A /* RemoteNotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF63DD11A0208CE5424F1B2179BE72A /* RemoteNotificationType.swift */; };
+		0D0036777DCEE1332181A59A7AAC51A2 /* SDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = D643393AF1D68E97636C087447F8BBF7 /* SDK.swift */; };
+		0EBE2DB914C91FE2689975529A11247C /* FSCalendarDelegationFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 37D2522B56DB4BF56907371D90B992EC /* FSCalendarDelegationFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		138206D72F3A305675424F10167ECA4F /* JTAppleCalendarLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49D0340D1276B63C8322F2A7DA68DAAE /* JTAppleCalendarLayout.swift */; };
+		13DC7A6FA7074FF36E2278F8E944B8D9 /* GlobalFunctionsAndExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0692B47F824489E248B991A022BA54 /* GlobalFunctionsAndExtensions.swift */; };
 		1402099FB36F00C274F17A0A6B74A3F1 /* Pods-intouchTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8EDD50B1F474B28B0056CC91AFC93C50 /* Pods-intouchTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		141F35B0D0EC4E4FA126A7B1A5C0B9E2 /* PushNotificationsNetworkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3F037C94DE0FA7EF08382E0E0BB5E7 /* PushNotificationsNetworkable.swift */; };
-		1A979B881019BB0FC8B19EB4C774550B /* Interests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C2E859EAD9F12858E988389586756 /* Interests.swift */; };
+		14EE75CE87065A216834E7BF736B3E1C /* PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B6CB75F8E85DAC8AFFAEE9B5D1AC47 /* PushNotifications.swift */; };
+		15C4CB6A3303565BFF2EBCA84786F388 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BA5A71163CC71AB931A00E23A3589 /* Register.swift */; };
+		16BE90421DB9C2ECAA7159CE3E9250A2 /* FSCalendarDelegationProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = A1882BB3C2BAC77CCBA6D8B87527BADD /* FSCalendarDelegationProxy.m */; };
 		1AAA82CEFB21FD001345735BB8313DCB /* Pods-intouch-dev-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0980743E792A12ECF36748215B649D9A /* Pods-intouch-dev-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B582488F618443BB9393881A547BC75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		22990547E9E4D2AAE9D10CB5301544C3 /* Array+ContainsSameElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F8EF6EF68DB075866545A19353581C /* Array+ContainsSameElements.swift */; };
-		24FF745492F8AC34C5D59B8AB95ADF6C /* Array+ContainsSameElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F8EF6EF68DB075866545A19353581C /* Array+ContainsSameElements.swift */; };
-		252C73A13A232D41E81AFF982C8B8586 /* PushNotificationsNetworkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC3F037C94DE0FA7EF08382E0E0BB5E7 /* PushNotificationsNetworkable.swift */; };
+		1B582488F618443BB9393881A547BC75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D8B915FF40EB401BFF7A6C07CC4BAC /* Foundation.framework */; };
+		1BC0ED61A57E5FF8523B98E94C058BC5 /* Interests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C0AA7FF26E0C182A66FF84861C396 /* Interests.swift */; };
+		1C33A8C8F95A3B3D864DC22B9E5B3CB5 /* FSCalendarConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 019C34DDA29EF2805ED688AB502B2BCA /* FSCalendarConstants.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F065B1176110C7D3C81CFEFBD235B1F /* DeviceTokenHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF822D33C1B3FD2F441C634DF32095 /* DeviceTokenHelper.swift */; };
+		24FF745492F8AC34C5D59B8AB95ADF6C /* Array+ContainsSameElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAA9C72829E5D89862C86BD815B976D /* Array+ContainsSameElements.swift */; };
+		252C73A13A232D41E81AFF982C8B8586 /* PushNotificationsNetworkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8926E371AA10D78BFA838FE7CB702550 /* PushNotificationsNetworkable.swift */; };
+		259FC6DCE1BA2BB0EED84730C30B5AF3 /* FSCalendarExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = A9DC3C8FC802FE4AAE5189D767F8469A /* FSCalendarExtensions.m */; };
+		2E23AB8752984FD6D09C8449A8BA4080 /* Encodable+Encode.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA66C365EFA91F3D13BF55B195A5A41 /* Encodable+Encode.swift */; };
+		2F460B6B177F07377DD41D9FF28BC6D1 /* PushNotifications-iOS10.3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1549BA7B1EA226D623C4E7D91B59CDF1 /* PushNotifications-iOS10.3-dummy.m */; };
 		3050A3B9F9A41339177FA75B5901100F /* Pods-intouch-dev-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C2F508045BE1352FE87EC6AAA21F7D3C /* Pods-intouch-dev-dummy.m */; };
-		31639509FF754B7E2E12368AC24D2408 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA893389DB15554D76C550ECC9C30EC /* Metadata.swift */; };
-		39017A47CB035AF12CDCD81407D2017A /* PusherAlreadyRegisteredError.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1A924DFA30B0F824F8BF7FDAC95A805 /* PusherAlreadyRegisteredError.swift */; };
-		39BFB27C936BB8CD023351E6C9E9CA90 /* Instance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF5F87B086CC5B5453AF48F650DB06C /* Instance.swift */; };
-		3CD60A2256786F7486FA7CB534F9ADD6 /* DeviceTokenHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FFA13C5CE417966F798EEBFE5221C4 /* DeviceTokenHelper.swift */; };
+		307CE045C79734DF837F2DFD96759E74 /* UserInteractionFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 556DE114D0302266FF6DB699B973FF93 /* UserInteractionFunctions.swift */; };
+		358950BA6E8EE4C99587456B849C41CA /* FSCalendarDelegationProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D89904162198E5EF407B2EF27D84BE0 /* FSCalendarDelegationProxy.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		389AB31471187DB059CDF638BDFAFE87 /* FSCalendarWeekdayView.m in Sources */ = {isa = PBXBuildFile; fileRef = C6B8D46069ECCF5880D5C0C6CB9AD270 /* FSCalendarWeekdayView.m */; };
+		39017A47CB035AF12CDCD81407D2017A /* PusherAlreadyRegisteredError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321C21C4A2E560F980DE0669B4068E88 /* PusherAlreadyRegisteredError.swift */; };
+		393E838C65D95EF96CF8E1F9C8F5547D /* Pods-intouch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A052FED7E76C8E8C0DE647E65B7E6BA /* Pods-intouch-dummy.m */; };
+		39BFB27C936BB8CD023351E6C9E9CA90 /* Instance.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA377E375B045DDC7BEC4D292D99F171 /* Instance.swift */; };
+		3AD167FD7CCAE9D5A84252096DF0A5BA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D8B915FF40EB401BFF7A6C07CC4BAC /* Foundation.framework */; };
+		3CD60A2256786F7486FA7CB534F9ADD6 /* DeviceTokenHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF822D33C1B3FD2F441C634DF32095 /* DeviceTokenHelper.swift */; };
 		3E64B8EA4307B57E97DBE01F4FFFCD73 /* Pods-intouchUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 37771342C2EAED1E289A179AF1C900D2 /* Pods-intouchUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3EE2DFEE266EC84CFA59E83169F3D5AD /* PublishId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF810ECC3537483860FA4A9FE8B883C /* PublishId.swift */; };
-		40CB0E6C04BC44E5CE0692658721F120 /* DeviceTokenHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72FFA13C5CE417966F798EEBFE5221C4 /* DeviceTokenHelper.swift */; };
-		42E7E21210BCEBB80FBF55AD01158352 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73836D686FF146EF2B80E033189A72DB /* HTTPMethod.swift */; };
-		4689205995D97C46C5F586C213D94C65 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9598A04530F567556206D59DF800FE37 /* PersistenceService.swift */; };
-		48D7DA8936AC7F3A48038AAAB1D014FE /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA50DF2695C1E5412E411BB7C2CCB564 /* Device.swift */; };
-		4AD9CD91D8C0B6284BE4970B56DA9BAE /* EventTypeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5038CDBFE5A2F723F931322F1606BAB5 /* EventTypeHandler.swift */; };
-		4CA377DF41A374EECF2FD2112C594DAF /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0AC021887429B508CA00A0C727D87E /* FeatureFlags.swift */; };
-		54FEE90A92EAF2587F643A5B1AF79448 /* InterestValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94C01AA0B158AA68FB42B53E0389EC /* InterestValidationError.swift */; };
-		5B0A496178B11477E99AB3681AC02717 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBE0E2E89436A6FE6BBF5748F9A611D /* NetworkService.swift */; };
-		5BA581A19F43AB6E827C1E349F16D141 /* PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE9026A22D38AD529ED3EAB8AA7EC58 /* PushNotifications.swift */; };
+		3E854A186108E25107EA25E175E71D2D /* FSCalendarAppearance.h in Headers */ = {isa = PBXBuildFile; fileRef = AA3773FCB8FBD617116F5394BE12729A /* FSCalendarAppearance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3EE2DFEE266EC84CFA59E83169F3D5AD /* PublishId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE639A85C42445DF308940A024F7607 /* PublishId.swift */; };
+		41C73BCE1E6F7964EEDB49D17AACA933 /* Array+ContainsSameElements.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BAA9C72829E5D89862C86BD815B976D /* Array+ContainsSameElements.swift */; };
+		420D6C910CEB92F34E4E2F15BBE8EA4E /* FSCalendarCalculator.h in Headers */ = {isa = PBXBuildFile; fileRef = 8D2868AEE7C5CF75E1C461106F435AB8 /* FSCalendarCalculator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48D7DA8936AC7F3A48038AAAB1D014FE /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6366E6A7615AE70B42B8FC7F800CDD86 /* Device.swift */; };
+		4AD9CD91D8C0B6284BE4970B56DA9BAE /* EventTypeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6135C1DF75AC3074D9CB680828B748A /* EventTypeHandler.swift */; };
+		4AE954FE5A1EE43F8C264326D68EA7A8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D8B915FF40EB401BFF7A6C07CC4BAC /* Foundation.framework */; };
+		4BA56434E3C216B81E93EFD1EE71852D /* FSCalendarCollectionView.h in Headers */ = {isa = PBXBuildFile; fileRef = A904594D0E93B493690D5449E06CA587 /* FSCalendarCollectionView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D2B16106746383DB2B00728CD0B2CF9 /* UICollectionViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16093D274FE16035679B7D2C0FBC69B2 /* UICollectionViewDelegates.swift */; };
+		51EB3D81DA46415F61FC8BBAF839177F /* FSCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2CDC05578C8B7A04CC2D17448BADC605 /* FSCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		520A7B2323E334270170B332802CDEB8 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287DE0E986FE14F4FA1C6F14026A2AF1 /* Metadata.swift */; };
+		555E07256934E3D43714A650DFDE8E68 /* JTAppleCalendarDelegateProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C33945FA40BB52F5A4AE99A2F726A15 /* JTAppleCalendarDelegateProtocol.swift */; };
+		59370F0E00D77D20CFC40DAE3F8D9C16 /* PropertyListReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11038B4C1D298D64478440272F7FC49E /* PropertyListReadable.swift */; };
+		5B2EDDC0067B47F979DF28F0537F9BF4 /* JTCalendarProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE603070AA1884242E46F6C493E02C7C /* JTCalendarProtocols.swift */; };
 		5E27375D046E6312564CA363723D87B0 /* Pods-intouchTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 49B9B9B749F9BE483A99E9CA192F15E2 /* Pods-intouchTests-dummy.m */; };
-		671B83EF6619840C0E330FFB0877BBE5 /* Reason.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15ED2779C4F4F3FD0F126169294E3DA /* Reason.swift */; };
-		68C4AA619160577332FFCAE1FC2C0010 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9598A04530F567556206D59DF800FE37 /* PersistenceService.swift */; };
-		6C8CC53BEBED99E058ED434D09DF7069 /* PublishId.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF810ECC3537483860FA4A9FE8B883C /* PublishId.swift */; };
-		72186158F148B25814E5101E481183C5 /* EventTypeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5038CDBFE5A2F723F931322F1606BAB5 /* EventTypeHandler.swift */; };
-		76002262420AD40EB4E8B8B48A0CBDEA /* Interests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3C2E859EAD9F12858E988389586756 /* Interests.swift */; };
-		7A38E5DE4AB5BCA4CAD5E5C92A09F44F /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA50DF2695C1E5412E411BB7C2CCB564 /* Device.swift */; };
-		7B523ED31F765154110CEE9B00431587 /* ReportEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737A9ABDA1E7872426F9E4F5683BC17 /* ReportEventType.swift */; };
-		888C8AD9306C701DFC3FC79535595801 /* InterestPersistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3630911229DE9611B48CDC569C38FF07 /* InterestPersistable.swift */; };
+		61598BB3855161C23CAF1D7A714A7F2A /* PushNotifications-iOS10.3-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE8B77C22B593F2569B51ED4865B841C /* PushNotifications-iOS10.3-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		678E82AEF9F023E5281A44746290026B /* JTAppleCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F8152C48C7AC358C8E2420509D7FF6E /* JTAppleCollectionReusableView.swift */; };
+		68C4AA619160577332FFCAE1FC2C0010 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F71F3F3FA6D334CCE9B6422B932A0BA /* PersistenceService.swift */; };
+		6EEA5AEDA3110DB1519445CD4322E175 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC06FE9A792C9352A10888ECB7E1CD2 /* NetworkResponse.swift */; };
+		6FAECDBCF2B576F8A64E504A23D1D4AA /* InterestValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9530415B8C182720E635F99174855BE /* InterestValidationError.swift */; };
+		71C07575BF136256A3C777B713C21A62 /* FSCalendarHeaderView.h in Headers */ = {isa = PBXBuildFile; fileRef = 53D6E13697CEDF78E5664902EB3A654A /* FSCalendarHeaderView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		76002262420AD40EB4E8B8B48A0CBDEA /* Interests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 318C0AA7FF26E0C182A66FF84861C396 /* Interests.swift */; };
+		7A8B0A3D45337E904FA69BB89D644CCE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A53654F6C69F2B1C06A517CAB5691730 /* UIKit.framework */; };
+		7B523ED31F765154110CEE9B00431587 /* ReportEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8FAA64F5616FEF67E9CCE652583844 /* ReportEventType.swift */; };
+		7F723F86B37A0A745FC70E1C2C62080F /* InterestPersistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7AB639CA3FBDB839C3291A1929A3AF /* InterestPersistable.swift */; };
+		849C9E5D2FE0810D1A9E3368F5D6D87C /* FSCalendarCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = E796DACC78E9503507786C090EC0C6C3 /* FSCalendarCalculator.m */; };
+		85585F91CD314B17F392B4896C1D27EC /* FSCalendarConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 2C7CC18EC7ACCDC22316D298ADE18127 /* FSCalendarConstants.m */; };
 		8892972C549F94E62AEB3487E9FAFB68 /* Pods-intouchUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 43E582FE8866DDF220CFD18E31AEA743 /* Pods-intouchUITests-dummy.m */; };
-		8C3C0E5FBB50526E9E9842271F879769 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EA893389DB15554D76C550ECC9C30EC /* Metadata.swift */; };
-		8DE725C48B73421EA58A848A875FBC42 /* PropertyListReadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6A07A3C2F3810B9854F669405DD2B21 /* PropertyListReadable.swift */; };
-		90DCEE50EEFE10F4BA8BE1DDE7C276CB /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73836D686FF146EF2B80E033189A72DB /* HTTPMethod.swift */; };
-		925371B97E8DF809EE6A54253D31E07A /* InterestValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF94C01AA0B158AA68FB42B53E0389EC /* InterestValidationError.swift */; };
-		A08187637899AEA426B9ADF6CC65AA6B /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A266465220F29B10803F41D0905950 /* Register.swift */; };
-		A256B804D3ED30545A65884CCB558200 /* PushNotifications-iOS10.3-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D743CA2CFB4286361268E477E1C90912 /* PushNotifications-iOS10.3-dummy.m */; };
-		A454CD360D966DBF77C9D28C0B223E7A /* PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE9026A22D38AD529ED3EAB8AA7EC58 /* PushNotifications.swift */; };
-		A8330C2A0DB4F45BF5606A97A2021B0D /* ReportEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1737A9ABDA1E7872426F9E4F5683BC17 /* ReportEventType.swift */; };
-		A97D4CADE59315F66A69FA7DCEFD764B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		AE96A841CEAEF9AC27DF499ABF64BED4 /* Instance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DF5F87B086CC5B5453AF48F650DB06C /* Instance.swift */; };
-		B59EF024B3AB3FFB201FB82FE2EBB1D6 /* PushNotifications-iOS10.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D254D54052FF90D7DED1B8B95E20202 /* PushNotifications-iOS10.0-dummy.m */; };
-		B6B85B57CD7E7E5DBA6DAE97ED2929BE /* RemoteNotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5F6D2C17A677490819AF66C2AE6C66 /* RemoteNotificationType.swift */; };
-		BB26461D5BC58BB5CAC5BAF2BB299563 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		C0AED21A7ECD681D4D73F0A81C0B4D2E /* Pods-intouch-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A052FED7E76C8E8C0DE647E65B7E6BA /* Pods-intouch-dummy.m */; };
-		C4CF66CC26B673E179C43A28367742B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		C6CA43859F54D8BCA03448E0FA028D2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		C84C7854017ADE396796510A675880F2 /* SDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = E5F614D5CD550BFF15B666C43801846F /* SDK.swift */; };
-		C9B082CACA2D12A229977E48F2215D6B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
-		CC6EEC9462FF47C6783BFAFBFAAC0455 /* SystemVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FB05F016FD91F25E6CBAB0D92579901 /* SystemVersion.swift */; };
-		D86B89C08C2436ACBBC2C29943F7120D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDBE0E2E89436A6FE6BBF5748F9A611D /* NetworkService.swift */; };
-		DA481AB2908DD34D53146CA0F68ECE1A /* MultipleInvalidInterestsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5A4C7E2ABD51E6F93F9D2F2493A9A8 /* MultipleInvalidInterestsError.swift */; };
-		DBD3881D29E9F62CBEF51DFA28843FF2 /* Encodable+Encode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D3FE2D0798EE8C1C712625732CA7E7 /* Encodable+Encode.swift */; };
-		DD3C391757C959E32529C884A309F6D1 /* Encodable+Encode.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8D3FE2D0798EE8C1C712625732CA7E7 /* Encodable+Encode.swift */; };
-		E1E6E1A08F2949B9B7C1C6A6E96A2C87 /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0AC021887429B508CA00A0C727D87E /* FeatureFlags.swift */; };
-		E7E98E30A15B2AE77A23BD522A7BBEC3 /* Reason.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15ED2779C4F4F3FD0F126169294E3DA /* Reason.swift */; };
-		EDD0D038B27A3AEA5FFBEA3EACFEE608 /* PushNotifications-iOS10.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B2C95175017A14619B8C47283AECE74D /* PushNotifications-iOS10.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EE293CA0D099539D6F8C4AD1B575A039 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9A266465220F29B10803F41D0905950 /* Register.swift */; };
-		F684043675040EFC5E0F6F5241D40B05 /* Pods-intouch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E627601B282BABFD616224CA0232BE83 /* Pods-intouch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F97B8FB6753CB9CCA7158AD9E104FF42 /* RemoteNotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5F6D2C17A677490819AF66C2AE6C66 /* RemoteNotificationType.swift */; };
-		FB10AB36F89C629AFED6CBE20E621AE7 /* InterestPersistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3630911229DE9611B48CDC569C38FF07 /* InterestPersistable.swift */; };
-		FB8F5F71E515A72B7B30E61C213A0EDA /* MultipleInvalidInterestsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D5A4C7E2ABD51E6F93F9D2F2493A9A8 /* MultipleInvalidInterestsError.swift */; };
-		FBD1272BC97F79E6F9AC27283C27525D /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC6271FAFF56D942C7194ABF7B78A1CE /* NetworkResponse.swift */; };
+		8910D6B37C682C7929C83D78243A7106 /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB4C87655C06DFFE060FD1D7DE54CAD /* HTTPMethod.swift */; };
+		8ADBFB5BFB8A9D71C46FF887E1D016BE /* FSCalendarExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = D58B238BA504BD4D84BA92453545D8B0 /* FSCalendarExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C3C0E5FBB50526E9E9842271F879769 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287DE0E986FE14F4FA1C6F14026A2AF1 /* Metadata.swift */; };
+		8F5234048F205B21491184ABEF8287B8 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03AEC63AD5EEF303064FDBD2298D645 /* NetworkService.swift */; };
+		90DCEE50EEFE10F4BA8BE1DDE7C276CB /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BB4C87655C06DFFE060FD1D7DE54CAD /* HTTPMethod.swift */; };
+		925371B97E8DF809EE6A54253D31E07A /* InterestValidationError.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9530415B8C182720E635F99174855BE /* InterestValidationError.swift */; };
+		94526A9E2DB5A446888D080D8D4922ED /* Reason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124933BD589217643B02FC4B2C54806B /* Reason.swift */; };
+		9476F8B3C2D20AC2B61A4200AE73612E /* SystemVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200570AEB277FC7AE120903DAFC0B342 /* SystemVersion.swift */; };
+		973FE8759B5FB18DA9C8C4AEC6E3E650 /* FSCalendarSeparatorDecorationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FDC8CB65C267E1CC7BE8C9F12A130A7 /* FSCalendarSeparatorDecorationView.m */; };
+		97628B8AB3158786FD4FC60B65C46080 /* CalendarStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2ADB39E37E17625CEA4EBE1454EBB66 /* CalendarStructs.swift */; };
+		9C4C688C5600003EFE9073339DB1E6C3 /* UIScrollViewDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0BC5D133ACDE7B66DF8FA788027178A /* UIScrollViewDelegates.swift */; };
+		A08187637899AEA426B9ADF6CC65AA6B /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD3BA5A71163CC71AB931A00E23A3589 /* Register.swift */; };
+		A0F5E757036BFE14D3DBA98AA10C49C3 /* JTAppleCalendarLayoutProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8B9D0CCE4CABDFEEC5EA0CFB85737D3 /* JTAppleCalendarLayoutProtocol.swift */; };
+		A454CD360D966DBF77C9D28C0B223E7A /* PushNotifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B6CB75F8E85DAC8AFFAEE9B5D1AC47 /* PushNotifications.swift */; };
+		A52D89B20F7855358EB3EA8E69F3ABB0 /* FSCalendarCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = B72F2EF56D9C3B12D72936FEB8CD7496 /* FSCalendarCollectionViewLayout.m */; };
+		A60B2ECF2A9DC2BAC9A59590CC6EAB11 /* JTAppleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68C5B10345B85092F0734CD44414B0AE /* JTAppleCell.swift */; };
+		A76262A41E9CE54072A845E716A2EE45 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D8B915FF40EB401BFF7A6C07CC4BAC /* Foundation.framework */; };
+		A9073B3911C640527E66FE6C78BB9C47 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F71F3F3FA6D334CCE9B6422B932A0BA /* PersistenceService.swift */; };
+		A95C02BA915435B4D48FBB1BC442263E /* FSCalendarTransitionCoordinator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1998C5FCBD602119666210F8005F6708 /* FSCalendarTransitionCoordinator.m */; };
+		A97D4CADE59315F66A69FA7DCEFD764B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D8B915FF40EB401BFF7A6C07CC4BAC /* Foundation.framework */; };
+		A9B720490D2E5AD9EA2880D971F8434F /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = A51947A8D1E30A691FCB0797D5614DA0 /* FSCalendarCollectionView.m */; };
+		AD9D4DB8C6704028CC726D51E7E35547 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 714DAECADAC6883BBF9E7F49D0671246 /* FSCalendar.m */; };
+		B3C5F50C9AE6CD9999CD0037ECCE5304 /* CalendarEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66768CB2FBB1302083970D08F6317E00 /* CalendarEnums.swift */; };
+		B3CDA5B91DBB671E338B8C39B15A475B /* SDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = D643393AF1D68E97636C087447F8BBF7 /* SDK.swift */; };
+		B59EF024B3AB3FFB201FB82FE2EBB1D6 /* PushNotifications-iOS10.0-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E363E5F74B4987E95A2F0D9F8BA0597B /* PushNotifications-iOS10.0-dummy.m */; };
+		B6B85B57CD7E7E5DBA6DAE97ED2929BE /* RemoteNotificationType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF63DD11A0208CE5424F1B2179BE72A /* RemoteNotificationType.swift */; };
+		BB74BA7BC0E43A711C4AA878A0BF6E6D /* FSCalendarCollectionViewLayout.h in Headers */ = {isa = PBXBuildFile; fileRef = C3D0DC7AC4CDA50A12C5FF1FCA43AB37 /* FSCalendarCollectionViewLayout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BDB6BA43250DFF70689481AAC9750E82 /* FSCalendarDelegationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DDB835792071B58874F7938581E75E5 /* FSCalendarDelegationFactory.m */; };
+		C060623B11B9070CC76819833F3FA84C /* FSCalendar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A65AAA7F4559811471C3831EE22C49C /* FSCalendar-dummy.m */; };
+		C1DF12D5F3004547BFD9D4C804E93F01 /* FSCalendarStickyHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = EECDD823DDB702D078BE6DE28185961C /* FSCalendarStickyHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4CF66CC26B673E179C43A28367742B1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D8B915FF40EB401BFF7A6C07CC4BAC /* Foundation.framework */; };
+		C671BBC252D956F093F5BFD951E5BFE6 /* PushNotificationsNetworkable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8926E371AA10D78BFA838FE7CB702550 /* PushNotificationsNetworkable.swift */; };
+		C6CA43859F54D8BCA03448E0FA028D2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D8B915FF40EB401BFF7A6C07CC4BAC /* Foundation.framework */; };
+		C8498D5D4BC978CD661B1B051DD17E74 /* FSCalendarHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2699D185804E501C9DE0E545CB9171B /* FSCalendarHeaderView.m */; };
+		C880A63E86461793517CEEBD5F685240 /* Instance.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA377E375B045DDC7BEC4D292D99F171 /* Instance.swift */; };
+		CC6EEC9462FF47C6783BFAFBFAAC0455 /* SystemVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200570AEB277FC7AE120903DAFC0B342 /* SystemVersion.swift */; };
+		D06935A59B3E3CFBF971E9613C80C49D /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 787307174AE4485177F1F14C04FD7A6A /* FSCalendarAppearance.m */; };
+		D13B9D1F3935AB35908188583E7606DB /* JTAppleCalendarVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B863A8E03C16270613AA334674A7BAC /* JTAppleCalendarVariables.swift */; };
+		D13E500E72B7D039A573333D60B7444F /* FSCalendarSeparatorDecorationView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E960982FF882D38E7910659FB5EBED0 /* FSCalendarSeparatorDecorationView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6475641775E5885AA6C2CBCA94049D9 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6366E6A7615AE70B42B8FC7F800CDD86 /* Device.swift */; };
+		D6D10D918D402F1BCFC1556FF22C92E3 /* EventTypeHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6135C1DF75AC3074D9CB680828B748A /* EventTypeHandler.swift */; };
+		D7597C04B8FE1D1E5D30E304B965022A /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4702032D70224305CC976B6B077FE728 /* FSCalendarCell.m */; };
+		D86B89C08C2436ACBBC2C29943F7120D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A03AEC63AD5EEF303064FDBD2298D645 /* NetworkService.swift */; };
+		DBB3602ECDF06051AD95CF6898AD4D0B /* FSCalendarCell.h in Headers */ = {isa = PBXBuildFile; fileRef = A3B6DC88996E26E11EC3CBFCB6B2A919 /* FSCalendarCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DBD3881D29E9F62CBEF51DFA28843FF2 /* Encodable+Encode.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABA66C365EFA91F3D13BF55B195A5A41 /* Encodable+Encode.swift */; };
+		DCCEA19D66FFEB26A44934B57B2D7D4F /* JTAppleCalendar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E6CF32AD76835939FDCD2A4149E93B5F /* JTAppleCalendar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DEEDC5B5A52A7343CE425F0A411C442B /* FSCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = D9891975A89078ABDFFAA928EC6F10F8 /* FSCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E064011AA68E40CEEE93CAF4532211DA /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83F55B96F9FD27342C0F09BBB7DEE1AE /* QuartzCore.framework */; };
+		E0E61217ABCC6A0D4CD0D234734A0964 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8DEFF6C634FB7C9BDCE0AF731A073391 /* FSCalendarStickyHeader.m */; };
+		E1E6E1A08F2949B9B7C1C6A6E96A2C87 /* FeatureFlags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E2793158D1B164DD5578CE25797BBD0 /* FeatureFlags.swift */; };
+		E402F097DC85836AD05F016EA61B74BB /* PusherAlreadyRegisteredError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321C21C4A2E560F980DE0669B4068E88 /* PusherAlreadyRegisteredError.swift */; };
+		E417ADED531D1263DB5DEC4806489059 /* FSCalendarTransitionCoordinator.h in Headers */ = {isa = PBXBuildFile; fileRef = AEAACC7F2363427A712DED1028F0FB50 /* FSCalendarTransitionCoordinator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5F61A26B8F45D727B1AE8D6A4022D63 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8D8B915FF40EB401BFF7A6C07CC4BAC /* Foundation.framework */; };
+		E7E98E30A15B2AE77A23BD522A7BBEC3 /* Reason.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124933BD589217643B02FC4B2C54806B /* Reason.swift */; };
+		ECF3FE1CDC04931AD24BF9D22E26544E /* Pods-intouch-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E627601B282BABFD616224CA0232BE83 /* Pods-intouch-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDD0D038B27A3AEA5FFBEA3EACFEE608 /* PushNotifications-iOS10.0-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2228D304F9F32C47044F2E297994CDDD /* PushNotifications-iOS10.0-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F197432CD327C9DC2C48A595CAA45DA2 /* FSCalendarDynamicHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = BE5D623F61ABF30F54811CBCC71D761C /* FSCalendarDynamicHeader.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9DA37C83B8D98ADF4ACEC732C333217 /* FSCalendarWeekdayView.h in Headers */ = {isa = PBXBuildFile; fileRef = B3F3259942013333F1F1D20EC4E1A1E1 /* FSCalendarWeekdayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB10AB36F89C629AFED6CBE20E621AE7 /* InterestPersistable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A7AB639CA3FBDB839C3291A1929A3AF /* InterestPersistable.swift */; };
+		FB8F5F71E515A72B7B30E61C213A0EDA /* MultipleInvalidInterestsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08034C2A34901C11F200736670622C86 /* MultipleInvalidInterestsError.swift */; };
+		FBD1272BC97F79E6F9AC27283C27525D /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEC06FE9A792C9352A10888ECB7E1CD2 /* NetworkResponse.swift */; };
+		FDAC8C4D06869F00556DA9A24EDB5FC3 /* MultipleInvalidInterestsError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08034C2A34901C11F200736670622C86 /* MultipleInvalidInterestsError.swift */; };
+		FF3C5FA10B066B26B18BA7F2D446AF4E /* ReportEventType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E8FAA64F5616FEF67E9CCE652583844 /* ReportEventType.swift */; };
+		FF905F1AC1557B5CFE7CE14481D0700A /* JTAppleCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4A5D9633AB3B9F03ED5E33785DBFBF /* JTAppleCalendarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,7 +139,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 68FF38D367DB40F1B48D3C7CE70CD1AF;
+			remoteGlobalIDString = 1121F2D3E397AFDC00CF6782DACE7ACF;
 			remoteInfo = "Pods-intouch";
 		};
 		3F775D6B79DAC927F6766999C96217DF /* PBXContainerItemProxy */ = {
@@ -96,110 +149,185 @@
 			remoteGlobalIDString = EC01D897A2CA2C2F021839D2B7C0E53A;
 			remoteInfo = "PushNotifications-iOS10.0";
 		};
-		B7F44886DBE33B7C1EE9BE9B84E85F49 /* PBXContainerItemProxy */ = {
+		5E251EEC1E97D03702CFA09B3D28F4F6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 91F79D40368E77E6C1E17EF017583928;
+			remoteGlobalIDString = 1921C72E1ADC97E3D04CA25FFB58DBFC;
+			remoteInfo = FSCalendar;
+		};
+		C386113536053C06AA485C003FF37F02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2E3D37501AE767F3B5B1DE94139533D0;
+			remoteInfo = JTAppleCalendar;
+		};
+		D479808D8FCCA4F2D0AF653075CBC497 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF1610D2BC65A22B3C39742576BB75F3;
 			remoteInfo = "PushNotifications-iOS10.3";
 		};
 		E312EDF0217F4DA818FB7A55F15D88E3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 68FF38D367DB40F1B48D3C7CE70CD1AF;
+			remoteGlobalIDString = 1121F2D3E397AFDC00CF6782DACE7ACF;
 			remoteInfo = "Pods-intouch";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		019C34DDA29EF2805ED688AB502B2BCA /* FSCalendarConstants.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarConstants.h; path = FSCalendar/FSCalendarConstants.h; sourceTree = "<group>"; };
 		04384342F4588B50FC51F8209AD3BB84 /* Pods-intouch-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-intouch-acknowledgements.markdown"; sourceTree = "<group>"; };
+		04608A1F6BD4778BAFB506335474EE00 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05D9CF958DBBFF70F00F381BFE72DD7D /* Pods-intouchUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-intouchUITests.release.xcconfig"; sourceTree = "<group>"; };
+		08034C2A34901C11F200736670622C86 /* MultipleInvalidInterestsError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipleInvalidInterestsError.swift; path = Sources/MultipleInvalidInterestsError.swift; sourceTree = "<group>"; };
+		081D417ABF9FF094917CE2E8D630BDC0 /* PushNotifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PushNotifications.framework; path = "PushNotifications-iOS10.0.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0980743E792A12ECF36748215B649D9A /* Pods-intouch-dev-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-intouch-dev-umbrella.h"; sourceTree = "<group>"; };
-		0C3B602ABEC03810C61851F362327B9A /* PushNotifications-iOS10.3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PushNotifications-iOS10.3-umbrella.h"; path = "../PushNotifications-iOS10.3/PushNotifications-iOS10.3-umbrella.h"; sourceTree = "<group>"; };
+		0A7AB639CA3FBDB839C3291A1929A3AF /* InterestPersistable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterestPersistable.swift; path = Sources/InterestPersistable.swift; sourceTree = "<group>"; };
 		0FAE90E4C220711612F577FE883892E7 /* Pods-intouchUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-intouchUITests.modulemap"; sourceTree = "<group>"; };
+		11038B4C1D298D64478440272F7FC49E /* PropertyListReadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PropertyListReadable.swift; path = Sources/PropertyListReadable.swift; sourceTree = "<group>"; };
+		124933BD589217643B02FC4B2C54806B /* Reason.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reason.swift; path = Sources/Reason.swift; sourceTree = "<group>"; };
 		12CF05156A898F3FF2D4BD3B9FB29C0D /* Pods-intouchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-intouchTests.debug.xcconfig"; sourceTree = "<group>"; };
 		13F25C3DD18E87801FD7062C19A464D1 /* Pods-intouchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-intouchTests.release.xcconfig"; sourceTree = "<group>"; };
 		1495F129C014E21042D8C9E90928F2E5 /* Pods-intouch-dev.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-intouch-dev.modulemap"; sourceTree = "<group>"; };
-		15F8EF6EF68DB075866545A19353581C /* Array+ContainsSameElements.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+ContainsSameElements.swift"; path = "Sources/Array+ContainsSameElements.swift"; sourceTree = "<group>"; };
-		1737A9ABDA1E7872426F9E4F5683BC17 /* ReportEventType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReportEventType.swift; path = Sources/ReportEventType.swift; sourceTree = "<group>"; };
+		1549BA7B1EA226D623C4E7D91B59CDF1 /* PushNotifications-iOS10.3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PushNotifications-iOS10.3-dummy.m"; path = "../PushNotifications-iOS10.3/PushNotifications-iOS10.3-dummy.m"; sourceTree = "<group>"; };
+		16093D274FE16035679B7D2C0FBC69B2 /* UICollectionViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UICollectionViewDelegates.swift; path = Sources/UICollectionViewDelegates.swift; sourceTree = "<group>"; };
+		1998C5FCBD602119666210F8005F6708 /* FSCalendarTransitionCoordinator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarTransitionCoordinator.m; path = FSCalendar/FSCalendarTransitionCoordinator.m; sourceTree = "<group>"; };
 		1A052FED7E76C8E8C0DE647E65B7E6BA /* Pods-intouch-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-intouch-dummy.m"; sourceTree = "<group>"; };
-		1C5F6D2C17A677490819AF66C2AE6C66 /* RemoteNotificationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteNotificationType.swift; path = Sources/RemoteNotificationType.swift; sourceTree = "<group>"; };
-		1F1C5C51258C6FD2B0CB69E134397945 /* PushNotifications-iOS10.3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "PushNotifications-iOS10.3.modulemap"; path = "../PushNotifications-iOS10.3/PushNotifications-iOS10.3.modulemap"; sourceTree = "<group>"; };
+		1BE639A85C42445DF308940A024F7607 /* PublishId.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PublishId.swift; path = Sources/PublishId.swift; sourceTree = "<group>"; };
+		1DA80833C6D15312D861106862EE18D7 /* PushNotifications-iOS10.3.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; name = "PushNotifications-iOS10.3.modulemap"; path = "../PushNotifications-iOS10.3/PushNotifications-iOS10.3.modulemap"; sourceTree = "<group>"; };
+		200570AEB277FC7AE120903DAFC0B342 /* SystemVersion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SystemVersion.swift; path = Sources/SystemVersion.swift; sourceTree = "<group>"; };
+		2228D304F9F32C47044F2E297994CDDD /* PushNotifications-iOS10.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PushNotifications-iOS10.0-umbrella.h"; sourceTree = "<group>"; };
+		23B6CB75F8E85DAC8AFFAEE9B5D1AC47 /* PushNotifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PushNotifications.swift; path = Sources/PushNotifications.swift; sourceTree = "<group>"; };
+		24CD9E2154D4E2BBB7EB648E83D6E66E /* JTAppleCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JTAppleCalendar.framework; path = JTAppleCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		251D2F9923173A0D13DC8CADF0F7EDEF /* PushNotifications-iOS10.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PushNotifications-iOS10.0-prefix.pch"; sourceTree = "<group>"; };
 		2546ECF516737B3DB042B90A4C1BD5AD /* Pods-intouchTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-intouchTests-frameworks.sh"; sourceTree = "<group>"; };
-		259AF0A19778EFE5E25513BB937D2996 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../PushNotifications-iOS10.3/Info.plist"; sourceTree = "<group>"; };
-		2788E0FE5E69E52C2649F21CD03E5FF3 /* Pods_intouchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_intouchUITests.framework; path = "Pods-intouchUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		28921503B1810E8CFE11E2CC125481DA /* PushNotifications-iOS10.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PushNotifications-iOS10.0.xcconfig"; sourceTree = "<group>"; };
-		2BE9026A22D38AD529ED3EAB8AA7EC58 /* PushNotifications.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PushNotifications.swift; path = Sources/PushNotifications.swift; sourceTree = "<group>"; };
+		287DE0E986FE14F4FA1C6F14026A2AF1 /* Metadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Metadata.swift; path = Sources/Metadata.swift; sourceTree = "<group>"; };
+		2B863A8E03C16270613AA334674A7BAC /* JTAppleCalendarVariables.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarVariables.swift; path = Sources/JTAppleCalendarVariables.swift; sourceTree = "<group>"; };
+		2BA39E24DDE8686CB3AC6C2B6A78DB99 /* FSCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-prefix.pch"; sourceTree = "<group>"; };
+		2BAA9C72829E5D89862C86BD815B976D /* Array+ContainsSameElements.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Array+ContainsSameElements.swift"; path = "Sources/Array+ContainsSameElements.swift"; sourceTree = "<group>"; };
 		2C6350BDB4B4D0C3DCEA3E49FE192839 /* Pods-intouchUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-intouchUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2E19B898B06CE1475DEAEB6129AE4698 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C7CC18EC7ACCDC22316D298ADE18127 /* FSCalendarConstants.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarConstants.m; path = FSCalendar/FSCalendarConstants.m; sourceTree = "<group>"; };
+		2CDC05578C8B7A04CC2D17448BADC605 /* FSCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FSCalendar-umbrella.h"; sourceTree = "<group>"; };
+		2DDB835792071B58874F7938581E75E5 /* FSCalendarDelegationFactory.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationFactory.m; path = FSCalendar/FSCalendarDelegationFactory.m; sourceTree = "<group>"; };
+		2E8FAA64F5616FEF67E9CCE652583844 /* ReportEventType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ReportEventType.swift; path = Sources/ReportEventType.swift; sourceTree = "<group>"; };
+		318C0AA7FF26E0C182A66FF84861C396 /* Interests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interests.swift; path = Sources/Interests.swift; sourceTree = "<group>"; };
+		321C21C4A2E560F980DE0669B4068E88 /* PusherAlreadyRegisteredError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherAlreadyRegisteredError.swift; path = Sources/PusherAlreadyRegisteredError.swift; sourceTree = "<group>"; };
 		336059AE5A2F158647BD185001AD09C5 /* Pods-intouchTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-intouchTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		340DA579C08F2F219546CB108FB9C65D /* PushNotifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PushNotifications.framework; path = "PushNotifications-iOS10.0.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3630911229DE9611B48CDC569C38FF07 /* InterestPersistable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterestPersistable.swift; path = Sources/InterestPersistable.swift; sourceTree = "<group>"; };
 		37771342C2EAED1E289A179AF1C900D2 /* Pods-intouchUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-intouchUITests-umbrella.h"; sourceTree = "<group>"; };
+		37D2522B56DB4BF56907371D90B992EC /* FSCalendarDelegationFactory.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationFactory.h; path = FSCalendar/FSCalendarDelegationFactory.h; sourceTree = "<group>"; };
+		3D89904162198E5EF407B2EF27D84BE0 /* FSCalendarDelegationProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDelegationProxy.h; path = FSCalendar/FSCalendarDelegationProxy.h; sourceTree = "<group>"; };
 		3E2A1E29E5768784261BCA16C44118D2 /* Pods-intouch.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-intouch.modulemap"; sourceTree = "<group>"; };
+		3F8152C48C7AC358C8E2420509D7FF6E /* JTAppleCollectionReusableView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCollectionReusableView.swift; path = Sources/JTAppleCollectionReusableView.swift; sourceTree = "<group>"; };
 		425B53CF72970337771B5A22B6805EE0 /* Pods-intouchTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-intouchTests.modulemap"; sourceTree = "<group>"; };
 		43E582FE8866DDF220CFD18E31AEA743 /* Pods-intouchUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-intouchUITests-dummy.m"; sourceTree = "<group>"; };
 		43E7DA24126C7BE2AA1B0090D3106A25 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45006538FBC4AC206F5D95E6E1547826 /* Pods-intouchUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-intouchUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4702032D70224305CC976B6B077FE728 /* FSCalendarCell.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCell.m; path = FSCalendar/FSCalendarCell.m; sourceTree = "<group>"; };
 		49B9B9B749F9BE483A99E9CA192F15E2 /* Pods-intouchTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-intouchTests-dummy.m"; sourceTree = "<group>"; };
-		5038CDBFE5A2F723F931322F1606BAB5 /* EventTypeHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventTypeHandler.swift; path = Sources/EventTypeHandler.swift; sourceTree = "<group>"; };
+		49D0340D1276B63C8322F2A7DA68DAAE /* JTAppleCalendarLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarLayout.swift; path = Sources/JTAppleCalendarLayout.swift; sourceTree = "<group>"; };
+		4A65AAA7F4559811471C3831EE22C49C /* FSCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar-dummy.m"; sourceTree = "<group>"; };
+		4BB4C87655C06DFFE060FD1D7DE54CAD /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Sources/HTTPMethod.swift; sourceTree = "<group>"; };
+		4D0692B47F824489E248B991A022BA54 /* GlobalFunctionsAndExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = GlobalFunctionsAndExtensions.swift; path = Sources/GlobalFunctionsAndExtensions.swift; sourceTree = "<group>"; };
+		4DB3B86A3BF5D9DAF9752F5E24C9F272 /* PushNotifications-iOS10.3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PushNotifications-iOS10.3-prefix.pch"; path = "../PushNotifications-iOS10.3/PushNotifications-iOS10.3-prefix.pch"; sourceTree = "<group>"; };
+		4EA1664580289F6C0EF0782F34CD786B /* PushNotifications-iOS10.0.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PushNotifications-iOS10.0.xcconfig"; sourceTree = "<group>"; };
+		53D6E13697CEDF78E5664902EB3A654A /* FSCalendarHeaderView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarHeaderView.h; path = FSCalendar/FSCalendarHeaderView.h; sourceTree = "<group>"; };
+		556DE114D0302266FF6DB699B973FF93 /* UserInteractionFunctions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UserInteractionFunctions.swift; path = Sources/UserInteractionFunctions.swift; sourceTree = "<group>"; };
 		5A060856A2370DC8D65EBC0C42293C98 /* Pods-intouchTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-intouchTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		5ACE36308852B2E51366C14A827787E0 /* PushNotifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PushNotifications.framework; path = "PushNotifications-iOS10.3.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C509BAC85D6459D7250CC5E6F9E5677 /* Pods-intouchUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-intouchUITests-frameworks.sh"; sourceTree = "<group>"; };
-		5D254D54052FF90D7DED1B8B95E20202 /* PushNotifications-iOS10.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PushNotifications-iOS10.0-dummy.m"; sourceTree = "<group>"; };
+		5E960982FF882D38E7910659FB5EBED0 /* FSCalendarSeparatorDecorationView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarSeparatorDecorationView.h; path = FSCalendar/FSCalendarSeparatorDecorationView.h; sourceTree = "<group>"; };
 		5F537C81B813BB46417CE81328464EBE /* Pods-intouch-dev-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-intouch-dev-frameworks.sh"; sourceTree = "<group>"; };
-		6EF810ECC3537483860FA4A9FE8B883C /* PublishId.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PublishId.swift; path = Sources/PublishId.swift; sourceTree = "<group>"; };
-		72FFA13C5CE417966F798EEBFE5221C4 /* DeviceTokenHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeviceTokenHelper.swift; path = Sources/DeviceTokenHelper.swift; sourceTree = "<group>"; };
-		73836D686FF146EF2B80E033189A72DB /* HTTPMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = HTTPMethod.swift; path = Sources/HTTPMethod.swift; sourceTree = "<group>"; };
+		6118F84356DBEC02BC558F3AF407D769 /* PushNotifications-iOS10.3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "PushNotifications-iOS10.3.xcconfig"; path = "../PushNotifications-iOS10.3/PushNotifications-iOS10.3.xcconfig"; sourceTree = "<group>"; };
+		6366E6A7615AE70B42B8FC7F800CDD86 /* Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.swift; path = Sources/Device.swift; sourceTree = "<group>"; };
+		66768CB2FBB1302083970D08F6317E00 /* CalendarEnums.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarEnums.swift; path = Sources/CalendarEnums.swift; sourceTree = "<group>"; };
+		68C5B10345B85092F0734CD44414B0AE /* JTAppleCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCell.swift; path = Sources/JTAppleCell.swift; sourceTree = "<group>"; };
+		6FDC8CB65C267E1CC7BE8C9F12A130A7 /* FSCalendarSeparatorDecorationView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarSeparatorDecorationView.m; path = FSCalendar/FSCalendarSeparatorDecorationView.m; sourceTree = "<group>"; };
+		714DAECADAC6883BBF9E7F49D0671246 /* FSCalendar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendar.m; path = FSCalendar/FSCalendar.m; sourceTree = "<group>"; };
+		73A6573DB308AB49F1D94E20AC9F8F7E /* FSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = FSCalendar.framework; path = FSCalendar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7603833EB7470B6A55F87343E081D85D /* Pods-intouch-dev-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-intouch-dev-acknowledgements.plist"; sourceTree = "<group>"; };
-		7AC3EB930C90B94D154CF45AE50E7CBE /* PushNotifications-iOS10.3-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PushNotifications-iOS10.3-prefix.pch"; path = "../PushNotifications-iOS10.3/PushNotifications-iOS10.3-prefix.pch"; sourceTree = "<group>"; };
-		7D5A4C7E2ABD51E6F93F9D2F2493A9A8 /* MultipleInvalidInterestsError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MultipleInvalidInterestsError.swift; path = Sources/MultipleInvalidInterestsError.swift; sourceTree = "<group>"; };
-		7FB05F016FD91F25E6CBAB0D92579901 /* SystemVersion.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SystemVersion.swift; path = Sources/SystemVersion.swift; sourceTree = "<group>"; };
-		8076813544B6B26F31B2FBE03D7348E8 /* PushNotifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = PushNotifications.framework; path = "PushNotifications-iOS10.3.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8B1921F61863676A062BE67F56510130 /* PushNotifications-iOS10.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "PushNotifications-iOS10.0.modulemap"; sourceTree = "<group>"; };
+		787307174AE4485177F1F14C04FD7A6A /* FSCalendarAppearance.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarAppearance.m; path = FSCalendar/FSCalendarAppearance.m; sourceTree = "<group>"; };
+		7FCD21ACF834CB4B68038AAC9631AC0E /* Pods_intouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_intouch.framework; path = "Pods-intouch.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		83F55B96F9FD27342C0F09BBB7DEE1AE /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		886A270CFCA34B9880407EA24402E190 /* JTAppleCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JTAppleCalendar.xcconfig; sourceTree = "<group>"; };
+		8926E371AA10D78BFA838FE7CB702550 /* PushNotificationsNetworkable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PushNotificationsNetworkable.swift; path = Sources/PushNotificationsNetworkable.swift; sourceTree = "<group>"; };
 		8B9696A5B91361E3E9932A6A8D2BCD79 /* Pods-intouch-dev-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-intouch-dev-resources.sh"; sourceTree = "<group>"; };
-		8DF5F87B086CC5B5453AF48F650DB06C /* Instance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Instance.swift; path = Sources/Instance.swift; sourceTree = "<group>"; };
+		8D2868AEE7C5CF75E1C461106F435AB8 /* FSCalendarCalculator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCalculator.h; path = FSCalendar/FSCalendarCalculator.h; sourceTree = "<group>"; };
+		8DEFF6C634FB7C9BDCE0AF731A073391 /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarStickyHeader.m; path = FSCalendar/FSCalendarStickyHeader.m; sourceTree = "<group>"; };
+		8E2793158D1B164DD5578CE25797BBD0 /* FeatureFlags.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FeatureFlags.swift; path = Sources/FeatureFlags.swift; sourceTree = "<group>"; };
+		8E4A5D9633AB3B9F03ED5E33785DBFBF /* JTAppleCalendarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarView.swift; path = Sources/JTAppleCalendarView.swift; sourceTree = "<group>"; };
 		8EDD50B1F474B28B0056CC91AFC93C50 /* Pods-intouchTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-intouchTests-umbrella.h"; sourceTree = "<group>"; };
-		90F39B98195B9EDC05B99845CC09C17F /* Pods_intouch_dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_intouch_dev.framework; path = "Pods-intouch-dev.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F56664E7CBBB97EA89254CC02ADA236 /* FSCalendar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FSCalendar.xcconfig; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9598A04530F567556206D59DF800FE37 /* PersistenceService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PersistenceService.swift; path = Sources/PersistenceService.swift; sourceTree = "<group>"; };
+		955510DE2D5F256B2FFC1AFFA0C65A48 /* Pods_intouchUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_intouchUITests.framework; path = "Pods-intouchUITests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		95DF822D33C1B3FD2F441C634DF32095 /* DeviceTokenHelper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DeviceTokenHelper.swift; path = Sources/DeviceTokenHelper.swift; sourceTree = "<group>"; };
 		9711053FDB7A03905975D67E0A5AE10E /* Pods-intouch-dev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-intouch-dev.debug.xcconfig"; sourceTree = "<group>"; };
+		9C33945FA40BB52F5A4AE99A2F726A15 /* JTAppleCalendarDelegateProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarDelegateProtocol.swift; path = Sources/JTAppleCalendarDelegateProtocol.swift; sourceTree = "<group>"; };
 		9CBD9E94FB69480FEEEFD1A778E6AF14 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9DB9CBF3E0EDDD3747CEA08FD6204E2F /* Pods_intouchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_intouchTests.framework; path = "Pods-intouchTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9EA893389DB15554D76C550ECC9C30EC /* Metadata.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Metadata.swift; path = Sources/Metadata.swift; sourceTree = "<group>"; };
 		9F20A068B7BA090DE4914320E6A0741F /* Pods-intouch-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-intouch-acknowledgements.plist"; sourceTree = "<group>"; };
-		A15ED2779C4F4F3FD0F126169294E3DA /* Reason.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reason.swift; path = Sources/Reason.swift; sourceTree = "<group>"; };
-		AC6271FAFF56D942C7194ABF7B78A1CE /* NetworkResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkResponse.swift; path = Sources/NetworkResponse.swift; sourceTree = "<group>"; };
-		B1A924DFA30B0F824F8BF7FDAC95A805 /* PusherAlreadyRegisteredError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PusherAlreadyRegisteredError.swift; path = Sources/PusherAlreadyRegisteredError.swift; sourceTree = "<group>"; };
-		B2C95175017A14619B8C47283AECE74D /* PushNotifications-iOS10.0-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PushNotifications-iOS10.0-umbrella.h"; sourceTree = "<group>"; };
+		9F3162C7F30E3B14FB53AD90CF961D69 /* JTAppleCalendar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JTAppleCalendar-dummy.m"; sourceTree = "<group>"; };
+		9F71F3F3FA6D334CCE9B6422B932A0BA /* PersistenceService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PersistenceService.swift; path = Sources/PersistenceService.swift; sourceTree = "<group>"; };
+		A03AEC63AD5EEF303064FDBD2298D645 /* NetworkService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkService.swift; path = Sources/NetworkService.swift; sourceTree = "<group>"; };
+		A1882BB3C2BAC77CCBA6D8B87527BADD /* FSCalendarDelegationProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarDelegationProxy.m; path = FSCalendar/FSCalendarDelegationProxy.m; sourceTree = "<group>"; };
+		A3601DB4ED917FA16CCF035A81107C4F /* JTAppleCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JTAppleCalendar.modulemap; sourceTree = "<group>"; };
+		A3B6DC88996E26E11EC3CBFCB6B2A919 /* FSCalendarCell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCell.h; path = FSCalendar/FSCalendarCell.h; sourceTree = "<group>"; };
+		A47098251FD1409535B18E13F103C119 /* FSCalendar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FSCalendar.modulemap; sourceTree = "<group>"; };
+		A51947A8D1E30A691FCB0797D5614DA0 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionView.m; path = FSCalendar/FSCalendarCollectionView.m; sourceTree = "<group>"; };
+		A53654F6C69F2B1C06A517CAB5691730 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		A8B9D0CCE4CABDFEEC5EA0CFB85737D3 /* JTAppleCalendarLayoutProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTAppleCalendarLayoutProtocol.swift; path = Sources/JTAppleCalendarLayoutProtocol.swift; sourceTree = "<group>"; };
+		A904594D0E93B493690D5449E06CA587 /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionView.h; path = FSCalendar/FSCalendarCollectionView.h; sourceTree = "<group>"; };
+		A9DC3C8FC802FE4AAE5189D767F8469A /* FSCalendarExtensions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarExtensions.m; path = FSCalendar/FSCalendarExtensions.m; sourceTree = "<group>"; };
+		AA3773FCB8FBD617116F5394BE12729A /* FSCalendarAppearance.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarAppearance.h; path = FSCalendar/FSCalendarAppearance.h; sourceTree = "<group>"; };
+		AA377E375B045DDC7BEC4D292D99F171 /* Instance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Instance.swift; path = Sources/Instance.swift; sourceTree = "<group>"; };
+		ABA66C365EFA91F3D13BF55B195A5A41 /* Encodable+Encode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Encodable+Encode.swift"; path = "Sources/Encodable+Encode.swift"; sourceTree = "<group>"; };
+		AE603070AA1884242E46F6C493E02C7C /* JTCalendarProtocols.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JTCalendarProtocols.swift; path = Sources/JTCalendarProtocols.swift; sourceTree = "<group>"; };
+		AEAACC7F2363427A712DED1028F0FB50 /* FSCalendarTransitionCoordinator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarTransitionCoordinator.h; path = FSCalendar/FSCalendarTransitionCoordinator.h; sourceTree = "<group>"; };
+		AEC06FE9A792C9352A10888ECB7E1CD2 /* NetworkResponse.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkResponse.swift; path = Sources/NetworkResponse.swift; sourceTree = "<group>"; };
+		AEFC9BA27013532ADD848B8FDC0F640A /* Pods_intouchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_intouchTests.framework; path = "Pods-intouchTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B34EAD919C35452BFD9A2C9CEB0F0A27 /* Pods-intouch-dev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-intouch-dev.release.xcconfig"; sourceTree = "<group>"; };
-		B4399C266CCA08AF5A4F6FDBDC101571 /* PushNotifications-iOS10.0-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PushNotifications-iOS10.0-prefix.pch"; sourceTree = "<group>"; };
-		B8D3FE2D0798EE8C1C712625732CA7E7 /* Encodable+Encode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Encodable+Encode.swift"; path = "Sources/Encodable+Encode.swift"; sourceTree = "<group>"; };
-		BA50DF2695C1E5412E411BB7C2CCB564 /* Device.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Device.swift; path = Sources/Device.swift; sourceTree = "<group>"; };
+		B3F3259942013333F1F1D20EC4E1A1E1 /* FSCalendarWeekdayView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarWeekdayView.h; path = FSCalendar/FSCalendarWeekdayView.h; sourceTree = "<group>"; };
+		B72F2EF56D9C3B12D72936FEB8CD7496 /* FSCalendarCollectionViewLayout.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCollectionViewLayout.m; path = FSCalendar/FSCalendarCollectionViewLayout.m; sourceTree = "<group>"; };
+		B8D8B915FF40EB401BFF7A6C07CC4BAC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B90879CD93645163F34ABFFC583D4899 /* PushNotifications-iOS10.0.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "PushNotifications-iOS10.0.modulemap"; sourceTree = "<group>"; };
+		BD09F1285A716C7282319D557A6772D4 /* JTAppleCalendar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-prefix.pch"; sourceTree = "<group>"; };
+		BD3BA5A71163CC71AB931A00E23A3589 /* Register.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Register.swift; path = Sources/Register.swift; sourceTree = "<group>"; };
+		BE5D623F61ABF30F54811CBCC71D761C /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarDynamicHeader.h; path = FSCalendar/FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
 		BFFF725B901E3F8219538BA95DC771C8 /* Pods-intouch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-intouch.release.xcconfig"; sourceTree = "<group>"; };
+		C0A0C9ECAB7856275262928864BF4899 /* Pods_intouch_dev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_intouch_dev.framework; path = "Pods-intouch-dev.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2F508045BE1352FE87EC6AAA21F7D3C /* Pods-intouch-dev-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-intouch-dev-dummy.m"; sourceTree = "<group>"; };
-		C9A266465220F29B10803F41D0905950 /* Register.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Register.swift; path = Sources/Register.swift; sourceTree = "<group>"; };
+		C3D0DC7AC4CDA50A12C5FF1FCA43AB37 /* FSCalendarCollectionViewLayout.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarCollectionViewLayout.h; path = FSCalendar/FSCalendarCollectionViewLayout.h; sourceTree = "<group>"; };
+		C6135C1DF75AC3074D9CB680828B748A /* EventTypeHandler.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventTypeHandler.swift; path = Sources/EventTypeHandler.swift; sourceTree = "<group>"; };
+		C6B8D46069ECCF5880D5C0C6CB9AD270 /* FSCalendarWeekdayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarWeekdayView.m; path = FSCalendar/FSCalendarWeekdayView.m; sourceTree = "<group>"; };
 		C9C252FFE6DFC1B9D90DD13AA53C6464 /* Pods-intouchUITests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-intouchUITests-resources.sh"; sourceTree = "<group>"; };
-		CC3F037C94DE0FA7EF08382E0E0BB5E7 /* PushNotificationsNetworkable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PushNotificationsNetworkable.swift; path = Sources/PushNotificationsNetworkable.swift; sourceTree = "<group>"; };
-		CF48717A8F2138F942FDC91E44044E01 /* PushNotifications-iOS10.3.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "PushNotifications-iOS10.3.xcconfig"; path = "../PushNotifications-iOS10.3/PushNotifications-iOS10.3.xcconfig"; sourceTree = "<group>"; };
-		D6A07A3C2F3810B9854F669405DD2B21 /* PropertyListReadable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PropertyListReadable.swift; path = Sources/PropertyListReadable.swift; sourceTree = "<group>"; };
-		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D743CA2CFB4286361268E477E1C90912 /* PushNotifications-iOS10.3-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "PushNotifications-iOS10.3-dummy.m"; path = "../PushNotifications-iOS10.3/PushNotifications-iOS10.3-dummy.m"; sourceTree = "<group>"; };
-		DA3C2E859EAD9F12858E988389586756 /* Interests.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Interests.swift; path = Sources/Interests.swift; sourceTree = "<group>"; };
-		DC0AC021887429B508CA00A0C727D87E /* FeatureFlags.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FeatureFlags.swift; path = Sources/FeatureFlags.swift; sourceTree = "<group>"; };
+		D2699D185804E501C9DE0E545CB9171B /* FSCalendarHeaderView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarHeaderView.m; path = FSCalendar/FSCalendarHeaderView.m; sourceTree = "<group>"; };
+		D58B238BA504BD4D84BA92453545D8B0 /* FSCalendarExtensions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarExtensions.h; path = FSCalendar/FSCalendarExtensions.h; sourceTree = "<group>"; };
+		D643393AF1D68E97636C087447F8BBF7 /* SDK.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SDK.swift; path = Sources/SDK.swift; sourceTree = "<group>"; };
+		D9530415B8C182720E635F99174855BE /* InterestValidationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterestValidationError.swift; path = Sources/InterestValidationError.swift; sourceTree = "<group>"; };
+		D9891975A89078ABDFFAA928EC6F10F8 /* FSCalendar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendar.h; path = FSCalendar/FSCalendar.h; sourceTree = "<group>"; };
+		DBF63DD11A0208CE5424F1B2179BE72A /* RemoteNotificationType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteNotificationType.swift; path = Sources/RemoteNotificationType.swift; sourceTree = "<group>"; };
 		DE003BAD2FC9EBB5F121D1ACD75063B3 /* Pods-intouchTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-intouchTests-resources.sh"; sourceTree = "<group>"; };
 		E218C1C9DEA18C7558763C2867BC42C6 /* Pods-intouch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-intouch.debug.xcconfig"; sourceTree = "<group>"; };
-		E5F614D5CD550BFF15B666C43801846F /* SDK.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SDK.swift; path = Sources/SDK.swift; sourceTree = "<group>"; };
+		E363E5F74B4987E95A2F0D9F8BA0597B /* PushNotifications-iOS10.0-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PushNotifications-iOS10.0-dummy.m"; sourceTree = "<group>"; };
 		E608ADC5815088FDF185F74E0CFD8FEC /* Pods-intouch-dev-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-intouch-dev-acknowledgements.markdown"; sourceTree = "<group>"; };
 		E627601B282BABFD616224CA0232BE83 /* Pods-intouch-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-intouch-umbrella.h"; sourceTree = "<group>"; };
-		EDBE0E2E89436A6FE6BBF5748F9A611D /* NetworkService.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkService.swift; path = Sources/NetworkService.swift; sourceTree = "<group>"; };
+		E6CF32AD76835939FDCD2A4149E93B5F /* JTAppleCalendar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JTAppleCalendar-umbrella.h"; sourceTree = "<group>"; };
+		E796DACC78E9503507786C090EC0C6C3 /* FSCalendarCalculator.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FSCalendarCalculator.m; path = FSCalendar/FSCalendarCalculator.m; sourceTree = "<group>"; };
+		ECA5B2AEC7EDB3BD7F07548B33FB3722 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ED0993CF7BB0871604BC1EA5BE28084F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE13145AC870222D7A6AC5EBA556EE86 /* Pods-intouch-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-intouch-resources.sh"; sourceTree = "<group>"; };
+		EECDD823DDB702D078BE6DE28185961C /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FSCalendarStickyHeader.h; path = FSCalendar/FSCalendarStickyHeader.h; sourceTree = "<group>"; };
+		F0BC5D133ACDE7B66DF8FA788027178A /* UIScrollViewDelegates.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIScrollViewDelegates.swift; path = Sources/UIScrollViewDelegates.swift; sourceTree = "<group>"; };
 		F2243D097DBD1D100EA0D2A6E9C2780E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F2ADB39E37E17625CEA4EBE1454EBB66 /* CalendarStructs.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CalendarStructs.swift; path = Sources/CalendarStructs.swift; sourceTree = "<group>"; };
 		F3E5C996EC4EB3196D5F7FE7689DFCD5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F7D9C0CBADC7B0816898CCA15B5A12F3 /* Pods_intouch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_intouch.framework; path = "Pods-intouch.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA961E74465FBCE6E04800A939A24AF9 /* Pods-intouchUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-intouchUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		FB5EF6E23B43F5A1C78D5F8654EB04B1 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../PushNotifications-iOS10.3/Info.plist"; sourceTree = "<group>"; };
+		FE8B77C22B593F2569B51ED4865B841C /* PushNotifications-iOS10.3-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "PushNotifications-iOS10.3-umbrella.h"; path = "../PushNotifications-iOS10.3/PushNotifications-iOS10.3-umbrella.h"; sourceTree = "<group>"; };
 		FF2590D81E4C893D3E30E83BE265C024 /* Pods-intouch-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-intouch-frameworks.sh"; sourceTree = "<group>"; };
-		FF94C01AA0B158AA68FB42B53E0389EC /* InterestValidationError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = InterestValidationError.swift; path = Sources/InterestValidationError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -211,19 +339,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		44A4F9B8E6ED4FF772FFC225099F317F /* Frameworks */ = {
+		1F1738F255C0BEA9FB931DB91F7206B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9B082CACA2D12A229977E48F2215D6B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		70EBAEF5C8B9DEC00940D81E2CCA6E8C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				BB26461D5BC58BB5CAC5BAF2BB299563 /* Foundation.framework in Frameworks */,
+				A76262A41E9CE54072A845E716A2EE45 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +352,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				A97D4CADE59315F66A69FA7DCEFD764B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99DEE70D3AE457CB8E8553F73B75BFAD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3AD167FD7CCAE9D5A84252096DF0A5BA /* Foundation.framework in Frameworks */,
+				E064011AA68E40CEEE93CAF4532211DA /* QuartzCore.framework in Frameworks */,
+				7A8B0A3D45337E904FA69BB89D644CCE /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +378,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B582488F618443BB9393881A547BC75 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5C65B19AD207EEFCC75CC427E784104 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5F61A26B8F45D727B1AE8D6A4022D63 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7B89FB2B92598E1175F64F3CA5F85CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AE954FE5A1EE43F8C264326D68EA7A8 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +418,20 @@
 			path = "Target Support Files/Pods-intouchTests";
 			sourceTree = "<group>";
 		};
+		021426A4EE9007994B76022A8E625A8D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ECA5B2AEC7EDB3BD7F07548B33FB3722 /* Info.plist */,
+				A3601DB4ED917FA16CCF035A81107C4F /* JTAppleCalendar.modulemap */,
+				886A270CFCA34B9880407EA24402E190 /* JTAppleCalendar.xcconfig */,
+				9F3162C7F30E3B14FB53AD90CF961D69 /* JTAppleCalendar-dummy.m */,
+				BD09F1285A716C7282319D557A6772D4 /* JTAppleCalendar-prefix.pch */,
+				E6CF32AD76835939FDCD2A4149E93B5F /* JTAppleCalendar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/JTAppleCalendar";
+			sourceTree = "<group>";
+		};
 		087BE460FDF821CBDF0FA40626EB8BDC /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -281,6 +441,24 @@
 				8DBBDA256014FA2183109DDF803FCAEF /* Pods-intouchUITests */,
 			);
 			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		0D7A87A398F0D91F1E1B327DC5AD954E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				B8D8B915FF40EB401BFF7A6C07CC4BAC /* Foundation.framework */,
+				83F55B96F9FD27342C0F09BBB7DEE1AE /* QuartzCore.framework */,
+				A53654F6C69F2B1C06A517CAB5691730 /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D7A87A398F0D91F1E1B327DC5AD954E /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		1DF23494684B0A66F65F143D76C35353 /* Pods-intouch-dev */ = {
@@ -301,25 +479,103 @@
 			path = "Target Support Files/Pods-intouch-dev";
 			sourceTree = "<group>";
 		};
-		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+		20158DC0E21C998B6D6B799AD880155F /* PushNotifications */ = {
 			isa = PBXGroup;
 			children = (
-				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+				2BAA9C72829E5D89862C86BD815B976D /* Array+ContainsSameElements.swift */,
+				6366E6A7615AE70B42B8FC7F800CDD86 /* Device.swift */,
+				95DF822D33C1B3FD2F441C634DF32095 /* DeviceTokenHelper.swift */,
+				ABA66C365EFA91F3D13BF55B195A5A41 /* Encodable+Encode.swift */,
+				C6135C1DF75AC3074D9CB680828B748A /* EventTypeHandler.swift */,
+				8E2793158D1B164DD5578CE25797BBD0 /* FeatureFlags.swift */,
+				4BB4C87655C06DFFE060FD1D7DE54CAD /* HTTPMethod.swift */,
+				AA377E375B045DDC7BEC4D292D99F171 /* Instance.swift */,
+				0A7AB639CA3FBDB839C3291A1929A3AF /* InterestPersistable.swift */,
+				318C0AA7FF26E0C182A66FF84861C396 /* Interests.swift */,
+				D9530415B8C182720E635F99174855BE /* InterestValidationError.swift */,
+				287DE0E986FE14F4FA1C6F14026A2AF1 /* Metadata.swift */,
+				08034C2A34901C11F200736670622C86 /* MultipleInvalidInterestsError.swift */,
+				AEC06FE9A792C9352A10888ECB7E1CD2 /* NetworkResponse.swift */,
+				A03AEC63AD5EEF303064FDBD2298D645 /* NetworkService.swift */,
+				9F71F3F3FA6D334CCE9B6422B932A0BA /* PersistenceService.swift */,
+				11038B4C1D298D64478440272F7FC49E /* PropertyListReadable.swift */,
+				1BE639A85C42445DF308940A024F7607 /* PublishId.swift */,
+				321C21C4A2E560F980DE0669B4068E88 /* PusherAlreadyRegisteredError.swift */,
+				23B6CB75F8E85DAC8AFFAEE9B5D1AC47 /* PushNotifications.swift */,
+				8926E371AA10D78BFA838FE7CB702550 /* PushNotificationsNetworkable.swift */,
+				124933BD589217643B02FC4B2C54806B /* Reason.swift */,
+				BD3BA5A71163CC71AB931A00E23A3589 /* Register.swift */,
+				DBF63DD11A0208CE5424F1B2179BE72A /* RemoteNotificationType.swift */,
+				2E8FAA64F5616FEF67E9CCE652583844 /* ReportEventType.swift */,
+				D643393AF1D68E97636C087447F8BBF7 /* SDK.swift */,
+				200570AEB277FC7AE120903DAFC0B342 /* SystemVersion.swift */,
+				8880F751F669603711AFC44A154BCA40 /* Support Files */,
 			);
-			name = iOS;
+			name = PushNotifications;
+			path = PushNotifications;
 			sourceTree = "<group>";
 		};
-		645C4326FFF1F3C2EADE906A4E9D5736 /* Products */ = {
+		2225AEE6F6E5CC9B1D08D19F4A74C8F7 /* JTAppleCalendar */ = {
 			isa = PBXGroup;
 			children = (
-				F7D9C0CBADC7B0816898CCA15B5A12F3 /* Pods_intouch.framework */,
-				90F39B98195B9EDC05B99845CC09C17F /* Pods_intouch_dev.framework */,
-				9DB9CBF3E0EDDD3747CEA08FD6204E2F /* Pods_intouchTests.framework */,
-				2788E0FE5E69E52C2649F21CD03E5FF3 /* Pods_intouchUITests.framework */,
-				340DA579C08F2F219546CB108FB9C65D /* PushNotifications.framework */,
-				8076813544B6B26F31B2FBE03D7348E8 /* PushNotifications.framework */,
+				66768CB2FBB1302083970D08F6317E00 /* CalendarEnums.swift */,
+				F2ADB39E37E17625CEA4EBE1454EBB66 /* CalendarStructs.swift */,
+				4D0692B47F824489E248B991A022BA54 /* GlobalFunctionsAndExtensions.swift */,
+				9C33945FA40BB52F5A4AE99A2F726A15 /* JTAppleCalendarDelegateProtocol.swift */,
+				49D0340D1276B63C8322F2A7DA68DAAE /* JTAppleCalendarLayout.swift */,
+				A8B9D0CCE4CABDFEEC5EA0CFB85737D3 /* JTAppleCalendarLayoutProtocol.swift */,
+				2B863A8E03C16270613AA334674A7BAC /* JTAppleCalendarVariables.swift */,
+				8E4A5D9633AB3B9F03ED5E33785DBFBF /* JTAppleCalendarView.swift */,
+				68C5B10345B85092F0734CD44414B0AE /* JTAppleCell.swift */,
+				3F8152C48C7AC358C8E2420509D7FF6E /* JTAppleCollectionReusableView.swift */,
+				AE603070AA1884242E46F6C493E02C7C /* JTCalendarProtocols.swift */,
+				16093D274FE16035679B7D2C0FBC69B2 /* UICollectionViewDelegates.swift */,
+				F0BC5D133ACDE7B66DF8FA788027178A /* UIScrollViewDelegates.swift */,
+				556DE114D0302266FF6DB699B973FF93 /* UserInteractionFunctions.swift */,
+				021426A4EE9007994B76022A8E625A8D /* Support Files */,
 			);
-			name = Products;
+			name = JTAppleCalendar;
+			path = JTAppleCalendar;
+			sourceTree = "<group>";
+		};
+		3A36D9F171E23D9A39FB9F55B7420A6E /* FSCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				D9891975A89078ABDFFAA928EC6F10F8 /* FSCalendar.h */,
+				714DAECADAC6883BBF9E7F49D0671246 /* FSCalendar.m */,
+				AA3773FCB8FBD617116F5394BE12729A /* FSCalendarAppearance.h */,
+				787307174AE4485177F1F14C04FD7A6A /* FSCalendarAppearance.m */,
+				8D2868AEE7C5CF75E1C461106F435AB8 /* FSCalendarCalculator.h */,
+				E796DACC78E9503507786C090EC0C6C3 /* FSCalendarCalculator.m */,
+				A3B6DC88996E26E11EC3CBFCB6B2A919 /* FSCalendarCell.h */,
+				4702032D70224305CC976B6B077FE728 /* FSCalendarCell.m */,
+				A904594D0E93B493690D5449E06CA587 /* FSCalendarCollectionView.h */,
+				A51947A8D1E30A691FCB0797D5614DA0 /* FSCalendarCollectionView.m */,
+				C3D0DC7AC4CDA50A12C5FF1FCA43AB37 /* FSCalendarCollectionViewLayout.h */,
+				B72F2EF56D9C3B12D72936FEB8CD7496 /* FSCalendarCollectionViewLayout.m */,
+				019C34DDA29EF2805ED688AB502B2BCA /* FSCalendarConstants.h */,
+				2C7CC18EC7ACCDC22316D298ADE18127 /* FSCalendarConstants.m */,
+				37D2522B56DB4BF56907371D90B992EC /* FSCalendarDelegationFactory.h */,
+				2DDB835792071B58874F7938581E75E5 /* FSCalendarDelegationFactory.m */,
+				3D89904162198E5EF407B2EF27D84BE0 /* FSCalendarDelegationProxy.h */,
+				A1882BB3C2BAC77CCBA6D8B87527BADD /* FSCalendarDelegationProxy.m */,
+				BE5D623F61ABF30F54811CBCC71D761C /* FSCalendarDynamicHeader.h */,
+				D58B238BA504BD4D84BA92453545D8B0 /* FSCalendarExtensions.h */,
+				A9DC3C8FC802FE4AAE5189D767F8469A /* FSCalendarExtensions.m */,
+				53D6E13697CEDF78E5664902EB3A654A /* FSCalendarHeaderView.h */,
+				D2699D185804E501C9DE0E545CB9171B /* FSCalendarHeaderView.m */,
+				5E960982FF882D38E7910659FB5EBED0 /* FSCalendarSeparatorDecorationView.h */,
+				6FDC8CB65C267E1CC7BE8C9F12A130A7 /* FSCalendarSeparatorDecorationView.m */,
+				EECDD823DDB702D078BE6DE28185961C /* FSCalendarStickyHeader.h */,
+				8DEFF6C634FB7C9BDCE0AF731A073391 /* FSCalendarStickyHeader.m */,
+				AEAACC7F2363427A712DED1028F0FB50 /* FSCalendarTransitionCoordinator.h */,
+				1998C5FCBD602119666210F8005F6708 /* FSCalendarTransitionCoordinator.m */,
+				B3F3259942013333F1F1D20EC4E1A1E1 /* FSCalendarWeekdayView.h */,
+				C6B8D46069ECCF5880D5C0C6CB9AD270 /* FSCalendarWeekdayView.m */,
+				BA8917B2222B4F79EFA689C81A4DB360 /* Support Files */,
+			);
+			name = FSCalendar;
+			path = FSCalendar;
 			sourceTree = "<group>";
 		};
 		6E248B8B37072CBCF4EAE0154ACD6C78 /* Pods-intouch */ = {
@@ -340,23 +596,50 @@
 			path = "Target Support Files/Pods-intouch";
 			sourceTree = "<group>";
 		};
+		7894ECDDBBF438136C79FECB5E45F7A6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				73A6573DB308AB49F1D94E20AC9F8F7E /* FSCalendar.framework */,
+				24CD9E2154D4E2BBB7EB648E83D6E66E /* JTAppleCalendar.framework */,
+				7FCD21ACF834CB4B68038AAC9631AC0E /* Pods_intouch.framework */,
+				C0A0C9ECAB7856275262928864BF4899 /* Pods_intouch_dev.framework */,
+				AEFC9BA27013532ADD848B8FDC0F640A /* Pods_intouchTests.framework */,
+				955510DE2D5F256B2FFC1AFFA0C65A48 /* Pods_intouchUITests.framework */,
+				5ACE36308852B2E51366C14A827787E0 /* PushNotifications.framework */,
+				081D417ABF9FF094917CE2E8D630BDC0 /* PushNotifications.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				8C84C3528ADD8027A01779422F8441F4 /* Pods */,
-				645C4326FFF1F3C2EADE906A4E9D5736 /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				92FEFC1EC57DD6563DC8824FE8D3C33C /* Pods */,
+				7894ECDDBBF438136C79FECB5E45F7A6 /* Products */,
 				087BE460FDF821CBDF0FA40626EB8BDC /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		8C84C3528ADD8027A01779422F8441F4 /* Pods */ = {
+		8880F751F669603711AFC44A154BCA40 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A37B7F90C76F785C71553C3866440FC8 /* PushNotifications */,
+				ED0993CF7BB0871604BC1EA5BE28084F /* Info.plist */,
+				FB5EF6E23B43F5A1C78D5F8654EB04B1 /* Info.plist */,
+				B90879CD93645163F34ABFFC583D4899 /* PushNotifications-iOS10.0.modulemap */,
+				4EA1664580289F6C0EF0782F34CD786B /* PushNotifications-iOS10.0.xcconfig */,
+				E363E5F74B4987E95A2F0D9F8BA0597B /* PushNotifications-iOS10.0-dummy.m */,
+				251D2F9923173A0D13DC8CADF0F7EDEF /* PushNotifications-iOS10.0-prefix.pch */,
+				2228D304F9F32C47044F2E297994CDDD /* PushNotifications-iOS10.0-umbrella.h */,
+				1DA80833C6D15312D861106862EE18D7 /* PushNotifications-iOS10.3.modulemap */,
+				6118F84356DBEC02BC558F3AF407D769 /* PushNotifications-iOS10.3.xcconfig */,
+				1549BA7B1EA226D623C4E7D91B59CDF1 /* PushNotifications-iOS10.3-dummy.m */,
+				4DB3B86A3BF5D9DAF9752F5E24C9F272 /* PushNotifications-iOS10.3-prefix.pch */,
+				FE8B77C22B593F2569B51ED4865B841C /* PushNotifications-iOS10.3-umbrella.h */,
 			);
-			name = Pods;
+			name = "Support Files";
+			path = "../Target Support Files/PushNotifications-iOS10.0";
 			sourceTree = "<group>";
 		};
 		8DBBDA256014FA2183109DDF803FCAEF /* Pods-intouchUITests */ = {
@@ -377,78 +660,38 @@
 			path = "Target Support Files/Pods-intouchUITests";
 			sourceTree = "<group>";
 		};
-		A37B7F90C76F785C71553C3866440FC8 /* PushNotifications */ = {
+		92FEFC1EC57DD6563DC8824FE8D3C33C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				15F8EF6EF68DB075866545A19353581C /* Array+ContainsSameElements.swift */,
-				BA50DF2695C1E5412E411BB7C2CCB564 /* Device.swift */,
-				72FFA13C5CE417966F798EEBFE5221C4 /* DeviceTokenHelper.swift */,
-				B8D3FE2D0798EE8C1C712625732CA7E7 /* Encodable+Encode.swift */,
-				5038CDBFE5A2F723F931322F1606BAB5 /* EventTypeHandler.swift */,
-				DC0AC021887429B508CA00A0C727D87E /* FeatureFlags.swift */,
-				73836D686FF146EF2B80E033189A72DB /* HTTPMethod.swift */,
-				8DF5F87B086CC5B5453AF48F650DB06C /* Instance.swift */,
-				3630911229DE9611B48CDC569C38FF07 /* InterestPersistable.swift */,
-				DA3C2E859EAD9F12858E988389586756 /* Interests.swift */,
-				FF94C01AA0B158AA68FB42B53E0389EC /* InterestValidationError.swift */,
-				9EA893389DB15554D76C550ECC9C30EC /* Metadata.swift */,
-				7D5A4C7E2ABD51E6F93F9D2F2493A9A8 /* MultipleInvalidInterestsError.swift */,
-				AC6271FAFF56D942C7194ABF7B78A1CE /* NetworkResponse.swift */,
-				EDBE0E2E89436A6FE6BBF5748F9A611D /* NetworkService.swift */,
-				9598A04530F567556206D59DF800FE37 /* PersistenceService.swift */,
-				D6A07A3C2F3810B9854F669405DD2B21 /* PropertyListReadable.swift */,
-				6EF810ECC3537483860FA4A9FE8B883C /* PublishId.swift */,
-				B1A924DFA30B0F824F8BF7FDAC95A805 /* PusherAlreadyRegisteredError.swift */,
-				2BE9026A22D38AD529ED3EAB8AA7EC58 /* PushNotifications.swift */,
-				CC3F037C94DE0FA7EF08382E0E0BB5E7 /* PushNotificationsNetworkable.swift */,
-				A15ED2779C4F4F3FD0F126169294E3DA /* Reason.swift */,
-				C9A266465220F29B10803F41D0905950 /* Register.swift */,
-				1C5F6D2C17A677490819AF66C2AE6C66 /* RemoteNotificationType.swift */,
-				1737A9ABDA1E7872426F9E4F5683BC17 /* ReportEventType.swift */,
-				E5F614D5CD550BFF15B666C43801846F /* SDK.swift */,
-				7FB05F016FD91F25E6CBAB0D92579901 /* SystemVersion.swift */,
-				F295B27F69F04F06DB5A9DF168C4552F /* Support Files */,
+				3A36D9F171E23D9A39FB9F55B7420A6E /* FSCalendar */,
+				2225AEE6F6E5CC9B1D08D19F4A74C8F7 /* JTAppleCalendar */,
+				20158DC0E21C998B6D6B799AD880155F /* PushNotifications */,
 			);
-			name = PushNotifications;
-			path = PushNotifications;
+			name = Pods;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		BA8917B2222B4F79EFA689C81A4DB360 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				44D5347904CF754D6785B84253F2574A /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F295B27F69F04F06DB5A9DF168C4552F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				2E19B898B06CE1475DEAEB6129AE4698 /* Info.plist */,
-				259AF0A19778EFE5E25513BB937D2996 /* Info.plist */,
-				8B1921F61863676A062BE67F56510130 /* PushNotifications-iOS10.0.modulemap */,
-				28921503B1810E8CFE11E2CC125481DA /* PushNotifications-iOS10.0.xcconfig */,
-				5D254D54052FF90D7DED1B8B95E20202 /* PushNotifications-iOS10.0-dummy.m */,
-				B4399C266CCA08AF5A4F6FDBDC101571 /* PushNotifications-iOS10.0-prefix.pch */,
-				B2C95175017A14619B8C47283AECE74D /* PushNotifications-iOS10.0-umbrella.h */,
-				1F1C5C51258C6FD2B0CB69E134397945 /* PushNotifications-iOS10.3.modulemap */,
-				CF48717A8F2138F942FDC91E44044E01 /* PushNotifications-iOS10.3.xcconfig */,
-				D743CA2CFB4286361268E477E1C90912 /* PushNotifications-iOS10.3-dummy.m */,
-				7AC3EB930C90B94D154CF45AE50E7CBE /* PushNotifications-iOS10.3-prefix.pch */,
-				0C3B602ABEC03810C61851F362327B9A /* PushNotifications-iOS10.3-umbrella.h */,
+				A47098251FD1409535B18E13F103C119 /* FSCalendar.modulemap */,
+				8F56664E7CBBB97EA89254CC02ADA236 /* FSCalendar.xcconfig */,
+				4A65AAA7F4559811471C3831EE22C49C /* FSCalendar-dummy.m */,
+				2BA39E24DDE8686CB3AC6C2B6A78DB99 /* FSCalendar-prefix.pch */,
+				2CDC05578C8B7A04CC2D17448BADC605 /* FSCalendar-umbrella.h */,
+				04608A1F6BD4778BAFB506335474EE00 /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/PushNotifications-iOS10.0";
+			path = "../Target Support Files/FSCalendar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0829372FF5608658DCDDF0D460A3E3AA /* Headers */ = {
+		1F75B3359C3AF4E9BAF17772C2DE1A03 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F684043675040EFC5E0F6F5241D40B05 /* Pods-intouch-umbrella.h in Headers */,
+				61598BB3855161C23CAF1D7A714A7F2A /* PushNotifications-iOS10.3-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,6 +703,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2245A1F7798E4DCF3F7BB52F8B85A9F9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ECF3FE1CDC04931AD24BF9D22E26544E /* Pods-intouch-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		663243477267CCA83C958C473760F0AA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -468,11 +719,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7815BC5A28C41683FDA5FE8D684B52FC /* Headers */ = {
+		7E33CF45B27BDADD483ACDB9FB2DD38B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0268D198F837674C345CF5C59CB9C76A /* PushNotifications-iOS10.3-umbrella.h in Headers */,
+				DCCEA19D66FFEB26A44934B57B2D7D4F /* JTAppleCalendar-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -492,9 +743,72 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C249F019F8982B60C82E1E791096BFEB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				51EB3D81DA46415F61FC8BBAF839177F /* FSCalendar-umbrella.h in Headers */,
+				DEEDC5B5A52A7343CE425F0A411C442B /* FSCalendar.h in Headers */,
+				3E854A186108E25107EA25E175E71D2D /* FSCalendarAppearance.h in Headers */,
+				420D6C910CEB92F34E4E2F15BBE8EA4E /* FSCalendarCalculator.h in Headers */,
+				DBB3602ECDF06051AD95CF6898AD4D0B /* FSCalendarCell.h in Headers */,
+				4BA56434E3C216B81E93EFD1EE71852D /* FSCalendarCollectionView.h in Headers */,
+				BB74BA7BC0E43A711C4AA878A0BF6E6D /* FSCalendarCollectionViewLayout.h in Headers */,
+				1C33A8C8F95A3B3D864DC22B9E5B3CB5 /* FSCalendarConstants.h in Headers */,
+				0EBE2DB914C91FE2689975529A11247C /* FSCalendarDelegationFactory.h in Headers */,
+				358950BA6E8EE4C99587456B849C41CA /* FSCalendarDelegationProxy.h in Headers */,
+				F197432CD327C9DC2C48A595CAA45DA2 /* FSCalendarDynamicHeader.h in Headers */,
+				8ADBFB5BFB8A9D71C46FF887E1D016BE /* FSCalendarExtensions.h in Headers */,
+				71C07575BF136256A3C777B713C21A62 /* FSCalendarHeaderView.h in Headers */,
+				D13E500E72B7D039A573333D60B7444F /* FSCalendarSeparatorDecorationView.h in Headers */,
+				C1DF12D5F3004547BFD9D4C804E93F01 /* FSCalendarStickyHeader.h in Headers */,
+				E417ADED531D1263DB5DEC4806489059 /* FSCalendarTransitionCoordinator.h in Headers */,
+				F9DA37C83B8D98ADF4ACEC732C333217 /* FSCalendarWeekdayView.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		1121F2D3E397AFDC00CF6782DACE7ACF /* Pods-intouch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3FE1D9621AD78554ACE50F310F516BB5 /* Build configuration list for PBXNativeTarget "Pods-intouch" */;
+			buildPhases = (
+				2245A1F7798E4DCF3F7BB52F8B85A9F9 /* Headers */,
+				5299C91E384A4A128827D884967B53AF /* Sources */,
+				F5C65B19AD207EEFCC75CC427E784104 /* Frameworks */,
+				CE7739F8426BA23A31081AE98399912B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EB23E4449BDFB69F5744036FBEB1EAC2 /* PBXTargetDependency */,
+				7342D5B292CF6A068A574CE911A91E7F /* PBXTargetDependency */,
+				A63E7E2260CF076808AD5A8E372C9DD3 /* PBXTargetDependency */,
+			);
+			name = "Pods-intouch";
+			productName = "Pods-intouch";
+			productReference = 7FCD21ACF834CB4B68038AAC9631AC0E /* Pods_intouch.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		1921C72E1ADC97E3D04CA25FFB58DBFC /* FSCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DFA0B92489C5138B697F3C9C80D0F440 /* Build configuration list for PBXNativeTarget "FSCalendar" */;
+			buildPhases = (
+				C249F019F8982B60C82E1E791096BFEB /* Headers */,
+				B37C7B439715B5DC9943BEC95A2E93E0 /* Sources */,
+				99DEE70D3AE457CB8E8553F73B75BFAD /* Frameworks */,
+				8B919EB82BEF91BE03E8752E41D579FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FSCalendar;
+			productName = FSCalendar;
+			productReference = 73A6573DB308AB49F1D94E20AC9F8F7E /* FSCalendar.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		1FE5B24301E93E34EB235237B901AE75 /* Pods-intouch-dev */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DFD7C2E652C894FC6971523BB009D55F /* Build configuration list for PBXNativeTarget "Pods-intouch-dev" */;
@@ -511,7 +825,25 @@
 			);
 			name = "Pods-intouch-dev";
 			productName = "Pods-intouch-dev";
-			productReference = 90F39B98195B9EDC05B99845CC09C17F /* Pods_intouch_dev.framework */;
+			productReference = C0A0C9ECAB7856275262928864BF4899 /* Pods_intouch_dev.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2E3D37501AE767F3B5B1DE94139533D0 /* JTAppleCalendar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 771ABED5D64354179EA329D4EF8DE27A /* Build configuration list for PBXNativeTarget "JTAppleCalendar" */;
+			buildPhases = (
+				7E33CF45B27BDADD483ACDB9FB2DD38B /* Headers */,
+				F8FF93A24CF36E5D6CD5B408E6E101AE /* Sources */,
+				F7B89FB2B92598E1175F64F3CA5F85CE /* Frameworks */,
+				AF6BD69FA8D66B829EC446C0E8A625D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JTAppleCalendar;
+			productName = JTAppleCalendar;
+			productReference = 24CD9E2154D4E2BBB7EB648E83D6E66E /* JTAppleCalendar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		37A09F3EB3F26E182193C4396D0491F2 /* Pods-intouchUITests */ = {
@@ -530,36 +862,17 @@
 			);
 			name = "Pods-intouchUITests";
 			productName = "Pods-intouchUITests";
-			productReference = 2788E0FE5E69E52C2649F21CD03E5FF3 /* Pods_intouchUITests.framework */;
+			productReference = 955510DE2D5F256B2FFC1AFFA0C65A48 /* Pods_intouchUITests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		68FF38D367DB40F1B48D3C7CE70CD1AF /* Pods-intouch */ = {
+		BF1610D2BC65A22B3C39742576BB75F3 /* PushNotifications-iOS10.3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13655ABB28E7FB7FCF0BE0E771BBCC37 /* Build configuration list for PBXNativeTarget "Pods-intouch" */;
+			buildConfigurationList = 1081479615C545EFF23E35F84F9A8D1C /* Build configuration list for PBXNativeTarget "PushNotifications-iOS10.3" */;
 			buildPhases = (
-				0829372FF5608658DCDDF0D460A3E3AA /* Headers */,
-				2C3E3233D703752C75742FC5BEE3ECD2 /* Sources */,
-				44A4F9B8E6ED4FF772FFC225099F317F /* Frameworks */,
-				83788EC4A399781002F0B396C23603F1 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DE0FF0824ABFB468100134AE0397FDE2 /* PBXTargetDependency */,
-			);
-			name = "Pods-intouch";
-			productName = "Pods-intouch";
-			productReference = F7D9C0CBADC7B0816898CCA15B5A12F3 /* Pods_intouch.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		91F79D40368E77E6C1E17EF017583928 /* PushNotifications-iOS10.3 */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = BA8EDD149C5CE0E83BB76C1741A5C0C1 /* Build configuration list for PBXNativeTarget "PushNotifications-iOS10.3" */;
-			buildPhases = (
-				7815BC5A28C41683FDA5FE8D684B52FC /* Headers */,
-				CC06F7593F307328011A1F41ADF9861A /* Sources */,
-				70EBAEF5C8B9DEC00940D81E2CCA6E8C /* Frameworks */,
-				C3A9EB634971F09994501F1312A102EA /* Resources */,
+				1F75B3359C3AF4E9BAF17772C2DE1A03 /* Headers */,
+				E93DE06DD8CD43E98BEC3EA1567E4FCD /* Sources */,
+				1F1738F255C0BEA9FB931DB91F7206B0 /* Frameworks */,
+				DE33F0EE93C3B191DC7E1B583FC3536A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -567,7 +880,7 @@
 			);
 			name = "PushNotifications-iOS10.3";
 			productName = "PushNotifications-iOS10.3";
-			productReference = 8076813544B6B26F31B2FBE03D7348E8 /* PushNotifications.framework */;
+			productReference = 5ACE36308852B2E51366C14A827787E0 /* PushNotifications.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EC01D897A2CA2C2F021839D2B7C0E53A /* PushNotifications-iOS10.0 */ = {
@@ -585,7 +898,7 @@
 			);
 			name = "PushNotifications-iOS10.0";
 			productName = "PushNotifications-iOS10.0";
-			productReference = 340DA579C08F2F219546CB108FB9C65D /* PushNotifications.framework */;
+			productReference = 081D417ABF9FF094917CE2E8D630BDC0 /* PushNotifications.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		FFF36F6FC78FED5F4D15B9B85E084CC6 /* Pods-intouchTests */ = {
@@ -604,7 +917,7 @@
 			);
 			name = "Pods-intouchTests";
 			productName = "Pods-intouchTests";
-			productReference = 9DB9CBF3E0EDDD3747CEA08FD6204E2F /* Pods_intouchTests.framework */;
+			productReference = AEFC9BA27013532ADD848B8FDC0F640A /* Pods_intouchTests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -624,16 +937,18 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 645C4326FFF1F3C2EADE906A4E9D5736 /* Products */;
+			productRefGroup = 7894ECDDBBF438136C79FECB5E45F7A6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				68FF38D367DB40F1B48D3C7CE70CD1AF /* Pods-intouch */,
+				1921C72E1ADC97E3D04CA25FFB58DBFC /* FSCalendar */,
+				2E3D37501AE767F3B5B1DE94139533D0 /* JTAppleCalendar */,
+				1121F2D3E397AFDC00CF6782DACE7ACF /* Pods-intouch */,
 				1FE5B24301E93E34EB235237B901AE75 /* Pods-intouch-dev */,
 				FFF36F6FC78FED5F4D15B9B85E084CC6 /* Pods-intouchTests */,
 				37A09F3EB3F26E182193C4396D0491F2 /* Pods-intouchUITests */,
 				EC01D897A2CA2C2F021839D2B7C0E53A /* PushNotifications-iOS10.0 */,
-				91F79D40368E77E6C1E17EF017583928 /* PushNotifications-iOS10.3 */,
+				BF1610D2BC65A22B3C39742576BB75F3 /* PushNotifications-iOS10.3 */,
 			);
 		};
 /* End PBXProject section */
@@ -646,7 +961,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		83788EC4A399781002F0B396C23603F1 /* Resources */ = {
+		8B919EB82BEF91BE03E8752E41D579FB /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -674,7 +989,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C3A9EB634971F09994501F1312A102EA /* Resources */ = {
+		AF6BD69FA8D66B829EC446C0E8A625D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE7739F8426BA23A31081AE98399912B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE33F0EE93C3B191DC7E1B583FC3536A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -684,11 +1013,11 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		2C3E3233D703752C75742FC5BEE3ECD2 /* Sources */ = {
+		5299C91E384A4A128827D884967B53AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0AED21A7ECD681D4D73F0A81C0B4D2E /* Pods-intouch-dummy.m in Sources */,
+				393E838C65D95EF96CF8E1F9C8F5547D /* Pods-intouch-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -751,38 +1080,83 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		CC06F7593F307328011A1F41ADF9861A /* Sources */ = {
+		B37C7B439715B5DC9943BEC95A2E93E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22990547E9E4D2AAE9D10CB5301544C3 /* Array+ContainsSameElements.swift in Sources */,
-				7A38E5DE4AB5BCA4CAD5E5C92A09F44F /* Device.swift in Sources */,
-				40CB0E6C04BC44E5CE0692658721F120 /* DeviceTokenHelper.swift in Sources */,
-				DD3C391757C959E32529C884A309F6D1 /* Encodable+Encode.swift in Sources */,
-				72186158F148B25814E5101E481183C5 /* EventTypeHandler.swift in Sources */,
-				4CA377DF41A374EECF2FD2112C594DAF /* FeatureFlags.swift in Sources */,
-				42E7E21210BCEBB80FBF55AD01158352 /* HTTPMethod.swift in Sources */,
-				AE96A841CEAEF9AC27DF499ABF64BED4 /* Instance.swift in Sources */,
-				888C8AD9306C701DFC3FC79535595801 /* InterestPersistable.swift in Sources */,
-				1A979B881019BB0FC8B19EB4C774550B /* Interests.swift in Sources */,
-				54FEE90A92EAF2587F643A5B1AF79448 /* InterestValidationError.swift in Sources */,
-				31639509FF754B7E2E12368AC24D2408 /* Metadata.swift in Sources */,
-				DA481AB2908DD34D53146CA0F68ECE1A /* MultipleInvalidInterestsError.swift in Sources */,
-				0C043BA2123AAE4399B34506F69DA0B4 /* NetworkResponse.swift in Sources */,
-				5B0A496178B11477E99AB3681AC02717 /* NetworkService.swift in Sources */,
-				4689205995D97C46C5F586C213D94C65 /* PersistenceService.swift in Sources */,
-				8DE725C48B73421EA58A848A875FBC42 /* PropertyListReadable.swift in Sources */,
-				6C8CC53BEBED99E058ED434D09DF7069 /* PublishId.swift in Sources */,
-				01405D3FDB38A5791CCBB3028F7E4097 /* PusherAlreadyRegisteredError.swift in Sources */,
-				A256B804D3ED30545A65884CCB558200 /* PushNotifications-iOS10.3-dummy.m in Sources */,
-				5BA581A19F43AB6E827C1E349F16D141 /* PushNotifications.swift in Sources */,
-				141F35B0D0EC4E4FA126A7B1A5C0B9E2 /* PushNotificationsNetworkable.swift in Sources */,
-				671B83EF6619840C0E330FFB0877BBE5 /* Reason.swift in Sources */,
-				EE293CA0D099539D6F8C4AD1B575A039 /* Register.swift in Sources */,
-				F97B8FB6753CB9CCA7158AD9E104FF42 /* RemoteNotificationType.swift in Sources */,
-				A8330C2A0DB4F45BF5606A97A2021B0D /* ReportEventType.swift in Sources */,
-				C84C7854017ADE396796510A675880F2 /* SDK.swift in Sources */,
-				0851293F362EF3C00231BD2453CD1402 /* SystemVersion.swift in Sources */,
+				C060623B11B9070CC76819833F3FA84C /* FSCalendar-dummy.m in Sources */,
+				AD9D4DB8C6704028CC726D51E7E35547 /* FSCalendar.m in Sources */,
+				D06935A59B3E3CFBF971E9613C80C49D /* FSCalendarAppearance.m in Sources */,
+				849C9E5D2FE0810D1A9E3368F5D6D87C /* FSCalendarCalculator.m in Sources */,
+				D7597C04B8FE1D1E5D30E304B965022A /* FSCalendarCell.m in Sources */,
+				A9B720490D2E5AD9EA2880D971F8434F /* FSCalendarCollectionView.m in Sources */,
+				A52D89B20F7855358EB3EA8E69F3ABB0 /* FSCalendarCollectionViewLayout.m in Sources */,
+				85585F91CD314B17F392B4896C1D27EC /* FSCalendarConstants.m in Sources */,
+				BDB6BA43250DFF70689481AAC9750E82 /* FSCalendarDelegationFactory.m in Sources */,
+				16BE90421DB9C2ECAA7159CE3E9250A2 /* FSCalendarDelegationProxy.m in Sources */,
+				259FC6DCE1BA2BB0EED84730C30B5AF3 /* FSCalendarExtensions.m in Sources */,
+				C8498D5D4BC978CD661B1B051DD17E74 /* FSCalendarHeaderView.m in Sources */,
+				973FE8759B5FB18DA9C8C4AEC6E3E650 /* FSCalendarSeparatorDecorationView.m in Sources */,
+				E0E61217ABCC6A0D4CD0D234734A0964 /* FSCalendarStickyHeader.m in Sources */,
+				A95C02BA915435B4D48FBB1BC442263E /* FSCalendarTransitionCoordinator.m in Sources */,
+				389AB31471187DB059CDF638BDFAFE87 /* FSCalendarWeekdayView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E93DE06DD8CD43E98BEC3EA1567E4FCD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41C73BCE1E6F7964EEDB49D17AACA933 /* Array+ContainsSameElements.swift in Sources */,
+				D6475641775E5885AA6C2CBCA94049D9 /* Device.swift in Sources */,
+				1F065B1176110C7D3C81CFEFBD235B1F /* DeviceTokenHelper.swift in Sources */,
+				2E23AB8752984FD6D09C8449A8BA4080 /* Encodable+Encode.swift in Sources */,
+				D6D10D918D402F1BCFC1556FF22C92E3 /* EventTypeHandler.swift in Sources */,
+				02B6683F07586D2EC8BFDF5A9305CCCA /* FeatureFlags.swift in Sources */,
+				8910D6B37C682C7929C83D78243A7106 /* HTTPMethod.swift in Sources */,
+				C880A63E86461793517CEEBD5F685240 /* Instance.swift in Sources */,
+				7F723F86B37A0A745FC70E1C2C62080F /* InterestPersistable.swift in Sources */,
+				1BC0ED61A57E5FF8523B98E94C058BC5 /* Interests.swift in Sources */,
+				6FAECDBCF2B576F8A64E504A23D1D4AA /* InterestValidationError.swift in Sources */,
+				520A7B2323E334270170B332802CDEB8 /* Metadata.swift in Sources */,
+				FDAC8C4D06869F00556DA9A24EDB5FC3 /* MultipleInvalidInterestsError.swift in Sources */,
+				6EEA5AEDA3110DB1519445CD4322E175 /* NetworkResponse.swift in Sources */,
+				8F5234048F205B21491184ABEF8287B8 /* NetworkService.swift in Sources */,
+				A9073B3911C640527E66FE6C78BB9C47 /* PersistenceService.swift in Sources */,
+				59370F0E00D77D20CFC40DAE3F8D9C16 /* PropertyListReadable.swift in Sources */,
+				07B841C68A7FD91E4F42C5CD183760CA /* PublishId.swift in Sources */,
+				E402F097DC85836AD05F016EA61B74BB /* PusherAlreadyRegisteredError.swift in Sources */,
+				2F460B6B177F07377DD41D9FF28BC6D1 /* PushNotifications-iOS10.3-dummy.m in Sources */,
+				14EE75CE87065A216834E7BF736B3E1C /* PushNotifications.swift in Sources */,
+				C671BBC252D956F093F5BFD951E5BFE6 /* PushNotificationsNetworkable.swift in Sources */,
+				94526A9E2DB5A446888D080D8D4922ED /* Reason.swift in Sources */,
+				15C4CB6A3303565BFF2EBCA84786F388 /* Register.swift in Sources */,
+				0CB555B61A1D34A700FF6C3E9377F31A /* RemoteNotificationType.swift in Sources */,
+				FF3C5FA10B066B26B18BA7F2D446AF4E /* ReportEventType.swift in Sources */,
+				B3CDA5B91DBB671E338B8C39B15A475B /* SDK.swift in Sources */,
+				9476F8B3C2D20AC2B61A4200AE73612E /* SystemVersion.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8FF93A24CF36E5D6CD5B408E6E101AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3C5F50C9AE6CD9999CD0037ECCE5304 /* CalendarEnums.swift in Sources */,
+				97628B8AB3158786FD4FC60B65C46080 /* CalendarStructs.swift in Sources */,
+				13DC7A6FA7074FF36E2278F8E944B8D9 /* GlobalFunctionsAndExtensions.swift in Sources */,
+				020668B9884D1E3BE333BD6C6998F3E7 /* JTAppleCalendar-dummy.m in Sources */,
+				555E07256934E3D43714A650DFDE8E68 /* JTAppleCalendarDelegateProtocol.swift in Sources */,
+				138206D72F3A305675424F10167ECA4F /* JTAppleCalendarLayout.swift in Sources */,
+				A0F5E757036BFE14D3DBA98AA10C49C3 /* JTAppleCalendarLayoutProtocol.swift in Sources */,
+				D13B9D1F3935AB35908188583E7606DB /* JTAppleCalendarVariables.swift in Sources */,
+				FF905F1AC1557B5CFE7CE14481D0700A /* JTAppleCalendarView.swift in Sources */,
+				A60B2ECF2A9DC2BAC9A59590CC6EAB11 /* JTAppleCell.swift in Sources */,
+				678E82AEF9F023E5281A44746290026B /* JTAppleCollectionReusableView.swift in Sources */,
+				5B2EDDC0067B47F979DF28F0537F9BF4 /* JTCalendarProtocols.swift in Sources */,
+				4D2B16106746383DB2B00728CD0B2CF9 /* UICollectionViewDelegates.swift in Sources */,
+				9C4C688C5600003EFE9073339DB1E6C3 /* UIScrollViewDelegates.swift in Sources */,
+				307CE045C79734DF837F2DFD96759E74 /* UserInteractionFunctions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -792,14 +1166,26 @@
 		3595687733A956F7B8D411C2EBF3364D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-intouch";
-			target = 68FF38D367DB40F1B48D3C7CE70CD1AF /* Pods-intouch */;
+			target = 1121F2D3E397AFDC00CF6782DACE7ACF /* Pods-intouch */;
 			targetProxy = 36347D3842A8C27E448DD6E2C53895CD /* PBXContainerItemProxy */;
+		};
+		7342D5B292CF6A068A574CE911A91E7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JTAppleCalendar;
+			target = 2E3D37501AE767F3B5B1DE94139533D0 /* JTAppleCalendar */;
+			targetProxy = C386113536053C06AA485C003FF37F02 /* PBXContainerItemProxy */;
 		};
 		78465BD5E7CDA978BAF4D0FCE48C8BE5 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-intouch";
-			target = 68FF38D367DB40F1B48D3C7CE70CD1AF /* Pods-intouch */;
+			target = 1121F2D3E397AFDC00CF6782DACE7ACF /* Pods-intouch */;
 			targetProxy = E312EDF0217F4DA818FB7A55F15D88E3 /* PBXContainerItemProxy */;
+		};
+		A63E7E2260CF076808AD5A8E372C9DD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "PushNotifications-iOS10.3";
+			target = BF1610D2BC65A22B3C39742576BB75F3 /* PushNotifications-iOS10.3 */;
+			targetProxy = D479808D8FCCA4F2D0AF653075CBC497 /* PBXContainerItemProxy */;
 		};
 		C15C45BCF3923BCB0D370F8CCBDB31EC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -807,20 +1193,51 @@
 			target = EC01D897A2CA2C2F021839D2B7C0E53A /* PushNotifications-iOS10.0 */;
 			targetProxy = 3F775D6B79DAC927F6766999C96217DF /* PBXContainerItemProxy */;
 		};
-		DE0FF0824ABFB468100134AE0397FDE2 /* PBXTargetDependency */ = {
+		EB23E4449BDFB69F5744036FBEB1EAC2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "PushNotifications-iOS10.3";
-			target = 91F79D40368E77E6C1E17EF017583928 /* PushNotifications-iOS10.3 */;
-			targetProxy = B7F44886DBE33B7C1EE9BE9B84E85F49 /* PBXContainerItemProxy */;
+			name = FSCalendar;
+			target = 1921C72E1ADC97E3D04CA25FFB58DBFC /* FSCalendar */;
+			targetProxy = 5E251EEC1E97D03702CFA09B3D28F4F6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0195E47C3BAE51C35BF5B03ED6F49167 /* Debug */ = {
+		2337E77887FCBF9032806222E2A65FD9 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E218C1C9DEA18C7558763C2867BC42C6 /* Pods-intouch.debug.xcconfig */;
+			baseConfigurationReference = 8F56664E7CBBB97EA89254CC02ADA236 /* FSCalendar.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FSCalendar/FSCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSCalendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FSCalendar/FSCalendar.modulemap";
+				PRODUCT_MODULE_NAME = FSCalendar;
+				PRODUCT_NAME = FSCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		28A882A334EDB92B43E7F23DD6C43F95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6118F84356DBEC02BC558F3AF407D769 /* PushNotifications-iOS10.3.xcconfig */;
+			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -831,28 +1248,28 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-intouch/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/PushNotifications-iOS10.3/PushNotifications-iOS10.3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PushNotifications-iOS10.3/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-intouch/Pods-intouch.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				MODULEMAP_FILE = "Target Support Files/PushNotifications-iOS10.3/PushNotifications-iOS10.3.modulemap";
+				PRODUCT_MODULE_NAME = PushNotifications;
+				PRODUCT_NAME = PushNotifications;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		305E6B13A484EA298A7419772287C2DD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28921503B1810E8CFE11E2CC125481DA /* PushNotifications-iOS10.0.xcconfig */;
+			baseConfigurationReference = 4EA1664580289F6C0EF0782F34CD786B /* PushNotifications-iOS10.0.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -917,6 +1334,38 @@
 			};
 			name = Release;
 		};
+		4A21127416CF0E85E96B485EEC9AAE90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6118F84356DBEC02BC558F3AF407D769 /* PushNotifications-iOS10.3.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/PushNotifications-iOS10.3/PushNotifications-iOS10.3-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/PushNotifications-iOS10.3/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/PushNotifications-iOS10.3/PushNotifications-iOS10.3.modulemap";
+				PRODUCT_MODULE_NAME = PushNotifications;
+				PRODUCT_NAME = PushNotifications;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		5ECBCB683308A415BC8B55F6037EB77E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FA961E74465FBCE6E04800A939A24AF9 /* Pods-intouchUITests.debug.xcconfig */;
@@ -951,42 +1400,9 @@
 			};
 			name = Debug;
 		};
-		5EDB5074ABD0BEC7C1BBEF74282F6E4F /* Release */ = {
+		6AA1B7F03D996C130ED39D683DD88B5C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF48717A8F2138F942FDC91E44044E01 /* PushNotifications-iOS10.3.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PushNotifications-iOS10.3/PushNotifications-iOS10.3-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PushNotifications-iOS10.3/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PushNotifications-iOS10.3/PushNotifications-iOS10.3.modulemap";
-				PRODUCT_MODULE_NAME = PushNotifications;
-				PRODUCT_NAME = PushNotifications;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		7AF13BB20AC5C538BAE88841BD063771 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BFFF725B901E3F8219538BA95DC771C8 /* Pods-intouch.release.xcconfig */;
+			baseConfigurationReference = E218C1C9DEA18C7558763C2867BC42C6 /* Pods-intouch.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -1013,11 +1429,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		8DDFA5FA8D4131BFD96E5E26F3672644 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1119,6 +1534,41 @@
 			};
 			name = Debug;
 		};
+		9A97DAAB909C454689C6E0E40A0FAEC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFFF725B901E3F8219538BA95DC771C8 /* Pods-intouch.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-intouch/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-intouch/Pods-intouch.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		9E1D66544D13F4E2E5E573FE3274972B /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 05D9CF958DBBFF70F00F381BFE72DD7D /* Pods-intouchUITests.release.xcconfig */;
@@ -1153,6 +1603,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		A0F1E2C6ABA77ECE787521898C245CA7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F56664E7CBBB97EA89254CC02ADA236 /* FSCalendar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FSCalendar/FSCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FSCalendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FSCalendar/FSCalendar.modulemap";
+				PRODUCT_MODULE_NAME = FSCalendar;
+				PRODUCT_NAME = FSCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		B031264DE4DB1A12E67F8803E6CC4879 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1225,7 +1706,7 @@
 		};
 		B0CE72CB4B38AC76E0304EC5098B09BD /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28921503B1810E8CFE11E2CC125481DA /* PushNotifications-iOS10.0.xcconfig */;
+			baseConfigurationReference = 4EA1664580289F6C0EF0782F34CD786B /* PushNotifications-iOS10.0.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
@@ -1255,6 +1736,37 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
+		};
+		C43C456AD9CAE30CFDB1C6A876B47F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 886A270CFCA34B9880407EA24402E190 /* JTAppleCalendar.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JTAppleCalendar/JTAppleCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JTAppleCalendar/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/JTAppleCalendar/JTAppleCalendar.modulemap";
+				PRODUCT_MODULE_NAME = JTAppleCalendar;
+				PRODUCT_NAME = JTAppleCalendar;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		D5F759C82752B2EB010DB3CD3D69707C /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -1318,11 +1830,10 @@
 			};
 			name = Release;
 		};
-		DD0D35A4A8B6ABF0C28894DC0FDD3C2B /* Debug */ = {
+		EB274FA5237B4DACC431E9DA374AFF73 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF48717A8F2138F942FDC91E44044E01 /* PushNotifications-iOS10.3.xcconfig */;
+			baseConfigurationReference = 886A270CFCA34B9880407EA24402E190 /* JTAppleCalendar.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -1332,32 +1843,33 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/PushNotifications-iOS10.3/PushNotifications-iOS10.3-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/PushNotifications-iOS10.3/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/JTAppleCalendar/JTAppleCalendar-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JTAppleCalendar/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/PushNotifications-iOS10.3/PushNotifications-iOS10.3.modulemap";
-				PRODUCT_MODULE_NAME = PushNotifications;
-				PRODUCT_NAME = PushNotifications;
+				MODULEMAP_FILE = "Target Support Files/JTAppleCalendar/JTAppleCalendar.modulemap";
+				PRODUCT_MODULE_NAME = JTAppleCalendar;
+				PRODUCT_NAME = JTAppleCalendar;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		13655ABB28E7FB7FCF0BE0E771BBCC37 /* Build configuration list for PBXNativeTarget "Pods-intouch" */ = {
+		1081479615C545EFF23E35F84F9A8D1C /* Build configuration list for PBXNativeTarget "PushNotifications-iOS10.3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0195E47C3BAE51C35BF5B03ED6F49167 /* Debug */,
-				7AF13BB20AC5C538BAE88841BD063771 /* Release */,
+				4A21127416CF0E85E96B485EEC9AAE90 /* Debug */,
+				28A882A334EDB92B43E7F23DD6C43F95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1371,11 +1883,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		BA8EDD149C5CE0E83BB76C1741A5C0C1 /* Build configuration list for PBXNativeTarget "PushNotifications-iOS10.3" */ = {
+		3FE1D9621AD78554ACE50F310F516BB5 /* Build configuration list for PBXNativeTarget "Pods-intouch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				DD0D35A4A8B6ABF0C28894DC0FDD3C2B /* Debug */,
-				5EDB5074ABD0BEC7C1BBEF74282F6E4F /* Release */,
+				6AA1B7F03D996C130ED39D683DD88B5C /* Debug */,
+				9A97DAAB909C454689C6E0E40A0FAEC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		771ABED5D64354179EA329D4EF8DE27A /* Build configuration list for PBXNativeTarget "JTAppleCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C43C456AD9CAE30CFDB1C6A876B47F3A /* Debug */,
+				EB274FA5237B4DACC431E9DA374AFF73 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1394,6 +1915,15 @@
 			buildConfigurations = (
 				5ECBCB683308A415BC8B55F6037EB77E /* Debug */,
 				9E1D66544D13F4E2E5E573FE3274972B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DFA0B92489C5138B697F3C9C80D0F440 /* Build configuration list for PBXNativeTarget "FSCalendar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0F1E2C6ABA77ECE787521898C245CA7 /* Debug */,
+				2337E77887FCBF9032806222E2A65FD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

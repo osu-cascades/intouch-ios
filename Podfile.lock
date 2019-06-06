@@ -1,16 +1,24 @@
 PODS:
+  - FSCalendar (2.8.0)
+  - JTAppleCalendar (7.0.6)
   - PushNotifications (0.10.7)
 
 DEPENDENCIES:
+  - FSCalendar
+  - JTAppleCalendar (= 7.0.6)
   - PushNotifications
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - FSCalendar
+    - JTAppleCalendar
     - PushNotifications
 
 SPEC CHECKSUMS:
+  FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
+  JTAppleCalendar: 6a942475e33b9ad4dee0a0e14aa4c63adcf4f543
   PushNotifications: 2e3df1e301e19ae2a100267f8387da5fc471ecc7
 
-PODFILE CHECKSUM: b3d792304f56cfefbb96a00cbbf398c7f49f0b61
+PODFILE CHECKSUM: aa2262523dfb9f8ed833f5f91fe4b684db8a61e2
 
 COCOAPODS: 1.5.3
